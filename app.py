@@ -4,7 +4,7 @@ import os
 from arrow import get
 from flask import Flask, render_template, request, url_for, send_file
 from tempfile import NamedTemporaryFile
-from niagarascheduler import make_url, sorted_classes, schedule, output, date_formats, parse_registrar_table, fetch_registrar_table, locale, discover_available_semesters
+from scheduler import make_url, sorted_classes, schedule, output, date_formats, parse_registrar_table, fetch_registrar_table, locale, discover_available_semesters
 
 app = Flask(__name__, static_url_path = "")
 
@@ -20,16 +20,6 @@ def form():
     formats = [t[0] for t in date_formats()]
     return render_template('form_submit.html', semesters=semesters, months=months, ddays=ddays, formats=formats)
 
-@app.route('/generic/', methods=['GET'])
-def generic():
-    semesters = discover_available_semesters()
-    if not semesters:
-        semesters = [('fall', '2024'), ('spring', '2025')]
-    months = ['January', 'February', 'March', 'April', 'May',
-            'June', 'July', 'August', 'September', 'October', 'November', 'December']
-    ddays = [str(d) for d in range(1,32)]
-    formats = [t[0] for t in date_formats()]
-    return render_template('form_submit_generic.html', semesters=semesters, months=months, ddays=ddays, formats=formats)
 
 @app.route('/results/', methods=['POST'])
 def results():
@@ -59,30 +49,6 @@ def results():
         filename = semester + year + 'Syllabus' + suffix
         return send_file(tf.name, attachment_filename=filename, as_attachment=True)
 
-@app.route('/classes/', methods=['POST'])
-def classes():
-
-    year = int(request.form['year'])
-    start_month = locale().month_number(request.form['start-month'])
-    start_day = int(request.form['start-day'])
-    last_month = locale().month_number(request.form['last-month'])
-    last_day = int(request.form['last-day'])
-    weekdays = request.form.getlist('days')
-    date_fmt = [b for (a, b) in date_formats() if a == request.form['format']][0]
-
-    try:
-        start_date = [get(year, start_month, start_day)]
-    except:
-        return "The starting date you specified does not exist." 
-
-    try:
-        last_date = [get(year, last_month, last_day)]
-    except:
-        return "The ending date you specified does not exist." 
-
-    possible_classes, no_classes = sorted_classes(weekdays, start_date, last_date, no_classes=[])
-    course = schedule(possible_classes, no_classes, show_no=True, fmt=date_fmt) 
-    return '<br/>'.join(course)
 
 if __name__ == '__main__':
     import argparse
@@ -101,7 +67,7 @@ if __name__ == '__main__':
     
     if args.generate:
         print("Generating calendar JSON files...")
-        from niagarascheduler import generate_calendar_json
+        from scheduler import generate_calendar_json
         generate_calendar_json()
         print("Calendar generation complete!")
     

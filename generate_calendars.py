@@ -14,7 +14,7 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(__file__))
 
-from niagarascheduler import generate_calendar_json
+from scheduler import generate_calendar_json
 
 def check_tbd_items(output_dir):
     """Check generated JSON files for TBD items and report them"""
@@ -172,7 +172,7 @@ def main():
         print()
     
     try:
-        from niagarascheduler import generate_calendar_json
+        from scheduler import generate_calendar_json
         generate_calendar_json(args.input_dir, args.output_dir)
         
         # Get preservation notes if any
