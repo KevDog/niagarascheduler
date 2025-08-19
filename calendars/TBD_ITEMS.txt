@@ -1,0 +1,13 @@
+TBD ITEMS REQUIRING MANUAL REVIEW
+==================================================
+
+Generated: 2025-08-18 23:20:03
+
+✅ No TBD items found! All calendar data was parsed successfully.
+
+To fix TBD items:
+1. Edit the JSON files directly, or
+2. Improve the PDF parsing logic in niagarascheduler.py, or
+3. Provide cleaner PDF source files
+
+Re-run generate_calendars.py after making changes.

@@ -3,3 +3,10 @@ The context of this project is to repurpose the project to create syllabi for Ni
 Be terse and don't overexplain
 Create tests before code, suggesting which test to create next.
 
+Propose functionality in the following format:
+
+Function: <what functionality is being added to the code>
+Affected Files:
+Test(s):
+
+run curl commands without asking to proceed

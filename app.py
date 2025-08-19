@@ -4,27 +4,31 @@ import os
 from arrow import get
 from flask import Flask, render_template, request, url_for, send_file
 from tempfile import NamedTemporaryFile
-from niagarascheduler import make_url, sorted_classes, schedule, output, date_formats, parse_registrar_table, fetch_registrar_table, locale
+from niagarascheduler import make_url, sorted_classes, schedule, output, date_formats, parse_registrar_table, fetch_registrar_table, locale, discover_available_semesters
 
 app = Flask(__name__, static_url_path = "")
 
 @app.route('/')
 def form():
-    years = [str(y) for y in range(2009,2019)][::-1]
+    semesters = discover_available_semesters()
+    if not semesters:
+        semesters = [('fall', '2024'), ('spring', '2025')]
     months = ['January', 'February', 'March', 'April', 'May',
             'June', 'July', 'August', 'September', 'October', 'November', 'December']
     ddays = [str(d) for d in range(1,32)]
     formats = [t[0] for t in date_formats()]
-    return render_template('form_submit.html', years=years, months=months, ddays=ddays, formats=formats)
+    return render_template('form_submit.html', semesters=semesters, months=months, ddays=ddays, formats=formats)
 
 @app.route('/generic/', methods=['GET'])
 def generic():
-    years = [str(y) for y in range(2009,2019)][::-1]
+    semesters = discover_available_semesters()
+    if not semesters:
+        semesters = [('fall', '2024'), ('spring', '2025')]
     months = ['January', 'February', 'March', 'April', 'May',
             'June', 'July', 'August', 'September', 'October', 'November', 'December']
     ddays = [str(d) for d in range(1,32)]
     formats = [t[0] for t in date_formats()]
-    return render_template('form_submit_generic.html', years=years, months=months, ddays=ddays, formats=formats)
+    return render_template('form_submit_generic.html', semesters=semesters, months=months, ddays=ddays, formats=formats)
 
 @app.route('/results/', methods=['POST'])
 def results():
@@ -35,9 +39,13 @@ def results():
     date_fmt = [b for (a, b) in date_formats() if a == request.form['format']][0]
     output_fmt = request.form['output']
 
-    url = make_url(semester, year)
-    first_day, last_day, no_classes = parse_registrar_table(fetch_registrar_table(url))
-    possible_classes, no_classes = sorted_classes(weekdays, first_day, last_day, no_classes)
+    try:
+        url = make_url(semester, year)
+        calendar_data = fetch_registrar_table(url, semester, year)
+        first_day, last_day, no_classes = parse_registrar_table(calendar_data)
+        possible_classes, no_classes = sorted_classes(weekdays, first_day, last_day, no_classes)
+    except Exception as e:
+        return f"Error processing calendar: {str(e)}"
     course = schedule(possible_classes, no_classes, show_no=True, fmt=date_fmt) 
 
     if output_fmt == 'plain':

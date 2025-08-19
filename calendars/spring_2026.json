@@ -1,0 +1,173 @@
+{
+  "semester": "spring_2026",
+  "academic_year": "2025-2026",
+  "source_file": "2025-2026-academic-calendar.pdf",
+  "generated_at": "2025-08-18 23:20:03",
+  "first_day": "TBD",
+  "last_day": "2026-05-15",
+  "no_class_dates": [],
+  "events": [
+    {
+      "name": "August 23 January 20",
+      "date": "2026-01-20",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Session I Tue, May 27 Mon, Jun 23 August 25 January 24",
+      "date": "2026-05-27",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Session I Tue, May 27 Mon, Jun 23 August 25 January 24",
+      "date": "2026-01-24",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Session III Tue, Jul 22 Wed, Aug 13 September 01 January 27",
+      "date": "2026-01-27",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Cross Session Tue, May 27 Mon, Jul 21 Monday Tuesday",
+      "date": "2026-05-27",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Evening (T,W) Tue, May 27 Wed, Aug 13 September 02 January 30 Restricted Drop Add Ends/Last Day to Drop without",
+      "date": "2026-05-27",
+      "date_range": null,
+      "type": "academic_deadline"
+    },
+    {
+      "name": "Evening (T,W) Tue, May 27 Wed, Aug 13 September 02 January 30 Restricted Drop Add Ends/Last Day to Drop without",
+      "date": "2026-01-30",
+      "date_range": null,
+      "type": "academic_deadline"
+    },
+    {
+      "name": "Graduate Start End September 05 Restricted Drop Add Ends/Last Day to Drop without February 21",
+      "date": "2026-02-21",
+      "date_range": null,
+      "type": "academic_deadline"
+    },
+    {
+      "name": "Session I Tue, May 27 Mon, Jun 23 Friday a W Saturday",
+      "date": "2026-05-27",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Session II Tue, Jun 24 Mon, Jul 21 September 20 February 28",
+      "date": "2026-02-28",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Cross Session Tue, May 27 Mon, Jul 21 September 27 March 06",
+      "date": "2026-05-27",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Cross Session Tue, May 27 Mon, Jul 21 September 27 March 06",
+      "date": "2026-03-06",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Evening (T,W) Tue, May 27 Wed, Aug 13 Saturday Friday",
+      "date": "2026-05-27",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "October 10 March 14",
+      "date": "2026-03-14",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Saturday Ses I Sat, May 31 Sat, Jun 28 Oct Mar",
+      "date": "2026-05-31",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Memorial Day Monday, May 26 Oct March 28",
+      "date": "2026-05-26",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Memorial Day Monday, May 26 Oct March 28",
+      "date": "2026-03-28",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "November 01 April 07",
+      "date": "2026-04-07",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Summer Conferral Date Fri, Aug 22 2025 Nov April 11",
+      "date": "2026-04-11",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "May Conferral Date (Spring 2026) Fri, May 22 2026 December 04 May 05",
+      "date": "2026-05-22",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "May Conferral Date (Spring 2026) Fri, May 22 2026 December 04 May 05",
+      "date": "2026-05-05",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "December 05 May 06",
+      "date": "2026-05-06",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "December 06 May 09",
+      "date": "2026-05-09",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "December 11 May 12",
+      "date": "2026-05-12",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "December 16 May 14",
+      "date": "2026-05-14",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "May 15",
+      "date": "2026-05-15",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "reserve the right to alter or amend this calendar as deemed necessary. May 16",
+      "date": "2026-05-16",
+      "date_range": null,
+      "type": "other"
+    }
+  ]
+}

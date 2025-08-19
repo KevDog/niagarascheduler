@@ -1,0 +1,11 @@
+{
+  "next_semester": "fall_2024",
+  "available_semesters": [
+    "fall_2024",
+    "fall_2025",
+    "spring_2025",
+    "spring_2026"
+  ],
+  "generated_at": "2025-08-18 23:18:07",
+  "_note": "Manually edit 'next_semester' to change which semester the interface displays"
+}

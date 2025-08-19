@@ -1,0 +1,107 @@
+{
+  "semester": "fall_2024",
+  "academic_year": "2024-2025",
+  "source_file": "2024-2025-academic-calendar.pdf",
+  "generated_at": "2025-08-18 23:20:03",
+  "first_day": "2024-05-20",
+  "last_day": "2024-12-15",
+  "no_class_dates": [],
+  "events": [
+    {
+      "name": "August 24 January 21",
+      "date": "2024-08-24",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Session I Mon, May 20 Thu, Jun 13 August 26 January 25",
+      "date": "2024-08-26",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Session III Tue, Jul 16 Thu, Aug 08 September 02 January 28",
+      "date": "2024-09-02",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Tues Evening Tue, May 21 Tue, Aug 06 September 03 January 31 Restricted Drop Add Ends/Last Day to Drop without",
+      "date": "2024-09-03",
+      "date_range": null,
+      "type": "academic_deadline"
+    },
+    {
+      "name": "Graduate Start End September 06 Restricted Drop Add Ends/Last Day to Drop without February 22",
+      "date": "2024-09-06",
+      "date_range": null,
+      "type": "academic_deadline"
+    },
+    {
+      "name": "Session II Mon, Jun 17 Mon, Jul 15 September 21 March 01",
+      "date": "2024-09-21",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Cross Session Mon, May 20 Mon, Jul 15 September 28 March 07",
+      "date": "2024-09-28",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "October 11 Mar",
+      "date": "2024-10-11",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "October 26 March 29",
+      "date": "2024-10-26",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "Independence Day Thursday, Jul 04 November 01 April 04",
+      "date": "2024-11-01",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "November 02 April 05",
+      "date": "2024-11-02",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "May (Spring 2025) Conferral Date Fri, May 23 2025 December 05 May 06",
+      "date": "2024-12-05",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "December 06 May 07",
+      "date": "2024-12-06",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "December 07 May 10",
+      "date": "2024-12-07",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "December 12 May 13",
+      "date": "2024-12-12",
+      "date_range": null,
+      "type": "other"
+    },
+    {
+      "name": "December 17 May 15",
+      "date": "2024-12-17",
+      "date_range": null,
+      "type": "other"
+    }
+  ]
+}
