@@ -13,6 +13,7 @@ def form():
     semesters = discover_available_semesters()
     if not semesters:
         semesters = [('fall', '2024'), ('spring', '2025')]
+    
     months = ['January', 'February', 'March', 'April', 'May',
             'June', 'July', 'August', 'September', 'October', 'November', 'December']
     ddays = [str(d) for d in range(1,32)]
@@ -33,8 +34,8 @@ def generic():
 @app.route('/results/', methods=['POST'])
 def results():
 
-    semester = request.form['semester']
-    year = request.form['year']
+    semester_year = request.form['semester_year']
+    semester, year = semester_year.split('_')
     weekdays = request.form.getlist('days')
     date_fmt = [b for (a, b) in date_formats() if a == request.form['format']][0]
     output_fmt = request.form['output']
@@ -84,6 +85,25 @@ def classes():
     return '<br/>'.join(course)
 
 if __name__ == '__main__':
+    import argparse
     import os
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    
+    parser = argparse.ArgumentParser(description='Run Niagara University Scheduler web application')
+    parser.add_argument('--generate', 
+                       action='store_true',
+                       help='Generate calendar JSON files from PDFs before starting server')
+    parser.add_argument('--port', '-p',
+                       type=int,
+                       default=int(os.environ.get('PORT', 5001)),
+                       help='Port to run the server on (default: 5001)')
+    
+    args = parser.parse_args()
+    
+    if args.generate:
+        print("Generating calendar JSON files...")
+        from niagarascheduler import generate_calendar_json
+        generate_calendar_json()
+        print("Calendar generation complete!")
+    
+    print(f"Starting server on port {args.port}...")
+    app.run(host='0.0.0.0', port=args.port, debug=True)

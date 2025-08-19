@@ -13,13 +13,9 @@
                 <h2>Choose your semester.</h2>
 
                 <form method="post" action="{{ url_for('results') }}">
-                  <select name="semester" class="ck mb1 field">
-                      <option value="Spring">Spring</option>
-                      <option value="Fall">Fall</option>
-                  </select>
-                  <select name="year" class="ck mb1 field">
-                      {% for year in years %}
-                          <option value="{{year}}">{{year}}</option>
+                  <select name="semester_year" class="ck mb1 field">
+                      {% for semester, year in semesters %}
+                          <option value="{{semester}}_{{year}}">{{semester.title()}} {{year}}</option>
                       {% endfor %}
                   </select>
 

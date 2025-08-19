@@ -575,7 +575,6 @@ def generate_calendar_json(niagara_dir=None, output_dir=None):
                 # Create individual semester JSON
                 semester_json = {
                     "semester": semester_key,
-                    "academic_year": json_data.get('academic_year'),
                     "source_file": json_data.get('source_file'),
                     "generated_at": json_data.get('generated_at'),
                     "first_day": semester_data.get('first_day'),
@@ -594,12 +593,6 @@ def generate_calendar_json(niagara_dir=None, output_dir=None):
                         
                         # Compare key fields that might have been manually edited
                         preserved_fields = []
-                        
-                        # Check academic year
-                        if (existing_data.get('academic_year') != 'TBD' and 
-                            semester_json.get('academic_year') == 'TBD'):
-                            semester_json['academic_year'] = existing_data['academic_year']
-                            preserved_fields.append('academic_year')
                         
                         # Preserve manually set first_day
                         if (existing_data.get('first_day') != 'TBD' and 
@@ -1024,15 +1017,13 @@ def parse_pdf_to_json_with_events(pdf_path):
     try:
         text = extract_text_from_pdf(pdf_path)
         
-        # Extract academic year from filename or content
+        # Extract year from filename or content
         filename = pdf_path.split('/')[-1]
         year_match = re.search(r'(\d{4})-(\d{4})', filename)
         if year_match:
-            academic_year = f"{year_match.group(1)}-{year_match.group(2)}"
             start_year = int(year_match.group(1))
             end_year = int(year_match.group(2))
         else:
-            academic_year = "TBD"
             start_year = 2024
             end_year = 2025
         
@@ -1051,7 +1042,6 @@ def parse_pdf_to_json_with_events(pdf_path):
             return [date.format('YYYY-MM-DD') for date in arrow_list] if arrow_list else []
         
         json_data = {
-            "academic_year": academic_year,
             "source_file": filename,
             "generated_at": arrow.now().format('YYYY-MM-DD HH:mm:ss'),
             "semesters": {
@@ -1075,7 +1065,6 @@ def parse_pdf_to_json_with_events(pdf_path):
     except Exception as e:
         # Return TBD structure for any parsing errors
         return {
-            "academic_year": "TBD",
             "source_file": pdf_path.split('/')[-1],
             "generated_at": arrow.now().format('YYYY-MM-DD HH:mm:ss'),
             "error": str(e),

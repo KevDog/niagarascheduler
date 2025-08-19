@@ -1,9 +1,8 @@
 {
   "semester": "fall_2025",
-  "academic_year": "2025-2026",
   "source_file": "2025-2026-academic-calendar.pdf",
   "generated_at": "2025-08-18 23:20:03",
-  "first_day": "TBD",
+  "first_day": "2025-08-25",
   "last_day": "2025-12-15",
   "no_class_dates": [],
   "events": [

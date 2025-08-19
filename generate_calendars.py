@@ -34,14 +34,6 @@ def check_tbd_items(output_dir):
             
             file_tbds = []
             
-            # Check academic year
-            if data.get('academic_year') == 'TBD':
-                file_tbds.append({
-                    'field': 'academic_year',
-                    'location': 'root',
-                    'suggestion': 'Set academic year in format "YYYY-YYYY"'
-                })
-            
             # Check for parsing errors
             if 'error' in data:
                 file_tbds.append({
