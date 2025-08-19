@@ -4,7 +4,7 @@ import os
 from arrow import get
 from flask import Flask, render_template, request, url_for, send_file
 from tempfile import NamedTemporaryFile
-from ricescheduler import make_url, sorted_classes, schedule, output, date_formats, parse_registrar_table, fetch_registrar_table, locale
+from niagarascheduler import make_url, sorted_classes, schedule, output, date_formats, parse_registrar_table, fetch_registrar_table, locale
 
 app = Flask(__name__, static_url_path = "")
 
@@ -76,4 +76,6 @@ def classes():
     return '<br/>'.join(course)
 
 if __name__ == '__main__':
-    app.run()
+    import os
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)

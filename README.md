@@ -1,4 +1,4 @@
-A script to automatically generate a list of class meetings for a semester-long Rice class, using calendar data scraped from the registrar's website. Currently only Spring and Fall courses are supported. Also includes a generic version that generates dates for a syllabus for other institutions.
+A script to automatically generate a list of class meetings for a semester-long Niagara University class, using calendar data from academic calendars. Currently only Spring and Fall courses are supported. Also includes a generic version that generates dates for a syllabus for other institutions.
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. 
    

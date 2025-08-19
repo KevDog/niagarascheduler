@@ -1,5 +1,5 @@
 import argparse 
-from ricescheduler import make_url, sorted_classes, schedule, output, date_formats
+from niagarascheduler import make_url, sorted_classes, schedule, output, date_formats
 
 parser = argparse.ArgumentParser()
 parser.add_argument('semester', help='Spring or Fall')
@@ -27,4 +27,4 @@ weekdays = [day_index[d] for d in args.days]
 possible_classes, no_classes = sorted_classes(weekdays, url)
 course = schedule(possible_classes, no_classes, show_no=True)
 print course
-# ricescheduler.output_docx(schedule(possible_classes, no_classes, args.verbose), args.semester, str(args.year), 'output.docx')
+# niagarascheduler.output_docx(schedule(possible_classes, no_classes, args.verbose), args.semester, str(args.year), 'output.docx')
