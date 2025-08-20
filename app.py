@@ -34,6 +34,7 @@ def results():
     show_holidays = 'show_holidays' in request.form
     show_breaks = 'show_breaks' in request.form
     show_events = 'show_events' in request.form
+    
 
     try:
         url = make_url(semester, year)
@@ -51,7 +52,10 @@ def results():
         suffix = '.' + output_fmt
         templatedir = os.path.dirname(os.path.abspath(__file__)) + '/templates'
         tf = NamedTemporaryFile(suffix=suffix)
+        
+        # Standard output method
         output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name)
+        
         filename = semester + year + 'Syllabus' + suffix
         return send_file(tf.name, attachment_filename=filename, as_attachment=True)
 

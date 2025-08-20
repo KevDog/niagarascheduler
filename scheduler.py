@@ -12,6 +12,7 @@ from core.utils import locale, regex, date_formats, range_of_days, clean_cell, p
 from core.calendar_loader import make_url, fetch_registrar_table, parse_registrar_table, load_semester_calendar_from_json, load_calendar_from_json
 from core.schedule_generator import sorted_classes, schedule, discover_available_semesters
 from core.output_formatter import markdown, output
+from core.docx_editor import create_custom_syllabus_template, install_docx_support
 
 # PDF processing
 from pdf.pdf_extractor import extract_text_from_pdf, extract_first_day_from_pdf_text, extract_last_day_from_pdf_text, extract_no_class_dates_from_pdf_text, parse_pdf_calendar
@@ -29,6 +30,9 @@ __all__ = [
     'make_url', 'fetch_registrar_table', 'parse_registrar_table', 
     'sorted_classes', 'schedule', 'output', 'date_formats',
     'discover_available_semesters', 'locale',
+    
+    # Enhanced DOCX editing
+    'create_custom_syllabus_template', 'install_docx_support',
     
     # Calendar management
     'generate_calendar_json', 'parse_pdf_to_json',
