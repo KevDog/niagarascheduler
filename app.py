@@ -27,7 +27,14 @@ def results():
     semester_year = request.form['semester_year']
     semester, year = semester_year.split('_')
     weekdays = request.form.getlist('days')
-    date_fmt = [b for (a, b) in date_formats() if a == request.form['format']][0]
+    format_selection = request.form.get('format', '')
+    available_formats = date_formats()
+    matching_formats = [b for (a, b) in available_formats if a == format_selection]
+    if not matching_formats:
+        # Default to first available format if none matches
+        date_fmt = available_formats[0][1] if available_formats else 'M/D'
+    else:
+        date_fmt = matching_formats[0]
     output_fmt = request.form['output']
     
     # Get user preferences for showing events
