@@ -3,7 +3,7 @@ The context of this project is to repurpose the project to create syllabi for Ni
 Be terse and don't overexplain
 
 TEST-DRIVEN DEVELOPMENT PROCESS:
-1. Create comprehensive failing test file for entire feature
+1. Create test file with empty test functions (just function names)
 2. Implement one test method at a time, in order
 3. Write minimal code to make current test pass
 4. Move to next test method
