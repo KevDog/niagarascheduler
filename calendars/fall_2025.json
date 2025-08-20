@@ -1,104 +1,50 @@
 {
   "semester": "fall_2025",
   "source_file": "2025-2026-academic-calendar.pdf",
-  "generated_at": "2025-08-18 23:20:03",
-  "first_day": "2025-08-25",
+  "generated_at": "2025-08-19 23:20:02",
+  "first_day": "TBD",
   "last_day": "2025-12-15",
   "no_class_dates": [],
   "events": [
     {
-      "name": "August 23 January 20",
+      "name": "January 20",
       "date": "2025-08-23",
       "date_range": null,
       "type": "other"
     },
     {
-      "name": "Session I Tue, May 27 Mon, Jun 23 August 25 January 24",
-      "date": "2025-08-25",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "Session III Tue, Jul 22 Wed, Aug 13 September 01 January 27",
-      "date": "2025-09-01",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "Evening (T,W) Tue, May 27 Wed, Aug 13 September 02 January 30 Restricted Drop Add Ends/Last Day to Drop without",
-      "date": "2025-09-02",
-      "date_range": null,
-      "type": "academic_deadline"
-    },
-    {
-      "name": "Graduate Start End September 05 Restricted Drop Add Ends/Last Day to Drop without February 21",
+      "name": "Graduate Start End",
       "date": "2025-09-05",
       "date_range": null,
-      "type": "academic_deadline"
+      "type": "semester_event"
     },
     {
-      "name": "Session II Tue, Jun 24 Mon, Jul 21 September 20 February 28",
-      "date": "2025-09-20",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "Cross Session Tue, May 27 Mon, Jul 21 September 27 March 06",
-      "date": "2025-09-27",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "October 10 March 14",
+      "name": "March 14",
       "date": "2025-10-10",
       "date_range": null,
       "type": "other"
     },
     {
-      "name": "October 25 Mar",
+      "name": "Mar",
       "date": "2025-10-25",
       "date_range": null,
       "type": "other"
     },
     {
-      "name": "Independence Day Friday, Jul 04 October 31 Apr",
+      "name": "Independence Day Friday,",
       "date": "2025-10-31",
       "date_range": null,
       "type": "other"
     },
     {
-      "name": "November 01 April 07",
+      "name": "April 07",
       "date": "2025-11-01",
       "date_range": null,
       "type": "other"
     },
     {
-      "name": "May Conferral Date (Spring 2026) Fri, May 22 2026 December 04 May 05",
+      "name": "2026",
       "date": "2025-12-04",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "December 05 May 06",
-      "date": "2025-12-05",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "December 06 May 09",
-      "date": "2025-12-06",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "December 11 May 12",
-      "date": "2025-12-11",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "December 16 May 14",
-      "date": "2025-12-16",
       "date_range": null,
       "type": "other"
     }

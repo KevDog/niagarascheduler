@@ -29,15 +29,21 @@ def results():
     weekdays = request.form.getlist('days')
     date_fmt = [b for (a, b) in date_formats() if a == request.form['format']][0]
     output_fmt = request.form['output']
+    
+    # Get user preferences for showing events
+    show_holidays = 'show_holidays' in request.form
+    show_breaks = 'show_breaks' in request.form
+    show_events = 'show_events' in request.form
 
     try:
         url = make_url(semester, year)
         calendar_data = fetch_registrar_table(url, semester, year)
-        first_day, last_day, no_classes = parse_registrar_table(calendar_data)
+        first_day, last_day, no_classes, events = parse_registrar_table(calendar_data)
         possible_classes, no_classes = sorted_classes(weekdays, first_day, last_day, no_classes)
     except Exception as e:
         return f"Error processing calendar: {str(e)}"
-    course = schedule(possible_classes, no_classes, show_no=True, fmt=date_fmt) 
+    course = schedule(possible_classes, no_classes, show_no=True, fmt=date_fmt, events=events,
+                     show_holidays=show_holidays, show_breaks=show_breaks, show_events=show_events) 
 
     if output_fmt == 'plain':
         return '<br/>'.join(course)

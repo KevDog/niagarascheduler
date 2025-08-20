@@ -1,8 +1,8 @@
 {
-  "available_semesters": [1
+  "available_semesters": [
     "fall_2025",
     "spring_2026"
   ],
-  "generated_at": "2025-08-18 23:18:07",
+  "generated_at": "2025-08-19 23:20:02",
   "_note": "Contains list of available semesters for the interface"
 }

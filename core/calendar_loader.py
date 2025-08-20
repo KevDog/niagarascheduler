@@ -37,13 +37,14 @@ def fetch_registrar_table(file_path, semester=None, year=None):
         # Load from semester-specific JSON
         return load_semester_calendar_from_json(file_path)
     else:
-        # Load from PDF (legacy)
+        # Load from PDF (legacy) - PDF doesn't return events, so add empty list
         from pdf.semester_parser import parse_pdf_calendar_for_semester
         from pdf.pdf_extractor import parse_pdf_calendar
         if semester and year:
-            return parse_pdf_calendar_for_semester(file_path, semester, year)
+            first_days, last_days, no_classes = parse_pdf_calendar_for_semester(file_path, semester, year)
         else:
-            return parse_pdf_calendar(file_path)
+            first_days, last_days, no_classes = parse_pdf_calendar(file_path)
+        return first_days, last_days, no_classes, []
 
 def parse_registrar_table(calendar_data):
     ''' Parse calendar data and return first, last, cancelled days of class as lists '''
@@ -60,6 +61,7 @@ def load_semester_calendar_from_json(json_path):
         first_days = []
         last_days = []
         no_class_dates = []
+        events = []
         
         if data.get('first_day') and data['first_day'] != 'TBD':
             try:
@@ -81,11 +83,39 @@ def load_semester_calendar_from_json(json_path):
                 except:
                     pass
         
-        return first_days, last_days, no_class_dates
+        # Load events
+        for event in data.get('events', []):
+            event_item = {
+                'name': event.get('name', ''),
+                'type': event.get('type', 'other'),
+                'date': None,
+                'date_range': []
+            }
+            
+            # Single date event
+            if event.get('date') and event['date'] != 'TBD':
+                try:
+                    event_item['date'] = arrow.get(event['date'])
+                except:
+                    pass
+            
+            # Date range event
+            if event.get('date_range'):
+                for date_str in event['date_range']:
+                    if date_str != 'TBD':
+                        try:
+                            event_item['date_range'].append(arrow.get(date_str))
+                        except:
+                            pass
+            
+            if event_item['date'] or event_item['date_range']:
+                events.append(event_item)
+        
+        return first_days, last_days, no_class_dates, events
         
     except Exception as e:
         print(f"Error loading calendar from JSON: {e}")
-        return [], [], []
+        return [], [], [], []
 
 def load_calendar_from_json(json_path, semester, year):
     ''' Load calendar data from JSON file for specific semester '''

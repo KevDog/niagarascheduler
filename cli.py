@@ -1,5 +1,6 @@
-import argparse 
-from niagarascheduler import make_url, sorted_classes, schedule, output, date_formats
+import argparse
+import sys
+from scheduler import make_url, sorted_classes, schedule, output, date_formats
 
 parser = argparse.ArgumentParser()
 parser.add_argument('semester', help='Spring or Fall')
@@ -13,11 +14,11 @@ def check_args():
     checks.append(set(args.days + 'MTWRF') != set('MTWRF'))
     checks.append(args.semester.lower() not in ['spring','fall'])
     if True in checks:
-        print 'Input error in your arguments.'
+        print('Input error in your arguments.')
         parser.print_help()
         sys.exit(1)
     if args.year < 2009:
-        print 'ERROR: The script only works for the years 2009 to the present.'
+        print('ERROR: The script only works for the years 2009 to the present.')
         sys.exit(1)
 
 check_args()
@@ -26,5 +27,5 @@ day_index = {'M': 'Monday', 'T': 'Tuesday', 'W': 'Wednesday', 'R': 'Thursday', '
 weekdays = [day_index[d] for d in args.days]
 possible_classes, no_classes = sorted_classes(weekdays, url)
 course = schedule(possible_classes, no_classes, show_no=True)
-print course
+print(course)
 # niagarascheduler.output_docx(schedule(possible_classes, no_classes, args.verbose), args.semester, str(args.year), 'output.docx')

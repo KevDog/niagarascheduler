@@ -12,15 +12,55 @@ def sorted_classes(weekdays, first_day, last_day, no_classes):
     possible_classes = [d for d in semester if locale().day_name(d.isoweekday()) in weekdays]
     return possible_classes, no_classes
 
-def schedule(possible_classes, no_classes, show_no=None, fmt=None):
+def schedule(possible_classes, no_classes, show_no=None, fmt=None, events=None, 
+            show_holidays=True, show_breaks=True, show_events=True):
     ''' Take lists of Arrow objects, return list of course meetings as strings '''
     course = []
     date_format = fmt if fmt else 'dddd, MMMM D, YYYY'
+    events = events or []
+    
+    # Filter events based on user preferences
+    filtered_events = []
+    for event in events:
+        event_type = event.get('type', 'other')
+        if event_type == 'holiday' and show_holidays:
+            filtered_events.append(event)
+        elif event_type == 'break' and show_breaks:
+            filtered_events.append(event)
+        elif event_type not in ['holiday', 'break'] and show_events:
+            filtered_events.append(event)
+    
+    # Create a map of dates to events for quick lookup
+    event_map = {}
+    for event in filtered_events:
+        if event['date']:
+            event_map[event['date'].date()] = event
+        # Handle date ranges
+        if event.get('date_range'):
+            for event_date in event['date_range']:
+                event_map[event_date.date()] = event
+    
     for d in possible_classes:
+        date_str = d.format(date_format)
+        
+        # Check if this date has an event
+        event = event_map.get(d.date())
+        
         if d not in no_classes:
-            course.append(d.format(date_format))
+            if event:
+                # Format event based on type
+                if event['type'] in ['holiday', 'break']:
+                    course.append(f"{date_str} - NO CLASS ({event['name']})")
+                else:
+                    course.append(f"{date_str} - {event['name']}")
+            else:
+                course.append(date_str)
         elif show_no:
-            course.append(d.format(date_format) + ' - NO CLASS')
+            if event:
+                course.append(f"{date_str} - NO CLASS ({event['name']})")
+            else:
+                course.append(date_str + ' - NO CLASS')
+    
     return course
 
 def discover_available_semesters():
