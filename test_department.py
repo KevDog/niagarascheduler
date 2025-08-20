@@ -42,6 +42,18 @@ class TestDepartment(unittest.TestCase):
         
         # Assert
         self.assertEqual(dept.mission_statement, mission_statement)
+    
+    def test_department_has_office(self):
+        """A department has an office"""
+        # Arrange
+        department_name = "Theater Arts"
+        office_location = "Castellani Art Museum Building, Room 201"
+        
+        # Act
+        dept = Department(department_name, office=office_location)
+        
+        # Assert
+        self.assertEqual(dept.office, office_location)
 
 
 if __name__ == '__main__':
