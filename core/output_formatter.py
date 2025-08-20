@@ -3,6 +3,7 @@
 import pypandoc
 import os
 from core.docx_editor import enhance_syllabus_docx, install_docx_support
+from core.course_descriptions import CourseDescriptionManager
 
 def markdown(schedule, semester, year, templatedir):
     course = ['## ' + d + '\n' for d in schedule]
@@ -40,3 +41,17 @@ def output(schedule, semester, year, fmt, templatedir, outfile):
     pandoc_args.append(template_arg)
     output = pypandoc.convert(md, fmt, 'md', pandoc_args, outputfile=outfile)
     assert output == ''
+
+def format_text_with_description(schedule, course_id=None, include_description=False):
+    """Format text output with optional course description"""
+    if not include_description or not course_id:
+        return '\n'.join(schedule)
+    
+    # Default data file path
+    data_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'courses.json')
+    manager = CourseDescriptionManager(data_file)
+    description = manager.get_course_description(course_id)
+    
+    result = f"Course Description: {description}\n\n"
+    result += '\n'.join(schedule)
+    return result
