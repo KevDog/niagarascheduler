@@ -11,6 +11,9 @@ Features:
 - Styling and formatting control
 """
 
+import os
+from core.course_descriptions import CourseDescriptionManager
+
 def create_enhanced_docx_editor():
     """Check if python-docx is available and provide enhanced editing"""
     try:
@@ -219,3 +222,15 @@ def install_docx_support():
         return True, "python-docx is already installed"
     except ImportError:
         return False, "python-docx is not installed. Install with: pip install python-docx"
+
+def enhance_docx_with_description(doc, course_id=None, include_description=False):
+    """Enhance DOCX document with course description"""
+    if not include_description or not course_id:
+        return
+    
+    # Default data file path
+    data_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'courses.json')
+    manager = CourseDescriptionManager(data_file)
+    description = manager.get_course_description(course_id)
+    
+    replace_text_in_document(doc, '{{COURSE_DESCRIPTION}}', description)
