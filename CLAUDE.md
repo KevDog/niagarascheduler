@@ -8,6 +8,7 @@ TEST-DRIVEN DEVELOPMENT PROCESS:
 3. Write minimal code to make current test pass
 4. Move to next test method
 5. Refactor when all tests pass
+6. Run git add . after each passing test
 
 Propose functionality in the following format:
 

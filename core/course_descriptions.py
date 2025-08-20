@@ -32,3 +32,12 @@ class CourseDescriptionManager:
         if course_id in self._course_data:
             return self._course_data[course_id]['description']
         return 'Course description not found, insert manually'
+    
+    def get_course_info(self, course_id):
+        """Get complete course information for given course ID"""
+        if self._course_data is None:
+            self.load_course_data()
+        
+        if course_id in self._course_data:
+            return self._course_data[course_id]
+        return None
