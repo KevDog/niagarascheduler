@@ -27,12 +27,12 @@ def format_schedule_as_markdown(schedule_data):
     
     for item in schedule_data:
         # Clean up the schedule item for markdown
-        clean_item = item.replace('**', '').replace('*', '')
+        clean_item = str(item).replace('**', '').replace('*', '')
         if ':' in clean_item:
             date_part, event_part = clean_item.split(':', 1)
             markdown_table += f"| {date_part.strip()} | {event_part.strip()} |\n"
         else:
-            markdown_table += f"| | {clean_item.strip()} |\n"
+            markdown_table += f"| {clean_item.strip()} | |\n"
     
     return markdown_table
 
