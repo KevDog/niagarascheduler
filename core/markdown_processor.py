@@ -100,27 +100,9 @@ def convert_markdown_to_format(markdown_content, output_format, template_dir=Non
     
     pandoc_args = ['--standalone']
     
-    # Format-specific arguments
-    if output_format == 'docx':
-        if template_dir:
-            docx_template = os.path.join(template_dir, 'syllabus.docx')
-            if os.path.exists(docx_template):
-                pandoc_args.append(f'--reference-doc={docx_template}')
-    
-    elif output_format == 'pdf':
+    # Format-specific arguments (using pandoc defaults since custom templates deleted)
+    if output_format == 'pdf':
         pandoc_args.extend(['--pdf-engine=pdflatex'])
-    
-    elif output_format == 'html':
-        if template_dir:
-            html_template = os.path.join(template_dir, 'syllabus.html')
-            if os.path.exists(html_template):
-                pandoc_args.append(f'--template={html_template}')
-    
-    elif output_format == 'tex':
-        if template_dir:
-            tex_template = os.path.join(template_dir, 'syllabus.tex')
-            if os.path.exists(tex_template):
-                pandoc_args.append(f'--template={tex_template}')
     
     # Convert using pandoc
     if output_file:
