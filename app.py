@@ -35,7 +35,7 @@ def results():
         date_fmt = available_formats[0][1] if available_formats else 'M/D'
     else:
         date_fmt = matching_formats[0]
-    output_fmt = request.form['output']
+# No longer need output_fmt since we're showing preview first
     
     # Get user preferences for showing events
     show_holidays = 'show_holidays' in request.form
@@ -57,23 +57,70 @@ def results():
     course = schedule(possible_classes, no_classes, show_no=True, fmt=date_fmt, events=events,
                      show_holidays=show_holidays, show_breaks=show_breaks, show_events=show_events) 
 
-    if output_fmt == 'plain':
-        if include_description and course_id:
-            from core.output_formatter import format_text_with_description
-            result = format_text_with_description(course, course_id, include_description)
-            return '<br/>'.join(result.split('\n'))
-        return '<br/>'.join(course)
-    else:
-        suffix = '.' + output_fmt
+    # Generate markdown content for preview
+    from core.markdown_processor import generate_syllabus_markdown
+    
+    markdown_content = generate_syllabus_markdown(
+        schedule_data=course,
+        semester=semester,
+        year=year,
+        course_id=course_id,
+        include_description=include_description
+    )
+    
+    # Store form data in session for export functionality
+    form_data = {
+        'schedule_data': course,
+        'semester': semester,
+        'year': year,
+        'course_id': course_id,
+        'include_description': include_description,
+        'date_fmt': date_fmt
+    }
+    
+    return render_template('results.html', 
+                         markdown_content=markdown_content,
+                         form_data=form_data)
+
+
+@app.route('/export/', methods=['POST'])
+def export_syllabus():
+    """Handle syllabus export in various formats"""
+    
+    # Reconstruct form data
+    schedule_data = request.form['schedule_data'].split(',') if request.form.get('schedule_data') else []
+    semester = request.form['semester']
+    year = request.form['year']
+    course_id = request.form.get('course_id', '')
+    include_description = request.form.get('include_description') == 'True'
+    export_format = request.form['export_format']
+    
+    try:
+        from tempfile import NamedTemporaryFile
+        
+        suffix = '.' + export_format
         templatedir = os.path.dirname(os.path.abspath(__file__)) + '/templates'
-        tf = NamedTemporaryFile(suffix=suffix)
+        tf = NamedTemporaryFile(suffix=suffix, delete=False)
         
-        # Use new markdown-first output method
-        output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name, 
-               course_id=course_id, include_description=include_description)
+        # Use markdown processor to generate file
+        from core.markdown_processor import generate_syllabus
         
-        filename = semester + year + 'Syllabus' + suffix
-        return send_file(tf.name, attachment_filename=filename, as_attachment=True)
+        generate_syllabus(
+            schedule_data=schedule_data,
+            semester=semester,
+            year=year,
+            output_format=export_format,
+            template_dir=templatedir,
+            output_file=tf.name,
+            course_id=course_id,
+            include_description=include_description
+        )
+        
+        filename = f"{semester}{year}Syllabus{suffix}"
+        return send_file(tf.name, as_attachment=True, download_name=filename)
+        
+    except Exception as e:
+        return f"Error generating export: {str(e)}", 500
 
 
 if __name__ == '__main__':
