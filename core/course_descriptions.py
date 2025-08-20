@@ -20,8 +20,11 @@ class CourseDescriptionManager:
     
     def load_course_data(self):
         """Load course data from JSON file"""
-        with open(self.data_file_path, 'r') as f:
-            self._course_data = json.load(f)
+        try:
+            with open(self.data_file_path, 'r') as f:
+                self._course_data = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            self._course_data = {}
         return self._course_data
     
     def get_course_description(self, course_id):
