@@ -5,10 +5,11 @@ Be terse and don't overexplain
 TEST-DRIVEN DEVELOPMENT PROCESS:
 1. Create test file with empty test functions (just function names)
 2. Implement one test method at a time, in order
-3. Write minimal code to make current test pass
-4. Move to next test method
-5. Refactor when all tests pass
-6. Run git add . after each passing test
+3. Use "Arrange, Act, Assert" pattern in test methods wherever practical
+4. Write minimal code to make current test pass
+5. Move to next test method
+6. Refactor when all tests pass
+7. Run git add . after each passing test
 
 Propose functionality in the following format:
 
