@@ -35,6 +35,10 @@ def results():
     show_breaks = 'show_breaks' in request.form
     show_events = 'show_events' in request.form
     
+    # Get course information preferences
+    course_id = request.form.get('course_id', '').strip()
+    include_description = 'include_description' in request.form
+    
 
     try:
         url = make_url(semester, year)
@@ -47,14 +51,32 @@ def results():
                      show_holidays=show_holidays, show_breaks=show_breaks, show_events=show_events) 
 
     if output_fmt == 'plain':
+        if include_description and course_id:
+            from core.output_formatter import format_text_with_description
+            result = format_text_with_description(course, course_id, include_description)
+            return '<br/>'.join(result.split('\n'))
         return '<br/>'.join(course)
     else:
         suffix = '.' + output_fmt
         templatedir = os.path.dirname(os.path.abspath(__file__)) + '/templates'
         tf = NamedTemporaryFile(suffix=suffix)
         
-        # Standard output method
-        output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name)
+        # Enhanced output method with course descriptions
+        if output_fmt == 'docx' and include_description and course_id:
+            from core.docx_editor import enhance_docx_with_description
+            # Use enhanced DOCX method
+            output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name)
+            # Then enhance with course description
+            try:
+                from docx import Document
+                doc = Document(tf.name)
+                enhance_docx_with_description(doc, course_id, include_description)
+                doc.save(tf.name)
+            except ImportError:
+                pass  # python-docx not available, continue without enhancement
+        else:
+            # Standard output method
+            output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name)
         
         filename = semester + year + 'Syllabus' + suffix
         return send_file(tf.name, attachment_filename=filename, as_attachment=True)

@@ -47,8 +47,9 @@ def format_text_with_description(schedule, course_id=None, include_description=F
     if not include_description or not course_id:
         return '\n'.join(schedule)
     
-    # Default data file path
-    data_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'courses.json')
+    # Data file path relative to project root
+    project_root = os.path.dirname(os.path.dirname(__file__))
+    data_file = os.path.join(project_root, 'data', 'courses.json')
     manager = CourseDescriptionManager(data_file)
     description = manager.get_course_description(course_id)
     

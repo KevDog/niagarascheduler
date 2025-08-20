@@ -228,8 +228,9 @@ def enhance_docx_with_description(doc, course_id=None, include_description=False
     if not include_description or not course_id:
         return
     
-    # Default data file path
-    data_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'courses.json')
+    # Data file path relative to project root
+    project_root = os.path.dirname(os.path.dirname(__file__))
+    data_file = os.path.join(project_root, 'data', 'courses.json')
     manager = CourseDescriptionManager(data_file)
     description = manager.get_course_description(course_id)
     
