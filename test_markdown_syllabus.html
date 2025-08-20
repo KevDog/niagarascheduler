@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <title>OSError: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+ // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="?__debugger__=yes&amp;cmd=resource&amp;f=style.css">
+    <link rel="shortcut icon"
+        href="?__debugger__=yes&amp;cmd=resource&amp;f=console.png">
+    <script src="?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js"></script>
+    <script>
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "Cr9RzYCBR5MBb251npCB";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>OSError</h1>
+<div class="detail">
+  <p class="errormsg">OSError: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+</p>
+</div>
+<h2 class="traceback">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-4447501888">
+  <h4>File <cite class="filename">"/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py"</cite>,
+      line <em class="line">2213</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:</pre>
+<pre class="line before"><span class="ws">        </span>&#34;&#34;&#34;The WSGI server calls the Flask application object as the</pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be</pre>
+<pre class="line before"><span class="ws">        </span>wrapped to apply middleware.</pre>
+<pre class="line before"><span class="ws">        </span>&#34;&#34;&#34;</pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447500432">
+  <h4>File <cite class="filename">"/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py"</cite>,
+      line <em class="line">2193</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line before"><span class="ws">                </span>error = e</pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre>
+<pre class="line after"><span class="ws">                </span>raise</pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)</pre>
+<pre class="line after"><span class="ws">        </span>finally:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447499872">
+  <h4>File <cite class="filename">"/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py"</cite>,
+      line <em class="line">2190</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)</pre>
+<pre class="line before"><span class="ws">        </span>error: BaseException | None = None</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">                </span>error = e</pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447500880">
+  <h4>File <cite class="filename">"/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py"</cite>,
+      line <em class="line">1486</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(</pre>
+<pre class="line after"><span class="ws">        </span>self,</pre>
+<pre class="line after"><span class="ws">        </span>rv: ft.ResponseReturnValue | HTTPException,</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447500096">
+  <h4>File <cite class="filename">"/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py"</cite>,
+      line <em class="line">1484</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447776832">
+  <h4>File <cite class="filename">"/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py"</cite>,
+      line <em class="line">1469</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>and req.method == &#34;OPTIONS&#34;</pre>
+<pre class="line before"><span class="ws">        </span>):</pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()</pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint</pre>
+<pre class="line before"><span class="ws">        </span>view_args: dict[str, t.Any] = req.view_args  # type: ignore[assignment]</pre>
+<pre class="line current"><span class="ws">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self) -&gt; Response:</pre>
+<pre class="line after"><span class="ws">        </span>&#34;&#34;&#34;Dispatches the request and on top of that performs request</pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and</pre>
+<pre class="line after"><span class="ws">        </span>error handling.</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447776944">
+  <h4>File <cite class="filename">"/Users/kevdog/Documents/code/niagarascheduler/app.py"</cite>,
+      line <em class="line">65</em>,
+      in <code class="function">results</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>suffix = &#39;.&#39; + output_fmt</pre>
+<pre class="line before"><span class="ws">        </span>templatedir = os.path.dirname(os.path.abspath(__file__)) + &#39;/templates&#39;</pre>
+<pre class="line before"><span class="ws">        </span>tf = NamedTemporaryFile(suffix=suffix)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span># Use new markdown-first output method</pre>
+<pre class="line current"><span class="ws">        </span>output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name,</pre>
+<pre class="line after"><span class="ws">               </span>course_id=course_id, include_description=include_description)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">        </span>filename = semester + year + &#39;Syllabus&#39; + suffix</pre>
+<pre class="line after"><span class="ws">        </span>return send_file(tf.name, attachment_filename=filename, as_attachment=True)</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447777056">
+  <h4>File <cite class="filename">"/Users/kevdog/Documents/code/niagarascheduler/core/output_formatter.py"</cite>,
+      line <em class="line">13</em>,
+      in <code class="function">output</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws"></span>def output(schedule, semester, year, fmt, templatedir, outfile, course_id=None, include_description=False, **kwargs):</pre>
+<pre class="line before"><span class="ws">    </span>&#34;&#34;&#34;Generate syllabus in specified format using markdown-first approach&#34;&#34;&#34;</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line current"><span class="ws">    </span>generate_syllabus(</pre>
+<pre class="line after"><span class="ws">        </span>schedule_data=schedule,</pre>
+<pre class="line after"><span class="ws">        </span>semester=semester,</pre>
+<pre class="line after"><span class="ws">        </span>year=year,</pre>
+<pre class="line after"><span class="ws">        </span>output_format=fmt,</pre>
+<pre class="line after"><span class="ws">        </span>template_dir=templatedir,</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447777840">
+  <h4>File <cite class="filename">"/Users/kevdog/Documents/code/niagarascheduler/core/markdown_processor.py"</cite>,
+      line <em class="line">160</em>,
+      in <code class="function">generate_syllabus</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>with open(output_file, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:</pre>
+<pre class="line before"><span class="ws">                </span>f.write(markdown_content)</pre>
+<pre class="line before"><span class="ws">            </span>return &#34;&#34;</pre>
+<pre class="line before"><span class="ws">        </span>return markdown_content</pre>
+<pre class="line before"><span class="ws">    </span>else:</pre>
+<pre class="line current"><span class="ws">        </span>return convert_markdown_to_format(</pre>
+<pre class="line after"><span class="ws">            </span>markdown_content, output_format, template_dir, output_file</pre>
+<pre class="line after"><span class="ws">        </span>)</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447780304">
+  <h4>File <cite class="filename">"/Users/kevdog/Documents/code/niagarascheduler/core/markdown_processor.py"</cite>,
+      line <em class="line">127</em>,
+      in <code class="function">convert_markdown_to_format</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>if os.path.exists(tex_template):</pre>
+<pre class="line before"><span class="ws">                </span>pandoc_args.append(f&#39;--template={tex_template}&#39;)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span># Convert using pandoc</pre>
+<pre class="line before"><span class="ws">    </span>if output_file:</pre>
+<pre class="line current"><span class="ws">        </span>pypandoc.convert_text(</pre>
+<pre class="line after"><span class="ws">            </span>markdown_content,</pre>
+<pre class="line after"><span class="ws">            </span>output_format,</pre>
+<pre class="line after"><span class="ws">            </span>format=&#39;md&#39;,</pre>
+<pre class="line after"><span class="ws">            </span>extra_args=pandoc_args,</pre>
+<pre class="line after"><span class="ws">            </span>outputfile=output_file</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447780416">
+  <h4>File <cite class="filename">"/Users/kevdog/Library/Python/3.9/lib/python/site-packages/pypandoc/__init__.py"</cite>,
+      line <em class="line">91</em>,
+      in <code class="function">convert_text</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">    </span>:raises RuntimeError: if any of the inputs are not valid of if pandoc fails with an error</pre>
+<pre class="line before"><span class="ws">    </span>:raises OSError: if pandoc is not found; make sure it has been installed and is available at</pre>
+<pre class="line before"><span class="ws">            </span>path.</pre>
+<pre class="line before"><span class="ws">    </span>&#34;&#34;&#34;</pre>
+<pre class="line before"><span class="ws">    </span>source = _as_unicode(source, encoding)</pre>
+<pre class="line current"><span class="ws">    </span>return _convert_input(source, format, &#39;string&#39;, to, extra_args=extra_args,</pre>
+<pre class="line after"><span class="ws">                          </span>outputfile=outputfile, filters=filters,</pre>
+<pre class="line after"><span class="ws">                          </span>verify_format=verify_format, sandbox=sandbox,</pre>
+<pre class="line after"><span class="ws">                          </span>cworkdir=cworkdir)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447683072">
+  <h4>File <cite class="filename">"/Users/kevdog/Library/Python/3.9/lib/python/site-packages/pypandoc/__init__.py"</cite>,
+      line <em class="line">324</em>,
+      in <code class="function">_convert_input</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">                   </span>sandbox=False, cworkdir=None):</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>_check_log_handler()</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>logger.debug(&#34;Ensuring pandoc path...&#34;)</pre>
+<pre class="line current"><span class="ws">    </span>_ensure_pandoc_path()</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>if verify_format:</pre>
+<pre class="line after"><span class="ws">        </span>logger.debug(&#34;Verifying format...&#34;)</pre>
+<pre class="line after"><span class="ws">        </span>format, to = _validate_formats(format, to, outputfile)</pre>
+<pre class="line after"><span class="ws">    </span>else:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-4447683968">
+  <h4>File <cite class="filename">"/Users/kevdog/Library/Python/3.9/lib/python/site-packages/pypandoc/__init__.py"</cite>,
+      line <em class="line">750</em>,
+      in <code class="function">_ensure_pandoc_path</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>&#34;&#34;&#34;))</pre>
+<pre class="line before"><span class="ws">            </span>logger.info(textwrap.dedent(&#34;&#34;&#34;\</pre>
+<pre class="line before"><span class="ws">                </span>---------------------------------------------------------------</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">            </span>&#34;&#34;&#34;))</pre>
+<pre class="line current"><span class="ws">            </span>raise OSError(&#34;No pandoc was found: either install pandoc and add it\n&#34;</pre>
+<pre class="line after"><span class="ws">                          </span>&#34;to your PATH or or call pypandoc.download_pandoc(...) or\n&#34;</pre>
+<pre class="line after"><span class="ws">                          </span>&#34;install pypandoc wheels with included pandoc.&#34;)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span>def ensure_pandoc_installed(url:Union[str, None]=None,</pre></div>
+</div>
+</ul>
+  <blockquote>OSError: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+</blockquote>
+</div>
+
+<div class="plain">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <textarea cols="50" rows="10" name="code" readonly>Traceback (most recent call last):
+  File &#34;/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py&#34;, line 2213, in __call__
+    return self.wsgi_app(environ, start_response)
+  File &#34;/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py&#34;, line 2193, in wsgi_app
+    response = self.handle_exception(e)
+  File &#34;/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py&#34;, line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File &#34;/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py&#34;, line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &#34;/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py&#34;, line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &#34;/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py&#34;, line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File &#34;/Users/kevdog/Documents/code/niagarascheduler/app.py&#34;, line 65, in results
+    output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name,
+  File &#34;/Users/kevdog/Documents/code/niagarascheduler/core/output_formatter.py&#34;, line 13, in output
+    generate_syllabus(
+  File &#34;/Users/kevdog/Documents/code/niagarascheduler/core/markdown_processor.py&#34;, line 160, in generate_syllabus
+    return convert_markdown_to_format(
+  File &#34;/Users/kevdog/Documents/code/niagarascheduler/core/markdown_processor.py&#34;, line 127, in convert_markdown_to_format
+    pypandoc.convert_text(
+  File &#34;/Users/kevdog/Library/Python/3.9/lib/python/site-packages/pypandoc/__init__.py&#34;, line 91, in convert_text
+    return _convert_input(source, format, &#39;string&#39;, to, extra_args=extra_args,
+  File &#34;/Users/kevdog/Library/Python/3.9/lib/python/site-packages/pypandoc/__init__.py&#34;, line 324, in _convert_input
+    _ensure_pandoc_path()
+  File &#34;/Users/kevdog/Library/Python/3.9/lib/python/site-packages/pypandoc/__init__.py&#34;, line 750, in _ensure_pandoc_path
+    raise OSError(&#34;No pandoc was found: either install pandoc and add it\n&#34;
+OSError: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+</textarea>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class="nojavascript">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value="Confirm Pin">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File "/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py", line 2213, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py", line 2193, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kevdog/Library/Python/3.9/lib/python/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/kevdog/Documents/code/niagarascheduler/app.py", line 65, in results
+    output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name,
+  File "/Users/kevdog/Documents/code/niagarascheduler/core/output_formatter.py", line 13, in output
+    generate_syllabus(
+  File "/Users/kevdog/Documents/code/niagarascheduler/core/markdown_processor.py", line 160, in generate_syllabus
+    return convert_markdown_to_format(
+  File "/Users/kevdog/Documents/code/niagarascheduler/core/markdown_processor.py", line 127, in convert_markdown_to_format
+    pypandoc.convert_text(
+  File "/Users/kevdog/Library/Python/3.9/lib/python/site-packages/pypandoc/__init__.py", line 91, in convert_text
+    return _convert_input(source, format, 'string', to, extra_args=extra_args,
+  File "/Users/kevdog/Library/Python/3.9/lib/python/site-packages/pypandoc/__init__.py", line 324, in _convert_input
+    _ensure_pandoc_path()
+  File "/Users/kevdog/Library/Python/3.9/lib/python/site-packages/pypandoc/__init__.py", line 750, in _ensure_pandoc_path
+    raise OSError("No pandoc was found: either install pandoc and add it\n"
+OSError: No pandoc was found: either install pandoc and add it
+to your PATH or or call pypandoc.download_pandoc(...) or
+install pypandoc wheels with included pandoc.
+
+
+-->

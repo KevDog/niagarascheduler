@@ -61,22 +61,9 @@ def results():
         templatedir = os.path.dirname(os.path.abspath(__file__)) + '/templates'
         tf = NamedTemporaryFile(suffix=suffix)
         
-        # Enhanced output method with course descriptions
-        if output_fmt == 'docx' and include_description and course_id:
-            from core.docx_editor import enhance_docx_with_description
-            # Use enhanced DOCX method
-            output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name)
-            # Then enhance with course description
-            try:
-                from docx import Document
-                doc = Document(tf.name)
-                enhance_docx_with_description(doc, course_id, include_description)
-                doc.save(tf.name)
-            except ImportError:
-                pass  # python-docx not available, continue without enhancement
-        else:
-            # Standard output method
-            output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name)
+        # Use new markdown-first output method
+        output(course, semester, year, output_fmt, templatedir=templatedir, outfile=tf.name, 
+               course_id=course_id, include_description=include_description)
         
         filename = semester + year + 'Syllabus' + suffix
         return send_file(tf.name, attachment_filename=filename, as_attachment=True)

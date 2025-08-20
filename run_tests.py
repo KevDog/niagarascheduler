@@ -21,7 +21,7 @@ def run_tests(suite_name=None):
         suite = unittest.TestSuite()
         suite.addTest(loader.loadTestsFromName('tests.core.test_event_filtering'))
         suite.addTest(loader.loadTestsFromName('tests.core.test_calendar_loader'))
-        suite.addTest(loader.loadTestsFromName('tests.core.test_docx_editor'))
+# Deprecated: suite.addTest(loader.loadTestsFromName('tests.core.test_docx_editor'))
         
     elif suite_name == 'event':
         # Run just event filtering tests
