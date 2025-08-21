@@ -13,6 +13,8 @@ TEST-DRIVEN DEVELOPMENT PROCESS:
 8. When asked a question, answer it before suggesting changes.
 Propose functionality in the following format:
 
+All tests going in the ./tests folder
+
 Function: <what functionality is being added to the code>
 Affected Files:
 Test(s):

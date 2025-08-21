@@ -2,7 +2,10 @@
 
 import unittest
 import json
-from department import Department
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from core.department import Department
 
 
 class TestDepartment(unittest.TestCase):
@@ -54,6 +57,18 @@ class TestDepartment(unittest.TestCase):
         
         # Assert
         self.assertEqual(dept.office, office_location)
+    
+    def test_department_has_course_listing_url(self):
+        """A department has a course listing url"""
+        # Arrange
+        department_name = "Theater Arts"
+        course_listing_url = "https://catalog.niagara.edu/undergraduate/programs-az/arts-sciences/theatre-studies-fine-arts/#coursestext"
+        
+        # Act
+        dept = Department(department_name, course_listing_url=course_listing_url)
+        
+        # Assert
+        self.assertEqual(dept.course_listing_url, course_listing_url)
 
 
 if __name__ == '__main__':
