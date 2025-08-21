@@ -34,6 +34,30 @@ class TestDepartment(unittest.TestCase):
         data = json.loads(json_output)
         self.assertEqual(data["name"], "Theater Arts")
     
+    def test_department_to_json_includes_all_properties(self):
+        """Department to_json includes all properties and courses"""
+        # Arrange
+        dept = Department(
+            name="Theater Arts",
+            mission_statement="Excellence in theater",
+            office="CAM 201",
+            course_listing_url="https://catalog.niagara.edu/theater"
+        )
+        
+        # Act
+        json_output = dept.to_json()
+        
+        # Assert
+        data = json.loads(json_output)
+        expected = {
+            "name": "Theater Arts",
+            "mission_statement": "Excellence in theater",
+            "office": "CAM 201", 
+            "course_listing_url": "https://catalog.niagara.edu/theater",
+            "courses": []
+        }
+        self.assertEqual(data, expected)
+    
     def test_department_has_mission_statement(self):
         """A department has a mission statement"""
         # Arrange

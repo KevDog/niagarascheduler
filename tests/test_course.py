@@ -92,6 +92,59 @@ class TestCourse(unittest.TestCase):
         
         # Assert
         self.assertEqual(course.meeting_days, meeting_days)
+    
+    def test_course_to_dict(self):
+        """Course has to_dict method that serializes all properties"""
+        # Arrange
+        course = Course(
+            number="101",
+            title="Introduction to Theater",
+            description="Basic theater course",
+            instructors=["Dr. Smith"],
+            textbooks=["Theater Basics"],
+            zoom_link="https://zoom.us/j/123",
+            meeting_days=["Monday", "Wednesday"]
+        )
+        
+        # Act
+        result = course.to_dict()
+        
+        # Assert
+        expected = {
+            "number": "101",
+            "title": "Introduction to Theater", 
+            "description": "Basic theater course",
+            "instructors": ["Dr. Smith"],
+            "textbooks": ["Theater Basics"],
+            "zoom_link": "https://zoom.us/j/123",
+            "meeting_days": ["Monday", "Wednesday"]
+        }
+        self.assertEqual(result, expected)
+    
+    def test_course_from_dict(self):
+        """Course has from_dict class method that creates object from dictionary"""
+        # Arrange
+        course_data = {
+            "number": "202",
+            "title": "Advanced Acting",
+            "description": "Advanced techniques",
+            "instructors": ["Prof. Johnson", "Dr. Lee"],
+            "textbooks": ["Method Acting", "Scene Study"],
+            "zoom_link": "https://zoom.us/j/456",
+            "meeting_days": ["Tuesday", "Thursday"]
+        }
+        
+        # Act
+        course = Course.from_dict(course_data)
+        
+        # Assert
+        self.assertEqual(course.number, "202")
+        self.assertEqual(course.title, "Advanced Acting")
+        self.assertEqual(course.description, "Advanced techniques")
+        self.assertEqual(course.instructors, ["Prof. Johnson", "Dr. Lee"])
+        self.assertEqual(course.textbooks, ["Method Acting", "Scene Study"])
+        self.assertEqual(course.zoom_link, "https://zoom.us/j/456")
+        self.assertEqual(course.meeting_days, ["Tuesday", "Thursday"])
 
 
 if __name__ == '__main__':
