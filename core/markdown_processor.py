@@ -8,7 +8,7 @@ Processes markdown templates with placeholder replacement and converts to variou
 
 import os
 import pypandoc
-from core.course_descriptions import CourseDescriptionManager
+from core.data_loader import DepartmentDataLoader
 
 
 def load_template(template_path):
@@ -59,15 +59,30 @@ def generate_syllabus_markdown(schedule_data, semester, year, course_id=None, in
     course_title = kwargs.get('course_title', f'Course {course_id}' if course_id else 'Course Title')
     instructor_name = kwargs.get('instructor_name', 'TBD')
     
-    # Get course description if requested
+    # Get course information using new data loader
     course_description = "Please paste your course description here which can be found in the online catalogue under Primary Resources."
-    if include_description and course_id:
+    course_instructors = []
+    course_textbooks = []
+    zoom_link = None
+    
+    if course_id:
         project_root = os.path.dirname(os.path.dirname(__file__))
-        data_file = os.path.join(project_root, 'data', 'courses.json')
-        manager = CourseDescriptionManager(data_file)
-        description = manager.get_course_description(course_id)
-        if description != 'Course description not found, insert manually':
-            course_description = description
+        data_dir = os.path.join(project_root, 'data')
+        loader = DepartmentDataLoader(data_dir)
+        course = loader.find_course(course_id)
+        
+        if course:
+            if include_description and course.description:
+                course_description = course.description
+            if course.title:
+                course_title = course.title
+            if course.instructors:
+                course_instructors = course.instructors
+                instructor_name = ", ".join(course.instructors)
+            if course.textbooks:
+                course_textbooks = course.textbooks
+            if course.zoom_link:
+                zoom_link = course.zoom_link
     
     # Format schedule as markdown table
     schedule_table = format_schedule_as_markdown(schedule_data)
@@ -81,7 +96,7 @@ def generate_syllabus_markdown(schedule_data, semester, year, course_id=None, in
         'INSTRUCTOR_NAME': instructor_name,
         'COURSE_DESCRIPTION': course_description,
         'SCHEDULE_TABLE': schedule_table,
-        'TEXTBOOKS': kwargs.get('textbooks', 'Please list textbook information here.'),
+        'TEXTBOOKS': kwargs.get('textbooks', '; '.join(course_textbooks) if course_textbooks else 'Please list textbook information here.'),
         'ASSIGNMENTS': kwargs.get('assignments', 'Please list assignments here providing clear explanations regarding the nature, length, grade percentage, and due dates for each major assignment.'),
         'ATTENDANCE_POLICY': kwargs.get('attendance_policy', 'Please explain the course attendance policy here.'),
         'GRADING_POLICY': kwargs.get('grading_policy', 'Please explain course grading policies and procedures here.'),
