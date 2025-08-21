@@ -1,14 +1,16 @@
 # Niagara University Scheduler
 
-A Flask web application that automatically generates class meeting schedules for Niagara University courses using official academic calendar data. Creates syllabi with properly formatted class dates, accounting for university holidays and breaks.
+A comprehensive Flask web application for generating course syllabi for Niagara University. Features a rich course data system, markdown-first template architecture, and automated class scheduling based on official academic calendar data.
 
 ## Features
 
-- **Web Interface**: Simple form-based interface for generating schedules
-- **Calendar Integration**: Uses Niagara University academic calendar PDFs
-- **Multiple Output Formats**: Plain text, DOCX, HTML, and LaTeX templates
-- **Flexible Scheduling**: Supports any combination of weekdays
-- **Holiday Awareness**: Automatically excludes university holidays and breaks
+- **Rich Course Database**: Object-oriented course management with department-specific JSON storage
+- **Markdown-First Templates**: Professional syllabus generation with multiple export formats
+- **Preview-Then-Export UX**: See formatted preview before downloading in chosen format
+- **Calendar Integration**: Automated parsing of Niagara University academic calendar PDFs
+- **Multiple Output Formats**: Export to DOCX, HTML, LaTeX, PDF, and Markdown
+- **Course Metadata Support**: Instructors, textbooks, zoom links, meeting days, and more
+- **Department Organization**: Structured data storage by academic department
 
 ## Quick Start
 
@@ -39,33 +41,59 @@ Visit `http://localhost:5001` to use the web interface.
 
 ## Usage
 
-1. **Select Semester**: Choose from available semesters (Fall/Spring + Year)
-2. **Choose Meeting Days**: Select which days your course meets
-3. **Pick Format**: Choose output format and date style
-4. **Generate**: Get class schedule or download syllabus template
+### Web Interface
+
+1. **Course Information**: Enter course ID (e.g., "THR 101") for automatic data lookup
+2. **Select Semester**: Choose from available semesters (Fall/Spring + Year)  
+3. **Choose Meeting Days**: Select which days your course meets
+4. **Configure Options**: Enable course descriptions, holidays, breaks, and events
+5. **Preview**: Review formatted syllabus with rich course metadata
+6. **Export**: Download in preferred format (DOCX, PDF, HTML, LaTeX, Markdown)
+
+### Course Data Management
+
+The system uses a rich object model for course data:
+
+- **Course Properties**: number, title, description, instructors, textbooks, zoom_link, meeting_days
+- **Department Properties**: name, mission_statement, office, course_listing_url, courses
+- **Storage Format**: Department-specific JSON files (e.g., `data/THR.json`, `data/MATH.json`)
 
 ## Project Structure
 
 ```
-├── app.py                    # Flask web application
-├── scheduler.py             # Main API module
-├── generate_calendars.py    # Calendar generation utility
-├── core/                    # Core scheduling components
-│   ├── utils.py            # Basic utilities & constants
-│   ├── calendar_loader.py  # Calendar data loading
+├── app.py                      # Flask web application with preview/export workflow
+├── scheduler.py               # Main API module for schedule generation
+├── generate_calendars.py      # Calendar generation utility
+├── core/                      # Core application modules
+│   ├── course.py             # Course class with full serialization
+│   ├── department.py         # Department class with course collection
+│   ├── data_loader.py        # Load Course/Department objects from JSON
+│   ├── data_migration.py     # Migrate legacy course data
+│   ├── markdown_processor.py # Markdown generation with rich Course objects
+│   ├── utils.py             # Basic utilities & constants
+│   ├── calendar_loader.py   # Calendar data loading
 │   ├── schedule_generator.py # Core scheduling logic
-│   └── output_formatter.py # Template generation
-├── pdf/                     # PDF processing modules
-│   ├── pdf_extractor.py    # PDF text extraction
-│   ├── date_parser.py      # Date parsing utilities
-│   ├── semester_parser.py  # Semester-specific parsing
-│   └── event_parser.py     # Event extraction
-├── calendar_json/           # JSON processing modules
-│   ├── json_converter.py   # PDF to JSON conversion
-│   └── calendar_manager.py # Calendar file management
-├── niagara/                 # Academic calendar PDFs
-├── calendars/               # Generated JSON calendar data
-└── templates/               # Syllabus templates (DOCX, HTML, LaTeX, MD)
+│   └── output_formatter.py  # Template generation
+├── pdf/                       # PDF processing modules
+│   ├── pdf_extractor.py     # PDF text extraction
+│   ├── date_parser.py       # Date parsing utilities
+│   ├── semester_parser.py   # Semester-specific parsing
+│   └── event_parser.py      # Event extraction
+├── calendar_json/             # JSON processing modules
+│   ├── json_converter.py    # PDF to JSON conversion
+│   └── calendar_manager.py  # Calendar file management
+├── data/                      # Course data storage
+│   ├── THR.json            # Theater Arts department courses
+│   └── MATH.json           # Mathematics department courses
+├── tests/                     # Comprehensive test suite using TDD
+│   ├── test_course.py       # Course class tests
+│   ├── test_department.py   # Department class tests
+│   ├── test_data_loader.py  # Data loading tests
+│   └── test_data_migration.py # Migration tests
+├── niagara/                   # Academic calendar PDFs
+├── calendars/                 # Generated JSON calendar data
+└── templates/                 # Syllabus templates
+    └── syllabus_master.md    # Core markdown template
 ```
 
 ## Calendar Data
@@ -110,10 +138,26 @@ python app.py  # Debug mode enabled by default
 
 ### Testing
 
+The project uses Test-Driven Development (TDD) with comprehensive test coverage:
+
 ```bash
-# Run test suite
-python -m pytest test_*.py
+# Run all tests
+python -m tests.test_course
+python -m tests.test_department  
+python -m tests.test_data_loader
+python -m tests.test_data_migration
+
+# Run specific test modules
+python -m tests.test_course
 ```
+
+### Architecture Highlights
+
+- **Object-Oriented Design**: Rich Course and Department classes with full metadata
+- **Markdown-First Generation**: Professional templates with Pandoc conversion
+- **Department-Specific Storage**: Organized JSON files by academic department
+- **TDD Implementation**: Complete test coverage using "Arrange, Act, Assert" pattern
+- **Data Migration Tools**: Utilities for converting legacy course data
 
 ## License
 
