@@ -1,0 +1,52 @@
+[
+  {
+    "number": "MIL101A",
+    "name": "Ldrshp & Personal Dev",
+    "credits": "2.00"
+  },
+  {
+    "number": "MIL101NCCC",
+    "name": "Ldrshp & Personal Dev",
+    "credits": "2.00"
+  },
+  {
+    "number": "MIL101LA",
+    "name": "Basic Mil Skills Lab",
+    "credits": "0.00"
+  },
+  {
+    "number": "MIL200A",
+    "name": "Development of Mil Strategy",
+    "credits": "3.00"
+  },
+  {
+    "number": "MIL201A",
+    "name": "Innovative Team Ldrshp",
+    "credits": "2.00"
+  },
+  {
+    "number": "MIL201LA",
+    "name": "Basic Mil Skills Lab",
+    "credits": "0.00"
+  },
+  {
+    "number": "MIL301A",
+    "name": "Inter Mil Ldrshp & Mgt",
+    "credits": "3.00"
+  },
+  {
+    "number": "MIL301LA",
+    "name": "Basic Mil Skills Lab",
+    "credits": "0.00"
+  },
+  {
+    "number": "MIL401A",
+    "name": "Adaptive Leadership",
+    "credits": "3.00"
+  },
+  {
+    "number": "MIL401LA",
+    "name": "Basic Mil Skills Lab",
+    "credits": "0.00"
+  }
+]

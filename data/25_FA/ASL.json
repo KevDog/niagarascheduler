@@ -1,0 +1,47 @@
+[
+  {
+    "number": "ASL100A",
+    "name": "Intro ASL and Deaf Culture",
+    "credits": "3.00"
+  },
+  {
+    "number": "ASL100D",
+    "name": "Intro ASL and Deaf Culture",
+    "credits": "3.00"
+  },
+  {
+    "number": "ASL200B",
+    "name": "Applied ASL I",
+    "credits": "3.00"
+  },
+  {
+    "number": "ASL201A",
+    "name": "Applied ASL II",
+    "credits": "3.00"
+  },
+  {
+    "number": "ASL201B",
+    "name": "Applied ASL II",
+    "credits": "3.00"
+  },
+  {
+    "number": "ASL202A",
+    "name": "Applied ASL III",
+    "credits": "3.00"
+  },
+  {
+    "number": "ASL202B",
+    "name": "Applied ASL III",
+    "credits": "3.00"
+  },
+  {
+    "number": "ASL310A",
+    "name": "Deaf Studies",
+    "credits": "3.00"
+  },
+  {
+    "number": "ASL310B",
+    "name": "Deaf Studies",
+    "credits": "3.00"
+  }
+]

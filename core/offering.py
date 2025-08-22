@@ -16,16 +16,36 @@ class Offering:
     
     def _parse_code(self):
         """Parse offering code into components"""
-        # Pattern: {DEPT}{NUMBER}{TYPE}{SECTION}
-        # Examples: THR101A, ACC425LA
-        match = re.match(r'^([A-Z]+)(\d+)([A-Z]*)([A-Z])$', self.code)
+        # Pattern: {DEPT}{NUMBER}{TYPE}{SECTION}{SUBSECTION}
+        # Examples: THR101A1, ACC425LA1, THR223B1
+        match = re.match(r'^([A-Z]+)(\d+)([A-Z]*)([A-Z])(\d*)$', self.code)
         if match:
             self.department = match.group(1)
             self.number = match.group(2)
             self.type = match.group(3)  # "" for regular, "L" for lab, etc.
             self.section = match.group(4)  # A, B, C, etc.
+            self.subsection = match.group(5)  # 1, 2, etc.
         else:
             self.department = None
             self.number = None
             self.type = None
             self.section = None
+            self.subsection = None
+    
+    def to_dict(self):
+        """Serialize offering to dictionary"""
+        return {
+            "code": self.code,
+            "delivery_type": self.delivery_type,
+            "designation": self.designation,
+            "credits": self.credits,
+            "instructors": self.instructors,
+            "textbooks": self.textbooks,
+            "zoom_link": self.zoom_link,
+            "meeting_days": self.meeting_days,
+            "department": self.department,
+            "number": self.number,
+            "type": self.type,
+            "section": self.section,
+            "subsection": self.subsection
+        }

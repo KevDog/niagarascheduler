@@ -1,0 +1,62 @@
+[
+  {
+    "number": "POL101A",
+    "name": "American Govt",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL105A",
+    "name": "Comparative Govt",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL111A",
+    "name": "Fundamentals of Justice",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL201A",
+    "name": "American Pol Thought",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL203A",
+    "name": "Introduction to Law",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL271A",
+    "name": "Politics Thr Lit",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL285A",
+    "name": "US Foreign Policy",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL304A",
+    "name": "Mod Pol Ideologies",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL378A",
+    "name": "Politics & Soc Latin America",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL390A",
+    "name": "Resrch Mthds-Pol Sci",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL398A",
+    "name": "Topic: AI and the Law",
+    "credits": "3.00"
+  },
+  {
+    "number": "POL398S",
+    "name": "Topic: Social Movements",
+    "credits": "3.00"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "number": "FRE101A",
+    "name": "Elem French I",
+    "credits": "3.00"
+  },
+  {
+    "number": "FRE101B",
+    "name": "Elem French I",
+    "credits": "3.00"
+  },
+  {
+    "number": "FRE103A",
+    "name": "Intr Conv French",
+    "credits": "3.00"
+  },
+  {
+    "number": "FRE206A",
+    "name": "Adv Conv Fre & Comp",
+    "credits": "3.00"
+  },
+  {
+    "number": "FRE319A",
+    "name": "Francophone Cinema",
+    "credits": "3.00"
+  }
+]

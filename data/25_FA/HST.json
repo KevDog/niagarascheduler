@@ -1,0 +1,42 @@
+[
+  {
+    "number": "HST100A",
+    "name": "Intro Hospitality",
+    "credits": "3.00"
+  },
+  {
+    "number": "HST140A",
+    "name": "Management & Leadership",
+    "credits": "3.00"
+  },
+  {
+    "number": "HST140B",
+    "name": "Management & Leadership",
+    "credits": "3.00"
+  },
+  {
+    "number": "HST244A",
+    "name": "Hotel & Tourism Law",
+    "credits": "3.00"
+  },
+  {
+    "number": "HST451A",
+    "name": "Disney Intern Experience",
+    "credits": "12.00"
+  },
+  {
+    "number": "HST452A",
+    "name": "Disney Int Exper Advantage",
+    "credits": "3.00"
+  },
+  {
+    "number": "HST493A",
+    "name": "Hosp/Tour/Rec Co-Op",
+    "credits": "3.00"
+  },
+  {
+    "number": "HST496X",
+    "name": "Senior Sem & Practicum",
+    "credits": "3.00"
+  }
+]

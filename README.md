@@ -5,6 +5,7 @@ A comprehensive Flask web application for generating course syllabi for Niagara 
 ## Features
 
 - **Rich Course Database**: Object-oriented course management with department-specific JSON storage
+- **Course Offering Model**: Section-specific data with encoded identifiers (THR101A, ACC425LA)
 - **Markdown-First Templates**: Professional syllabus generation with multiple export formats
 - **Preview-Then-Export UX**: See formatted preview before downloading in chosen format
 - **Calendar Integration**: Automated parsing of Niagara University academic calendar PDFs
@@ -54,9 +55,14 @@ Visit `http://localhost:5001` to use the web interface.
 
 The system uses a rich object model for course data:
 
-- **Course Properties**: number, title, description, instructors, textbooks, zoom_link, meeting_days
+- **Course Properties**: number, title, description (general course information)
+- **Offering Properties**: delivery_type, designation, credits, instructors, textbooks, zoom_link, meeting_days (section-specific)
 - **Department Properties**: name, mission_statement, office, course_listing_url, courses
 - **Storage Format**: Department-specific JSON files (e.g., `data/THR.json`, `data/MATH.json`)
+
+Course Offerings use encoded identifiers:
+- `THR101A` = Theater (THR) course 101, section A
+- `ACC425LA` = Accounting (ACC) course 425, Lab (L) section A
 
 ## Project Structure
 
@@ -66,6 +72,7 @@ The system uses a rich object model for course data:
 ├── generate_calendars.py      # Calendar generation utility
 ├── core/                      # Core application modules
 │   ├── course.py             # Course class with full serialization
+│   ├── offering.py           # Offering class with section-specific data
 │   ├── department.py         # Department class with course collection
 │   ├── data_loader.py        # Load Course/Department objects from JSON
 │   ├── data_migration.py     # Migrate legacy course data
@@ -87,6 +94,7 @@ The system uses a rich object model for course data:
 │   └── MATH.json           # Mathematics department courses
 ├── tests/                     # Comprehensive test suite using TDD
 │   ├── test_course.py       # Course class tests
+│   ├── test_offering.py     # Offering class tests
 │   ├── test_department.py   # Department class tests
 │   ├── test_data_loader.py  # Data loading tests
 │   └── test_data_migration.py # Migration tests
@@ -143,21 +151,31 @@ The project uses Test-Driven Development (TDD) with comprehensive test coverage:
 ```bash
 # Run all tests
 python -m tests.test_course
+python -m tests.test_offering
 python -m tests.test_department  
 python -m tests.test_data_loader
 python -m tests.test_data_migration
 
 # Run specific test modules
-python -m tests.test_course
+python -m tests.test_offering
 ```
 
 ### Architecture Highlights
 
-- **Object-Oriented Design**: Rich Course and Department classes with full metadata
+- **Object-Oriented Design**: Rich Course, Offering, and Department classes with full metadata
+- **Section-Specific Data**: Offering model separates course-general from section-specific properties
 - **Markdown-First Generation**: Professional templates with Pandoc conversion
 - **Department-Specific Storage**: Organized JSON files by academic department
 - **TDD Implementation**: Complete test coverage using "Arrange, Act, Assert" pattern
 - **Data Migration Tools**: Utilities for converting legacy course data
+
+## Planned Features
+
+The following features are planned for future development:
+
+- **Course Offering Scraper**: Automated extraction of current semester offerings from `https://apps.niagara.edu/courses/index.php?semester=25/FA&ug=1`
+- **Course Description Scraper**: Bulk scraping of course descriptions from catalog URLs
+- **Pre-Export Editor Interface**: Web-based editing interface for syllabus content before final export
 
 ## License
 

@@ -12,7 +12,7 @@ class Course:
     
     def to_dict(self):
         """Serialize course to dictionary"""
-        return {
+        result = {
             "number": self.number,
             "title": self.title,
             "description": self.description,
@@ -21,6 +21,12 @@ class Course:
             "zoom_link": self.zoom_link,
             "meeting_days": self.meeting_days
         }
+        
+        # Include offerings if they exist
+        if hasattr(self, 'offerings'):
+            result["offerings"] = [offering.to_dict() if hasattr(offering, 'to_dict') else offering for offering in self.offerings]
+        
+        return result
     
     @classmethod
     def from_dict(cls, data):

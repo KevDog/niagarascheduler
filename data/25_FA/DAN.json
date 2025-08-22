@@ -1,0 +1,47 @@
+[
+  {
+    "number": "DAN111A",
+    "name": "Dance and Movement",
+    "credits": "3.00"
+  },
+  {
+    "number": "DAN121A",
+    "name": "Dance Appreciation",
+    "credits": "3.00"
+  },
+  {
+    "number": "DAN160A",
+    "name": "Hip Hop Dance",
+    "credits": "3.00"
+  },
+  {
+    "number": "DAN230A",
+    "name": "Jazz I",
+    "credits": "3.00"
+  },
+  {
+    "number": "DAN231A",
+    "name": "Jazz II",
+    "credits": "3.00"
+  },
+  {
+    "number": "DAN321A",
+    "name": "Tap I",
+    "credits": "3.00"
+  },
+  {
+    "number": "DAN322A",
+    "name": "Tap II",
+    "credits": "3.00"
+  },
+  {
+    "number": "DAN409A",
+    "name": "Ballet V",
+    "credits": "3.00"
+  },
+  {
+    "number": "DAN410A",
+    "name": "Ballet VI",
+    "credits": "3.00"
+  }
+]

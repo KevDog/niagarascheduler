@@ -1,0 +1,87 @@
+[
+  {
+    "number": "CIS190A",
+    "name": "Web Design",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS190B",
+    "name": "Web Design",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS232A",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS232B",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS232E",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS232F",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS232G",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS265A",
+    "name": "Visual Programming I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS265B",
+    "name": "Visual Programming I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS270B",
+    "name": "Computer Hardware",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS285A",
+    "name": "Computer Forensics I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS285B",
+    "name": "Computer Forensics I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS350A",
+    "name": "Intro Systm Analysis",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS355A",
+    "name": "Artificial Intelligence",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS359A",
+    "name": "Advanced Python & Data Anal",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS490B",
+    "name": "Law & Ethics in Computing",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS490C",
+    "name": "Topic: Cryptocurrency",
+    "credits": "3.00"
+  }
+]

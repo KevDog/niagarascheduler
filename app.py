@@ -58,7 +58,7 @@ def results():
                      show_holidays=show_holidays, show_breaks=show_breaks, show_events=show_events) 
 
     # Generate markdown content for preview
-    from core.markdown_processor import generate_syllabus_markdown
+    from core.markdown_processor import generate_syllabus_markdown, convert_markdown_to_format
     
     markdown_content = generate_syllabus_markdown(
         schedule_data=course,
@@ -67,6 +67,9 @@ def results():
         course_id=course_id,
         include_description=include_description
     )
+    
+    # Convert markdown to HTML for web display
+    syllabus_html = convert_markdown_to_format(markdown_content, 'html')
     
     # Store form data in session for export functionality
     form_data = {
@@ -79,7 +82,7 @@ def results():
     }
     
     return render_template('results.html', 
-                         markdown_content=markdown_content,
+                         syllabus_html=syllabus_html,
                          form_data=form_data)
 
 

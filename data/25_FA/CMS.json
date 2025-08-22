@@ -1,0 +1,67 @@
+[
+  {
+    "number": "CMS101A",
+    "name": "Introduction to Media Studies",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS115A",
+    "name": "Digital Media Production",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS115B",
+    "name": "Digital Media Production",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS201B",
+    "name": "Research Methods",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS215A",
+    "name": "Video Prod & Lab",
+    "credits": "4.00"
+  },
+  {
+    "number": "CMS222B",
+    "name": "Social Media for Comm Profes",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS230A",
+    "name": "Mass Communications Law",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS260A",
+    "name": "Sports Broadcasting",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS285A",
+    "name": "Intro to Film Studies",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS315A",
+    "name": "Public Relations",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS340A",
+    "name": "Photography",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS360A",
+    "name": "Topic: Film Festivals",
+    "credits": "3.00"
+  },
+  {
+    "number": "CMS375A",
+    "name": "Women and Film",
+    "credits": "3.00"
+  }
+]

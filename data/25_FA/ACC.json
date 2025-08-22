@@ -1,0 +1,77 @@
+[
+  {
+    "number": "ACC111A",
+    "name": "Financial Accounting",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC111B",
+    "name": "Financial Accounting",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC111C",
+    "name": "Financial Accounting",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC111D",
+    "name": "Financial Accounting",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC111E",
+    "name": "Financial Accounting",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC111G",
+    "name": "Financial Accounting",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC111H",
+    "name": "Financial Accounting",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC111X",
+    "name": "Financial Accounting",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC112A",
+    "name": "Management Accounting",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC223A",
+    "name": "Intermediate Acc I",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC223X",
+    "name": "Intermediate Acc I",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC336X",
+    "name": "Advanced Acc",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC340X",
+    "name": "Fraud Exam & Eco Crime",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC346A",
+    "name": "Auditing",
+    "credits": "3.00"
+  },
+  {
+    "number": "ACC347C",
+    "name": "Tax I",
+    "credits": "3.00"
+  }
+]

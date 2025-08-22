@@ -1,0 +1,132 @@
+[
+  {
+    "number": "CHE100A",
+    "name": "Chem-Allied Health Prof",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE100B",
+    "name": "Chem-Allied Health Prof",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE100D",
+    "name": "Chem-Allied Health Prof",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE105A",
+    "name": "Chemistry & Society I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE107A",
+    "name": "Food Chemistry",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE108A",
+    "name": "Forensic Science",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE111A",
+    "name": "General Chemistry I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE111B",
+    "name": "General Chemistry I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE113LA",
+    "name": "General Chem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE113LB",
+    "name": "General Chem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE113LC",
+    "name": "General Chem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE113LD",
+    "name": "General Chem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE113LF",
+    "name": "General Chem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE221A",
+    "name": "Organic Chem I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE221B",
+    "name": "Organic Chem I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE223LA",
+    "name": "Organic Chem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE223LB",
+    "name": "Organic Chem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE223LC",
+    "name": "Organic Chem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE227A",
+    "name": "Analytical Chemistry",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE229LA",
+    "name": "Analytical Chem Lab",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE229LB",
+    "name": "Analytical Chem Lab",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE331A",
+    "name": "Physical Chemistry",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE333LA",
+    "name": "Phys Chem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE345A",
+    "name": "Biochemistry I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CHE347LA",
+    "name": "Biochem Lab I",
+    "credits": "1.00"
+  },
+  {
+    "number": "CHE469A",
+    "name": "Written and Oral Reports",
+    "credits": "2.00"
+  }
+]

@@ -11,6 +11,7 @@ TEST-DRIVEN DEVELOPMENT PROCESS:
 6. Refactor when all tests pass
 7. Run git add . after each passing test
 8. When asked a question, answer it before suggesting changes.
+9. Describe functionality before proposing code. I.e., what is the workflow?
 Propose functionality in the following format:
 
 All tests going in the ./tests folder
@@ -81,6 +82,9 @@ Course Description Lookup: Given a course I.D., e.g. "THR 101", the system looks
 ### Course Listing Matrix (Partial)
 Department,Abbreviation,URL    
 Theater Arts, THR, https://catalog.niagara.edu/undergraduate/programs-az/arts-sciences/theatre-studies-fine-arts/#coursestext
+
+### Course Details Availabe at:
+https://apps.niagara.edu/courses/index.php?semester=25/FA&ug=1
 
 ### CLI Implementation Notes
 - Use TDD approach: tests first, then implementation

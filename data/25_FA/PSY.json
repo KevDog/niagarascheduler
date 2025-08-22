@@ -1,0 +1,72 @@
+[
+  {
+    "number": "PSY101A",
+    "name": "Intro Psychology",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY101B",
+    "name": "Intro Psychology",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY101C",
+    "name": "Intro Psychology",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY101D",
+    "name": "Intro Psychology",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY221A",
+    "name": "Statistics for Psych",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY221B",
+    "name": "Statistics for Psych",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY222A",
+    "name": "Research Methods",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY231A",
+    "name": "Behavioral Neuroscience",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY252A",
+    "name": "Personality Theory",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY307A",
+    "name": "Topics: Sports Psychology",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY331A",
+    "name": "Cognitive Psychology",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY345A",
+    "name": "Psychology of Disability",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY481A",
+    "name": "Senior Seminar",
+    "credits": "3.00"
+  },
+  {
+    "number": "PSY491B",
+    "name": "Practicum",
+    "credits": "3.00"
+  }
+]

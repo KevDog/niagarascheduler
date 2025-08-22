@@ -1,0 +1,62 @@
+[
+  {
+    "number": "ECO100A",
+    "name": "Intro to Economics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO102A",
+    "name": "Principles of Microeconomics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO102B",
+    "name": "Principles of Microeconomics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO102C",
+    "name": "Principles of Microeconomics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO102D",
+    "name": "Principles of Microeconomics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO102E",
+    "name": "Principles of Microeconomics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO231A",
+    "name": "Business Analytics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO231B",
+    "name": "Business Analytics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO231C",
+    "name": "Business Analytics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO305A",
+    "name": "Intermediate Microeconomics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO320A",
+    "name": "International Economics",
+    "credits": "3.00"
+  },
+  {
+    "number": "ECO350A",
+    "name": "Econ Growth & Devel",
+    "credits": "3.00"
+  }
+]
