@@ -1,0 +1,89 @@
+{
+    "name": "Sport Management",
+    "mission_statement": "The master of science in sport management degree is a focused, yet flexible, 36-credit hour graduate program designed to meet the needs of today\u2019s graduate student, while developing skilled professionals for the sport industry.\n\nThe program is structured to offer small class sizes, a flexible format for content delivery and interaction with industry professionals and full-time faculty. Offering an internship or a thesis track, students may select the format that best fits their abilities and accommodates their future interests in sport. The rigorous curriculum and experiential learning requirements are specifically designed to provide students with the skills necessary to be successful in a broad range of sport industry opportunities, or to move on to further study if they desire.\n\nThe Niagara University sport management program has a long history of providing outstanding experiential opportunities for its students. The program has an established network of industry relationships that will assist students in finding the right opportunities for them. Examples include the NFL Experience and the Super Bowl, MLB Spring Training, various NCAA championship events and professional and college sport organizations in Western New York and around the country. Not only will students have contact both in and out of the classroom with sport industry leaders, but the six-hour internship option in the program will allow students to maximize the benefit such experiences can provide.\n\nNiagara University is home to an NCAA Division I athletic program, providing valuable on-campus opportunities for students in college athletics administration. Additionally, through the College of Hospitality and Tourism Management, the program has established partnerships with a variety of sport facility and event managers throughout the United States. Finally, students with an interest in recreational sport will be able to find opportunities with local government and not-for-profit agencies as well.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/spm/",
+    "courses": [
+        {
+            "number": "244",
+            "title": "\u2014 Recreation & Sport Law",
+            "description": "Prerequisite Take SPM*275 As more time is spent globally on recreation and leisure, it is crucial for these service providers to fully understand how laws and regulations will affect the way they conduct business. This introductory law course explores legal issues relevant to recreation and sports enterprises as leisure service providers. The course explores the legal duties and obligations created between recreation/sport related companies and their customers, as well as the general public. The unique legal problems of recreational and/or sporting facilities will be fully introduced and explored as will concepts of constitutional protection, discrimination and agency relationships. Of particular interest to students will be how legal concepts may apply differently in professional sport, amatuer sport and recreational settings.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "250",
+            "title": "\u2014 Sport & Rec Communication & Technology",
+            "description": "This course will provide a framework for understanding the connection between the informational and commercial sides of sport information management and technology. Students will study the roles of sport information specialists as they relate to the media, the sport organization, and the public from both a journalistic and revenue generating perspective. Students will also examine the uses of technology from similar perspectives.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "260",
+            "title": "\u2014 Sports Broadcasting",
+            "description": "Sports Broadcasting is a hands-on course designed around the production and broadcasting of sporting events at Niagara University using live, multiple camera production techniques. Students learn the principles, tools, and techniques of producing for live sporting events aired on ESPN and other web streaming platforms.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "275",
+            "title": "\u2014 Sport Management and Recreation",
+            "description": "This course will introduce issues concerning organizing and managing sport-related businesses. It will also provide the students with a comprehensive introduction to the body of knowledge that serves as the foundation for the study of management within sport and sport-related organizations. The students will get a realistic view of current and future opportunities in sport-related organizations.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "320",
+            "title": "\u2014 Sport & Recreation Based Youth Mentoring",
+            "description": "This is a service learning class, meaning that a large portion of the class work will take place in the community serving as activity and recreation leaders and mentors to under-served, disadvantaged youth in the Niagara Falls area. There will also be an academic component of the class - reading, writing, and discussing social issues and how sport can be used to address a variety of social issues.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "335",
+            "title": "\u2014 Issues in Sport and Recreation",
+            "description": "This course is designed to encourage the study of organized sport and its role in society today. It will examine the current issues and ethical dilemmas that the evolution of sport has created in our society. By studying these issues and their effects, the student will be able to not only apply their teachings to the managerial situations presented in sport and recreation settings, but will enhance a wide variety of sport experiences for themselves and those around them.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "380",
+            "title": "\u2014 Sport & Recreation Policy and Governance",
+            "description": "Prerequisite Take SPM*275 This course will examine the various regulatory agencies that govern individual sport organizations and expose students to the management activities needed to operate effectively within those agencies. Students will learn how individual sport organizations fit into a greater industry and the power that lies within segments of the industry. The course is designed to integrate management theory with governance and policy development.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "395",
+            "title": "\u2014 Recreation and Sport Programming",
+            "description": "The course is designed to provide the student with an understanding of the practices and procedures involved in recreation and sports programs. The course will develop the concepts of planning, organization, human resources, risk management, supervision, promotion, and event management. Students will develop an appreciation for the challenges in recreation and sport programming while learning the practices needed to be successful in this area.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "432",
+            "title": "\u2014 Financial Aspects of Sport/Recreation",
+            "description": "Prerequisite Take HST*202 This course will examine the financial aspects of the sports industry and provide the student with an understanding of sport finance and its role in sport management. Students will study the overall aspects of revenue generation, budget management, and financing issues unique to sports organizations.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "441",
+            "title": "\u2014 Spec Topics in Sport Mgmt and Recreation",
+            "description": "This course examines the fundamentals of cutting edge issues in sport management, including such topics as concessions management in a sports venue, youth sport management, sports tourism and E Sports. Students learn the history and current context of the topic and explore best practices for keeping pace with industry changes and customer expectations.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

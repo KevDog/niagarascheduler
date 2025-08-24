@@ -34,62 +34,88 @@ Course Description Lookup: Given a course I.D., e.g. "THR 101", the system looks
 
 # DESIGN NOTES & PROJECT STATUS
 
-## Current Implementation Status (Dec 2025) ✅ COMPLETE
+## Current Implementation Status (Aug 2025) ✅ COMPLETE
 - **Web Application**: Fully functional Flask app with markdown-first architecture
 - **Syllabus Generation**: Complete preview system with export to DOCX, HTML, LaTeX, PDF, and Markdown
 - **Calendar Integration**: JSON-based calendar parsing from PDF academic calendars
 - **Rich Course Data System**: Complete object-oriented course management with department-specific JSON files
+- **Course Offerings Scraper**: CLI tool for scraping semester course offerings from Niagara course portal
+- **Department Data System**: Complete department structure with mission statements and course description URLs
+- **Program Overview Integration**: Mission statements populated from program overview pages
 
 ## Key Architecture Decisions
 1. **Markdown-First Approach**: All syllabus generation starts with markdown template, converts to other formats via pandoc
 2. **Preview-Then-Export UX**: Users see formatted preview before downloading in chosen format
 3. **JSON Calendar Storage**: Academic calendars converted from PDF to JSON for programmatic access
 4. **Object-Oriented Course Model**: Full Course and Department classes with rich metadata
-5. **Department-Specific Storage**: One JSON file per department (THR.json, MATH.json, etc.)
+5. **Data Organization**: Static department data (departments/) separate from dynamic semester data (semesters/)
+6. **Mission Statement Auto-Population**: Department mission statements automatically included in syllabi
 
 ## File Structure
-- `templates/syllabus_master.md` - Core markdown template for all syllabi
-- `core/markdown_processor.py` - Markdown generation and format conversion with rich Course objects
-- `core/course.py` - Course class with full serialization (to_dict/from_dict)
-- `core/department.py` - Department class with course collection and JSON export
-- `core/data_loader.py` - Load Course/Department objects from JSON files
-- `core/data_migration.py` - Migrate legacy course data to new structure
+- `templates/syllabus_master.md` - Core markdown template with mission statement integration
+- `core/markdown_processor.py` - Enhanced markdown generation with department mission statement loading
+- `core/course.py` - Course class with full serialization and offerings support
+- `core/department.py` - Department class with mission statements and URL management
+- `core/data_loader.py` - Load Course/Department objects with backward compatibility
 - `app.py` - Flask web application with preview/export workflow
 - `calendars/*.json` - Academic calendar data parsed from PDFs
-- `data/THR.json`, `data/MATH.json` - Department-specific course databases
+- `data/departments/` - Static department JSON files with mission statements and URLs
+- `data/semesters/` - Dynamic semester offering data by term
+- `scrape_offerings.py` - CLI tool for scraping course offerings by semester
 - `tests/` - Comprehensive test suite using TDD approach
 
 ## Course Object Model ✅ IMPLEMENTED
-**Course Properties**: number, title, description, instructors[], textbooks[], zoom_link, meeting_days[]
-**Department Properties**: name, mission_statement, office, course_listing_url, courses[]
+**Course Properties**: number, title, description, instructors[], textbooks[], zoom_link, meeting_days[], offerings[]
+**Department Properties**: name, mission_statement, office, course_listing_url, course_descriptions_url, courses[]
+**Offering Properties**: code, delivery_type, designation, credits, meeting_days[], department, number, section
 
 ## Data Flow Architecture ✅ IMPLEMENTED
-1. **JSON Storage**: Department files (THR.json) → DepartmentDataLoader
-2. **Object Creation**: JSON data → Course/Department objects via from_dict()
-3. **Syllabus Generation**: Rich Course objects → Enhanced markdown templates
-4. **Export Options**: Markdown → Pandoc → DOCX/HTML/LaTeX/PDF
+1. **Static Data**: Department files (departments/THR.json) → Mission statements and course description URLs
+2. **Dynamic Data**: Semester files (semesters/25_FA/THR.json) → Course offerings and scheduling
+3. **Object Creation**: JSON data → Course/Department/Offering objects via from_dict()
+4. **Syllabus Generation**: Rich objects → Enhanced markdown templates with mission statements
+5. **Export Options**: Markdown → Pandoc → DOCX/HTML/LaTeX/PDF
 
-## Next Development Phase: CLI Tool for Course Scraping
-**Purpose**: Administrative tool for course description management
-**Goal**: Scrape course descriptions from catalog URLs and populate department JSON files
+## CLI Tools ✅ IMPLEMENTED
+1. **Course Offerings Scraper** (`scrape_offerings.py`): 
+   - Command: `python scrape_offerings.py --semester 25/FA --ug --output-dir ./data`
+   - Scrapes semester course offerings from apps.niagara.edu
+   - Creates Department→Course→Offerings structure in semesters/ folder
+2. **Department Creator** (`create_departments.py`):
+   - Creates JSON files for all 54 departments from catalog
+3. **URL Updater** (`update_departments_urls.py`):
+   - Adds course_descriptions_url to department files
+4. **Program Overview Mapper** (`map_program_overviews.py`):
+   - Maps program overviews to department mission statements
 
-### Planned CLI Features
-1. **Course Description Scraper**: Parse department catalog pages for course descriptions
-2. **Department JSON Builder**: Create/update THR.json, MATH.json files with scraped data
-3. **Validation Tools**: Verify course data integrity and completeness
-4. **Bulk Operations**: Process multiple departments/courses in batch
+## Department Data System ✅ IMPLEMENTED
+- **54 Departments**: All departments from catalog.niagara.edu/undergraduate/courses-az/
+- **Mission Statements**: Populated from program overview pages at www.niagara.edu/programs/
+- **Course Description URLs**: Direct links to catalog pages for each department
+- **Organized Structure**: Static department info separated from dynamic semester offerings
 
-### Course Listing Matrix (Partial)
-Department,Abbreviation,URL    
-Theater Arts, THR, https://catalog.niagara.edu/undergraduate/programs-az/arts-sciences/theatre-studies-fine-arts/#coursestext
+## TODO: Next Development Phase
+### UI/UX Enhancements
+1. **TailwindCSS Integration**: Add modern styling framework to Flask app
+2. **Editable Syllabus Preview**: Allow in-browser editing before download
+3. **Syllabus Creation Wizard**: Multi-step form for guided syllabus building
+4. **Enhanced User Experience**: Modern, responsive interface
 
-### Course Details Availabe at:
-https://apps.niagara.edu/courses/index.php?semester=25/FA&ug=1
+### Data Enhancement
+1. **Course Description Scraper**: CLI tool to populate course descriptions from catalog URLs
+   - Command: `python scrape_descriptions.py --department THR --output-dir ./data/departments`
+   - Parse course descriptions from course_descriptions_url in department files
+   - Update Course objects with detailed descriptions
+2. **Bulk Department Processing**: Process all departments for course descriptions
+3. **Data Validation Tools**: Verify course data integrity and completeness
 
-### CLI Implementation Notes
-- Use TDD approach: tests first, then implementation
-- Consider using requests/BeautifulSoup for web scraping
-- **JSON File Structure**: ✅ IMPLEMENTED - One JSON file per department using abbreviation naming
-- JSON structure: ✅ IMPLEMENTED - Matches Course/Department object model
-- Include error handling for network failures and parsing errors
-- Course lookup: ✅ IMPLEMENTED - DepartmentDataLoader searches across department files
+### Planned Workflow
+1. **Wizard Interface**: Step-by-step syllabus creation
+2. **Live Preview**: Real-time markdown rendering with TailwindCSS styling
+3. **In-Browser Editing**: Rich text editor for final adjustments
+4. **Export Options**: Download in multiple formats after editing
+
+### Technical Resources
+- **TailwindCSS Documentation**: https://tailwindcss.com/docs/
+- **Integration Method**: CDN or npm installation for Flask templates
+- **Responsive Design**: Mobile-first approach with Tailwind utility classes

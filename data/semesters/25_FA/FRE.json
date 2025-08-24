@@ -1,0 +1,62 @@
+[
+  {
+    "department": "FRE",
+    "number": "FRE101A",
+    "name": "Elem French I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "10:05AM",
+    "end_time": "11:00AM",
+    "delivery_type": "LEC",
+    "designation": "AS*GE*LA",
+    "availability": "6"
+  },
+  {
+    "department": "FRE",
+    "number": "FRE101B",
+    "name": "Elem French I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "AS*GE*LA",
+    "availability": "4"
+  },
+  {
+    "department": "FRE",
+    "number": "FRE103A",
+    "name": "Intr Conv French",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "AS*GE*LA",
+    "availability": "6"
+  },
+  {
+    "department": "FRE",
+    "number": "FRE206A",
+    "name": "Adv Conv Fre & Comp",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AS",
+    "availability": "6"
+  },
+  {
+    "department": "FRE",
+    "number": "FRE319A",
+    "name": "Francophone Cinema",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "H*AS*LA",
+    "availability": "7"
+  }
+]

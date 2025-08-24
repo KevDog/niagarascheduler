@@ -1,0 +1,89 @@
+{
+    "name": "Marketing",
+    "mission_statement": "Whether you\u2019re interested in a broad program or specialization like social media or food industry, studying Marketing at Niagara University will provide you an unbeatable advantage in developing your creativity, innovation, and insight into the winning brands of the future. Our courses and active opportunities are designed for your growth and success, charting the flight plan to help you achieve exceptional career growth.\n\nAs a Marketing student at Niagara, you\u2019ll engage with generative AI technologies, predict outcomes using machine learning, create and publish captivating digital content, launch impactful marketing campaigns, and build winning brands. You\u2019ll join a cohort of enthusiastic and engaged students who participate in national competitions, trade shows, study abroad activities, and on-campus clubs like the Niagara University Marketing Association (NUMA).",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/mkg/",
+    "courses": [
+        {
+            "number": "181",
+            "title": "\u2014 Principles of Marketing",
+            "description": "Marketing philosophies, influences, strategies, and practices. Topics include: strategic planning, environmental influences, marketing research, consumer and business markets, segmentation and targeting, international marketing, and strategies for products, prices, distribution, and promotion.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "301",
+            "title": "\u2014 Overview Global Food Ind",
+            "description": "Prerequisite Take MKG*181 This course offers a broad introduction to the food industry in the United States as well as around the world. Focus will include agricultural production and practice, economics and pricing, distribution, wholesale and retailing. Critical social/cultural changes with impacts on the food industry will be covered as well as an understanding of global food supply and inequity in distribution.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "305",
+            "title": "\u2014 Integrated Marketing Communication",
+            "description": "Prerequisite Take MKG*181 This course consists of essentially two modules. The first deals with product development issues and the design of global market offerings. The second deals with the planning, organization, implementation, and control of integrated marketing communications. Coverage of advertising, sales promotion, public relations, direct marketing, and personal selling along with emerging and nontraditional tools, and their integrated management for the accomplishment of promotional objectives. It includes both a strategic focus as well as an emphasis on creative campaign development.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "310",
+            "title": "\u2014 Channels Management",
+            "description": "Prerequisite Take MKG*181 The role of distribution channels in marketing. Analysis will focus on the coordination of all channel members from the manufacturer to the consumer. Topics include: wholesaler structure, channel strategy, channel coordination, channel communication, and channel conflict.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "311",
+            "title": "\u2014 Marketing Research",
+            "description": "Prerequisite Take MKG*181 Study of contemporary research methods used to provide information for solving marketing problems. Topics include marketing-research design and ethics, data acquisition and analysis, and communication and application of results.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "313",
+            "title": "\u2014 Consumer Behavior",
+            "description": "Prerequisite Take MKG*181 Study of consumer acquisition, consumption, and disposition of products and services. Focuses on decision processes and the psychological, social, cultural, and economic factors that influence them.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "314",
+            "title": "\u2014 Topic:",
+            "description": "Prerequisite Must have taken MKG*181; Case studies or directed investigations focused on current problems and topics that are increasingly of concern to modern businesses. The topics covered may be current issues in Marketing and/or involve new and emerging areas of study.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "325",
+            "title": "\u2014 International Marketing",
+            "description": "Prerequisite Take MKG*181 This course looks at the economic, social, cultural, political, legal, and financial dimensions of international markets. Global marketing-strategy options and the conceptual and analytical tools needed to plan and implement them successfully.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "333",
+            "title": "\u2014 Category & Value Chain Mgt",
+            "description": "Prerequisite Take MKG*181 This course focuses on the management and improvement of supply chain processes and performance. Students will explore key supply chain metrics, production planning, inventory control, order fulfillment and supply chain management and coordination. There will be an emphasis on the application of information technology utilized in the marketing of food with a focus on analytics associated with price, cost, merchandise, forecasts and performance metrics.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "335",
+            "title": "\u2014 Sales Communications",
+            "description": "Prerequisite Take MKG*181 This course introduces key concepts of business-to-business marketing, salesforce management, and personal selling. Topics include the organizational buying process, segmenting business markets, and value creation. Principles of salesforce motivation, compensation, and deployment are also discussed. Students also master the personal selling process including techniques of need identification, need confirmation, closing and serving the account relationship. The course uses case studies, speakers, and role plays to understand and apply concepts.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

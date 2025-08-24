@@ -1,0 +1,89 @@
+{
+    "name": "Nursing",
+    "mission_statement": "Completion Time: 12 Months\nCredits: 57 credits\nClinical Hours: 675\n\nOur Accelerated Second Degree Bachelor of Science (ASDBS) degree in Nursing compliments your bachelor\u2019s degree to prepare you for a career in healthcare, with a focus on the science and fundamentals of nursing practice. Through classroom, lab, clinical, and simulated training, you\u2019ll be equipped with the skills needed to provide sound clinical judgment while delivering comprehensive care to patients as entry-level clinicians.\n\nDesigned for students with a bachelor\u2019s degree but lacking a license as a registered professional nurse, our ASDBS program will teach you how to enhance your personal resilience and wellness while focusing on service to others and the key components of effective health care delivery, including the comprehensive care of individuals and groups across their lifespan.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/nur/",
+    "courses": [
+        {
+            "number": "200L",
+            "title": "This 1st",
+            "description": "level course introduces students to beginning generalist nursing practice. Concepts and skills basic to nursing will be integrated using traditional classroom and skills laboratory methods. A theoretical component will include scope of practice, communication, decision making, and nursing process. Generic nursing intervention skills that support planning, managing, and delivering patient care will include assessment of patients in their environment, safety and asepsis, comfort and hygiene, activities of daily living, and supportive care for mobility, respiration, nutrition, elimination, and other body functions. (Formerly NUR 350)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "concurrently",
+            "description": "Companion lab for Nursing Concepts I (formerly NUR 350L)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "Health",
+            "description": "Assessment & Promotion (formerly NUR 354L)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "Health",
+            "description": "Assessment & Promotion (formerly NUR 354L)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "352",
+            "title": "\u2014 The Developing Family",
+            "description": "Prerequisite Must take NUR 353 concurrently with NUR 352 Nursing science and knowledge related to the developing family, including child bearing, labor and delivery, and post-partum health and deviations will be addressed. Acute and chronic health problems of children and adolescents will be integrated with developmental needs, as related to nursing practice. Gynecological health and respective nursing practice will also be incorporated.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "353",
+            "title": "\u2014 Care of Developing Family",
+            "description": "Prerequisite Must take NUR 352 concurrently with NUR 353. This clinical based course combines theoretical knowledge gained in NUR 352 and 466 with clinical practice. The student will apply principles of nursing science and evidence based care in the specialty areas of obstetrical, gynecological, and pediatric nursing. Inter-professional collaboration in planning and implementing care will be addressed. The role of nurse as advocate and educator in support of the family system will be addressed.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "352",
+            "title": "and 466",
+            "description": "with clinical practice. The student will apply principles of nursing science and evidence based care in the specialty areas of obstetrical, gynecological, and pediatric nursing. Inter-professional collaboration in planning and implementing care will be addressed. The role of nurse as advocate and educator in support of the family system will be addressed.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "355",
+            "title": "\u2014 Building Healthy Communities",
+            "description": "Prerequisite Must have taken NUR 352 and NUR 353. Nursing students must Epidemiological concepts are applied to health of populations. Role of nurse in planning, delivering, and evaluating programs to communities is addressed. The trans-theoretical model of stages of readiness to change is contrasted with King's Interactive system theory. Public health mandates and research-based nursing interventions are applied to population based health.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "372",
+            "title": "\u2014 Individual With Health Needs",
+            "description": "Prerequisite Must take NUR 372L and NUR 399 concurrently. In this second level course, deviations from health are contrasted with healthy states of individuals. The influence of genetics and the bio-psycho-social and spiritual components of health and related threats are discussed. Therapeutic interventions, both immediate and long term are discussed, and the role of the professional nurse examined. Therapeutic, diagnostics, and nutritional interventions for collaborative care are included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "372L",
+            "title": "\u2014 Nursing Concepts III",
+            "description": "Prerequisite Must take NUR 372 and NUR 399 concurrently This lab course addresses skill-based competencies that are evidence based and associated with the theoretical course, NUR 372. This course will introduce skill-based competencies, grounded in evidence to inform practice. The lab skills are specific to the health needs and health deviations of individuals. The clinical skills introduced in this course include: . Parenteral Medication Administration . Medication Reconstitution . Oxygen Therapy . Intravenous infusions, both Primary and Secondary . Advanced Wound Care . Insertion of Nasogastric Tubes and Tube Feedings . Colostomy/Ileostomy Care . Bladder Catheterization and Catheter Care . Tracheostomy Care & Suctioning",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

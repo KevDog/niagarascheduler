@@ -1,0 +1,89 @@
+{
+    "name": "Social Work",
+    "mission_statement": "Our Social Work program combines hands-on learning with commitment to social justice, preparing you to work impactful careers with integrity in diverse fields. Accredited by the Council on Social Work Education (CSWE), we equip you with the skills to address the needs of individuals, families, and communities.\n\nBy studying a curriculum rooted in empowerment, experiential learning, and service, you\u2019ll gain practical skills and broad knowledge through coursework, internships, and research opportunities. Our graduates continue into diverse career pathways as they help individuals and families face challenges as social workers, government liaisons, policy analysts, community activists, international relief groups, or further study in graduate school.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/swk/",
+    "courses": [
+        {
+            "number": "100",
+            "title": "\u2014 Intro Social Work",
+            "description": "An introduction to the profession and beginning generalist social work practice. The values, knowledge, and skills necessary for practice will be critically examined and discussed, along with the social problems of concern to the profession. Social work in the empowerment tradition will be emphasized. This course requires 25 hours of service learning. This course is required for social work majors and minors.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "120",
+            "title": "\u2014 Understanding & Addressing Poverty",
+            "description": "The course explores poverty and discrimination. We will explore: How is poverty defined? How is poverty measured? What does living in poverty or being raised in poverty do to individuals, families, communities, and society? What can the poor do to help themselves? What can we do to help the poor?",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Intro Soc Srvc & Pol",
+            "description": "Prerequisite Take SWK 100 This course focuses on the historical development and structure of the social services system. In the evaluation of social policies, specific attention will be given to populations at risk, such as African Americans, Native Americans, women, persons with disabilities, and gays and lesbians, who all have encountered social injustice. Students will learn how these groups resisted efforts to dominate them and how they empowered themselves.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "210",
+            "title": "\u2014 Diversity & Soc Justice",
+            "description": "Prerequisite Take SWK*100 This course is designed to stimulate and enhance a student's understanding of various cultural issues that are relevant to his or her professional aspirations. One thrust of this course is to develop in students a respect and appreciation for diversity in all its forms. It is intended that this course will facilitate effective communication among diverse populations. This course requires 20 hours of service learning and is required for social work majors.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "211",
+            "title": "\u2014 Human Behav & Soc Envi 1",
+            "description": "Prerequisite Take SWK 100, BIO !01, a psychology course, and a sociology This is the first course in a two-semester sequence. The course provides students with basic descriptive knowledge about how biological, social, and psychological systems affect the human person from birth through young adulthood. In addition, students assess the strengths and limitations of various theories of human behavior for diverse populations, and consider alternative and possible theories that change or extend traditional theories.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "212",
+            "title": "\u2014 Human Behav & Soc Env 2",
+            "description": "Prerequisite Take SWK 211 This course is a continuation of SWK 211. The course provides students with basic descriptive knowledge about how biological, social, and psychological systems affect the human person from middle adulthood through late life. In addition, students assess the strengths and limitations of various theories of human behavior for diverse populations, and consider alternative and possible theories that change or extend traditional theories.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "220",
+            "title": "\u2014 Poverty & Policy",
+            "description": "This course examines how poverty is defined in the United States, its causes, and consequences. Students will review historical and contemporary policies and identify how the social construction of poverty is linked to political agendas. Students will discuss effective skills for advocating for the alleviation of poverty through the design, implementation, and analysis of public and social policies. In addition to course assignments, students will be required to complete 25 Impact Hours.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "240",
+            "title": "\u2014 Topic:",
+            "description": "Prerequisite Take SWK*100 Areas of special interest to students are offered. Examples of topics include: crisis intervention, school social work, poverty, industrial social work, social work and technology, social work and the law, and domestic violence. Emphasis will be placed on student research, presentations, and participation through a seminar format.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "250",
+            "title": "\u2014 Human Sexuality",
+            "description": "Prerequisite Take SWK*100 This course will present a survey of contemporary issues and problems in human sexuality from a social, psychological, biological, cross-cultural, and clinical perspective. Topics such as sexual orientation, adolescent sexuality, teen pregnancy, infertility, family planning, sex research, coercive forms of sex, and treatment of sexual problems will be explored.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "252",
+            "title": "\u2014 Death & Dying",
+            "description": "This course deals directly with the psychological, social, and behavioral dynamics inherent in confronting the issue of death and dying, from both the personal and professional perspectives. Aspects related to euthanasia, refusing life-sustaining medical treatment, factors influencing grief and bereavement among people from diverse populations, and hospice care are some of the topics explored. This is a required course for the gerontology minor.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

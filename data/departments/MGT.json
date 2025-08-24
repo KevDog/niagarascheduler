@@ -1,0 +1,89 @@
+{
+    "name": "Management",
+    "mission_statement": "Our program in Management is a balanced and flexible choice that allows you to tailor your education to your career aspirations. As a Niagara graduate, you\u2019ll be equipped with the skills and knowledge needed to excel in diverse business environments \u2013 from startup organizations to large, multinational corporations \u2013 and in a variety of roles.\n\nAt Niagara, you can customize your education and differentiate yourself with your course choices, including specialized instruction in human resources, international management, and more. Whether you envision a career in a large firm, small business, or even launching your own entrepreneurial venture, you\u2019ll be prepared to navigate and lead in a dynamic business world.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/mgt/",
+    "courses": [
+        {
+            "number": "160",
+            "title": "\u2014 Management Principles",
+            "description": "Theories and practices of management and organization are studied, with a major focus on planning, organizing, leading, and controlling. General topics include goals and strategy formulation, decision making, leadership, motivation, communication, teamwork, innovation, ethics, and social responsibility. The course is designed to prepare students for more advanced courses in organizational management.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "217",
+            "title": "\u2014 International Management",
+            "description": "Prerequisite Take MGT*160 prior This course places strategic management in a global context and examines the uniqueness of international organizational structures and practices. In addition to the challenges of coordinating and controlling a global enterprise, the course emphasizes global cultural diversity and its influence on human resource management, internal and external communication, ethics, and social responsibility.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "220",
+            "title": "\u2014 Operations & Supply Chain",
+            "description": "Prerequisite Must take MGT*160 prior to taking this course In the era of global competitiveness, this course addresses the principles and management challenges associated with production, including manufacturing and the creation of value-added services. The framework for analysis will include total quality systems such as Lean, Six Sigma, and TPS.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "221",
+            "title": "\u2014 Supply Chain Logistics",
+            "description": "Prerequisite Must take MGT*160 prior to taking this course The course studies the business activities that support the flow of products, supplies, and raw materials throughout the supply chain. Topics include inventory control, corporate traffic management, warehousing, packaging, materials handling, and procurement. Customer service quality and leading-edge logistics practices are emphasized.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "240",
+            "title": "\u2014 Human Resource Management",
+            "description": "Prerequisite Take MGT*160 or HST*140 prior The class provides a foundation for the study of Human Resource Management (HRM) practices and strategies, exploring how HRM leads to a competitive advantage for organizations, both nationally and globally. Emphasis will be placed on examining the legal environment, HR planning/staffing, employee training/development, compensation, and managing employee performance and relations.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "308",
+            "title": "\u2014 E Commerce Essentials",
+            "description": "Prerequisite Take MGT*160 In this course, students will learn about the opportunities, challenges, and initial steps required to establish an entrepreneurial web based business. This project-based course will introduce students to dropshipping, print on demand, web design, social media and email marketing among other topics.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "313",
+            "title": "\u2014 Art and Leadership",
+            "description": "An examination of what leaders can learn from art and how artists lead. Principles from a wide spectrum of art disciplines-visual and performing arts, film, literature, architecture, and others--will be studied for their applicability to leadership. The role of artists in leading social change will also be explored.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "314",
+            "title": "\u2014 Topic:",
+            "description": "Prerequisite Must have taken MGT*160; Case studies of a variety of problems that are increasingly becoming the prime concerns of management. The areas covered may include entrepreneurship, business and the quality of life, business and other social institutions, business and the community, business and the individual, business and government, and business and foreign policy.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "315",
+            "title": "\u2014 Leadership and Teamwork",
+            "description": "This course provides a foundation in leadership and team concepts via experiential, hands-on learning. In this course students learn skills such as communication, listening, coordinating, team conflict management, relationship building, and motivation at individual and group levels.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "316",
+            "title": "\u2014 Conflict Management and Negotiations",
+            "description": "This course examines the nature and sources of conflict and interdependence in social and organizational dynamics. Various means of resolving conflict, including the use of competitive and collaborative negotiations and mediation. The course supports the development of the students as managers, mediators, and negotiators.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

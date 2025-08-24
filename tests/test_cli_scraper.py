@@ -10,11 +10,11 @@ import sys
 from io import StringIO
 
 
-class TestScrapeCoursesCLI(unittest.TestCase):
+class TestScrapeOfferingsCLI(unittest.TestCase):
     
     def test_parse_args_required_semester_and_ug(self):
         # Arrange
-        from scrape_courses import parse_args
+        from scrape_offerings import parse_args
         test_args = ['--semester', '25/FA', '--ug']
         
         # Act
@@ -28,7 +28,7 @@ class TestScrapeCoursesCLI(unittest.TestCase):
         
     def test_parse_args_with_grad_flag(self):
         # Arrange
-        from scrape_courses import parse_args
+        from scrape_offerings import parse_args
         test_args = ['--semester', '25/FA', '--grad']
         
         # Act
@@ -40,7 +40,7 @@ class TestScrapeCoursesCLI(unittest.TestCase):
         
     def test_parse_args_with_both_ug_and_grad(self):
         # Arrange
-        from scrape_courses import parse_args
+        from scrape_offerings import parse_args
         test_args = ['--semester', '25/FA', '--ug', '--grad']
         
         # Act
@@ -52,7 +52,7 @@ class TestScrapeCoursesCLI(unittest.TestCase):
         
     def test_parse_args_with_output_dir(self):
         # Arrange
-        from scrape_courses import parse_args
+        from scrape_offerings import parse_args
         test_args = ['--semester', '25/FA', '--ug', '--output-dir', '/tmp/courses']
         
         # Act
@@ -63,10 +63,10 @@ class TestScrapeCoursesCLI(unittest.TestCase):
         
     def test_main_function_calls_scraper(self):
         # Arrange
-        from scrape_courses import main
+        from scrape_offerings import main
         from unittest.mock import patch
         
-        with patch('scrape_courses.CourseScraperCLI') as mock_scraper_class:
+        with patch('scrape_offerings.CourseScraperCLI') as mock_scraper_class:
             mock_scraper = mock_scraper_class.return_value
             test_args = ['--semester', '25/FA', '--ug']
             
@@ -79,10 +79,10 @@ class TestScrapeCoursesCLI(unittest.TestCase):
         
     def test_main_function_with_arguments(self):
         # Arrange
-        from scrape_courses import main
+        from scrape_offerings import main
         from unittest.mock import patch
         
-        with patch('scrape_courses.CourseScraperCLI') as mock_scraper_class:
+        with patch('scrape_offerings.CourseScraperCLI') as mock_scraper_class:
             mock_scraper = mock_scraper_class.return_value
             test_args = ['--semester', '25/SP', '--ug', '--grad', '--output-dir', '/custom/path']
             

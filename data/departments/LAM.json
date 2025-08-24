@@ -1,0 +1,81 @@
+{
+    "name": "Liberal Arts",
+    "mission_statement": "General Studies provides a flexible program of study grounded in Niagara Universities liberal arts curriculum.\n\nIt is intended for students who wish to complete a two year Associate in Arts (A.A) degree, explore major or career options, or continue on to a bachelor\u2019s program.\n\nStudents enrolled in General Studies select from the same courses available to all NU students. The program aims to provide students with an integrated course of study in the liberal arts which introduces students to a specific body of knowledge, stimulates a student\u2019s intellectual curiosity, and encourages future study.\n\nIndividual schedules are tailor made with your advisor to explore your academic and career interests. A general outline of the courses required can be found below.\n\nStudents who wish to pursue a four year degree after finishing their associate degree, can easily continue on at Niagara University for a Bachelor\u2019s degree. As students figure out their interests, the curriculum can be adjusted to assist the transition to a specific major.\n\nStudents who wish to continue to explore an individually designed curriculum can take advantage of the new Bachelor of Arts degree in Liberal Arts and Master of Arts in Interdisciplinary Studies programs.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/lam/",
+    "courses": [
+        {
+            "number": "255",
+            "title": "\u2014 Intro Develop for Non Profits",
+            "description": "This introductory course will provide an overview of the role that development plays in the financial health of an organization. Topics will include cultivating and soliciting donors; the annual appeal; grant writing; corporate sponsorships; membership; volunteer coordination; special events; planned giving and capital campaigns; and the roles of development staff, including the CEO.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "351",
+            "title": "\u2014 Grant Writing",
+            "description": "This course introduces students to the process of applying for grants in their area of specialization using research and documentation skills. Students gain practice analyzing the mission, values, and priorities of philanthropic and other funding institutions, and apply that knowledge to their organizational and/or individual ethos. This course culminates in a grant proposal, requiring extensive persuasive and analytic writing.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "403",
+            "title": "\u2014 Honors Thesis I",
+            "description": "An integrative, reflective capstone course requiring students to synthesize research from the several disciplines they have studied in the Liberal Arts program or to conduct research on a question or problem that integrates the several disciplines. The course will be conducted as an independent research effort guided by the student's adviser. Students will be required to write a senior thesis in which they apply their acquired skills to a central topic, theme, or question",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "404",
+            "title": "\u2014 Honors Thesis II",
+            "description": "Prerequisite Must have taken LAM*403; An integrative, reflective capstone course requiring students to synthesize research from the several disciplines they have studied in the Liberal Arts program or to conduct research on a question or problem that integrates the several disciplines. The course will be conducted as an independent research effort guided by the student's adviser. Students will be required to write a senior thesis in which they apply their acquired skills to a central topic, theme, or question",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "493",
+            "title": "\u2014 Liberal Arts Internship/Co-op",
+            "description": "A junior or senior work study program providing relevant employment experience. Registration will occur at the beginning of the experience. The object of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning, and providing the student with a realistic exposure to career opportunities. Students interested in taking an internship or co-op should talk to their adviser.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "494",
+            "title": "\u2014 Liberal Arts Internship/Co-op",
+            "description": "A junior or senior work study program providing relevant employment experience. Registration will occur at the beginning of the experience. The object of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning, and providing the student with a realistic exposure to career opportunities. Students interested in taking an internship or co-op should talk to their adviser.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "495",
+            "title": "\u2014 Liberal Arts Internship/Co-op",
+            "description": "A junior or senior work study program providing relevant employment experience. Registration will occur at the beginning of the experience. The object of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning, and providing the student with a realistic exposure to career opportunities. Students interested in taking an internship or co-op should talk to their adviser.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "496",
+            "title": "\u2014 Liberal Arts Internship/Co-op",
+            "description": "A junior or senior work study program providing relevant employment experience. Registration will occur at the beginning of the experience. The object of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning and providing the student with a realistic exposure to career opportunities. Students interested in taking an internship or co-op should talk to their adviser.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "499",
+            "title": "\u2014 Senior Seminar",
+            "description": "An integrative, reflective capstone course requiring students to synthesize research from the several disciplines they have studied in the Liberal Arts program or to conduct research on a question or problem that integrates the several disciplines. The course will be conducted as an independent research effort guided by the student's adviser. Students will be required to write a senior thesis in which they apply their acquired skills to a central topic, theme, or question.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

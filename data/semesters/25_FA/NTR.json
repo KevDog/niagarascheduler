@@ -1,0 +1,14 @@
+[
+  {
+    "department": "NTR",
+    "number": "NTR200A",
+    "name": "Principles of Nutrition",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "17"
+  }
+]

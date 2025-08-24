@@ -1,0 +1,537 @@
+[
+  {
+    "department": "THR",
+    "number": "THR103A",
+    "name": "Intro to Theatre",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "H*LA",
+    "availability": "27"
+  },
+  {
+    "department": "THR",
+    "number": "THR105A",
+    "name": "Theory & Musicianship I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "9"
+  },
+  {
+    "department": "THR",
+    "number": "THR107B",
+    "name": "Acting 1: Foundations I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "10"
+  },
+  {
+    "department": "THR",
+    "number": "THR110A",
+    "name": "Vocal Performance II",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR110B",
+    "name": "Vocal Performance II",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR111A",
+    "name": "Dance & Movement I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "4"
+  },
+  {
+    "department": "THR",
+    "number": "THR120A",
+    "name": "Intro to Theatre Design",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AE*LA",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR205A",
+    "name": "Speech For the Actor I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR207B",
+    "name": "Acting 3: Camera/Chekhov",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR216A",
+    "name": "Stage Combat II",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "11"
+  },
+  {
+    "department": "THR",
+    "number": "THR230A",
+    "name": "Jazz I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "4"
+  },
+  {
+    "department": "THR",
+    "number": "THR231A",
+    "name": "Jazz II",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "5"
+  },
+  {
+    "department": "THR",
+    "number": "THR307A",
+    "name": "Acting 5: Shakespeare 2",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR309A",
+    "name": "Vocal Performance III",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR321A",
+    "name": "Tap I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "04:30PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "5"
+  },
+  {
+    "department": "THR",
+    "number": "THR322A",
+    "name": "Tap II",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "6"
+  },
+  {
+    "department": "THR",
+    "number": "THR324A",
+    "name": "Physical Theatre II",
+    "credits": "3.00",
+    "days": "F",
+    "start_time": "12:00PM",
+    "end_time": "02:40PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR324B",
+    "name": "Physical Theatre II",
+    "credits": "3.00",
+    "days": "F",
+    "start_time": "12:00PM",
+    "end_time": "02:40PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR329A",
+    "name": "Playwriting",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "04:30PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "2"
+  },
+  {
+    "department": "THR",
+    "number": "THR337A",
+    "name": "Scene Design",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "4"
+  },
+  {
+    "department": "THR",
+    "number": "THR345A",
+    "name": "History of Decor II",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "9"
+  },
+  {
+    "department": "THR",
+    "number": "THR409A",
+    "name": "Ballet V",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "5"
+  },
+  {
+    "department": "THR",
+    "number": "THR410A",
+    "name": "Ballet VI",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "6"
+  },
+  {
+    "department": "THR",
+    "number": "THR411A",
+    "name": "History & Lit of Thr I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "H*WI*LA",
+    "availability": "20"
+  },
+  {
+    "department": "THR",
+    "number": "THR413A",
+    "name": "History & Lit of Thr III",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "H*WI*LA*SJ",
+    "availability": "24"
+  },
+  {
+    "department": "THR",
+    "number": "THR417A",
+    "name": "Acting 7: The Profession I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR417B",
+    "name": "Acting 7: The Profession I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR424A",
+    "name": "Physical Theatre IV",
+    "credits": "3.00",
+    "days": "F",
+    "start_time": "09:00AM",
+    "end_time": "11:40AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR424B",
+    "name": "Physical Theatre IV",
+    "credits": "3.00",
+    "days": "F",
+    "start_time": "09:00AM",
+    "end_time": "11:40AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "THR",
+    "number": "THR425A",
+    "name": "Directing",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "9"
+  },
+  {
+    "number": "THR011A",
+    "name": "Practicum I",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR015A",
+    "name": "Vocal Techniques I",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR015B",
+    "name": "Vocal Techniques I",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR015C",
+    "name": "Vocal Techniques I",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR015D",
+    "name": "Vocal Techniques I",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR015E",
+    "name": "Vocal Techniques I",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR015G",
+    "name": "Vocal Techniques I",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR021A",
+    "name": "Practicum III",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR025A",
+    "name": "Vocal Techniques III",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR025B",
+    "name": "Vocal Techniques III",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR025C",
+    "name": "Vocal Techniques III",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR025D",
+    "name": "Vocal Techniques III",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR025E",
+    "name": "Vocal Techniques III",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR025G",
+    "name": "Vocal Techniques III",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR031A",
+    "name": "Practicum V",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR035A",
+    "name": "Vocal Techniques V",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR035B",
+    "name": "Vocal Techniques V",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR035C",
+    "name": "Vocal Techniques V",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR035D",
+    "name": "Vocal Techniques V",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR035E",
+    "name": "Vocal Techniques V",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR035G",
+    "name": "Vocal Techniques V",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR041A",
+    "name": "Pracitcum VII",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR045A",
+    "name": "Vocal Techniques VII",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR045B",
+    "name": "Vocal Techniques VII",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR045C",
+    "name": "Vocal Techniques VII",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR045D",
+    "name": "Vocal Techniques VII",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR045E",
+    "name": "Vocal Techniques VII",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR045G",
+    "name": "Vocal Techniques VII",
+    "credits": "1.00"
+  },
+  {
+    "number": "THR101A",
+    "name": "Performance Techniques I",
+    "credits": "4.00"
+  },
+  {
+    "number": "THR201A",
+    "name": "Performance Techniques III",
+    "credits": "4.00"
+  },
+  {
+    "number": "THR243A",
+    "name": "Costume Construction I",
+    "credits": "3.00"
+  },
+  {
+    "number": "THR243B",
+    "name": "Costume Construction I",
+    "credits": "3.00"
+  },
+  {
+    "number": "THR301A",
+    "name": "Performance Techniques V",
+    "credits": "4.00"
+  },
+  {
+    "number": "THR401A",
+    "name": "Performance Techniques VII",
+    "credits": "4.00"
+  },
+  {
+    "number": "THR425B",
+    "name": "Directing",
+    "credits": "3.00"
+  }
+]

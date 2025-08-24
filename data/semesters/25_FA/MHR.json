@@ -1,0 +1,62 @@
+[
+  {
+    "department": "MHR",
+    "number": "MHR241A",
+    "name": "Foodservice Oper",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "MHR",
+    "number": "MHR341A",
+    "name": "Food Prep Principles",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "5"
+  },
+  {
+    "department": "MHR",
+    "number": "MHR347A",
+    "name": "Mgt Hotel Systems",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "10:05AM",
+    "end_time": "11:00AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "11"
+  },
+  {
+    "department": "MHR",
+    "number": "MHR388A",
+    "name": "Food & Bev Cost Ctrl",
+    "credits": "3.00",
+    "days": "T",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "4"
+  },
+  {
+    "department": "MHR",
+    "number": "MHR438A",
+    "name": "Luxury Hotel Mkg & Sales",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "10"
+  }
+]

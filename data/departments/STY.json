@@ -1,0 +1,17 @@
+{
+    "name": "Study Abroad",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/sty/",
+    "courses": [
+        {
+            "number": "401",
+            "title": "\u2014 Study Abroad 1",
+            "description": "STY 402 \u2014 Study Abroad 2  STY 403 \u2014 Study Abroad 3  STY 404 \u2014 Study Abroad 4  STY 405 \u2014 Study Abroad 5  STY 406 \u2014 Study Abroad 6  STY 407 \u2014 Study Abroad 7  STY 408 \u2014 Study Abroad 8  STY 409 \u2014 Study Abroad 9  STY 410 \u2014 Study Abroad 10",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

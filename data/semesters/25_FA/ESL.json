@@ -1,0 +1,14 @@
+[
+  {
+    "department": "ESL",
+    "number": "ESL193A",
+    "name": "English As a Foreign Lang",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "3"
+  }
+]

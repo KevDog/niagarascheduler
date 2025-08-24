@@ -1,0 +1,41 @@
+{
+    "name": "English As a Foreign Language",
+    "mission_statement": "Becoming an English as a Second Language (ESL) teacher will provide you with unique multicultural opportunities in a growing field around the world and in our local schools. As a student in our Teaching English to Speakers of Other Languages (TESOL) program, you\u2019ll be encouraged to explore theories, strategies, and methodologies in teaching English language learners, facilitate the process for them, and navigate the journey of education within the global context of our communities.\n\nOnce you successfully complete our program and pass New York state testing requirements, you\u2019ll qualify for initial teacher certification in New York to teach English to speakers of other languages at any grade level.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/esl/",
+    "courses": [
+        {
+            "number": "193",
+            "title": "\u2014 English as a Foreign Language",
+            "description": "For information on this course please contact The Office of Academic Support. Designed for foreign students, this course provides intensive training in the basics of English grammar, composition, and language art skills. An individual program of instruction is designed to help students master the English skills required for college students and allow the foreign student a reasonable expectation of success later in Writing 100, which is required of all undergraduate students.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "194",
+            "title": "\u2014 English as a Foreign Language",
+            "description": "For information on this course please contact The Office of Academic Support. Designed for foreign students, this course provides intensive training in the basics of English grammar, composition, and language art skills. An individual program of instruction is designed to help students master the English skills required for college students and allow the foreign student a reasonable expectation of success later in Writing 100, which is required of all undergraduate students.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 Acad Reading & Writing",
+            "description": "This course is designed for college students who are English language learners, have been accepted into an undergraduate degree program, and who have achieved a Paper Based Test of English as a Foreign Language (PBT TOEFL) score, or an International English Language Testing Systems (IELTS) score in keeping with the current admissions requirements, but are in need of additional academic language support. This course provides further support for academic reading and writing at the undergraduate level to ease the transition into the academics of the University. Students will receive integrated reading and writing instruction that underscores the rigors of American undergraduate university expectations. Through guided practice and support, students will explore different genres of reading and writing found in American academia and be able to fulfill course work expectations independently.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "202",
+            "title": "\u2014 Acad Speaking & Listening",
+            "description": "This course is designed for college students who are English language learners, have been accepted into an undergraduate degree program, and who have achieved a Paper-Based Test of English as a Foreign Language (PBT TOEFL) score, or an International English Language Testing Systems (IELTS) score in keeping with the current admissions requirements, but are in need of additional academic language support. This course provides further support specific to comprehension in English as applied to various disciplines and coursework at the undergraduate level. Students will receive integrated speaking and listening instruction to help transition to the rigors of American university academic expectations. Through guided practice and support, students will participate in various speaking and listening exercises to help them successfully participate both in coursework and in social situations.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

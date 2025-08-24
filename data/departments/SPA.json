@@ -1,0 +1,89 @@
+{
+    "name": "Spanish",
+    "mission_statement": "The Spanish program at Niagara University focuses on developing linguistic fluency while building global awareness, cultural understanding, and analytical thinking. This versatile major gives students the skills to communicate effectively with those around them, expanding their personal and professional horizons and empowering them to engage with Hispanic communities.\n\nStudying Spanish at Niagara University gives students the opportunity to learn, practice, and refine their use of the Spanish language. Our small class sizes ensure individualized attention, provide ample opportunity for the development of essential speaking and comprehension skills, and build a strong sense of community. The Spanish major is also flexible enough to combine with other academic programs and study abroad. Students graduate with a high level of proficiency, a greater understanding of the world around them, and the confidence they need to use their language skills professionally.\n\nOutside of the classroom, we offer a variety of activities that allow students to engage first-hand with Hispanic cultures while building lasting friendships. Informal conversation hours, film nights, guest speakers, and live music all help bring the language to life.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/spa/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Elem Spanish I",
+            "description": "Basic course in Spanish emphasizing skills in oral and written communication with an introduction to the culture and civilization of the Hispanic world. Open to students with no previous study of Spanish or with the permission of the chairperson of the department of foreign languages.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101",
+            "title": "speaking,",
+            "description": "understanding, reading, and writing, while stressing vocabulary, grammar, and pronunciation. The cultures of the Hispanic world also form the content of the course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101",
+            "title": "speaking,",
+            "description": "understanding, reading, and writing, while stressing vocabulary, grammar, and pronunciation. The cultures of the Hispanic world also form the content of the course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "103",
+            "title": "\u2014 Intermediate Spanish I",
+            "description": "Prerequisite Students should take SPA 101 and SPA 102 prior Review and expansion of communication skills (speaking, reading, and writing) through materials reflecting the history, literature, and culture of the Hispanic world.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "104",
+            "title": "\u2014 Intermediate Spanish II",
+            "description": "Prerequisite Students should take SPA 101, SPA 102, and SPA 103 prior Review and expansion of communication skills (speaking, reading and writing) through materials reflecting the history, literature, and culture of the Hispanic world.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "110",
+            "title": "\u2014 Spanish for Business",
+            "description": "Prerequisite Students should have completed SPA 102 An introduction to vocabulary, idiomatic expressions, and grammatical constructions appropriate to a Spanish-speaking environment. In addition to building basic communication skills, the course covers various aspects of Spanish business protocol, commercial terminology, and correspondence. This course would be of interest for students who would like to have a working knowledge for business relations with the Hispanic world. A weekly one-hour lab session is required with this course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Hispanic Women Writers in English",
+            "description": "A survey of various themes and social questions regarding the position that women have held in Spanish and Latin American societies from the 16th century to the present, as these are treated in poetry, prose fiction, testimony, cinema, and drama by and about women. Conducted in English, with all texts read in translation, this course is open to all students, regardless of their background in Spanish. This course cannot be used to satisfy a language or analytical skills requirement for non-majors. It may count as a culture course for the Spanish minor or major or Latin American Studies minor.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "205",
+            "title": "\u2014 Adv Convers Spanish & Composition I",
+            "description": "Prerequisite Students should take SPA 103 and SPA 104 prior The development of fluency in the language as well as ability to write original compositions. Includes the study of various aspects of the Hispanic people and their culture.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "206",
+            "title": "\u2014 Adv Convers Spanish & Comp II",
+            "description": "Prerequisite Take SPA*205 The development of fluency in the language as well as ability to write original compositions. Includes the study of various aspects of the Hispanic people and their culture.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "210",
+            "title": "\u2014 Spanish for Heritage Speakers",
+            "description": "A course for heritage speakers of Spanish who have little or no formal training in the language. Students with near native speaking ability seeking to perfect their Spanish skills may also enroll. Students will improve their Spanish grammar, reading, and writing skills, as well as expand their knowledge of Hispanic cultures.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

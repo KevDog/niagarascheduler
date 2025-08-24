@@ -61,6 +61,7 @@ def generate_syllabus_markdown(schedule_data, semester, year, course_id=None, in
     
     # Get course information using new data loader
     course_description = "Please paste your course description here which can be found in the online catalogue under Primary Resources."
+    department_mission_statement = "Please paste your departmental mission statement here which can be found in the online catalogue under Primary Resources."
     course_instructors = []
     course_textbooks = []
     zoom_link = None
@@ -83,6 +84,13 @@ def generate_syllabus_markdown(schedule_data, semester, year, course_id=None, in
                 course_textbooks = course.textbooks
             if course.zoom_link:
                 zoom_link = course.zoom_link
+        
+        # Get department mission statement
+        if course_id and ' ' in course_id:
+            dept_code = course_id.split()[0]
+            department = loader.load_department(dept_code)
+            if department and department.mission_statement:
+                department_mission_statement = department.mission_statement
     
     # Format schedule as markdown table
     schedule_table = format_schedule_as_markdown(schedule_data)
@@ -95,6 +103,7 @@ def generate_syllabus_markdown(schedule_data, semester, year, course_id=None, in
         'YEAR': str(year),
         'INSTRUCTOR_NAME': instructor_name,
         'COURSE_DESCRIPTION': course_description,
+        'DEPARTMENT_MISSION_STATEMENT': department_mission_statement,
         'SCHEDULE_TABLE': schedule_table,
         'TEXTBOOKS': kwargs.get('textbooks', '; '.join(course_textbooks) if course_textbooks else 'Please list textbook information here.'),
         'ASSIGNMENTS': kwargs.get('assignments', 'Please list assignments here providing clear explanations regarding the nature, length, grade percentage, and due dates for each major assignment.'),

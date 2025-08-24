@@ -1,0 +1,103 @@
+[
+  {
+    "department": "DAN",
+    "number": "DAN111A",
+    "name": "Dance and Movement",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "0"
+  },
+  {
+    "department": "DAN",
+    "number": "DAN160A",
+    "name": "Hip Hop Dance",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AE*DN",
+    "availability": "0"
+  },
+  {
+    "department": "DAN",
+    "number": "DAN230A",
+    "name": "Jazz I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "DN*AE",
+    "availability": "2"
+  },
+  {
+    "department": "DAN",
+    "number": "DAN231A",
+    "name": "Jazz II",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "2"
+  },
+  {
+    "department": "DAN",
+    "number": "DAN321A",
+    "name": "Tap I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "04:30PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "2"
+  },
+  {
+    "department": "DAN",
+    "number": "DAN322A",
+    "name": "Tap II",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "4"
+  },
+  {
+    "department": "DAN",
+    "number": "DAN409A",
+    "name": "Ballet V",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "6"
+  },
+  {
+    "department": "DAN",
+    "number": "DAN410A",
+    "name": "Ballet VI",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "5"
+  },
+  {
+    "number": "DAN121A",
+    "name": "Dance Appreciation",
+    "credits": "3.00"
+  }
+]

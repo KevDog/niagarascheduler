@@ -1,0 +1,65 @@
+{
+    "name": "Latin American Studies",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/las/",
+    "courses": [
+        {
+            "number": "100",
+            "title": "\u2014 Introduction to Latin American Studies",
+            "description": "This course will introduce students to the richness of Latin America from their inception to the present, studying the culture and civilization related to contemporary times. Students will have lectures about specific topics from speakers abroad using the LDC* at NU. The course will also study the Chicano Culture in the USA.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Popular Culture in Lat America",
+            "description": "An introduction to Latin American history, geography, economy, and culture from Pre-Columbian times to the 1800s. With an interdisciplinary approach, through video-conference and web technologies, specialized scholars from universities abroad present topics designed to portray Latin America from a Latin American point of view. This course is taught in English.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 Latin American Art",
+            "description": "Students will be given the unique experience of creating an exhibition of works by Latin American artists in the Castellani's collection from the initial selection process through the various components of publicizing the show, thus introducing the full behind the scenes activities of museum work. The rich stylistic history of the 20th century Latin American art will be introduced week by week as students delve deeper into researching the artwork and museum procedures to display and explain it. This course is taught in English.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "205",
+            "title": "\u2014 Afro-Latino Culture",
+            "description": "This course provides a survey of major cultural issues in Latin America and the Caribbean. It aims to familiarize students with contributions and interactions of African-descended populations with the language, people, and customs of South America and the Caribbean.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "300",
+            "title": "\u2014 Topics:",
+            "description": "Students will examine a range of political, economic, cultural, and literary topics with experts in Latin American Studies. The specific topic will be determined on a semester-to-semester basis, based upon the availability and expertise of faculty.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "426",
+            "title": "\u2014 Teaching Assistantship",
+            "description": "Prerequisite Take LAS*100 and LAS*200 A student having a declared minor in Latin American Studies, and having attained advanced proficiency in Spanish, will lead weekly discussion sessions or other class activities in LAS 100, LAS 200, or LAS 300 under the direct supervision of the course professor. With a pedagogical supervisor, the student will examine various learning strategies while preparing a cumulative teaching portfolio.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "495",
+            "title": "\u2014 Hispanics United of Buffalo, Inc",
+            "description": "A junior or senior work-study program providing employment experience. Registration will occur at the beginning of the experience. The objective of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning and providing the student with a realistic exposure to career opportunities. Students interested in taking a co-op or internship should talk to their adviser.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "name": "History",
+    "mission_statement": "History program equips students with the tools of historical thinking, which they can then apply to a broad range of career fields through the department\u2019s extensive internship program.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/his/",
+    "courses": [
+        {
+            "number": "100",
+            "title": "\u2014 The Historian's Craft",
+            "description": "Thinking, reading, research, and writing like a Historian requires a unique set of skills adaptable to academic history and a variety of careers and professions. Open to first-year students and transfers, this course teaches the technical skills necessary to become a Historian.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "103",
+            "title": "\u2014 America to 1876",
+            "description": "This course seeks to introduce students to American history from the age of discovery until the end of Reconstruction. Basic methods of historical study and central themes such as Americas multicultural origins, society and politics, equality and freedom, and sectional differences will be covered.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "104",
+            "title": "\u2014 America Since 1877",
+            "description": "This course seeks to introduce students to American history from the end of Reconstruction until today. Basic methods of historical study and central themes such as immigration, civil rights, war and social change, and political transformations will be discussed.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "105",
+            "title": "\u2014 Introduction to Africana Studies",
+            "description": "Introductory historical, methodological, and interdisciplinary approach to the dispersal of African people, culture, and identity in the Americas, Europe and Asia from antiquity to the present with an emphasis on culture, policy and contemporary issues. This course acquaints students with the nature of Africana Studies as a field of intellectual inquiry.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "107",
+            "title": "\u2014 World History to 1200",
+            "description": "This course provides a survey of major historical developments in world history from prehistory to 1500. It aims to familiarize students with the interaction and development of civilizations on a global scale through an examination of cultural exchanges and conflict, technological developments, the impact of environmental change, geography, and global commerce.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "108",
+            "title": "\u2014 The Modern World",
+            "description": "In this course, students will explore major themes in world history from the sixteenth century to the present. Topics include imperialism and changing models of political organization, the rise of national- ism, international trade routes and globalization, and the role that new technology plays in historical events.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "110",
+            "title": "\u2014 Modern US History*",
+            "description": "Thematic courses in contemporary U.S. history allow students to scrutinize documents and diverse historical viewpoints in order to build compelling arguments based on evidence in context as we seek to understand the forces that affect U.S. lives today. Themes may include social, cultural, environmental, political, urban, local, and presidential histories. Formerly HIS 199 *Themes are posted in each semester's section details.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Intro Research",
+            "description": "This course focuses on doing research in the discipline of history. Research theory, research technique, and evaluation of sources are stressed. Students work in all of the following areas: topic selection, source location, source evaluation, structural integrity of a report, elements of style, technology, and appropriate use and citation of sources. Required of all history and social studies majors usually during their sophomore year.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 Hitler & Third Reich",
+            "description": "Study of the developments which led to Nazi dictatorship. Topics discussed will include Germany's intellectual background, the role of Adolph Hitler, and the political, social, and economic factors which caused the rise and fall of the Third Reich.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "204",
+            "title": "\u2014 Intro to Public History",
+            "description": "This course acquaints students with the roles that museums, museum workers, and public historians play in the United States, both in the past and present times. Students participate as interns at public history sites in the community, and have a chance to create a public history project.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

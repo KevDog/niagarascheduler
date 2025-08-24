@@ -1,0 +1,41 @@
+{
+    "name": "Chinese",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/chi/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Elem Mandarin Chin",
+            "description": "Basic course in Chinese emphasizing skills in oral and written communication with an introduction to the culture and civilization of China. Open to students with no previous study of Chinese or with the permission of the chairperson of the department of foreign languages.CHI 102 \u2014 Elem Mandarin Chinese 2  Prerequisite TAKE CHI*101 This course continues to develop oral and written skills that were introduced in Chinese 101, with a special emphasis on the ability to read and write Chinese characters. Presentations of Chinese culture and customs are also a content focus of this course.CHI 200 \u2014 Chinese Popular Culture  A general introduction to China's distinct cultural identity, as represented in its poetry, prose fiction, cinema, arts, and folklore. This course will also compare important cultural differences between the United States and China in the domains of business etiquette and social conventions. This course is conducted in English, and is open to all students, regardless of their background in Chinese language. This course cannot be used to satisfy a foreign language requirement for non-majors.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101",
+            "title": "\u2014 Elem Mandarin Chin",
+            "description": "Basic course in Chinese emphasizing skills in oral and written communication with an introduction to the culture and civilization of China. Open to students with no previous study of Chinese or with the permission of the chairperson of the department of foreign languages.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Elem Mandarin Chinese 2",
+            "description": "Prerequisite TAKE CHI*101 This course continues to develop oral and written skills that were introduced in Chinese 101, with a special emphasis on the ability to read and write Chinese characters. Presentations of Chinese culture and customs are also a content focus of this course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Chinese Popular Culture",
+            "description": "A general introduction to China's distinct cultural identity, as represented in its poetry, prose fiction, cinema, arts, and folklore. This course will also compare important cultural differences between the United States and China in the domains of business etiquette and social conventions. This course is conducted in English, and is open to all students, regardless of their background in Chinese language. This course cannot be used to satisfy a foreign language requirement for non-majors.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

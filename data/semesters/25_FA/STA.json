@@ -1,0 +1,14 @@
+[
+  {
+    "department": "STA",
+    "number": "STA301A",
+    "name": "Linear Models",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "09:00AM",
+    "end_time": "09:55AM",
+    "delivery_type": "LEC",
+    "designation": "AS*MAT*QR*LA",
+    "availability": "4"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "department": "REL",
+    "number": "REL101A",
+    "name": "The Search for God",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "10:05AM",
+    "end_time": "11:00AM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL101B",
+    "name": "The Search for God",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL101C",
+    "name": "The Search for God",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "12:15PM",
+    "end_time": "01:10PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL101HON",
+    "name": "HON: The Search for God",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "09:00AM",
+    "end_time": "09:55AM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "6"
+  },
+  {
+    "department": "REL",
+    "number": "REL103A",
+    "name": "Intro Christianity",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL103B",
+    "name": "Intro Christianity",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "10:05AM",
+    "end_time": "11:00AM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL103C",
+    "name": "Intro Christianity",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL103D",
+    "name": "Intro Christianity",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL103E",
+    "name": "Intro Christianity",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL103F",
+    "name": "Intro Christianity",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "1"
+  },
+  {
+    "department": "REL",
+    "number": "REL103G",
+    "name": "Intro Christianity",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "06:00PM",
+    "end_time": "08:45PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "16"
+  },
+  {
+    "department": "REL",
+    "number": "REL219A",
+    "name": "Intro Christian Scripture",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "H*LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL219B",
+    "name": "Intro Christian Scripture",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "H*LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL317A",
+    "name": "Christian Ministry",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "06:00PM",
+    "end_time": "08:45PM",
+    "delivery_type": "LEC",
+    "designation": "H*LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL343A",
+    "name": "Women Church Society",
+    "credits": "3.00",
+    "days": "T",
+    "start_time": "06:00PM",
+    "end_time": "08:45PM",
+    "delivery_type": "LEC",
+    "designation": "H*LA",
+    "availability": "1"
+  },
+  {
+    "department": "REL",
+    "number": "REL388A",
+    "name": "Moments Christian History",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "H*LA",
+    "availability": "11"
+  },
+  {
+    "department": "REL",
+    "number": "REL399A",
+    "name": "Religion & Politics in America",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL399B",
+    "name": "Topic: Religion & Atheism",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "12:15PM",
+    "end_time": "01:10PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "1"
+  },
+  {
+    "department": "REL",
+    "number": "REL399C",
+    "name": "Topic: Religion & Death",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "01:30PM",
+    "end_time": "02:25PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "REL",
+    "number": "REL399HON",
+    "name": "HON: Religion & Atheism",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "01:30PM",
+    "end_time": "02:25PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "17"
+  },
+  {
+    "number": "REL101D",
+    "name": "The Search for God",
+    "credits": "3.00"
+  },
+  {
+    "number": "REL250A",
+    "name": "Comparative Religion",
+    "credits": "3.00"
+  },
+  {
+    "number": "REL309A",
+    "name": "Hinduism & Buddhism",
+    "credits": "3.00"
+  },
+  {
+    "number": "REL309B",
+    "name": "Hinduism & Buddhism",
+    "credits": "3.00"
+  },
+  {
+    "number": "REL358A",
+    "name": "Morality And Medicine",
+    "credits": "3.00"
+  },
+  {
+    "number": "REL358B",
+    "name": "Morality And Medicine",
+    "credits": "3.00"
+  }
+]

@@ -1,0 +1,89 @@
+{
+    "name": "Dance",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/dan/",
+    "courses": [
+        {
+            "number": "111",
+            "title": "\u2014 Dance and Movement",
+            "description": "This course studies the exploration and development of movement, gestures and dance forms common to a basic understanding of dance with emphasis on alignment and basic loco motor patterns. It includes an introduction to improvisation, basic ballroom and tap dance.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "112",
+            "title": "\u2014 Dance & Movement II",
+            "description": "Prerequisite DAN*111 This course continues studying the exploration and development of movement, gestures and dance forms common to a basic understanding of dance with emphasis on alignment and basic loco-motor patterns with a focus on pedagogy. ?is course is a continuation of THR 111.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "114",
+            "title": "\u2014 Ballet II",
+            "description": "Prerequisite Take 1 group; #; Take DAN*113; #; Take THR*113 This course is designed for the dancer with previous ballet training. The class will reinforce the fundamental vocabulary and technique of ballet. It will include body alignment, weight placement, transfer of weight and coordination. Prerequisites may be waived with prior dance experience.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "121",
+            "title": "\u2014 Dance Appreciation",
+            "description": "Dance Appreciation is an exploration of the roots and trends of the art of dance from the primitive to the contemporary. It serves as an introduction of esthetic guidelines for looking at dance as it relates to America and the world.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "150",
+            "title": "\u2014 Irish Dance 1",
+            "description": "This class is geared to the student with little or no previous experience. It provides a historical and physical introduction to Irish dance while exploring and experiencing its unique phyicality as students learn the fundamental steps. The historical background and significance will be simultaneously taught throughout the class.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "160",
+            "title": "\u2014 Hip Hop Dance",
+            "description": "This course will explore hip hop dance as a culturally significant and diverse form. Students will engage with intermediate technique within hip hop social party dances as well as other forms including break dancing and house dancing.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "211",
+            "title": "\u2014 Ballet III",
+            "description": "Prerequisite Take 1 group; #; Take DAN*113; #; Take THR*113 This course is designed as a continuation of DAN/THR 113 for the less experienced ballet student. Class will focus on basic transfer of weight at barre and center; increase of strength and flexibility and coordination of upper and lower body.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "212",
+            "title": "\u2014 Ballet IV",
+            "description": "Prerequisite Take 1 group; #; Take DAN*114; #; Take THR*114 This course is a continuation of DAN/THR 114. It is designed to teach the intermediate level of ballet which includes turning, petite allegro, grand allegro and adagio work. This course is designed to aid in the skills necessary to perform in auditions.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "224",
+            "title": "\u2014 Indep. Study",
+            "description": "Under the supervision of a faculty member, the student selects a major independent dance project he or she wishes to develop and complete.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "231",
+            "title": "\u2014 Jazz Dance II",
+            "description": "Prerequisite Take 1 group; # Take DAN*230; #; Take THR*230 The art of jazz dance is studied with an emphasis on proper technique, alignment and style to expand the dynamic sensitivity of the body's ability to communicate through movement. Jazz styles are studied chronologically according to performance trends utilizing complex steps and combinations. Prerequisite may be waived with prior dance experience.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

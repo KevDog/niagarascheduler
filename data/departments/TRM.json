@@ -1,0 +1,89 @@
+{
+    "name": "Tourism/Recreation Management",
+    "mission_statement": "The tourism and event management program at Niagara University prepares students for management careers in the global hospitality industry at premier resorts, hotels, clubs, and food service establishments. The curriculum emphasizes globalization, leadership, and technological advances in hotels and restaurants.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/trm/",
+    "courses": [
+        {
+            "number": "258",
+            "title": "\u2014 Contemp Leisure & Rec",
+            "description": "The course provides a diversified, contemporary picture of the role of leisure and recreation in American culture. Students will be introduced to leisure as: 1) an individual, personal experience, seen from a psychological and philosophical vantage point; 2) leisure as a social system, using sociological methods of analysis; and 3) leisure as an operational function of providing recreational facilities and programs. Topics will include the theoretical background of recreation behavior, the determinants of recreation behavior, an overview of recreation pursuits and settings, and a survey of the occupational opportunities in the field.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "290",
+            "title": "\u2014 Tourism and Transportation Oper",
+            "description": "An introduction of group travel to the student of hospitality and travel/tourism. Basic concepts of the nature of group travel and group travel motivators are explained. The course then focuses in on the tour industry, its fundamentals, how it serves various groups, and tour operations. Fundamentals of group travel marketing, operations, financial control, automation, and small business management are introduced and explored. Group travel and tour industry systems as a part of the greater travel/tourism industry are central to the delivery of information in this course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "315",
+            "title": "\u2014 Website Design",
+            "description": "This course will provide hands-on experiences on the latest website design technologies and theories as applied to the hospitality/tourism industry. Various website-authoring programs will be introduced and explored. It will also introduce students to the latest Website Optimization techniques to maximize for search engine rankings. Case studies are to be utilized to illustrate principles of website design and optimization.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "340",
+            "title": "\u2014 Special Interest Mkg",
+            "description": "Increasingly, travel and tourism can be understood as a multifaceted activity made up of numerous industries and events. Numerous distinct activities have recently been recognized as promising vehicles for economic development for many communities across the country and around the world. They include cultural tourism, heritage tourism, adventure tourism, ecotourism, casino gaming, outdoor recreation, sports tourism, adventure tourism, shopping, and live entertainment ventures. This course will help to define and better understand each of these emerging niche tourism products. Students will learn how to inventory a destination's resources and attractions and creatively incorporate them into a comprehensive tourism promotion strategy. Students will learn how to best identify and interpret particular advantages and how to reach target markets.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "360",
+            "title": "\u2014 Tour Info Technology",
+            "description": "A comprehensive introduction to various aspects of tourism information technology, including hardware, software, and management. The course will emphasize the global and technological integration of the tourism technologies. Students are expected to submit a major course project that demonstrates mastery of principles and solutions presented in the course using information retrieval and/or database software programs.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "370",
+            "title": "\u2014 Attractions & Events",
+            "description": "This course emphasizes the planning, operational, and financial management aspect of directing all functions of managing a successful supply side attraction. The course underscores that attractions and events need to be developed and managed entities. Students will be introduced to principles of entrepreneurship, design considerations, visitor control and guest services, resource interpretation, and marketing and promotion. Special emphasis will also be placed on public/private event planning partnerships between the public, nonprofit, and business sectors.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "380",
+            "title": "\u2014 Int Tourism & Rec Geog",
+            "description": "An introduction to world tourism destinations and markets, including an exploration of physical, cultural, and geopolitical influences on the travel and tourism industry. International travel and world geography are linked in a fundamental way. By definition, geography focuses on space and places special emphasis on the location of destinations, characteristics of tourist markets, and the transportation infrastructure and hospitality superstructure found in major destinations. The course also introduces students to a social analysis of host/guest relationships, and provides an opportunity to discuss the critical role tourism plays in international economics and politics.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "390",
+            "title": "\u2014 Production & Design: Events",
+            "description": "The course provides an overview of the meeting and convention industry and the various aspects and skills involved in planning and managing meetings and conventions. Special emphasis is placed on types of meetings, meeting markets, industry suppliers, budget and program planning, site selection and contract negotiations, registration and housing, food and beverage requirements, room set-up, and audiovisual requirements. Must have a junior standing.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "399",
+            "title": "\u2014 Plan & Dev of Tour Ventures",
+            "description": "Tourism is a large and complex system of activities and industries. It has wide-ranging and deep positive and negative effects on people, economies, and the environment. The tourism industry is using planning to guide tourism to meet the public's consumer needs, coordinate programs, and encourage tourism's economic benefits while minimizing social and environmental problems. This course presents planning concepts and practices applied to tourism. We study the nature of the tourism system and the social, economic, and environmental impacts of tourism. Students will explore the planning process and its application to the tourism industry.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "441",
+            "title": "\u2014 Topic:",
+            "description": "A course designed to address and solve a problem pertinent to the field of tourism and/or recreation. Group participation is stressed to define and investigate current issues.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

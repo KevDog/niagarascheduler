@@ -1,0 +1,89 @@
+{
+    "name": "Finance",
+    "mission_statement": "Our undergraduate Finance program is meticulously designed to equip you with a comprehensive understanding of the financial principles essential for success in the global economy. We blend theory with hands-on application, allowing you to delve deeply into financial markets, investment strategies, corporate finance, and analysis.\n\nBe assured that our faculty consists of seasoned professionals and scholars with extensive industry experience and academic expertise. You\u2019ll receive personalized instruction with small class sizes and meaningful engagement with faculty. In addition, you\u2019ll have the advantage of on-campus labs to provide you with essential financial data resources.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/fin/",
+    "courses": [
+        {
+            "number": "151",
+            "title": "\u2014 Personal Finance",
+            "description": "A course designed for nonbusiness majors. The course material serves as a guide to personal financial planning; a practical approach to managing money. An overview of basic accounting, borrowing money, budgeting, investing in securities, buying real estate and estate planning are among the major topics to be considered.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "314",
+            "title": "\u2014 Topic:",
+            "description": "Prerequisite Must have taken MGT*160; Case studies or directed investigations focused on current problems and topics that are increasingly of concern to modern businesses. The topics covered may be current issues in Finance and/or involve new and emerging areas of study.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "320",
+            "title": "\u2014 Corporate Finance I",
+            "description": "Prerequisite Take ACC 111 and ECO 102 This is an introductory course in corporate finance for both non-majors and majors preparing for upper-level course work. This course will provide an introduction to capital budgeting techniques. The main topics include: financial statement analysis, the time value of money, pricing bonds and stocks, capital asset pricing model, cost of capital, and capital budgeting.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "340",
+            "title": "\u2014 Corporate Finance II",
+            "description": "Prerequisite Take FIN 320 The course reviews the theories and empirical evidence related to corporate financing decisions. The issues we consider will be directly applicable for those planning to work in commercial and investment banking, corporate financial management, as well as more general business careers that have a substantial finance component. The topics include: capital structure, working capital management, dividend policy, security issues, mergers and acquisitions, and risk management.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "350",
+            "title": "\u2014 Fundamentals of Investments",
+            "description": "Prerequisite Take FIN 320 This course develops an understanding of the main categories of asset classes and financial instruments, including money, bond, equity, options, and futures markets. After building a foundation of portfolio theory, valuation techniques are applied to these instruments. Students use investment simulation software and security research databases to develop a deeper understanding of real time investment management applications.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "360",
+            "title": "\u2014 International Financial Management",
+            "description": "Prerequisite Take FIN*320 This course looks into the financial concerns of a multinational corporation. Topics include international financial markets and instruments, exchange rate determination, currency derivatives, and types of foreign exchange risk exposure and hedging strategies.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "403",
+            "title": "\u2014 Finance Honors Thesis I",
+            "description": "Individual research of a substantive nature pursued in the student's major field of study. The research will conclude in a written thesis or an original project, and an oral defense.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "404",
+            "title": "\u2014 Finance Honors Thesis II",
+            "description": "Individual research of a substantive nature pursued in the student's major field of study. The research will conclude in a written thesis or an original project, and an oral defense.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "410",
+            "title": "\u2014 Financial Derivatives",
+            "description": "Prerequisite Take FIN*320 Mat*107 The course is an introduction to the analysis and use of derivative securities, such as options, futures, forwards, and swaps. Topics covered will include arbitrage, Binomial and Black Scholes pricing models, hedging, swaps, and the increasingly critical role of derivatives in the financial system. The class will emphasize financial model building and simulation using real time market data.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "450",
+            "title": "\u2014 Monteagle Fund Investments",
+            "description": "Prerequisite Student must have taken FIN 350 This course blends theoretical concepts of financial analysis and portfolio management with practical experience in running the Monteagle Fund, Niagara University's student run investment fund. Students will work together in groups to draft an appropriate investment strategy, select investments, evaluate performance, and report results to shareholders. Students will research financial and economic indicators, such as stock indices, interest rates, exchange rates, and corporate earnings releases, and evaluate the potential impact on portfolio holdings. Finance students only or permission of instructor.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

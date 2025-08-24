@@ -1,0 +1,25 @@
+{
+    "name": "Critical Literacy",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/crl/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Critical Literacy Prerequisite for WRT",
+            "description": "This course integrates reading and writing instruction to engage students in the rigors of college work and includes ten recitation hours in addition to regular class times. Strategic instruction and guided practice strengthen students' reading skills and provide practice in writing college essays. Through an exploration of knowledge and learning in higher education, students are encouraged to think critically.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101",
+            "title": "\u2014 Critical Literacy Prerequisite for WRT",
+            "description": "This course integrates reading and writing instruction to engage students in the rigors of college work and includes ten recitation hours in addition to regular class times. Strategic instruction and guided practice strengthen students' reading skills and provide practice in writing college essays. Through an exploration of knowledge and learning in higher education, students are encouraged to think critically.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

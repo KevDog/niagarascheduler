@@ -1,0 +1,89 @@
+{
+    "name": "Fine Arts",
+    "mission_statement": "Our Art History with Museum Studies program blends theory with practice through the scholarly study of art, culture, and museums while directly engaging in professional work through our on-campus art museum. It\u2019s a unique opportunity to set yourself apart from students studying in other undergraduate programs.\n\nAs a Niagara University student, you\u2019ll have direct access to our Castellani Art Museum through your academic studies. The CAM will also help you gain professional experience in curatorship, education, collections management, development, and museum administration. Upon graduation, you\u2019ll have pursued an in-depth academic study of art history while earning hands-on experience in museum operations and art exhibitions.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/faa/",
+    "courses": [
+        {
+            "number": "120",
+            "title": "\u2014 Intro to Theatre Design",
+            "description": "This studio course acquaints the student with the language, techniques, and conventions of theatrical set, lighting, and costume design. Weekly assignments will emphasize the development of practical skills.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "150",
+            "title": "\u2014 Sp Topic in Musical Repertoire",
+            "description": "This course provides opportunities for the musician who seeks to improve technique and musicality through the study of repertoire. Students will identify a specific performance goal and develop a plan to achieve it. Students may retake this course up to three additional times for a maximum of four credit hours.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "170",
+            "title": "\u2014 Painting Workshop",
+            "description": "This course is a workshop in painting for beginning students. Lectures, course projects, and individual critiques in the studio classroom are provided by the instructor. Students undertake a variety of thematic and stylistic approaches using acrylic paints. Available for reference are art works in the Castellani Art Museum.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "171",
+            "title": "\u2014 Adv Painting Workshop",
+            "description": "This course is an intermediate workshop for students who have successfully completed FAA 170. Each student pursues one theme, creating a series of acrylic paintings in the studio classroom under the instructor's supervision.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "190",
+            "title": "\u2014 Hand Papermaking",
+            "description": "A studio course in the history of hand papermaking and its use as an art form for beginning and advanced students. Lecture, slides, and examination of handmade papers illustrate and explain the history and methods of paper production. Demonstration and hands-on experience facilitate the exploration of the nature and techniques of making paper by hand. Basic vocabulary and art/design principles are stressed.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 19th C. Art",
+            "description": "This course deals with the complex art scene following the French Revolution of 1789. Styles examined are neo-classicism, romanticism, realism at mid-century, and impressionism at the close. Students learn about major painters and sculptors while developing visual literacy. Videos, slides, lecture-discussion and museum visiting are included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "202",
+            "title": "\u2014 20th Century Art",
+            "description": "This course studies the aesthetic and social revolutions of modern art that began in the 19th century but erupted in Fauvism in 1905 Paris. Cubism, Futurism, Dadaism and Surrealism are examined, as well as the art scene in America up to the 1960's. Videos, slides, lecture-discussion and visits to the Castellani Art Museum are included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "203",
+            "title": "\u2014 Hist of Music",
+            "description": "A survey course designed to develop an appreciation of Western music and its relationship to culture throughout history. Selected works illustrate various musical elements from early beginnings to the present. Some attention is given to the development of vocal, instrumental and electronic music.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "205",
+            "title": "\u2014 America's Music",
+            "description": "A study of music made or used by the people of the Americas and United States, from its Native American and Colonial beginnings to the present. Works studied illustrate how culture is represented in American music's pluralism. Some attention is given to the development of jazz, musical theatre, popular and avant-garde music as American expressions.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "206",
+            "title": "\u2014 Latin American Art",
+            "description": "Students will be given the unique experience of creating an exhibition of works by Latin American artists in the Castellani's collection from the initial selection process through the various components of publicizing the show, thus introducing the full behind the scenes activities of museum work. The rich stylistic history of the 20th century Latin American art will be introduced week by week as students delve deeper into researching the artwork and museum procedures to display and explain it. This course is taught in English.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

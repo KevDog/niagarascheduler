@@ -1,0 +1,49 @@
+{
+    "name": "Earth Science",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/esc/",
+    "courses": [
+        {
+            "number": "172",
+            "title": "\u2014 Earth Science Meteorology",
+            "description": "The constituents and structure of the atmosphere; meteorological elements; weather and climate; air masses; fronts and circulation of the atmosphere; instrumentation and map reading.ESC 174 \u2014 Earth Science: Physical Geology  A study of the origin of the Earth, its structure, how it has changed in history, and the processes that caused the change. This course is intended for non-science majors and no prior knowledge of scientific principles or techniques is presumed of the student. Major topics include: study and classification of rocks and minerals, soil composition and formation, and seismic activity.ESC 175 \u2014 Earth Science: Solar System  This is a one semester course directed toward non-science majors to fulfill a science credit. The course will primarily deal with motion of celestial objects and the solar system.ESC 176 \u2014 Earth Science: Stellar Astronomy  A description of stars in the universe for both science and liberal arts majors. Stellar distance, motion, mass, size, magnitude, temperature and classification of stars, binary stars. Stellar evolution and earth, original and evolution of the universe, cosmology.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "172",
+            "title": "\u2014 Earth Science Meteorology",
+            "description": "The constituents and structure of the atmosphere; meteorological elements; weather and climate; air masses; fronts and circulation of the atmosphere; instrumentation and map reading.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "174",
+            "title": "\u2014 Earth Science: Physical Geology",
+            "description": "A study of the origin of the Earth, its structure, how it has changed in history, and the processes that caused the change. This course is intended for non-science majors and no prior knowledge of scientific principles or techniques is presumed of the student. Major topics include: study and classification of rocks and minerals, soil composition and formation, and seismic activity.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "175",
+            "title": "\u2014 Earth Science: Solar System",
+            "description": "This is a one semester course directed toward non-science majors to fulfill a science credit. The course will primarily deal with motion of celestial objects and the solar system.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "176",
+            "title": "\u2014 Earth Science: Stellar Astronomy",
+            "description": "A description of stars in the universe for both science and liberal arts majors. Stellar distance, motion, mass, size, magnitude, temperature and classification of stars, binary stars. Stellar evolution and earth, original and evolution of the universe, cosmology.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

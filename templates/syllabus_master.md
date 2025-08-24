@@ -12,7 +12,7 @@ date: "{{SEMESTER}} {{YEAR}}"
 
 ## Department Mission Statement
 
-Please paste your departmental mission statement here which can be found in the online catalogue under Primary Resources.
+{{DEPARTMENT_MISSION_STATEMENT}}
 
 ## Course Description
 

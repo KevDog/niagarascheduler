@@ -1,0 +1,89 @@
+{
+    "name": "Economics",
+    "mission_statement": "Are you ready to understand the behaviors of individuals and groups through commerce? Our Economics programs will provide you with a comprehensive understanding of the concepts, theories, and analytics tools that determine how markets function.\n\nAs a Niagara University student, you\u2019ll develop crucial skills like critical thinking, quantitative and qualitative data analysis, economic modeling and forecasting, policy analysis and evaluation, and a deep understanding of global economic issues.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/eco/",
+    "courses": [
+        {
+            "number": "100",
+            "title": "\u2014 Intro to Economics",
+            "description": "For non-college of business majors A course of study introducing students to the foundations of western economics, examining the basic framework of micro and macro economics and applying economics to current issues facing individuals and society.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Principles of Microeconomics",
+            "description": "A study of consumer and producer behavior in the determination of prices and output, wages and productivity, profit and market structure.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "103",
+            "title": "\u2014 Principles of Macroeconomics",
+            "description": "Prerequisite Take ECO*102 A study of the behavior of economic aggregates including national income, consumption, investment, foreign trade, the demand for and supply of money and government policy efforts to influence these aggregates to meet national goals.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "231",
+            "title": "\u2014 Business Analytics",
+            "description": "Prerequisite Take MAT*102 This course introduces the student to those statistical models and methods that are used in a business environment to assist in making effective decisions. It includes, but is not limited to, descriptive statistics, regression analysis, supervised data mining techniques such as decision trees and unsupervised data mining techniques such as cluster analysis.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "305",
+            "title": "\u2014 Intermediate Microeconomics",
+            "description": "Prerequisite Take ECO*102 and ECO*103 Economics is a social science studying society's choice of how to use scare resources to produce goods and services in order to maximize the attainment of economic wants. Microeconomics focuses on the analysis of specific economic units such as the consumer, firm, or industry. Upon completion of this course the student will have an understanding of both consumer and firm behavior as well as the basic models of industry market structure. In ECO 102, these concepts were introduced in a non-technical manner. The purpose of this course is to expand and build upon the fundamental microeconomic concepts covered in ECO 102. These intermediate economic concepts will be applied to a wide range of private decision making and public policy issues. While many of the underlying ideas presented in the course should be familiar to students, the intermediate treatment will be more formal and mathematically rigorous than in principles of economics courses.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "306",
+            "title": "\u2014 Intermediate Macroeconomics",
+            "description": "Prerequisite Take ECO*102 and ECO*103 A study of classical, Keynesian and monetarist models as these pertain to aggregate behavior in the achievement of society's economic goals.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "310",
+            "title": "\u2014 Law and Economics",
+            "description": "Prerequisite Take ECO*102 This course introduces students to the fundamentals of law and economics, focusing on the common law areas of torts, contracts, property and criminal law. Economic concepts are used to assess which legal rules are economically efficient, and to predict which legal concepts will be effective and which will not.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "314",
+            "title": "\u2014 Topic:",
+            "description": "Prerequisite Must have taken MGT*160; Case studies or directed investigations focused on current problems and topics that are increasingly of concern to modern businesses. The topics covered may be current issues in Economics and/or involve new and emerging areas of study.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "320",
+            "title": "\u2014 International Economics",
+            "description": "Prerequisite Take ECO*102 and ECO*103 This course aims to familiarize students with two key topics of international economics: the economics of international trade relations and the economics of monetary international relations. In analyzing international trade relations, we will study comparative advantage among nations, tariff and nontariff barriers to trade, multinational enterprises, developing countries, and regional trading arrangements such as NAFTA and the European Union. Our study of international monetary relations will include the balance of payments, foreign exchange, exchange-rate determination, alternative exchange-rate systems, international reserves, and international debt problems. By the end of this course, each student should have a solid economic basis for understanding and evaluating international economic policy issues discussed in economic publications such as The Economist and the Wall Street Journal.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "330",
+            "title": "\u2014 Economics of the Public Sector",
+            "description": "Prerequisite Take ECO*102 Allocation, distribution, and stabilization aspects of government budget policy, including critical analysis of theories and principles of taxation, expenditures, and intergovernmental fiscal relations.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

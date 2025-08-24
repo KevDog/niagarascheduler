@@ -157,8 +157,8 @@ class CourseScraperCLI:
     
     def save_semester_departments(self, departments, output_dir, semester):
         """Save Department objects to JSON files using object serialization"""
-        # Create semester-specific directory
-        semester_dir = os.path.join(output_dir, semester.replace('/', '_'))
+        # Create semester-specific directory under semesters/
+        semester_dir = os.path.join(output_dir, 'semesters', semester.replace('/', '_'))
         os.makedirs(semester_dir, exist_ok=True)
         
         for dept_code, department in departments.items():
@@ -199,7 +199,7 @@ class CourseScraperCLI:
             # Save using object serialization
             self.save_semester_departments(departments, output_dir, semester)
             
-            semester_dir = os.path.join(output_dir, semester.replace('/', '_'))
+            semester_dir = os.path.join(output_dir, 'semesters', semester.replace('/', '_'))
             print(f"Successfully scraped {len(all_courses)} total courses")
             print(f"Created {len(offerings)} course offerings")
             print(f"Organized into {len(departments)} departments")

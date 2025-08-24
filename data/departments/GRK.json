@@ -1,0 +1,25 @@
+{
+    "name": "Greek",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/grk/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Elementary Classical Greek",
+            "description": "An introduction to Ancient Greek, using reading as a pathway to understanding the forms, grammar, and structure of the language. Along with acquiring basic reading skills in Greek, students will study the culture and civilization of the 5th century Greek world, and its influence on the English language.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101",
+            "title": "\u2014 Elementary Classical Greek",
+            "description": "An introduction to Ancient Greek, using reading as a pathway to understanding the forms, grammar, and structure of the language. Along with acquiring basic reading skills in Greek, students will study the culture and civilization of the 5th century Greek world, and its influence on the English language.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

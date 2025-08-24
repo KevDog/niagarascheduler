@@ -1,0 +1,81 @@
+{
+    "name": "Physics",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/phy/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Survey of Physics",
+            "description": "An introduction to the fundamental concepts of physics including historical developments and the basic laws and principles of physics as derived from both macroscopic and microscopic phenomena.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Survey of Physics",
+            "description": "An introduction to the fundamental concepts of physics including historical developments and the basic laws and principles of physics as derived from both macroscopic and microscopic phenomena.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "108",
+            "title": "\u2014 CSI NU: Physical Forensics",
+            "description": "This course is an introduction to the principles of physics in the context of forensic science, the application of science to law. Application of logic and probability to analyze forensic evidence will also be discussed.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "121",
+            "title": "\u2014 General Physics",
+            "description": "This is the first half of the two-semester algebra-based physics course sequence dealing primarily with classical newtonian physics. The main themes of this course are motion, vectors, forces, energy and momentum conservation, and rotational motion.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "122",
+            "title": "\u2014 General Physics",
+            "description": "This is the second half of the two-semester algebra-based physics course dealing primarily with electricity and magnetism. The main themes of this course are electrostatics, circuits, electrodynamics, and modern physics.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "123L",
+            "title": "\u2014 General Physics",
+            "description": "This is the lab for the first half of the two-semester introductory physics lab sequence dealing primarily with classical newtonian physics. The main themes of this lab are motion (1D, 2D, and rotational), vectors, forces, and energy and momentum conservation.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "124L",
+            "title": "\u2014 General Physics",
+            "description": "This is the lab for the second half of the two-semester introductory physics lab sequence dealing primarily with electrical circuits, but also with some other topics to coincide with the PHY 122 course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "323",
+            "title": "\u2014 Modern Physics I",
+            "description": "Prerequisite Must have taken PHY*121, PHY*122, PHY*123L, PHY*124L, In this introduction to quantum mechanics, we review the inadequacy of classical physics and the need for a probabilistic description of nature. Schrodinger's equation will be solved and statistical thermodynamics will be introduced. Time permitting this course will touch on electron spin and Feynman's sum over histories approach.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "399",
+            "title": "\u2014 Topics:",
+            "description": "Prerequisite take phy*121 This special topics course will be an introduction to various applications of physics. For example, topics may include aspects of modern physics, the concepts of the Hamiltonian and Lagrangian, and the thermodynamics of gases and aerosols.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

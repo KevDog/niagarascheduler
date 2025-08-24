@@ -1,0 +1,89 @@
+{
+    "name": "Chemistry",
+    "mission_statement": "The B.S. in Chemistry major is certified by the American Chemical Society (ACS) to provide foundational training in all areas of chemistry. Many B.S. chemistry students continue into research-oriented careers and/or further graduate studies in chemistry, forensics, materials science, environmental science, or medicine.\n\nThe B.S. in Biochemistry major emphasizes additional study in biology and the chemistry of biological organisms. This major is particularly popular among pre-health students pursuing careers in medicine, dentistry, pharmacy, and allied fields.\n\nThe B.A. in Chemistry major offers a high level of flexibility in the choice of upper-level courses. This major is popular with students who wish to apply their interest in chemistry to careers in business, law, or public policy. Students may choose courses to fulfill a 4+1 B.A. in chemistry/M.B.A in business. Additionally, through the NU College of Education, our department supports programs that provide specialized chemistry training for educators teaching students across various age levels.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/che/",
+    "courses": [
+        {
+            "number": "100",
+            "title": "\u2014 Chemistry Allied Health Prof",
+            "description": "An examination of chemistry through the substances that impact our lives. This course is intended for anyone seeking to become a better informed citizen of our technological society. This course is reserved for students who have no prior college-level chemistry experience.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101",
+            "title": "\u2014 Introductory Chemistry",
+            "description": "Prerequisite Take CHE*103L A beginning course in chemistry designed to present fundamental principles of chemical theory in the context of inorganic and some organic chemistry. This course is reserved for students who have no prior college-level chemistry experience.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "103L",
+            "title": "\u2014 Intro Chem Lab",
+            "description": "Prerequisite Take CHE*101 A laboratory course to be taken concurrently with CHE 101.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "105",
+            "title": "\u2014 Chemistry and Society I: Public Affairs",
+            "description": "A qualitative, non-laboratory course to relate students to their chemical environment. Classes will include discussions on present problems involving air and water pollution, energy, nuclear material and waste disposal. This course is reserved for students who have no prior college-level chemistry experience.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "106",
+            "title": "\u2014 Chemistry and Society II: Chemistry for",
+            "description": "A qualitative, non-laboratory course that will present many popular consumer items in a chemical context. Topics will include polymers, fibers, detergents, agricultural chemicals, food, food additives and over-the-counter medication. This course is reserved for students who have no prior college-level chemistry experience.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "107",
+            "title": "\u2014 Food Chemistry for Nonscientists",
+            "description": "This course introduces the non-science major to chemical and scientific concepts through a study of foods and food-related processes. No previous scientific training is expected. The student should also gain from the course a greater appreciation of why things are done in certain ways, while learning that some practices have absolutely no scientific basis. This course is reserved for students who have no prior college-level chemistry experience.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "108",
+            "title": "\u2014 Forensic Science",
+            "description": "A presentation of scientific and chemical principles in the context of forensic science, the application of science to law. This course is reserved for students who have no prior college-level chemistry experience.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "110",
+            "title": "\u2014 World of Chemistry",
+            "description": "The world around us, including our own bodies, is really just a bunch of chemicals. We use them everyday without realizing it. This course will look at some of the more common uses of chemistry in our everyday lives, including food, vitamins, weight control, drugs, crime, etc.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "111",
+            "title": "\u2014 General Chemistry I",
+            "description": "Prerequisite Take CHE*113L An introduction to physical and chemical principles appropriate for declared and potential science majors. Topics include stoichiometry, nuclear and electronic structure, bonding and thermochemistry.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "112",
+            "title": "\u2014 General Chemistry II",
+            "description": "Prerequisite Must have taken CHE*111; This course continues the exposition of chemical principles necessary for further study in the chemical and biological sciences. Topics include kinetics, equilibrium, acids and bases, and electrochemistry as well as a periodic survey of the physical and chemical properties of the elements.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

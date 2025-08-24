@@ -1,0 +1,89 @@
+{
+    "name": "Criminology & Criminal Justice",
+    "mission_statement": "Our Criminology and Criminal Justice program provides a unique educational experience that bridges social scientific theory with current criminal justice policy and practice. This program goes beyond vocational training by blending academic rigor and practical application, preparing you to pursue positions in a wide range of criminal justice-related fields, or enter graduate or law school.\n\nThrough internships, research opportunities, and international experiences, our students gain a comprehensive understanding of criminology and criminal justice systems, positioning them for success in various career paths or advanced studies.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/crj/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Intro to Crim Just",
+            "description": "An overview of the design and functioning of the criminal justice system in the United States. The nature and extent of crime, criminal procedure, the constitutional basis for due process, principles of the criminal law, and the agencies of criminal justice will be examined.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Criminology",
+            "description": "Historical and contemporary perspectives on the causes of crime and deviance in society and the treatment of offenders. Major social, psychological, and economic theories will be assessed. Non-behavioral science perspectives will also be examined.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "104",
+            "title": "\u2014 Law Enforcement",
+            "description": "The history and state-of-the-art in evaluating the police role in the community in attempting to balance peace, order and individual rights. Influential theoretical and empirical studies of police discretion, attitudes, and corruption will be examined. Other topics include: the effect of Supreme Court decisions on police practices, evaluating police performance and policewomen.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "240",
+            "title": "\u2014 American Criminal Courts",
+            "description": "This course focuses on courts in the criminal justice system. It outlines sources of law, different types of law, and the structure of the American court system. This course also examines the influence of major court actors, such as judges, prosecutors, defense counsel, defendants, victims, and juries. Additional topics include pretrial, trial, and appellate processes.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "250",
+            "title": "\u2014 Juvenile Justice",
+            "description": "Examines philosophy and administration of the juvenile justice system. Incorporates social science research and case law to understand the system. Focus devoted to: (1) history of juvenile justice, (2) theoretical explanations of juvenile delinquency, (3) family, school, and cultural influences on juvenile behavior, and (4) interventions for juvenile offenders. Formerly CRJ 103",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "265",
+            "title": "\u2014 Principles Justice",
+            "description": "Examines criminal punishment as a social and political institution. Critically examines prominent philosophical justifications for criminal punishment, their guiding principles, and their implications for contemporary policy. Explores related principles such as equality, rights, proportionality, and moral desert.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "270",
+            "title": "\u2014 Corrections",
+            "description": "Examines the prison within a social, political, and economic context as well as its place within contemporary crime-control debates. Explores the nature of the prison environment, including the prison subculture, violence and its management, correctional officers, and the prospects for reform. Critically evaluates imprisonments impact on prisoners and their post-release adjustment, families, and communities.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "305",
+            "title": "\u2014 Urban Crime",
+            "description": "This class will examine and explain the nature and prevalence of street-level offending in urban communities. The class will look closely at the day-to-day lives of street offenders and examine motivations and cause of street crime. It will closely examine crimes like robbery, street level drug dealing, and various forms of street violence.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "310",
+            "title": "\u2014 Celebrated Cases",
+            "description": "This course will provide an overview of celebrated criminal cases that received significant mass media coverage. These cases influenced public perceptions of crime and raised important justice debates. Their cultural impact on the criminal justice system and procedures will be examined as will significant 20th and 21st Century United States Supreme Court Cases relating to these cases.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "315",
+            "title": "\u2014 Organiz Criminality",
+            "description": "The nature, extent, and impact of illicit behavior on the part of corporations, illicit organizations, government agencies, and employees. The causes, enforcement, prosecution, sentencing, and prevention of organized criminal behavior will be examined. Political, white-collar, organized and corporate crime are assessed.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

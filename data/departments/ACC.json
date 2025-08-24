@@ -1,0 +1,169 @@
+{
+    "name": "Accounting",
+    "mission_statement": "Get a head start on your accounting career by applying for the Distinguished Accounting Scholar Accelerated Degree 3+1 Accounting Program sponsored by Deloitte.\n\nStudents obtain both their Bachelor of Business Administration and their Master of Business Administration degrees in four years rather than the usual five. This program is geared toward incoming students who have completed college-level courses during their high school careers.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/acc/",
+    "courses": [
+        {
+            "number": "111",
+            "title": "\u2014 Financial Accounting",
+            "description": "This is an introductory course which views accounting as a source of information and a tool for effective decision making. The course provides a basic understanding of the concepts of financial accounting and includes analysis and interpretation of financial reports with emphasis on their use by external parties such as stockholders and creditors. Computer/Internet applications included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "112",
+            "title": "\u2014 Management Accounting",
+            "description": "Prerequisite Take ACC 111 This introductory course focuses on accounting information as a tool for effective decision making within an organization. The course provides a basic understanding of the procedures of management accounting as a means of identifying management problems and evaluating potential solutions. It emphasizes a multi-disciplinary approach to the use of management reports by managers inside the business organization. Computer/Internet applications included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "223",
+            "title": "\u2014 Intermediate Acc I",
+            "description": "Prerequisite Must have taken ACC*112 A comprehensive study of the preparation and use of financial reports for business decisions and the role of accounting standards in the international business community. Activities that may be included in the course are ethical issues in business decisions, financial information on the Internet, research papers, group projects, class presentations, and computer spreadsheets.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "224",
+            "title": "\u2014 Intermediate Acc II",
+            "description": "Prerequisite Take ACC 112 A comprehensive study of the preparation and use of financial reports for business decisions and the role of accounting standards in the international business community. Activities that may be included in the course are ethical issues in business decisions, financial information on the Internet, research papers, group projects, class presentations, and computer spreadsheets.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "240",
+            "title": "\u2014 VITA: Personal Tax Preparation",
+            "description": "This is a hands-on tax preparation course and service learning opportunity that allows students to acquire a number of skills including client interaction, problem-solving, team work, critical thinking, and leadership that are considered valuable to entry level accounting professionals. Students will learn tax rules and regulations related to individual income taxes, and how to prepare US individual income tax returns (form 1040, with schedules A,B and CEZ) using TaxWise software. Students will update the Niagara University VITA Handbook of Policies & Procedures for Volunteers to be used in the future. Classroom learning time and VITA service is anticipated to be 70-85 hours over the semester.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "302",
+            "title": "\u2014 Accounting for Managers",
+            "description": "Prerequisite Must have taken ACC 111 and ACC 112 This course covers key financial and managerial accounting concepts such as how accounting system generates accounting information and how accounting information enhances managers' decision-making process. Specifically, the course is focused on developing managers' ability to interpret accounting information, both financial and non- financial, through case studies to aid their decision-making process.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "314",
+            "title": "\u2014 Contemporary Issues in ACC:",
+            "description": "A course involving case studies of current issues in accounting. Topics may include any area relating to accounting such as financial accounting and reporting issues, auditing, fraud, ethical issues, international accounting, government and not-for-profit accounting, legal issues, taxation, management accounting, and strategic accounting.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "335",
+            "title": "\u2014 Cost Management Systems",
+            "description": "Prerequisite Must have taken ACC*112 A study of the design and use of modern cost management systems. Topics include product costing, activity-based costing and management, profit planning, performance measurement, and strategic decision making and control. Computer applications, a writing component, and group projects included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "336",
+            "title": "\u2014 Advanced Acc",
+            "description": "Prerequisite Must have taken ACC*224; A study of the special accounting information needs of the various forms of accounting entities, whether large or small, public or private, profit or nonprofit. Topics include business combinations, multinational corporations, segment reporting, partnership accounting, bankruptcy, and estates and trusts. Computer applications included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "340",
+            "title": "\u2014 Fraud Exam & Eco Crime",
+            "description": "Prerequisite Must have taken ACC*111, ACC*112, ECO*102, CIS*232 and This course examines forensic accounting and economic crime, integrating accounting, criminal justice and computer and information systems concepts and issues. The course includes limited accounting theory and concentrates on financial fraud, white-collar crime, how financial fraud is perpetrated, approaches to fraud investigation and documentation, and fraud detection and prevention.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "111",
+            "title": "\u2014 Financial Accounting",
+            "description": "This is an introductory course which views accounting as a source of information and a tool for effective decision making. The course provides a basic understanding of the concepts of financial accounting and includes analysis and interpretation of financial reports with emphasis on their use by external parties such as stockholders and creditors. Computer/Internet applications included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "112",
+            "title": "\u2014 Management Accounting",
+            "description": "Prerequisite Take ACC 111 This introductory course focuses on accounting information as a tool for effective decision making within an organization. The course provides a basic understanding of the procedures of management accounting as a means of identifying management problems and evaluating potential solutions. It emphasizes a multi-disciplinary approach to the use of management reports by managers inside the business organization. Computer/Internet applications included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "223",
+            "title": "\u2014 Intermediate Acc I",
+            "description": "Prerequisite Must have taken ACC*112 A comprehensive study of the preparation and use of financial reports for business decisions and the role of accounting standards in the international business community. Activities that may be included in the course are ethical issues in business decisions, financial information on the Internet, research papers, group projects, class presentations, and computer spreadsheets.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "224",
+            "title": "\u2014 Intermediate Acc II",
+            "description": "Prerequisite Take ACC 112 A comprehensive study of the preparation and use of financial reports for business decisions and the role of accounting standards in the international business community. Activities that may be included in the course are ethical issues in business decisions, financial information on the Internet, research papers, group projects, class presentations, and computer spreadsheets.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "240",
+            "title": "\u2014 VITA: Personal Tax Preparation",
+            "description": "This is a hands-on tax preparation course and service learning opportunity that allows students to acquire a number of skills including client interaction, problem-solving, team work, critical thinking, and leadership that are considered valuable to entry level accounting professionals. Students will learn tax rules and regulations related to individual income taxes, and how to prepare US individual income tax returns (form 1040, with schedules A,B and CEZ) using TaxWise software. Students will update the Niagara University VITA Handbook of Policies & Procedures for Volunteers to be used in the future. Classroom learning time and VITA service is anticipated to be 70-85 hours over the semester.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "302",
+            "title": "\u2014 Accounting for Managers",
+            "description": "Prerequisite Must have taken ACC 111 and ACC 112 This course covers key financial and managerial accounting concepts such as how accounting system generates accounting information and how accounting information enhances managers' decision-making process. Specifically, the course is focused on developing managers' ability to interpret accounting information, both financial and non- financial, through case studies to aid their decision-making process.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "314",
+            "title": "\u2014 Contemporary Issues in ACC:",
+            "description": "A course involving case studies of current issues in accounting. Topics may include any area relating to accounting such as financial accounting and reporting issues, auditing, fraud, ethical issues, international accounting, government and not-for-profit accounting, legal issues, taxation, management accounting, and strategic accounting.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "335",
+            "title": "\u2014 Cost Management Systems",
+            "description": "Prerequisite Must have taken ACC*112 A study of the design and use of modern cost management systems. Topics include product costing, activity-based costing and management, profit planning, performance measurement, and strategic decision making and control. Computer applications, a writing component, and group projects included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "336",
+            "title": "\u2014 Advanced Acc",
+            "description": "Prerequisite Must have taken ACC*224; A study of the special accounting information needs of the various forms of accounting entities, whether large or small, public or private, profit or nonprofit. Topics include business combinations, multinational corporations, segment reporting, partnership accounting, bankruptcy, and estates and trusts. Computer applications included.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "340",
+            "title": "\u2014 Fraud Exam & Eco Crime",
+            "description": "Prerequisite Must have taken ACC*111, ACC*112, ECO*102, CIS*232 and This course examines forensic accounting and economic crime, integrating accounting, criminal justice and computer and information systems concepts and issues. The course includes limited accounting theory and concentrates on financial fraud, white-collar crime, how financial fraud is perpetrated, approaches to fraud investigation and documentation, and fraud detection and prevention.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

@@ -1,0 +1,535 @@
+[
+  {
+    "department": "EDU",
+    "number": "EDU214A",
+    "name": "Cult & Multicult Found",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "2"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU214B",
+    "name": "Cult & Multicult Found",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU214D",
+    "name": "Cult & Multicult Found",
+    "credits": "3.00",
+    "days": "M",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU214E",
+    "name": "Cult & Multicult Found",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "7"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU236A",
+    "name": "Human Learn, Dev, Moti",
+    "credits": "3.00",
+    "days": "T",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "SS*SSI",
+    "availability": "1"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU236B",
+    "name": "Human Learn, Dev, Moti",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "SS*SSI",
+    "availability": "10"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU239A",
+    "name": "Char Stds W Exceptionalities",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "SJ",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU239B",
+    "name": "Char Stds W Exceptionalities",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "SJ",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU239D",
+    "name": "Char Stds W Exceptionalities",
+    "credits": "3.00",
+    "days": "TH",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "SJ",
+    "availability": "4"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU239E",
+    "name": "Char Stds W Exceptionalities",
+    "credits": "3.00",
+    "days": "TH",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "SJ",
+    "availability": "9"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU271A",
+    "name": "Found Literacy Inst",
+    "credits": "3.00",
+    "days": "T",
+    "start_time": "01:30PM",
+    "end_time": "04:15PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU271B",
+    "name": "Found Literacy Inst",
+    "credits": "3.00",
+    "days": "TH",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU376A",
+    "name": "Language Arts B-6",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU376B",
+    "name": "Language Arts B-6",
+    "credits": "3.00",
+    "days": "TH",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "12"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU377A",
+    "name": "Literacy Dev Sec Cur",
+    "credits": "3.00",
+    "days": "TH",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "ONL",
+    "designation": "WI",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU378A",
+    "name": "Found Biling Ed and Tesol",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "ONL",
+    "designation": "",
+    "availability": "14"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU379A",
+    "name": "Developing ESL Literacy",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "ONL",
+    "designation": "CD",
+    "availability": "14"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU429A",
+    "name": "STEM Curr/Meth in Elm/Inc",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "01:30PM",
+    "end_time": "04:15PM",
+    "delivery_type": "LEC",
+    "designation": "WI",
+    "availability": "17"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU429B",
+    "name": "STEM Curr/Meth in Elm/Inc",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "WI",
+    "availability": "4"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU435A",
+    "name": "Curric Applications Esl",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "ONL",
+    "designation": "",
+    "availability": "11"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU438A",
+    "name": "Contnt Area ESL Mth(6 day pr)",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "ONL",
+    "designation": "",
+    "availability": "11"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU450A",
+    "name": "Erly Child Phi/Prac (6 Day Pr)",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "10"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU451B",
+    "name": "Assessment of Learning",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "4"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU451C",
+    "name": "Assessment of Learning",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU452A",
+    "name": "Mid Child Phil/Prac (6 Day Pr)",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "15"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU455A",
+    "name": "Assessment in Spe Ed",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "9"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU467A",
+    "name": "Elem Methd Soc/Arts (6 Day Pr)",
+    "credits": "3.00",
+    "days": "T",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "WI",
+    "availability": "0"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU468A",
+    "name": "Meth of Tchng Stud With Disab",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "3"
+  },
+  {
+    "department": "EDU",
+    "number": "EDU470A",
+    "name": "Adol Specl Ed Mthds (6 Day Pr)",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "5"
+  },
+  {
+    "number": "EDU001GR",
+    "name": "Dignity for All Students Act",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU001UG",
+    "name": "Dignity for All Students Act",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU002GR",
+    "name": "School Violence Prev & Interv",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU002UG",
+    "name": "School Violence Prev & Interv",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU003GR",
+    "name": "Child Abuse ID & Reporting",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU003UG",
+    "name": "Child Abuse Id & Reporting",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU004GR",
+    "name": "Needs of Students With Autism",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU004UG",
+    "name": "Needs of Students With Autism",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU005GR",
+    "name": "Alcohol, Tob, & Drug Abs Prev",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU005UG",
+    "name": "Alcohol, Tob, & Drug Abs Prev",
+    "credits": "0.00"
+  },
+  {
+    "number": "EDU372A",
+    "name": "Read Assmt & Instruction",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU460.01A",
+    "name": "Meth-Sec Tch(6d Prac)",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU461.01A",
+    "name": "Meth-English",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU462.01A",
+    "name": "Meth-Foreign Language",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU463.01A",
+    "name": "Meth-Mathematics",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU464.02A",
+    "name": "Meth-Science Biology",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU464.03A",
+    "name": "Meth-Science Chemistry",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU465.01A",
+    "name": "Meth-Social Studies",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU466.01A",
+    "name": "Methods Bus",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU471A",
+    "name": "ELA/Sped Studt Tch(70 day pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU475A",
+    "name": "Soc Stds/Sp Ed St (70 Day Pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU481A",
+    "name": "ELA Student Teach (70 day pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU482A",
+    "name": "Fr Lang Student Tch(70 Day Pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU483A",
+    "name": "Math Student Teach(70 Day Pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU484A",
+    "name": "Science Stud Teach (70 Day Pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU485A",
+    "name": "Soc Stds Stud Tch (70 Day Pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU486A",
+    "name": "Business Studt Tch(70 Day Pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU487A",
+    "name": "Elem Student Teach (70 Day Pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU488A",
+    "name": "St Tch Elem/Incl Special Ed",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU489A",
+    "name": "ESL Student Teach (70 Day Pr)",
+    "credits": "9.00"
+  },
+  {
+    "number": "EDU490CAN",
+    "name": "Prof Seminar in Educ",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU490US",
+    "name": "Prof Seminar in Educ",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU491CAN",
+    "name": "Prof Seminar in Elem Ed",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU491US",
+    "name": "Prof Seminar in Elem Ed",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU492US",
+    "name": "Prof Seminar in Elem Edu/Spec",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU493US",
+    "name": "Pr of Sem Sec/Incl Ed",
+    "credits": "3.00"
+  },
+  {
+    "number": "EDU494US",
+    "name": "Professional Seminar-Tesol",
+    "credits": "3.00"
+  }
+]

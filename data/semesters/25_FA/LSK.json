@@ -1,0 +1,19 @@
+[
+  {
+    "department": "LSK",
+    "number": "LSK095B",
+    "name": "Basic Math",
+    "credits": "0.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "REM*LA",
+    "availability": "5"
+  },
+  {
+    "number": "LSK095C",
+    "name": "Basic Math",
+    "credits": "0.00"
+  }
+]
