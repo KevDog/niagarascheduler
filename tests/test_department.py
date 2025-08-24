@@ -54,6 +54,7 @@ class TestDepartment(unittest.TestCase):
             "mission_statement": "Excellence in theater",
             "office": "CAM 201", 
             "course_listing_url": "https://catalog.niagara.edu/theater",
+            "course_descriptions_url": None,
             "courses": []
         }
         self.assertEqual(data, expected)
