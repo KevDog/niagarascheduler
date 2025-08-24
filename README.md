@@ -1,191 +1,352 @@
 # Niagara University Scheduler
 
-A comprehensive Flask web application for generating course syllabi for Niagara University. Features a rich course data system, markdown-first template architecture, and automated class scheduling based on official academic calendar data.
+A modern Vue 3 + Flask application for generating course syllabi for Niagara University. Features a comprehensive course selection wizard, live schedule integration, and automated syllabus generation with multiple export formats.
+
+## Current Architecture (December 2025) ✨
+
+- **Vue 3 Frontend**: Modern SPA with TypeScript, Pinia state management, and TailwindCSS
+- **Flask JSON API**: CORS-enabled backend serving course and schedule data
+- **Live Schedule Integration**: Real-time course offering data with meeting times
+- **Comprehensive Data Pipeline**: Automated course description and schedule scraping
+- **Rich Course Selection**: Multi-step wizard with semester, department, course, and section selection
 
 ## Features
 
-- **Rich Course Database**: Object-oriented course management with department-specific JSON storage
-- **Course Offering Model**: Section-specific data with encoded identifiers (THR101A, ACC425LA)
-- **Markdown-First Templates**: Professional syllabus generation with multiple export formats
-- **Preview-Then-Export UX**: See formatted preview before downloading in chosen format
-- **Calendar Integration**: Automated parsing of Niagara University academic calendar PDFs
-- **Multiple Output Formats**: Export to DOCX, HTML, LaTeX, PDF, and Markdown
-- **Course Metadata Support**: Instructors, textbooks, zoom links, meeting days, and more
-- **Department Organization**: Structured data storage by academic department
+- **🎯 Smart Course Selection Wizard**: Semester → Instructor → Department → Course → Section
+- **📅 Live Schedule Data**: Real meeting times and days (e.g., "Section A - MW 10:30AM-11:50AM")
+- **📚 Rich Course Database**: 52/55 departments populated with course descriptions
+- **🔄 Automated Data Scraping**: CLI tools for course descriptions and schedule updates
+- **📄 Multiple Export Formats**: DOCX, PDF, HTML, LaTeX, and Markdown
+- **🎨 Modern UI**: TailwindCSS with responsive design and intuitive workflow
+- **⚡ Fast Development**: Hot reload, TypeScript support, and modern tooling
 
 ## Quick Start
 
-### Running the Application
+### Development Setup
 
 ```bash
-# Start the web server
-python app.py
+# Backend API (Terminal 1)
+python api.py --port 8000
 
-# Or specify a custom port
-python app.py --port 3000
+# Frontend Dev Server (Terminal 2)
+cd frontend && npm run dev
 
-# Generate calendars and start server
-python app.py --generate
+# Access the application
+# Frontend: http://localhost:5173
+# API: http://localhost:8000
 ```
 
-### Calendar Management
+### Production Deployment
 
 ```bash
-# Generate JSON calendar files from PDFs
-python generate_calendars.py
+# Build frontend
+cd frontend && npm run build
 
-# Check for missing data
-cat calendars/TBD_ITEMS.txt
+# Start production server
+python app.py --port 5002  # Legacy Flask app with static files
 ```
 
-Visit `http://localhost:5001` to use the web interface.
+## API Documentation
 
-## Usage
+### Core Endpoints
 
-### Web Interface
+#### Configuration
+```http
+GET /api/config
+```
+Returns available semesters and system configuration.
 
-1. **Course Information**: Enter course ID (e.g., "THR 101") for automatic data lookup
-2. **Select Semester**: Choose from available semesters (Fall/Spring + Year)  
-3. **Choose Meeting Days**: Select which days your course meets
-4. **Configure Options**: Enable course descriptions, holidays, breaks, and events
-5. **Preview**: Review formatted syllabus with rich course metadata
-6. **Export**: Download in preferred format (DOCX, PDF, HTML, LaTeX, Markdown)
+**Response:**
+```json
+{
+  "semesters": [
+    {
+      "key": "25_FA",
+      "semester": "Fall", 
+      "year": "2025",
+      "display": "Fall 2025"
+    }
+  ],
+  "date_formats": [...],
+  "months": [...],
+  "days": [...]
+}
+```
 
-### Course Data Management
+#### Departments
+```http
+GET /api/departments
+```
+Returns list of all academic departments.
 
-The system uses a rich object model for course data:
+**Response:**
+```json
+{
+  "departments": [
+    {
+      "code": "THR",
+      "name": "Theater Arts",
+      "mission_statement": "Excellence in theatrical arts..."
+    }
+  ]
+}
+```
 
-- **Course Properties**: number, title, description (general course information)
-- **Offering Properties**: delivery_type, designation, credits, instructors, textbooks, zoom_link, meeting_days (section-specific)
-- **Department Properties**: name, mission_statement, office, course_listing_url, courses
-- **Storage Format**: Department-specific JSON files (e.g., `data/THR.json`, `data/MATH.json`)
+#### Department Courses
+```http
+GET /api/departments/{dept_code}
+```
+Returns detailed course information for a department.
 
-Course Offerings use encoded identifiers:
-- `THR101A` = Theater (THR) course 101, section A
-- `ACC425LA` = Accounting (ACC) course 425, Lab (L) section A
+**Response:**
+```json
+{
+  "code": "THR",
+  "name": "Theater Arts",
+  "courses": [
+    {
+      "number": "101",
+      "title": "Introduction to Theater",
+      "description": "An introductory course covering..."
+    }
+  ]
+}
+```
+
+#### Course Offerings (with Schedule)
+```http
+GET /api/offerings/{semester}/{dept_code}/{course_number}
+```
+Returns section offerings with meeting times for a specific course.
+
+**Parameters:**
+- `semester`: e.g., "25_FA" 
+- `dept_code`: e.g., "THR"
+- `course_number`: e.g., "103"
+
+**Response:**
+```json
+{
+  "offerings": [
+    {
+      "number": "THR103A",
+      "name": "Intro to Theatre", 
+      "section": "A",
+      "credits": "3.00",
+      "days": "TTH",
+      "start_time": "12:00PM",
+      "end_time": "01:20PM",
+      "delivery_type": "LEC",
+      "availability": "27"
+    }
+  ]
+}
+```
+
+#### Health Check
+```http
+GET /api/health
+```
+Returns API status and version information.
+
+## CLI Tools
+
+### Course Description Scraper
+```bash
+# Scrape all department course descriptions
+python scrape_descriptions.py
+
+# Scrape specific department
+python scrape_descriptions.py --department THR
+```
+
+### Schedule Data Scraper
+```bash
+# Scrape all semester schedules
+python scrape_descriptions.py --schedules
+
+# Scrape specific semester
+python scrape_descriptions.py --schedules --semester 25_FA
+```
+
+The scraper pulls live data from: https://apps.niagara.edu/courses/index.php?semester=25/FA&ug=1
 
 ## Project Structure
 
 ```
-├── app.py                      # Flask web application with preview/export workflow
-├── scheduler.py               # Main API module for schedule generation
-├── generate_calendars.py      # Calendar generation utility
+├── frontend/                   # Vue 3 + TypeScript + TailwindCSS frontend
+│   ├── src/
+│   │   ├── views/HomeView.vue # Main syllabus wizard component
+│   │   ├── types/api.ts       # TypeScript API interfaces
+│   │   └── stores/            # Pinia state management
+│   ├── package.json           # Vue project dependencies
+│   └── vite.config.ts         # Vite configuration with API proxy
+├── api.py                     # Flask JSON API server
+├── app.py                     # Legacy Flask app (for production static serving)
+├── scrape_descriptions.py     # CLI tool for course data scraping
 ├── core/                      # Core application modules
-│   ├── course.py             # Course class with full serialization
-│   ├── offering.py           # Offering class with section-specific data
-│   ├── department.py         # Department class with course collection
-│   ├── data_loader.py        # Load Course/Department objects from JSON
-│   ├── data_migration.py     # Migrate legacy course data
-│   ├── markdown_processor.py # Markdown generation with rich Course objects
-│   ├── utils.py             # Basic utilities & constants
-│   ├── calendar_loader.py   # Calendar data loading
-│   ├── schedule_generator.py # Core scheduling logic
-│   └── output_formatter.py  # Template generation
-├── pdf/                       # PDF processing modules
-│   ├── pdf_extractor.py     # PDF text extraction
-│   ├── date_parser.py       # Date parsing utilities
-│   ├── semester_parser.py   # Semester-specific parsing
-│   └── event_parser.py      # Event extraction
-├── calendar_json/             # JSON processing modules
-│   ├── json_converter.py    # PDF to JSON conversion
-│   └── calendar_manager.py  # Calendar file management
-├── data/                      # Course data storage
-│   ├── THR.json            # Theater Arts department courses
-│   └── MATH.json           # Mathematics department courses
-├── tests/                     # Comprehensive test suite using TDD
-│   ├── test_course.py       # Course class tests
-│   ├── test_offering.py     # Offering class tests
-│   ├── test_department.py   # Department class tests
-│   ├── test_data_loader.py  # Data loading tests
-│   └── test_data_migration.py # Migration tests
-├── niagara/                   # Academic calendar PDFs
-├── calendars/                 # Generated JSON calendar data
-└── templates/                 # Syllabus templates
-    └── syllabus_master.md    # Core markdown template
+│   ├── course.py             # Course class with serialization
+│   ├── department.py         # Department class with course collection  
+│   ├── data_loader.py        # JSON data loading utilities
+│   └── markdown_processor.py # Syllabus generation
+├── data/
+│   ├── departments/          # Course description data by department
+│   │   ├── THR.json         # Theater Arts courses with descriptions
+│   │   └── ACC.json         # Accounting courses with descriptions
+│   └── semesters/           # Schedule data by semester
+│       ├── 25_FA/           # Fall 2025 schedule data
+│       │   ├── THR.json    # Theater section schedules
+│       │   └── ACC.json    # Accounting section schedules
+│       └── 25_SU/          # Summer 2025 schedule data
+├── tests/                    # Comprehensive test suite
+│   ├── test_api.py          # API endpoint tests
+│   ├── test_schedule_scraper.py # Schedule scraper tests
+│   ├── test_course.py       # Course model tests
+│   └── test_department.py   # Department model tests
+└── templates/               # Syllabus templates
+    └── syllabus_master.md   # Core markdown template
 ```
 
-## Calendar Data
+## Data Architecture
 
-The system converts PDF academic calendars to structured JSON format:
+### Separation of Concerns
+- **`/data/departments/`**: Static course descriptions and department info
+- **`/data/semesters/`**: Dynamic schedule data with meeting times
+- **Vue Frontend**: User interface and workflow management
+- **Flask API**: Data serving and business logic
 
-- **PDF Source**: Place academic calendar PDFs in `niagara/` directory
-- **JSON Output**: Generated semester-specific files in `calendars/`
-- **Manual Editing**: JSON files can be manually edited for corrections
-
-### Adding New Academic Years
-
-1. Place new academic calendar PDF in `niagara/` directory
-2. Run `python generate_calendars.py` to generate JSON
-3. Edit JSON files to fix any "TBD" values
-4. Update `calendars/active_semester.json` if needed
+### Course Selection Flow
+1. **Semester Selection**: User chooses from available semesters
+2. **Instructor Input**: Enter instructor name
+3. **Department Selection**: Choose from alphabetically sorted departments
+4. **Course Selection**: Pick from department-specific courses with descriptions
+5. **Section Selection**: Choose specific meeting times (e.g., "A - TTH 12:00PM-01:20PM")
 
 ## Development
 
-### Modular Architecture
-
-The codebase is organized into focused modules for maintainability:
-
-- **`core/`**: Core scheduling logic and utilities (~50-120 LOC each)
-- **`pdf/`**: PDF processing and date extraction (~70-145 LOC each)  
-- **`calendar_json/`**: JSON conversion and calendar management (~85-100 LOC each)
-- **`scheduler.py`**: Public API exposing main functions
-
-### Dependencies
-
-- Flask
-- Arrow (date handling)
-- PyPandoc (template conversion)
-- PDFplumber (PDF parsing)
-- BeautifulSoup4
-
-### Running with Debug Mode
-
+### Vue Frontend Development
 ```bash
-python app.py  # Debug mode enabled by default
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start development server with hot reload
+npm run dev
+
+# Build for production
+npm run build
+
+# Type checking
+npm run type-check
+
+# Linting
+npm run lint
+```
+
+### API Development
+```bash
+# Start API server with auto-reload
+python api.py --port 8000
+
+# Run tests
+python -m unittest discover tests -v
+
+# Test specific functionality
+python -m unittest tests.test_api tests.test_schedule_scraper -v
 ```
 
 ### Testing
 
-The project uses Test-Driven Development (TDD) with comprehensive test coverage:
+The project uses comprehensive test coverage with Python unittest:
 
 ```bash
 # Run all tests
-python -m tests.test_course
-python -m tests.test_offering
-python -m tests.test_department  
-python -m tests.test_data_loader
-python -m tests.test_data_migration
+python -m unittest discover tests -v
 
-# Run specific test modules
-python -m tests.test_offering
+# Core functionality tests (32+ tests)
+python -m unittest tests.test_course tests.test_department tests.test_data_loader tests.test_api tests.test_schedule_scraper -v
 ```
 
-### Architecture Highlights
+**Test Coverage:**
+- ✅ Course and Department object models
+- ✅ JSON serialization/deserialization
+- ✅ API endpoints with mock data
+- ✅ Schedule scraper with HTML parsing
+- ✅ CLI integration testing
+- ✅ Data loading and validation
 
-- **Object-Oriented Design**: Rich Course, Offering, and Department classes with full metadata
-- **Section-Specific Data**: Offering model separates course-general from section-specific properties
-- **Markdown-First Generation**: Professional templates with Pandoc conversion
-- **Department-Specific Storage**: Organized JSON files by academic department
-- **TDD Implementation**: Complete test coverage using "Arrange, Act, Assert" pattern
-- **Data Migration Tools**: Utilities for converting legacy course data
+## Current Status & Todos
 
-## Planned Features
+### ✅ Completed Features
+- [x] Vue 3 + Vite project with TypeScript and TailwindCSS
+- [x] Flask JSON API with CORS support  
+- [x] Complete syllabus wizard with 5-step form
+- [x] Course description scraper (52/55 departments populated)
+- [x] Schedule scraper with live meeting times
+- [x] API endpoints for all data access
+- [x] Comprehensive test suite (32+ tests)
+- [x] Development proxy and hot reload setup
 
-The following features are planned for future development:
+### 🚧 Pending Features
+- [ ] Pinia state management for syllabus data
+- [ ] Editable preview component for syllabus content
+- [ ] TailwindCSS Plus component integration
+- [ ] File download functionality (DOCX, PDF exports)
+- [ ] Production deployment configuration
+- [ ] Vue component testing setup
 
-- **Course Offering Scraper**: Automated extraction of current semester offerings from `https://apps.niagara.edu/courses/index.php?semester=25/FA&ug=1`
-- **Course Description Scraper**: Bulk scraping of course descriptions from catalog URLs
-- **Pre-Export Editor Interface**: Web-based editing interface for syllabus content before final export
+### 🔄 Data Pipeline Status
+- **Course Descriptions**: 52/55 departments complete (✅ THR, ACC, ENG, MAT, etc.)
+- **Schedule Data**: Integrated for Fall 2025 and Summer 2025 semesters
+- **API Integration**: All endpoints tested and operational
+
+## Deployment
+
+### Development
+```bash
+# Start both servers
+python api.py --port 8000 &
+cd frontend && npm run dev
+```
+
+### Production
+```bash
+# Build frontend assets
+cd frontend && npm run build
+
+# Start production API
+python api.py --port 8000 --env production
+```
+
+## Course Data Management
+
+### Data Sources
+- **Course Descriptions**: University course catalog (automated scraping)
+- **Schedule Data**: Live course offerings from https://apps.niagara.edu/courses/
+- **Department Info**: Manually curated department data
+
+### Updates
+```bash
+# Update course descriptions
+python scrape_descriptions.py
+
+# Update current semester schedules  
+python scrape_descriptions.py --schedules --semester 25_FA
+
+# Update all available semesters
+python scrape_descriptions.py --schedules
+```
 
 ## License
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-<https://www.gnu.org/licenses/>.
-
 ## Credits
 
 Based on original work by W. Caleb McDaniel (2015-2019)  
-Modified for Niagara University by Kevin Stevens
+Vue + Flask modernization by Kevin Stevens (2025)
+
+---
+
+🚀 **Ready for development!** Start the API server and Vue dev server to begin working with the modern syllabus generator.

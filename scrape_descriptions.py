@@ -343,19 +343,243 @@ class CourseScheduleScraper:
         
         return merged
 
+def list_departments(data_dir):
+    """List all available departments"""
+    data_loader = DepartmentDataLoader(data_dir)
+    departments = data_loader.get_all_departments()
+    
+    print(f"Available departments ({len(departments)}):")
+    print("=" * 40)
+    
+    dept_info = []
+    for dept_code in sorted(departments):
+        dept = data_loader.load_department(dept_code)
+        if dept:
+            dept_info.append((dept_code, dept.name))
+        else:
+            dept_info.append((dept_code, "Unknown"))
+    
+    # Format output in columns
+    for code, name in dept_info:
+        print(f"  {code:<6} - {name}")
+
+def list_semesters(data_dir):
+    """List all available semesters"""
+    semesters_dir = os.path.join(data_dir, 'semesters')
+    
+    if not os.path.exists(semesters_dir):
+        print("No semester data found.")
+        return
+    
+    semesters = []
+    for folder in os.listdir(semesters_dir):
+        if os.path.isdir(os.path.join(semesters_dir, folder)):
+            # Convert folder name like "25_FA" to readable format
+            if '_' in folder:
+                year_part, season_part = folder.split('_', 1)
+                season_map = {
+                    'FA': 'Fall', 'SP': 'Spring', 'SU': 'Summer', 'WI': 'Winter'
+                }
+                full_season = season_map.get(season_part, season_part)
+                full_year = f"20{year_part}" if len(year_part) == 2 else year_part
+                display = f"{full_season} {full_year}"
+            else:
+                display = folder
+            semesters.append((folder, display))
+    
+    semesters.sort(key=lambda x: x[0])
+    
+    print(f"Available semesters ({len(semesters)}):")
+    print("=" * 40)
+    for folder, display in semesters:
+        print(f"  {folder:<8} - {display}")
+
+def show_stats(data_dir):
+    """Show statistics about current data"""
+    data_loader = DepartmentDataLoader(data_dir)
+    departments = data_loader.get_all_departments()
+    
+    print("Course Data Statistics")
+    print("=" * 40)
+    
+    # Department statistics
+    total_courses = 0
+    with_descriptions = 0
+    dept_count = 0
+    
+    for dept_code in departments:
+        dept = data_loader.load_department(dept_code)
+        if dept:
+            dept_count += 1
+            dept_courses = len(dept.courses)
+            total_courses += dept_courses
+            
+            courses_with_desc = sum(1 for course in dept.courses if course.description)
+            with_descriptions += courses_with_desc
+    
+    print(f"Departments: {dept_count}")
+    print(f"Total Courses: {total_courses}")
+    print(f"With Descriptions: {with_descriptions} ({(with_descriptions/total_courses*100):.1f}%)" if total_courses > 0 else "With Descriptions: 0")
+    
+    # Semester statistics
+    semesters_dir = os.path.join(data_dir, 'semesters')
+    if os.path.exists(semesters_dir):
+        semester_folders = [f for f in os.listdir(semesters_dir) 
+                          if os.path.isdir(os.path.join(semesters_dir, f))]
+        print(f"Semester Data: {len(semester_folders)} semesters")
+        
+        # Count offerings per semester
+        for semester in sorted(semester_folders):
+            semester_dir = os.path.join(semesters_dir, semester)
+            dept_files = [f for f in os.listdir(semester_dir) if f.endswith('.json')]
+            
+            total_offerings = 0
+            with_schedules = 0
+            
+            for dept_file in dept_files:
+                try:
+                    with open(os.path.join(semester_dir, dept_file), 'r') as f:
+                        offerings = json.load(f)
+                    
+                    total_offerings += len(offerings)
+                    with_schedules += sum(1 for offering in offerings 
+                                        if isinstance(offering, dict) and 'days' in offering and offering.get('days'))
+                except:
+                    continue
+            
+            print(f"  {semester}: {total_offerings} offerings, {with_schedules} with schedules")
+    else:
+        print("Semester Data: Not available")
+
+def show_quickstart():
+    """Show quick start guide"""
+    print("""
+🚀 Niagara University Course Scraper - Quick Start Guide
+
+COMMON TASKS:
+
+1. Get help and see what's available:
+   python scrape_descriptions.py --help            # Full help
+   python scrape_descriptions.py --list-departments # See all departments
+   python scrape_descriptions.py --list-semesters   # See all semesters
+   python scrape_descriptions.py --stats            # Data statistics
+
+2. Update course descriptions:
+   python scrape_descriptions.py                    # All departments
+   python scrape_descriptions.py -d THR             # Just Theater Arts
+   python scrape_descriptions.py -d ACC             # Just Accounting
+
+3. Update schedule data:
+   python scrape_descriptions.py --schedules        # All semesters
+   python scrape_descriptions.py --schedules -s 25_FA # Just Fall 2025
+
+4. Check results:
+   python scrape_descriptions.py --stats            # See updated statistics
+
+DATA SOURCES:
+• Course Descriptions: https://catalog.niagara.edu/undergraduate/courses-az/[dept]/
+• Course Schedules: https://apps.niagara.edu/courses/index.php?semester=[sem]&ug=1
+
+OUTPUT LOCATIONS:
+• Course Descriptions: ./data/departments/[DEPT].json
+• Schedule Data: ./data/semesters/[SEM]/[DEPT].json
+
+TIPS:
+• Run descriptions first, then schedules to get complete data
+• Use --stats to monitor progress and data completeness
+• Schedule scraping requires active semester to be available online
+• Process is respectful with 1-second delays between requests
+
+Need more help? Run: python scrape_descriptions.py --help
+    """)
+
 def main():
-    parser = argparse.ArgumentParser(description='Scrape course data from Niagara University')
-    parser.add_argument('--department', '-d', 
-                       help='Department code to scrape descriptions (e.g., THR). If not specified, scrapes all departments')
-    parser.add_argument('--semester', '-s',
-                       help='Semester to scrape schedules (e.g., 25_FA). Use with --schedules flag')
+    parser = argparse.ArgumentParser(
+        description='Niagara University Course Data Scraper - Extract course descriptions and schedules',
+        epilog='''
+Examples:
+  # Scrape all course descriptions from catalog
+  %(prog)s
+
+  # Scrape specific department descriptions
+  %(prog)s --department THR
+  %(prog)s -d ACC
+
+  # Scrape all semester schedules
+  %(prog)s --schedules
+
+  # Scrape specific semester schedule
+  %(prog)s --schedules --semester 25_FA
+  %(prog)s -s 25_SU --schedules
+
+  # Use custom data directory
+  %(prog)s --output-dir /path/to/data
+
+Data Sources:
+  - Course Descriptions: https://catalog.niagara.edu/undergraduate/courses-az/[dept]/
+  - Course Schedules: https://apps.niagara.edu/courses/index.php?semester=[sem]&ug=1
+
+Output:
+  - Descriptions: ./data/departments/[DEPT].json
+  - Schedules: ./data/semesters/[SEM]/[DEPT].json
+        ''',
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    
+    # Main operation mode
     parser.add_argument('--schedules', action='store_true',
-                       help='Scrape course schedules instead of descriptions')
-    parser.add_argument('--output-dir', '-o',
+                       help='Scrape course schedules with meeting times instead of descriptions')
+    
+    # Filtering options
+    parser.add_argument('--department', '-d', metavar='DEPT',
+                       help='Department code to scrape (e.g., THR, ACC, ENG). If not specified, scrapes all departments')
+    parser.add_argument('--semester', '-s', metavar='SEM', 
+                       help='Semester to scrape schedules (e.g., 25_FA, 25_SP, 25_SU). Required with --schedules for single semester')
+    
+    # Configuration
+    parser.add_argument('--output-dir', '-o', metavar='DIR',
                        default='./data',
                        help='Directory containing data files (default: ./data)')
     
+    # Information options
+    parser.add_argument('--list-departments', action='store_true',
+                       help='List all available departments and exit')
+    parser.add_argument('--list-semesters', action='store_true', 
+                       help='List all available semesters and exit')
+    parser.add_argument('--stats', action='store_true',
+                       help='Show statistics about current data and exit')
+    parser.add_argument('--version', action='version', version='%(prog)s 2.0.0',
+                       help='Show version information and exit')
+    parser.add_argument('--quickstart', action='store_true',
+                       help='Show quick start guide and exit')
+    
     args = parser.parse_args()
+    
+    # Handle information requests first
+    if args.list_departments:
+        list_departments(args.output_dir)
+        return
+    
+    if args.list_semesters:
+        list_semesters(args.output_dir)
+        return
+    
+    if args.stats:
+        show_stats(args.output_dir)
+        return
+    
+    if args.quickstart:
+        show_quickstart()
+        return
+    
+    # Validation for schedules mode
+    if args.schedules and not args.semester:
+        # Check if we have semester directories to scrape all
+        semesters_dir = os.path.join(args.output_dir, 'semesters')
+        if not os.path.exists(semesters_dir) or not os.listdir(semesters_dir):
+            print("Error: No semester directories found. Use --semester to specify a semester or --list-semesters to see available options.")
+            parser.print_help()
+            return
     
     if args.schedules:
         # Use schedule scraper

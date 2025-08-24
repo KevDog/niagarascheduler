@@ -270,6 +270,124 @@ class TestScheduleScraperCLIIntegration(unittest.TestCase):
         # Assert
         mock_scraper.scrape_semester_schedule.assert_called_once_with('25_FA')
 
+class TestCLIHelpFunctionality(unittest.TestCase):
+    """Test CLI help and information functions"""
+    
+    def setUp(self):
+        self.temp_dir = tempfile.mkdtemp()
+        
+        # Create test data structure
+        departments_dir = os.path.join(self.temp_dir, 'departments')
+        os.makedirs(departments_dir)
+        
+        # Create mock department files
+        test_dept_data = {
+            "name": "Theater Arts",
+            "mission_statement": "Excellence in theater",
+            "office": None,
+            "course_listing_url": None,
+            "course_descriptions_url": None,
+            "courses": [
+                {"number": "101", "title": "Intro to Theater", "description": "Basic theater course"},
+                {"number": "201", "title": "Advanced Theater", "description": "Advanced course"}
+            ]
+        }
+        
+        with open(os.path.join(departments_dir, 'THR.json'), 'w') as f:
+            json.dump(test_dept_data, f)
+        
+        # Create semester data
+        semesters_dir = os.path.join(self.temp_dir, 'semesters', '25_FA')
+        os.makedirs(semesters_dir)
+        
+        semester_data = [
+            {"number": "THR101A", "name": "Intro to Theater", "credits": "3.00", "days": "MW", "start_time": "10:00AM", "end_time": "11:00AM"}
+        ]
+        
+        with open(os.path.join(semesters_dir, 'THR.json'), 'w') as f:
+            json.dump(semester_data, f)
+    
+    @patch('scrape_descriptions.list_departments')
+    def test_list_departments_option(self, mock_list_departments):
+        """Test --list-departments flag calls the function and exits"""
+        from scrape_descriptions import main
+        
+        with patch('sys.argv', ['scrape_descriptions.py', '--list-departments']):
+            # Act
+            main()
+        
+        # Assert
+        mock_list_departments.assert_called_once_with('./data')
+    
+    @patch('scrape_descriptions.list_semesters')
+    def test_list_semesters_option(self, mock_list_semesters):
+        """Test --list-semesters flag calls the function and exits"""
+        from scrape_descriptions import main
+        
+        with patch('sys.argv', ['scrape_descriptions.py', '--list-semesters']):
+            # Act
+            main()
+        
+        # Assert
+        mock_list_semesters.assert_called_once_with('./data')
+    
+    @patch('scrape_descriptions.show_stats')
+    def test_stats_option(self, mock_show_stats):
+        """Test --stats flag calls the function and exits"""
+        from scrape_descriptions import main
+        
+        with patch('sys.argv', ['scrape_descriptions.py', '--stats']):
+            # Act
+            main()
+        
+        # Assert
+        mock_show_stats.assert_called_once_with('./data')
+    
+    def test_list_departments_output(self):
+        """Test that list_departments produces expected output"""
+        from scrape_descriptions import list_departments
+        import io
+        import sys
+        
+        # Capture stdout
+        captured_output = io.StringIO()
+        sys.stdout = captured_output
+        
+        try:
+            # Act
+            list_departments(self.temp_dir)
+            output = captured_output.getvalue()
+            
+            # Assert
+            self.assertIn('Available departments', output)
+            self.assertIn('THR', output)
+            self.assertIn('Theater Arts', output)
+        finally:
+            sys.stdout = sys.__stdout__
+    
+    def test_show_stats_output(self):
+        """Test that show_stats produces expected output"""
+        from scrape_descriptions import show_stats
+        import io
+        import sys
+        
+        # Capture stdout
+        captured_output = io.StringIO()
+        sys.stdout = captured_output
+        
+        try:
+            # Act
+            show_stats(self.temp_dir)
+            output = captured_output.getvalue()
+            
+            # Assert
+            self.assertIn('Course Data Statistics', output)
+            self.assertIn('Departments: 1', output)
+            self.assertIn('Total Courses: 2', output)
+            self.assertIn('25_FA:', output)
+        finally:
+            sys.stdout = sys.__stdout__
+
 
 if __name__ == '__main__':
     unittest.main()
