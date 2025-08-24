@@ -1,0 +1,14 @@
+[
+  {
+    "department": "TUS",
+    "number": "TUS101A",
+    "name": "Elementary Tuscarora I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AS*CD*LA",
+    "availability": "14"
+  }
+]

@@ -1,0 +1,89 @@
+{
+    "name": "Military Science",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/mil/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Ldrshp & Personal Dev",
+            "description": "Prerequisite Take MIL*101L Military Science 101 and 102 teach leadership theory and practice. These courses also provide an overview of the organization, role and structure of today's Army. The student will be introduced to the duties, responsibilities, technical skills, and professional knowledge required of the Army officer. The student will learn the basics of leadership, organizational management, problem solving, communication, and active learning skills.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101L",
+            "title": "\u2014 Military Science Basic Military Skills -",
+            "description": "Prerequisite Take MIL*101 Major emphasis of this non-credit course will focus upon application of leadership skills directed toward drill and ceremony and basic soldier skills. In addition, students will be given the opportunity to participate in Army specialty training to include rappelling and physical conditioning.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Intro to Tactical Ldrshp",
+            "description": "Prerequisite Take MIL*102L Military Science 101 and 102 teach leadership theory and practice. These courses also provide an overview of the organization, role and structure of today's Army. The student will be introduced to the duties, responsibilities, technical skills and professional knowledge required of the Army officer. The student will learn the basics of leadership, organizational management, problem solving, communication and active learning skills.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102L",
+            "title": "\u2014 Military Science Basic Military Skills -",
+            "description": "Prerequisite Take MIL*102 Major emphasis of this non-credit course will focus upon application of leadership skills directed toward drill and ceremony and basic soldier skills. In addition, students will be given the opportunity to participate in Army specialty training to include rappelling and physical conditioning.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Development of Military Strategy",
+            "description": "This course provides an opportunity to analyze American Military History conflicts from the Colonial Period to the present. Particular emphasis is placed on the study of critical decisions made by leaders during those conflicts, the impacts of their decisions, and lessons that today's leaders may apply as they prepare to become leaders in today's Army and society. Reading assignments and classroom discussion identify strategy, resource, and logistic complexities that shaped the leaders' decisions. This course is required for all contracted Cadets. An alternate history course may count for credit toward this program with prior approval from the department military science chairperson",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 Innovative Team Ldrshp",
+            "description": "Prerequisite Take MIL*201L Military Science 201 and 202 are primarily devoted toward the application of collective and individual skills required of a manager or supervisor. Emphasis is placed on skills required for a new manager of a small-scale organization. Leadership principals and assessments beginning in the MS 201 course build a solid foundation for continuing in the advanced military science program.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201L",
+            "title": "\u2014 Military Science Basic Military Skills -",
+            "description": "Prerequisite Take MIL*201 Major emphasis of this non-credit course will focus upon application of leadership skills directed toward drill and ceremony and basic soldier skills. In addition, students will be given the opportunity to participate in Army specialty training to include rappelling and physical conditioning.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "202",
+            "title": "\u2014 Basic Mil Ldrshp & Mgt",
+            "description": "Prerequisite Take MIL*202L Military Science 201 and 202 are primarily devoted toward the application of collective and individual skills required of a manager or supervisor. Emphasis is placed on skills required for a new manager of a small-scale organization. Leadership principals and assessments beginning in the MS 201 course build a solid foundation for continuing in the advanced military science program.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "202L",
+            "title": "\u2014 Military Science Basic Military Skills -",
+            "description": "Prerequisite Take MIL*202 Major emphasis of this non-credit course will focus upon application of leadership skills directed toward drill and ceremony and basic soldier skills. In addition, students will be given the opportunity to participate in Army specialty training to include rappelling and physical conditioning.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "301",
+            "title": "\u2014 Inter Mil Ldrshp & Mgt",
+            "description": "Prerequisite Take MIL 101, MIL 102, MIL 201 and MIL 202 The student will gain an understanding of the role of the small unit leader. The focus is on the knowledge required of a leader when dealing with subordinates at the small-unit level. The student will learn basic infantry tactics, communication skills, land navigation, basic rifle marksmanship, and physical training. All students are required to take the Army physical fitness test monthly, and attend the five-week National Advanced Leadership Camp at Fort Lewis, Wash., during the summer.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

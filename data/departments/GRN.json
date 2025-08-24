@@ -1,0 +1,89 @@
+{
+    "name": "Gerontology",
+    "mission_statement": "As society contends with an older population, our Gerontology program will help you understand aging from a multidisciplinary perspective while preparing you for a career with the appropriate knowledge, skills, and values to engage with them.\n\nStudents in every major will benefit from an understanding of the interests, abilities, and needs of older adults. Our academic program also provides opportunities for you to engage with high impact learning, such as research training, internships, and community service placements.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/grn/",
+    "courses": [
+        {
+            "number": "100",
+            "title": "\u2014 Intro to Gerontology",
+            "description": "An introduction to the field of gerontology. The course takes a multidisciplinary approach to the study of aging and older adults, considering biological, psychological and sociological perspectives. GRN 100 is open to all students; there are no prerequisites. The course can count as a social science, or as a cultural diversity course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "310",
+            "title": "\u2014 Physical Change and Aging",
+            "description": "Physical changes and common pathologies associated with the aging process, with special emphasis on the psychological and social implications of these changes in the lives of older adults. Key topics include theories of aging; changes and disorders in the skeletal, nervous, cardiovascular, and respiratory systems; dementia, delirium, and mild cognitive impairment.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "315",
+            "title": "\u2014 Mental Health and Aging",
+            "description": "Various models of mental health and their relevance to older adults are considered. The course focuses on the most commonly occurring mental health problems and disorders in later life. The prevalence of each disorder, its causes, appropriate assessments, and effective treatments are discussed.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "403",
+            "title": "\u2014 Supervised Research",
+            "description": "An opportunity for students to conduct collaborative research under the supervision of a faculty mentor or engage in an independent study program. Both options require a written report.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "406",
+            "title": "\u2014 Honors Thesis I",
+            "description": "Individual research of a substantive nature pursued in the student's major field of study. The research will conclude in a written thesis or an original project, and an oral defense.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "407",
+            "title": "\u2014 Honors Thesis II",
+            "description": "Individual research of a substantive nature pursued in the student's major field of study. The research will conclude in a written thesis or an original project, and an oral defense.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "425",
+            "title": "\u2014 Ethics, Aging, and Society",
+            "description": "An integration of the disciplines of ethics and aging. Critical issues include dementia, long-term care, ageism, public policy, medical treatments, elder abuse, disaster response, determinants of consent (for research participants and for patients), euthanasia, patient autonomy, and the challenges of resource allocation.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "493",
+            "title": "\u2014 Gerontology Inter/Co-Op",
+            "description": "A work-study program providing relevant employment experience. The objective of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning and providing the student with a realistic exposure to career opportunities.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "494",
+            "title": "\u2014 Gerontology Intern/Co-Op",
+            "description": "A work-study program providing relevant employment experience. The objective of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning and providing the student with a realistic exposure to career opportunities.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "495",
+            "title": "\u2014 Gerontology Intern/Co-Op",
+            "description": "A work-study program providing relevant employment experience. The objective of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning and providing the student with a realistic exposure to career opportunities.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

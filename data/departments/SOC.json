@@ -1,0 +1,89 @@
+{
+    "name": "Sociology",
+    "mission_statement": "The Africana / Black studies minor focuses on the diaspora of African-descended people and cultures.\n\nThe sequencing of courses includes areas of study on the History of Africa, The African-American (USA and Canada) experience, both historically and in contemporary times, Afro-Caribbean, Afro-Hispanic, and other cultures and descents of African peoples. The program offerings range across traditional fields of sociology, criminology, history, literature, political sciences, law, communications, and education.\n\nOverall, the Africana/Black studies minor seeks to provide Niagara University studies with a multidisciplinary and comparative framework through which to explore African diaspora.\n\nGenerally, the minor is designed to introduce students to the history, culture and society, and political and economic conditions of Black people in Africa, the Americas, and elsewhere in the world; and to explore new approaches \u2013 \u00a0perspectives, analyses and interdisciplinary techniques\u2013 appropriate to the study of the Black experience.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/soc/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Intro Sociology",
+            "description": "The study of society and social institutions with a focus on race, ethnicity, gender, social class, sexuality, deviance, culture, subcultures, work, families, social change, education, and much more.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "202",
+            "title": "\u2014 Cont Social Org",
+            "description": "An analysis of structure and processes within contemporary organizations including the nature, environment, effectiveness, and theory of organizations; focus on power, conflict, resolution, communication, change, innovation, and centralization.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "205",
+            "title": "\u2014 Native American Culture",
+            "description": "Comparative and social-cultural study of Native American cultures. Included are analysis of customs, social structures and processes, and social change.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "207",
+            "title": "\u2014 Introduction to Archaeology",
+            "description": "An overview of the branch of anthropology that investigates ancient societies through the material remains they have left behind. Students will learn that archaeologists do detailed, systematic detective work aimed at answering questions about human behavior. We will study archaeological goals, methods, and theories, and review famous discoveries.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "250",
+            "title": "\u2014 Sociology of Education",
+            "description": "This course examines the educational institution and the roles schools play in societies. Topics will include social mobility, cross-cultural perspectives on education and learning, the dynamics of race, class and gender in education, inequality, discrimination, and the rise of the modern school system, both within the United States and cross-nationally.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "260",
+            "title": "\u2014 Sociology of Higher Ed",
+            "description": "This course examines historical, social, cultural, and environmental issues in higher education. Emphasis is given to the changing nature of higher education, technology, social movements, campus cultures, diversity and multicultural issues. Students will critically engage with theory and challenges facing different student and professional populations within higher education.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "277",
+            "title": "\u2014 Hip-Hop in Society",
+            "description": "This seminar examines the socio-cultural historical development of hip-hop culture from the 1970s to present day. It explores how hip-hop became a global social movement with an emphasis on gender, sexuality, politics, and women's roles as change agents.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "280",
+            "title": "\u2014 Sexuality and Gender",
+            "description": "This course examines the relationship between sexuality, gender, and identity. It considers sociological theories about sex and gender and how our social institutions influence our ideas about sex and gender. We will study how cultural views of sex, sexual identities, gender, intimacy, and marriage have changed over time.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "288",
+            "title": "\u2014 Youth/Music/Subculture",
+            "description": "This course will consider the place of youth in bringing about cultural change. We will explore the worlds of youth subcultures and ?scenes.? In doing so, we should gain an understanding and appreciation for the work done by those who dwell on the fringe of accepted norms.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "302",
+            "title": "\u2014 Topic:",
+            "description": "An analysis of specific sociological topics that have developed as strong theoretical and research areas of current inquiry, including adolescence, gender roles, work, sport, leisure, literature, sex, sociology of knowledge, educational systems, media, and popular culture.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

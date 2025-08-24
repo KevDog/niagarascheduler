@@ -1,0 +1,89 @@
+{
+    "name": "French",
+    "mission_statement": "The French Program at Niagara University focuses on creating globalized citizens who, through studying a language that is spoken on every continent, cultivate new ways to engage with the world. The program progresses from language classes to courses on the history, literature, and art of the French speaking world, culminating in an immersive study-abroad experience.\n\nWith the world becoming more connected and globalized, the need to engage with and truly understand other cultures, and not just translate from one language to the next, is equally on the rise. Studies show that bilingual individuals on average make a higher salary and have more job prospects than their monolingual counterparts. Given that French is spoken on every continent, French majors have the opportunity to put their skills to use in almost any sector and open the doors to a future anywhere in the world.\n\nStudents at Niagara learn French in small classes designed to give them individual attention. Our courses focus on building a strong foundation of proficiency in the language while exposing students to the diverse French-speaking cultures of the world. The classes then progress from language-focused to courses on the history, literature, and art of the French-speaking world, culminating in an immersive study-abroad experience.\n\nThe flexible BA in French gives every student at Niagara University the opportunity to double major, rounding out their marketability and preparing them for any career they decide to pursue. Students can also choose to add on a French minor to any degree.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/fre/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Elem French I",
+            "description": "Basic course in French emphasizing skills in oral and written communication with an introduction to the culture and civilization of the Francophone world. Open to students with no previous study of French or with the permission of the chairperson of the department of foreign languages.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Elementary French II",
+            "description": "Prerequisite Students should take FRE 101 prior Course continues to develop the four basic functions of language begun in French 101: speaking, understanding, reading and writing while stressing vocabulary, grammar and pronunciation. The culture of the Francophone world will form the content area of the course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "103",
+            "title": "\u2014 Interm Conversational French",
+            "description": "Prerequisite Students should take FRE 101 and FRE 102 prior Review and expansion of communication skills (speaking, reading and writing) through materials reflecting the history, literature, and culture of the Francophone world.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "104",
+            "title": "\u2014 Interm Conversational French II",
+            "description": "Prerequisite Student should take FRE 101, FRE 102, and FRE 103 prior. Review and expansion of communication skills (speaking, reading and writing) through materials reflecting the history, literature, and culture of the Francophone world.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Francophone Women",
+            "description": "A survey of various themes and social questions regarding the position that women have held in French society from the 12th century to the present, as these are treated in poetry, prose fiction, cinema and drama by and about female authors. Conducted in English, with all texts read in translation, this course is open to all students, regardless of their background in French. This course cannot be used to satisfy a foreign-language requirement for non-majors. It may count as a culture course required for the minor.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "205",
+            "title": "\u2014 Adv Conversational French & Composition",
+            "description": "Prerequisite Students should take FRE 103 and FRE 104 prior Development of fluency in the language as well as of ability to write original compositions. Includes the study of various aspects of Francophone people and their culture.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "206",
+            "title": "\u2014 Adv Conversational French & Composition",
+            "description": "Prerequisite Take FRE*103 FRE*104 Development of fluency in the language as well as of ability to write original compositions. Includes the study of various aspects of Francophone people and their culture.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "305",
+            "title": "\u2014 Lit & Civil Quebec",
+            "description": "Prerequisite Take FRE*205 A survey of political, social, intellectual and artistic history of Quebec as reflected in its literature.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "307",
+            "title": "\u2014 Contemporary France",
+            "description": "Prerequisite Take FRE*205 An introduction to the cultural institutions of post-war France, this course examines the political structure, technological developments, and social issues of the Fifth Republic, with special emphasis on current events and contemporary media.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "308",
+            "title": "\u2014 Cultural History of France",
+            "description": "Prerequisite Take FRE*205 A survey of the history of France from the Middle Ages to World War II, through thematic studies of the artistic and literary developments, social and political movements, philosophical trends, and historic personalities that helped to shape France of the twenty-first century.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

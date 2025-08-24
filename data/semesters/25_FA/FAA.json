@@ -1,0 +1,116 @@
+[
+  {
+    "department": "FAA",
+    "number": "FAA120A",
+    "name": "Intro to Theatre Design",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "4"
+  },
+  {
+    "department": "FAA",
+    "number": "FAA203B",
+    "name": "Hist of Music",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "ONL",
+    "designation": "H*AE*LA",
+    "availability": "7"
+  },
+  {
+    "department": "FAA",
+    "number": "FAA205A",
+    "name": "America's Music",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "ONL",
+    "designation": "H*AE*LA",
+    "availability": "8"
+  },
+  {
+    "department": "FAA",
+    "number": "FAA220A",
+    "name": "Foundations Drawing",
+    "credits": "3.00",
+    "days": "T",
+    "start_time": "05:20PM",
+    "end_time": "08:00PM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "0"
+  },
+  {
+    "department": "FAA",
+    "number": "FAA305B",
+    "name": "Urban Sketching",
+    "credits": "3.00",
+    "days": "T",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "ONL",
+    "designation": "AE",
+    "availability": "1"
+  },
+  {
+    "department": "FAA",
+    "number": "FAA337A",
+    "name": "Scene Design",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "9"
+  },
+  {
+    "department": "FAA",
+    "number": "FAA345A",
+    "name": "History of Decor & Fashion II",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "H*LA",
+    "availability": "4"
+  },
+  {
+    "number": "FAA201A",
+    "name": "19th C. Art",
+    "credits": "3.00"
+  },
+  {
+    "number": "FAA206A",
+    "name": "Latin American Art",
+    "credits": "3.00"
+  },
+  {
+    "number": "FAA207A",
+    "name": "Women in Art",
+    "credits": "3.00"
+  },
+  {
+    "number": "FAA210A",
+    "name": "Pstmdrn to Cont Art 1960-2000",
+    "credits": "3.00"
+  },
+  {
+    "number": "FAA230A",
+    "name": "Prehistoric to Gothic Art",
+    "credits": "3.00"
+  },
+  {
+    "number": "FAA232A",
+    "name": "Renaissance Art & Cult",
+    "credits": "3.00"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "department": "ESC",
+    "number": "ESC175A",
+    "name": "Earth Sci Solar Astr",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "NS*LA*NSI",
+    "availability": "0"
+  },
+  {
+    "department": "ESC",
+    "number": "ESC176A",
+    "name": "Earth Sci Stellar Ast",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "05:00PM",
+    "end_time": "07:30PM",
+    "delivery_type": "ONL",
+    "designation": "NS*LA*NSI",
+    "availability": "11"
+  }
+]

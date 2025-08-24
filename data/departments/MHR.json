@@ -1,0 +1,89 @@
+{
+    "name": "Hotel Restaurant Management",
+    "mission_statement": "The Food Industry Management program prepares students to become leaders in one of the world\u2019s most dynamic and essential industries. This comprehensive undergraduate degree combines rigorous academic coursework with hands-on experiential learning, providing students with the technical expertise, business acumen, and global perspective necessary to excel in food production, marketing, distribution, safety, and innovation.\n\nIn addition to courses in all functional business areas, this interdisciplinary major also includes courses from across the entire University.\u00a0 The curriculum emphasizes practical application through experiential learning opportunities and offers specialized elective tracks in Manufacturing and Hospitality to align with career interests.\n\nStudents learn about all facets of the food industry in small, interactive classes.\u00a0 Open-door policies are the norm for NU faculty, so students have quick and easy access to these industry experts to ask questions and solve problems.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/mhr/",
+    "courses": [
+        {
+            "number": "241",
+            "title": "\u2014 Foodservice Operations",
+            "description": "This course places special emphasis on the institutional aspects of food and beverage management in restaurants, cafeterias, hotels, motels and clubs. The knowledge necessary to succeed in an entry-level management position in the hospitality industry is presented. Subjects covered include: foodservice sanitation and procedures, tools and equipment, cooking principles, and quality standards. The student will understand production methods for various food types.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "341",
+            "title": "\u2014 Food Prep Principles",
+            "description": "Prerequisite TAKE MHR*241 A study of various foods, basic food preparation principles, cooking methods, food storage, equipment and sanitation. Includes lab and classroom learning experiences. Classroom component investigates the natures and properties of various food types and the underlying processes that effect food preparation techniques. Lab component includes hands on food preparation and experimentation.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "343",
+            "title": "\u2014 Menu & Food Production",
+            "description": "Prerequisite Take MHR*341 MHR*388 Students develop the skills needed to plan, produce, and serve meals to customers in a commercial setting. These skills include menu planning, food procurement and production methods, customer service, and marketing. The classroom portion of the course includes a discussion of the importance of menu development and examines how menu decisions affect all other operational decisions. The lab component culminates in the preparation of an actual meal.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "346",
+            "title": "\u2014 Mkg Hotels & Restaurts",
+            "description": "Prerequisite Take HRT*100 In this course the marketing functions and the delivery systems for hospitality services are examined; explores marketing as a total competitive effort of the firm. It includes human factors of the market, product and market analysis, competitive pricing and methods of approaching the market, with focus on positioning and selling the product. Case studies, interactive methods, and practical application will be used.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "347",
+            "title": "\u2014 Mgt Hotel Systems",
+            "description": "Prerequisite Take HRT*100 Investigates the integrated functions of front office, housekeeping and other departments, as well as considering their roles individually. Information flows within and between departments, demand forecasting, room pricing strategies, reservations control, front office accounting, and other aspects of hotel operations are examined.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "351",
+            "title": "\u2014 Finance & Capital Bdgt",
+            "description": "Prerequisite Take HRT*201 HRT*202 An examination of the manner in which firms attempt to increase shareholders wealth through making the correct financial decisions. We will explore how the manner used to acquire capital as well the asset structure can affect the value of the hospitality firm. Methods of analysis are discussed, including cash budgeting, forecasting of revenue and expenses, and capital expenditure.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "359",
+            "title": "\u2014 Food Layout & Design",
+            "description": "The course presents how principles of layout and design can maximize efficiency in food/lodging operations. Relationships and standards of space allocation, work area standards for equipment, dining area, and service area are discussed. Also included are criteria for selection and costs involved in different forms of layout and design.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "365",
+            "title": "\u2014 Spa Operations",
+            "description": "This course is an in-depth look at subjects ranging from the history and cultural development of spas to spa terminology and financial realities. It also examines today's spa industry, and introduces students to spa careers. In addition, it takes students through a typical day from a spa director's perspective, examines the qualities of an outstanding spa experience, and discusses industry trends and future directions. It provides a strong foundation of knowledge for success in the spa industry.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "388",
+            "title": "\u2014 Food & Bev Cost Ctrl",
+            "description": "Prerequisite Take HRT*201 Food and beverage will be reviewed from both an accounting and a physical asset point of view. The flow of food and beverage from purchasing, to storage, and finally to issuing will be discussed. Inventory techniques and the analysis of appropriate financial ratios will be examined.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "409",
+            "title": "\u2014 Club Management",
+            "description": "Investigates the general administrative procedures and management concepts in seasonal and year-round private clubs by focusing on their unique characteristics and the requirements of the leisure industry. Distinctive aspects such as member ownership and oversight, service excellence, limited market audience, and extensive food and beverage and recreation venues are discussed as operational considerations for managers.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

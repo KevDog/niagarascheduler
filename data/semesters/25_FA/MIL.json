@@ -1,0 +1,122 @@
+[
+  {
+    "department": "MIL",
+    "number": "MIL101A",
+    "name": "Ldrshp & Personal Dev",
+    "credits": "2.00",
+    "days": "T",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "SS",
+    "availability": "8"
+  },
+  {
+    "department": "MIL",
+    "number": "MIL101NCCC",
+    "name": "Ldrshp & Personal Dev",
+    "credits": "2.00",
+    "days": "M",
+    "start_time": "07:55AM",
+    "end_time": "08:50AM",
+    "delivery_type": "LEC",
+    "designation": "SS",
+    "availability": "18"
+  },
+  {
+    "department": "MIL",
+    "number": "MIL101LA",
+    "name": "Basic Mil Skills Lab",
+    "credits": "0.00",
+    "days": "THTH",
+    "start_time": "02:00PM02:00PM",
+    "end_time": "05:00PM05:00PM",
+    "delivery_type": "LAB",
+    "designation": "LAB",
+    "availability": "9"
+  },
+  {
+    "department": "MIL",
+    "number": "MIL200A",
+    "name": "Development of Mil Strategy",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "SS",
+    "availability": "12"
+  },
+  {
+    "department": "MIL",
+    "number": "MIL201A",
+    "name": "Innovative Team Ldrshp",
+    "credits": "2.00",
+    "days": "W",
+    "start_time": "11:10AM",
+    "end_time": "01:10PM",
+    "delivery_type": "LEC",
+    "designation": "SS",
+    "availability": "10"
+  },
+  {
+    "department": "MIL",
+    "number": "MIL201LA",
+    "name": "Basic Mil Skills Lab",
+    "credits": "0.00",
+    "days": "THTH",
+    "start_time": "02:00PM02:00PM",
+    "end_time": "05:00PM05:00PM",
+    "delivery_type": "LAB",
+    "designation": "LAB",
+    "availability": "9"
+  },
+  {
+    "department": "MIL",
+    "number": "MIL301A",
+    "name": "Inter Mil Ldrshp & Mgt",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "4"
+  },
+  {
+    "department": "MIL",
+    "number": "MIL301LA",
+    "name": "Basic Mil Skills Lab",
+    "credits": "0.00",
+    "days": "THTH",
+    "start_time": "02:00PM02:00PM",
+    "end_time": "05:00PM05:00PM",
+    "delivery_type": "LAB",
+    "designation": "LAB",
+    "availability": "5"
+  },
+  {
+    "department": "MIL",
+    "number": "MIL401A",
+    "name": "Adaptive Leadership",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "4"
+  },
+  {
+    "department": "MIL",
+    "number": "MIL401LA",
+    "name": "Basic Mil Skills Lab",
+    "credits": "0.00",
+    "days": "THTH",
+    "start_time": "02:00PM02:00PM",
+    "end_time": "05:00PM05:00PM",
+    "delivery_type": "LAB",
+    "designation": "LAB",
+    "availability": "4"
+  }
+]

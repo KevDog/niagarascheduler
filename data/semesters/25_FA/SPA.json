@@ -1,0 +1,110 @@
+[
+  {
+    "department": "SPA",
+    "number": "SPA101A",
+    "name": "Elem Spanish I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "09:00AM",
+    "end_time": "09:55AM",
+    "delivery_type": "LEC",
+    "designation": "AS*GE*LA",
+    "availability": "11"
+  },
+  {
+    "department": "SPA",
+    "number": "SPA101C",
+    "name": "Elem Spanish I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "10:05AM",
+    "end_time": "11:00AM",
+    "delivery_type": "LEC",
+    "designation": "AS*GE*LA",
+    "availability": "3"
+  },
+  {
+    "department": "SPA",
+    "number": "SPA101D",
+    "name": "Elem Spanish I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "AS*GE*LA",
+    "availability": "1"
+  },
+  {
+    "department": "SPA",
+    "number": "SPA103A",
+    "name": "Intermediate Spanish I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "10:05AM",
+    "end_time": "11:00AM",
+    "delivery_type": "LEC",
+    "designation": "AS*GE*LA",
+    "availability": "8"
+  },
+  {
+    "department": "SPA",
+    "number": "SPA103B",
+    "name": "Intermediate Spanish I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "AS*GE*LA",
+    "availability": "10"
+  },
+  {
+    "department": "SPA",
+    "number": "SPA205A",
+    "name": "Adv Conv Span & Comp I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "AS*GE*LA",
+    "availability": "8"
+  },
+  {
+    "department": "SPA",
+    "number": "SPA307A",
+    "name": "Civ & Cult Lat Amer",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "H*CD*AS*LA*GE",
+    "availability": "7"
+  },
+  {
+    "department": "SPA",
+    "number": "SPA319A",
+    "name": "Latin America in Film",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "H*AS*CD*LA",
+    "availability": "8"
+  },
+  {
+    "department": "SPA",
+    "number": "SPA413A",
+    "name": "Generations of 98 and 27",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "H*AS*WI*LA",
+    "availability": "11"
+  }
+]

@@ -1,0 +1,33 @@
+{
+    "name": "Learning Skills",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/lsk/",
+    "courses": [
+        {
+            "number": "095",
+            "title": "\u2014 Basic Math",
+            "description": "A course designed to review and/or teach students the methodology of arithmetic and basic algebra which will help students better their understanding of the math concepts they need in their subsequent credit math class. Topics include fractions, decimals, percents, signed numbers, exponents, and beginning algebra through the solving of basic linear equations that contain rational numbers.LSK 200 \u2014 Intro to College Academics  This course helps students develop the academic skills and strategies that can enable them to successfully transition from high school to college. It addresses college-level reading, writing, and study skills. Registration is limited to students enrolled in the Summer Niagara University Opportunity Program.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "095",
+            "title": "\u2014 Basic Math",
+            "description": "A course designed to review and/or teach students the methodology of arithmetic and basic algebra which will help students better their understanding of the math concepts they need in their subsequent credit math class. Topics include fractions, decimals, percents, signed numbers, exponents, and beginning algebra through the solving of basic linear equations that contain rational numbers.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Intro to College Academics",
+            "description": "This course helps students develop the academic skills and strategies that can enable them to successfully transition from high school to college. It addresses college-level reading, writing, and study skills. Registration is limited to students enrolled in the Summer Niagara University Opportunity Program.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

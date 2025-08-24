@@ -1,0 +1,70 @@
+[
+  {
+    "department": "SOC",
+    "number": "SOC101A",
+    "name": "Intro Sociology",
+    "credits": "3.00",
+    "days": "TH",
+    "start_time": "06:00PM",
+    "end_time": "08:45PM",
+    "delivery_type": "LEC",
+    "designation": "SS*SSI*LA",
+    "availability": "1"
+  },
+  {
+    "department": "SOC",
+    "number": "SOC310A",
+    "name": "Social Theories",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "H*WI*LA",
+    "availability": "22"
+  },
+  {
+    "department": "SOC",
+    "number": "SOC312A",
+    "name": "Social Stratification",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "SS*SSI*LA",
+    "availability": "3"
+  },
+  {
+    "department": "SOC",
+    "number": "SOC323A",
+    "name": "Soc of Religion",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "SS*SSI*LA",
+    "availability": "21"
+  },
+  {
+    "number": "SOC101B",
+    "name": "Intro Sociology",
+    "credits": "3.00"
+  },
+  {
+    "number": "SOC205A",
+    "name": "Native American Culture",
+    "credits": "3.00"
+  },
+  {
+    "number": "SOC317A",
+    "name": "Cultural Anthropology",
+    "credits": "3.00"
+  },
+  {
+    "number": "SOC328A",
+    "name": "Social Change",
+    "credits": "3.00"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "department": "PHY",
+    "number": "PHY101B",
+    "name": "Survey of Physics",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "NS*LA",
+    "availability": "16"
+  },
+  {
+    "department": "PHY",
+    "number": "PHY121A",
+    "name": "General Physics Lecture I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "NS*LA*NSI",
+    "availability": "15"
+  },
+  {
+    "department": "PHY",
+    "number": "PHY121B",
+    "name": "General Physics Lecture I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "NS*LA*NSI",
+    "availability": "7"
+  },
+  {
+    "department": "PHY",
+    "number": "PHY123LA",
+    "name": "General Physics Lab I",
+    "credits": "1.00",
+    "days": "T",
+    "start_time": "01:30PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LAB",
+    "designation": "NS*LA",
+    "availability": "2"
+  },
+  {
+    "department": "PHY",
+    "number": "PHY123LB",
+    "name": "General Physics Lab I",
+    "credits": "1.00",
+    "days": "T",
+    "start_time": "05:10PM",
+    "end_time": "08:00PM",
+    "delivery_type": "LAB",
+    "designation": "NS*LA",
+    "availability": "2"
+  },
+  {
+    "department": "PHY",
+    "number": "PHY123LC",
+    "name": "General Physics Lab I",
+    "credits": "1.00",
+    "days": "TH",
+    "start_time": "01:30PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LAB",
+    "designation": "NS*LA",
+    "availability": "0"
+  }
+]

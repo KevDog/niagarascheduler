@@ -1,0 +1,110 @@
+[
+  {
+    "department": "ASL",
+    "number": "ASL100A",
+    "name": "Intro ASL and Deaf Culture",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AS*CD*LA*SJ",
+    "availability": "0"
+  },
+  {
+    "department": "ASL",
+    "number": "ASL100D",
+    "name": "Intro ASL and Deaf Culture",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "AS*CD*LA*SJ",
+    "availability": "0"
+  },
+  {
+    "department": "ASL",
+    "number": "ASL200B",
+    "name": "Applied ASL I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "04:30PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "AS*CD*LA",
+    "availability": "0"
+  },
+  {
+    "department": "ASL",
+    "number": "ASL201A",
+    "name": "Applied ASL II",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "04:30PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "AS*CD*LA",
+    "availability": "3"
+  },
+  {
+    "department": "ASL",
+    "number": "ASL201B",
+    "name": "Applied ASL II",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AS*CD*LA",
+    "availability": "5"
+  },
+  {
+    "department": "ASL",
+    "number": "ASL202A",
+    "name": "Applied ASL III",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AS*CD*LA",
+    "availability": "0"
+  },
+  {
+    "department": "ASL",
+    "number": "ASL202B",
+    "name": "Applied ASL III",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "04:30PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "AS*CD*LA",
+    "availability": "7"
+  },
+  {
+    "department": "ASL",
+    "number": "ASL310A",
+    "name": "Deaf Studies",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "ONL",
+    "designation": "CD*SJ*LA",
+    "availability": "3"
+  },
+  {
+    "department": "ASL",
+    "number": "ASL310B",
+    "name": "Deaf Studies",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "ONL",
+    "designation": "CD*SJ*LA",
+    "availability": "1"
+  }
+]

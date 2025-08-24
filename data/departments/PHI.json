@@ -1,0 +1,89 @@
+{
+    "name": "Philosophy",
+    "mission_statement": "Philosophy is the cornerstone of a liberal arts education.\n\nIt asks and searches for answers to some of the deepest, most personal questions that we all as human beings have had, such as:\n\nPhilosophy judges answers to these questions based on whether they can be rationally defended. Philosophy thus focuses almost entirely on assessing reasons, which is the keystone for critical thinking. Students who have had a firm grounding in philosophy are ready to enter the world as rational, freethinking, and critically reflective citizens and human beings.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/phi/",
+    "courses": [
+        {
+            "number": "105",
+            "title": "\u2014 Reason & Responsibility",
+            "description": "This course provides an introduction to the philosophical methodology for good reasoning and applies these reasoning skills to examine general principles about what it is we should do and believe. Students will learn classic problems in philosophy, their roots in intellectual history, and their importance for modern life.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "206",
+            "title": "\u2014 Ethics",
+            "description": "Prerequisite PHI*105 This course is designed to develop the student's ability to think critically about contemporary ethical issues, both personal and social. It constitutes a scientific investigation in order to develop a normative value system as a basis for distinguishing the good and evil in human conduct.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "300",
+            "title": "\u2014 Logic",
+            "description": "Prerequisite PHI*105 Logic, the science and art of reasoning, is a necessary tool for decision making in all areas of human reasoning. This course helps the student to develop reasoning skills through the principles and method of classical logic.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "301",
+            "title": "\u2014 Philosophy of the Human Person",
+            "description": "Prerequisite PHI*105 This course investigates, both historically and systematically, philosophical questions concerning the human person. Are persons identical to bodies, souls, psychologies, or some combination of these? How should we understand the idea of human nature? What does it mean for human persons to live well or flourish?",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "303",
+            "title": "\u2014 Epistemology",
+            "description": "Prerequisite PHI*105 At its core, epistemology attempts to explain what makes a belief a good one. Topics include the nature of knowledge, philosophical skepticism, the structure of justification for beliefs, and the sources of such justification.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "304",
+            "title": "\u2014 Social and Political Philosophy",
+            "description": "Prerequisite PHI*105 A study of classical, modern, and contemporary social and political theories; the values toward which the social process is directed; the power and authority of the state; law as an agent of social control; political obligations; the idea of justice.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "305",
+            "title": "\u2014 Philosophy of Science",
+            "description": "Prerequisite PHI*105 Science is an exemplary source of knowledge-but it is unclear just what science is, and in what sense it is successful. Topics include the distinction between science (astronomy, evolution) and pseudoscience (astrology, homeopathics), the nature of scientific explanations and laws, the reality of theoretical entities, and the role of values and aesthetics in scientific theorizing.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "306",
+            "title": "\u2014 Metaphysics",
+            "description": "Prerequisite PHI*105 Investigates, both historically and systematically, the nature of metaphysical knowledge, the constitution and properties of being, causality, analogy, the existence and nature of Infinite Being, and allied questions.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "308",
+            "title": "\u2014 Philosophy of Mind",
+            "description": "Prerequisite Take PHI 105 This course is a study of some central questions about the human mind and its place in nature. Topics will include: theories of the relation between mental states and physical states, artificial intelligence, the nature of mental representation, and the place of consciousness in a physicalistic worldview.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "309",
+            "title": "\u2014 Special Topics",
+            "description": "Prerequisite Take PHI 105 This course offers in depth study of contemporary debates in philosophy. The course may focus on specific topics in different areas of philosophy or on debated issues in the study of the history of philosophy. May be taken up to three times with different course material.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

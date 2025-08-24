@@ -1,0 +1,89 @@
+{
+    "name": "Political Science",
+    "mission_statement": "Political science is dedicated to developing student understanding of the institutions of government and the formulation and implementation of domestic and foreign policy.\n\nOur approach prepares students to think independently, appreciate alternative perspectives, and critically analyze current events. We seek to nurture student appreciation of law and legal reasoning, other cultures and political systems, and the role of the United States in the world community. We are dedicated to the development of the whole student, one who is culturally sensitive and able to apply qualitative and quantitative methodologies to political, economic, social, cultural, gender-based, and legal questions. We encourage students to consider the ethical implications of policies and governmental actions, and to become active citizens at both the local and global levels.\n\nThe breadth and diversity of political science makes it a discipline well suited for answering the major issues challenging the world of the 21st century.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/pol/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 American Govt",
+            "description": "Study of the essentials of American government; Congress; the presidency; the federal judiciary; principles of federalism; separation of powers, and the federal regulatory system.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "103",
+            "title": "\u2014 International Issues",
+            "description": "An introduction to the major issues facing the international political system. The course will focus on the problems of war, nuclear weapons, underdevelopment, food and population, science and technology, human rights, and nationalism as they currently affect world politics.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "105",
+            "title": "\u2014 Comparative Govt",
+            "description": "Examination of topics in comparative political analysis. The impact of indigenous values, beliefs, and attitudes upon political behavior. Materials will be drawn from a variety of systems and the cultures with emphasis on the Western.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "111",
+            "title": "\u2014 Fundamentals of Justice",
+            "description": "This course will examine justice from environmental, social, and legal perspectives. It will introduce students to advocacy and organizing principles and techniques by examining transformative movements, inspirational writings, and efforts for collective liberation. The overriding goal is to help students understand actions and strategies for change.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Political Science Practical Seminar",
+            "description": "Prerequisite take pol*101; This course is designed to introduce students to the systematic analysis of politics. Methods of critical investigation are applied to research topics determined by the student; issues related to the research question and approaches to answering the question are examined. Students will research career options, internship opportunities, study abroad programs, and develop strategies for pursuing these opportunities.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 American Pol Thought",
+            "description": "A study of the historical and contemporary ideas underlying the creation and development of American liberal democracy. The political and social thought of the system's most ardent advocates and critics will be examined as a way of discovering both the ideological bases of some of the most important issues of our time and the power of interest groups to co-opt or defeat ideological preferences.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "203",
+            "title": "\u2014 Introduction to Law",
+            "description": "An introduction to American law and legal institutions as a part of government. The course will survey generally the sources and functions of law as a mediator between the individual and the society of government; and between the various orders of society: political, economic, and social. The course will examine, in general terms, the various kinds of law - civil, environmental, criminal, constitutional, etc. - focusing on selected problems in these areas to determine the capacity and limitations of law and legal processes to deal with social problems.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "204",
+            "title": "\u2014 International Regions",
+            "description": "An introduction to the political histories and prehistories of different regions of the world based on the interpretation of evidence from archaeological excavations. This course is a survey of global archaeology as it relates to ancient political systems-beginning at their point of inception in human history-while comparing and contrasting the various methods and systems used by our ancestors to govern and structure human interactions with each other and with their environments.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "220",
+            "title": "\u2014 Women and the Law",
+            "description": "A historical and legal overview of women in the American justice system. Emphasis on the equal protection arguments, remedies for discrimination, evolving concepts in the law of rape, consumer rights, and employment practices.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "230",
+            "title": "\u2014 Women in Politics",
+            "description": "This course is designed to provide an introduction to the growing field of women and politics, specifically women and politics in the United States. Specific topics include the origins and goals of the women's movements, political participation by women in citizen level activities, women elected and appointed officials in government, and public policy goals and accomplishments of the women's movements.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

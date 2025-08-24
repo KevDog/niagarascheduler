@@ -1,0 +1,38 @@
+[
+  {
+    "department": "LAW",
+    "number": "LAW205A",
+    "name": "Legal Env of Business",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "SS",
+    "availability": "0"
+  },
+  {
+    "department": "LAW",
+    "number": "LAW205X",
+    "name": "Legal Env of Business",
+    "credits": "3.00",
+    "days": "M",
+    "start_time": "06:00PM",
+    "end_time": "08:45PM",
+    "delivery_type": "LEC",
+    "designation": "SS",
+    "availability": "0"
+  },
+  {
+    "department": "LAW",
+    "number": "LAW301A",
+    "name": "Business Law I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "SS",
+    "availability": "0"
+  }
+]

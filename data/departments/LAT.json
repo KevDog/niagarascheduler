@@ -1,0 +1,33 @@
+{
+    "name": "Latin",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/lat/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Elem Latin I",
+            "description": "A basic course in Latin emphasizing the essentials of grammatical structure, vocabulary, and the reading of selected texts based on a variety of Latin authors with an introduction to the culture and civilization of ancient Rome. Special emphasis on Latin roots of English words. Highly recommended for all arts and science majors, particularly students in pre-law, pre-med, religious studies, English, and modern language programs.LAT 102 \u2014 Elem Latin II  Prerequisite Take LAT*101 Latin 102 is a continuation of Latin 101, which uses readings as a pathway to understanding the forms, grammar, and structure of the language of the Romans. Along with acquiring the ability to read Latin at an intermediate level, students will learn about the culture and civilization of the Greco-Roman world, the Latin influence on English, and the Romance languages, with special emphasis on the Latin presence in English today.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101",
+            "title": "\u2014 Elem Latin I",
+            "description": "A basic course in Latin emphasizing the essentials of grammatical structure, vocabulary, and the reading of selected texts based on a variety of Latin authors with an introduction to the culture and civilization of ancient Rome. Special emphasis on Latin roots of English words. Highly recommended for all arts and science majors, particularly students in pre-law, pre-med, religious studies, English, and modern language programs.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Elem Latin II",
+            "description": "Prerequisite Take LAT*101 Latin 102 is a continuation of Latin 101, which uses readings as a pathway to understanding the forms, grammar, and structure of the language of the Romans. Along with acquiring the ability to read Latin at an intermediate level, students will learn about the culture and civilization of the Greco-Roman world, the Latin influence on English, and the Romance languages, with special emphasis on the Latin presence in English today.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

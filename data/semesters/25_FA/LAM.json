@@ -1,0 +1,38 @@
+[
+  {
+    "department": "LAM",
+    "number": "LAM499AS",
+    "name": "Senior Seminar",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "ONL",
+    "designation": "WI*LA",
+    "availability": "13"
+  },
+  {
+    "department": "LAM",
+    "number": "LAM499EDUA",
+    "name": "Senior Seminar",
+    "credits": "3.00",
+    "days": "M",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "ONL",
+    "designation": "WI*LA",
+    "availability": "8"
+  },
+  {
+    "department": "LAM",
+    "number": "LAM499EDUB",
+    "name": "Senior Seminar",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "ONL",
+    "designation": "WI*LA",
+    "availability": "13"
+  }
+]

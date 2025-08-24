@@ -1,0 +1,89 @@
+{
+    "name": "Religious Studies",
+    "mission_statement": "Our Religious Studies academic program explores the nature of religion and its impact on history, culture, and society. This is a unique offering, grounded in the Catholic Vincentian tradition of Niagara University, that will give you crucial insight into understanding the world and society, whether you are personally religious or not.\n\nWithin the global religious landscape, we focus on the great monotheistic traditions of Judaism, Christianity, and Islam, and how it is practiced through ritual, belief, art, and more. You\u2019ll receive personalized instruction from the faculty and participate in research and activities alongside them, including Study Abroad trips to Rome, Italy.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/rel/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 The Search for God",
+            "description": "This course explores some of the common themes and patterns of religion, such as myth, ritual, symbolism, sacred space, and the quest for salvation. Examples are taken from different religions, especially those of the Western/American tradition. The course highlights Catholicism in general and the Vincentian heritage in particular. (Formerly Intro to Religion)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "103",
+            "title": "\u2014 Introduction to Christianity",
+            "description": "A survey of the historical and theological development of the Christian religion from its Jewish origins to contemporary American Christianity. There will be an emphasis on the key historical moments and personages that have had a far-reaching impact on the Christian tradition, especially its Roman Catholic dimension. Aspects of the Vincentian heritage will be considered as part of the latter.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "206",
+            "title": "\u2014 World Religions",
+            "description": "This course introduces students to the category of world religion and surveys several examples, including Hinduism, Buddhism, Christianity, and Islam. Attention is given to the origins, beliefs, practices, and social structures of each tradition.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "211",
+            "title": "\u2014 Introduction to Hebrew Scriptures",
+            "description": "An introduction to the critical interpretation of the Jewish Bible/ Old Testament. The composition and key themes of the individual works of the Bible will be examined in light of ancient Israelite history and religion. The formation of biblical canons in early Judaism and early Christianity will also be considered.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "215",
+            "title": "\u2014 Christian Vision of the Human Person",
+            "description": "The course will explore the meaning of human personhood using the theological language of grace, sin, freedom, and conscience, both from traditional and contemporary sources. We will discuss issues of human character as well as current issues in family, church, and society, whose solutions have implication for the dignity of persons.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "216",
+            "title": "\u2014 Jesus the Christ",
+            "description": "A study of Jesus as presented in the Gospels, with special emphasis upon Jesus as savior, the resurrection, the role of the cross, and Jesus as revealing the Word of God. Also treated are various theological developments (including the Formula of Chalcedon) in the distinction made between the Jesus of History and the Christ of Faith.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "217",
+            "title": "\u2014 Christian Sacraments",
+            "description": "A study of the scriptural, historical, and cultural influences on the development of Christian worship. Beginning with the human experience of worship, the course proceeds to examine the Jewish roots of Christian worship and the various sacraments and rites which Christians celebrate. Special emphasis is given to baptism, confirmation, and the Eucharist, and their relevance for the contemporary Christian.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "219",
+            "title": "\u2014 Introduction to Christian Scriptures",
+            "description": "An introduction to the critical interpretation of the earliest Christian literature within the historical, cultural, and social settings of the ancient Mediterranean world in which it was produced. Close reading of primary texts will be emphasized, with a focus on issues of method, and the question of unity and diversity in early Christianity.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "230",
+            "title": "\u2014 Monastery and Megachurch",
+            "description": "A comparative look at two branches of Christianity -- Orthodoxy ('monastery') and Protestantism ('megachurch'). Topics range from worship styles to questions of salvation.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "246",
+            "title": "\u2014 Religion and Science",
+            "description": "Conflict and antagonism between religion and science are neither uncommon nor unusual, yet they have a common origin in the quest for truth and meaning in life. Modern scientific knowledge is required to be objective, logical, empirical, and quantitative. Religion deals primarily with meaning; it gains knowledge through faith, contemplation, and revelation. This course examines the contemporary relationship between religion and science.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

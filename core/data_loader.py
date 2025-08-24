@@ -13,10 +13,16 @@ class DepartmentDataLoader:
     
     def load_department(self, department_abbreviation):
         """Load Department object from JSON file"""
-        file_path = os.path.join(self.data_directory, f"{department_abbreviation}.json")
+        # Try departments/ subfolder first, then legacy location
+        dept_file_path = os.path.join(self.data_directory, 'departments', f"{department_abbreviation}.json")
+        if not os.path.exists(dept_file_path):
+            # Fallback to legacy location for backward compatibility
+            dept_file_path = os.path.join(self.data_directory, f"{department_abbreviation}.json")
         
-        if not os.path.exists(file_path):
+        if not os.path.exists(dept_file_path):
             return None
+        
+        file_path = dept_file_path
         
         with open(file_path, 'r') as f:
             dept_data = json.load(f)
@@ -32,6 +38,7 @@ class DepartmentDataLoader:
             mission_statement=dept_data.get("mission_statement"),
             office=dept_data.get("office"),
             course_listing_url=dept_data.get("course_listing_url"),
+            course_descriptions_url=dept_data.get("course_descriptions_url"),
             courses=courses
         )
     
@@ -59,8 +66,20 @@ class DepartmentDataLoader:
     def get_all_departments(self):
         """Get list of all available department abbreviations"""
         departments = []
+        
+        # Try departments/ subfolder first
+        dept_dir = os.path.join(self.data_directory, 'departments')
+        if os.path.exists(dept_dir):
+            for filename in os.listdir(dept_dir):
+                if filename.endswith('.json'):
+                    dept_abbrev = filename[:-5]  # Remove .json extension
+                    departments.append(dept_abbrev)
+        
+        # Also check legacy location for backward compatibility
         for filename in os.listdir(self.data_directory):
             if filename.endswith('.json'):
                 dept_abbrev = filename[:-5]  # Remove .json extension
-                departments.append(dept_abbrev)
+                if dept_abbrev not in departments:  # Avoid duplicates
+                    departments.append(dept_abbrev)
+                    
         return departments

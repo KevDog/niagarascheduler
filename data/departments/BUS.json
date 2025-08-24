@@ -1,0 +1,57 @@
+{
+    "name": "Business",
+    "mission_statement": "Our Master of Business Administration (MBA) program provides you with rigorous and advanced study for further development as you work towards your current and future business career goals across all industries.\n\nAs an MBA student at Niagara, you\u2019ll combine theory from social and behavioral science with real-world experiences. NU uses a variety of teaching methods, including team projects, experiential learning, and case studies, to enhance the interpersonal skills that are crucial for your professional advancement. Our small classes, led by industry professionals, ensure an optimal learning environment with opportunities for practical application, preparing you for success in the business world.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/bus/",
+    "courses": [
+        {
+            "number": "120",
+            "title": "\u2014 Intro to Business",
+            "description": "This course is designed as an introduction to business for first year business students. Major topics include the competitive global business environment, keys to business success, financial literacy, business ethics, leadership and team skills, and an overview of the functional management areas of business and related career opportunities.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "403",
+            "title": "\u2014 Honors Thesis I",
+            "description": "Individual research of a substantive nature pursued in the students major field of study. The research will conclude in a written thesis or an original project, and an oral defense.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "404",
+            "title": "\u2014 Honors Thesis II",
+            "description": "Individual research of a substantive nature pursued in the students major field of study. The research will conclude in a written thesis or an original project, and an oral defense.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "420",
+            "title": "\u2014 Directed Readings",
+            "description": "A program of directed individual readings for advanced undergraduates. Conferences with members of the College of Business Administration faculty and written reports are required. Course often incorporates special travel, and activities not covered in traditional courses.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "495",
+            "title": "\u2014 Internship/Co-op",
+            "description": "A junior or senior work-study program providing relevant employment experience. The objective of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning and providing the student with a realistic exposure to career opportunities. Transfer students must complete a minimum of 15 semester hours in the major at Niagara University before enrollment. Registration is to be arranged through the chairperson.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "496",
+            "title": "\u2014 Business Internship/Co-op",
+            "description": "A junior or senior work-study program providing relevant employment experience. The objective of the program is to integrate classroom theory and practical work experience, thus lending relevancy to learning and providing the student with a realistic exposure to career opportunities. Transfer students must complete a minimum of 15 semester hours in the major at Niagara University before enrollment. Registration is to be arranged through the chairperson.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

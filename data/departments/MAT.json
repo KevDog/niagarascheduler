@@ -1,0 +1,169 @@
+{
+    "name": "Mathematics",
+    "mission_statement": "As a student of actuarial science, you\u2019ll blend theory from math, business, finance, and economics into practice in this interdisciplinary major. Our students learn about the commonalities and science between math and business with individual instruction in small classes.\n\nYour coursework will combine mathematics, general business, finance, and computer science to help you pass the first two actuarial exams while developing marketable skills for your post-graduate career.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/mat/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Math for the Liberal Arts",
+            "description": "A survey of mathematics including sets, probability, descriptive statistics, and other contemporary math topics.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Intro Statistics",
+            "description": "A study of the basic terminology and methods of elementary statistics including organization of data, measures of central tendency and dispersion, sampling theory, estimation, and testing of hypotheses. Also includes an introduction to correlation and linear regression. Students may not receive credit in both MAT 102 and MAT 201.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102Y",
+            "title": "\u2014 Intro Statistics",
+            "description": "A study of the basic terminology and methods of elementary statistics including organization of data, measures of central tendency and dispersion, sampling theory, estimation, and testing of hypotheses. Also includes an introduction to correlation and linear regression. Students may not receive credit in both MAT 102 and MAT 201. MAT 102Y includes an extra hour per week of supplemental instruction.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "106",
+            "title": "\u2014 Intro College Math",
+            "description": "This course is designed for students who have mastered the basic skills of arithmetic and elementary algebra, but are not adequately prepared for Business Calculus I (MAT 107) or Precalculus (MAT 109). Topics include exponents; scientific notation; graphing; polynomial arithmetic and factoring; linear, fractional, and quadratic expressions and equations; linear equalities; measurement geometry; and trigonometry. Course does not satisfy the mathematics requirement in the distribution component.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "107",
+            "title": "\u2014 Business Calculus I",
+            "description": "An introduction to calculus with primary emphasis on applications to business and economics. Topics include algebra, problem solving, functions including exponential and logarithmic, mathematics of finance, systems of linear equations, differentiation, and applications of differentiation.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "109",
+            "title": "\u2014 Precalculus",
+            "description": "A study of basic properties of algebra and trigonometry together with algebraic functions, transcendental functions, and analytic geometry. Emphasis will be on providing students with the background necessary to begin the formal calculus sequence.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "111",
+            "title": "\u2014 Calculus I",
+            "description": "A study of functions, limits, continuity, differentiation, applications of differentiation, and an introduction to integration.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "112",
+            "title": "\u2014 Calculus II",
+            "description": "Prerequisite Take MAT*111 A study of integration, techniques of integration, applications of integration, and an introduction to infinite sequences and series.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 Business Statistics I",
+            "description": "Prerequisite Taking CIS 232 is recommended A completely integrated computer-based course in which Excel is used to study statistical methods as applied to business, including descriptive statistics, probability sampling, hypothesis testing, and statistical inference. Students may not receive credit in both MAT 102 and MAT 201.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "202",
+            "title": "\u2014 Statistics II",
+            "description": "A continuation of MAT 102 including estimating and testing the difference between means, proportions, and variances. An introduction to analysis of variance, regression analysis, and nonparametric statistics. Students may not receive credit in both MAT 202 and BUS 231.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101",
+            "title": "\u2014 Math for the Liberal Arts",
+            "description": "A survey of mathematics including sets, probability, descriptive statistics, and other contemporary math topics.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Intro Statistics",
+            "description": "A study of the basic terminology and methods of elementary statistics including organization of data, measures of central tendency and dispersion, sampling theory, estimation, and testing of hypotheses. Also includes an introduction to correlation and linear regression. Students may not receive credit in both MAT 102 and MAT 201.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102Y",
+            "title": "\u2014 Intro Statistics",
+            "description": "A study of the basic terminology and methods of elementary statistics including organization of data, measures of central tendency and dispersion, sampling theory, estimation, and testing of hypotheses. Also includes an introduction to correlation and linear regression. Students may not receive credit in both MAT 102 and MAT 201. MAT 102Y includes an extra hour per week of supplemental instruction.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "106",
+            "title": "\u2014 Intro College Math",
+            "description": "This course is designed for students who have mastered the basic skills of arithmetic and elementary algebra, but are not adequately prepared for Business Calculus I (MAT 107) or Precalculus (MAT 109). Topics include exponents; scientific notation; graphing; polynomial arithmetic and factoring; linear, fractional, and quadratic expressions and equations; linear equalities; measurement geometry; and trigonometry. Course does not satisfy the mathematics requirement in the distribution component.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "107",
+            "title": "\u2014 Business Calculus I",
+            "description": "An introduction to calculus with primary emphasis on applications to business and economics. Topics include algebra, problem solving, functions including exponential and logarithmic, mathematics of finance, systems of linear equations, differentiation, and applications of differentiation.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "109",
+            "title": "\u2014 Precalculus",
+            "description": "A study of basic properties of algebra and trigonometry together with algebraic functions, transcendental functions, and analytic geometry. Emphasis will be on providing students with the background necessary to begin the formal calculus sequence.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "111",
+            "title": "\u2014 Calculus I",
+            "description": "A study of functions, limits, continuity, differentiation, applications of differentiation, and an introduction to integration.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "112",
+            "title": "\u2014 Calculus II",
+            "description": "Prerequisite Take MAT*111 A study of integration, techniques of integration, applications of integration, and an introduction to infinite sequences and series.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 Business Statistics I",
+            "description": "Prerequisite Taking CIS 232 is recommended A completely integrated computer-based course in which Excel is used to study statistical methods as applied to business, including descriptive statistics, probability sampling, hypothesis testing, and statistical inference. Students may not receive credit in both MAT 102 and MAT 201.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "202",
+            "title": "\u2014 Statistics II",
+            "description": "A continuation of MAT 102 including estimating and testing the difference between means, proportions, and variances. An introduction to analysis of variance, regression analysis, and nonparametric statistics. Students may not receive credit in both MAT 202 and BUS 231.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

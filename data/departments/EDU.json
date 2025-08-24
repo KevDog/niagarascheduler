@@ -1,0 +1,89 @@
+{
+    "name": "Education",
+    "mission_statement": "Our Adolescence Education program is recommended for people who have a passion teaching a specific subject to middle and high school students in grades 7-12. As a student in our College of Education, you\u2019ll be encouraged to explore concepts, issues, and problems from multiple perspectives with reflection, collaboration, and analysis of diverse evidence. Through this foundation, you\u2019ll systematically build your knowledge and skill through coursework and field experiences, beginning in your first semester at Niagara.\n\nOnce you successfully complete our program and pass New York state testing requirements, you\u2019ll qualify for initial teacher certification in New York for middle childhood and adolescence education in your specific subject, including Biology, Chemistry, English, Mathematics, Spanish, French, and Social Studies.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/edu/",
+    "courses": [
+        {
+            "number": "214",
+            "title": "\u2014 Cult & Multicult Found",
+            "description": "This course examines the ways in which diverse disciplines (e.g., history, philosophy, psychology, sociology, multiculturality, economics, ethics, law) are the basis upon which Western educational practices are built. These interconnected foundations continuously shape school characteristics and conditions including curriculum, pedagogy, classroom organization, technology and the expectations held of teachers, students, parents, administrators, and the community. Course experiences will involve prospective teachers in gaining knowledge with which to analyze the effects of these educational foundations on the school experience in the past and present. Prospective teachers will use their evolving foundational framework to examine educational paradigms, theories and practices that either strengthen and expand the democratic possibilities of schooling or maintain the current correspondence between educational success and students socioeconomic and cultural identities.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "215",
+            "title": "\u2014 Topic:",
+            "description": "Students and instructor will select for reading, discussion, and analysis, issues which have significant implications for education, present and future. Students as individuals and as a group will be expected to develop clear, cogent position statements on issues.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "216",
+            "title": "\u2014 Current Issues Education",
+            "description": "Students and instructor will select for reading, discussion, and analysis, issues which have significant implications for education, present and future. Students as individuals and as a group will be expected to develop clear, cogent position statements on issues.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "228",
+            "title": "\u2014 Equity, Diversity, & Inclusion",
+            "description": "This course introduces the prospective teacher to the issues of respect, appreciation and celebration of diversity in the educational setting. It examines the myths and origins of prejudice and discrimination. Prospective teachers will explore student-responsive strategies(in a constructivist environment) to enhance learning for students with cultural, ethnic, gender, racial, physical, and mental differences.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "234",
+            "title": "\u2014 Underst the Adolescent",
+            "description": "This course provides a comprehensive study of the development of children and adolescents. Theoretical stages of personality development, cognitive growth and moral development will be presented and applied to identifying student characteristics and understanding the individual child in a classroom situation. Students will be assigned field experience in school classrooms and other youth-related programs in addition to regularly scheduled class time at the university.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "236",
+            "title": "\u2014 Human Learn, Development, Motivation",
+            "description": "The course is designed to introduce the prospective teacher to the theories of human learning, development, and motivation and the applications of these theories in the learning environment. Each of the developmental stages of early childhood, childhood, preadolescence and adolescence will be examined. Students will be required to participate in an education field experience to experience the application of theories; observe the interaction of a child/adolescent within the school, family and peer systems; and reflect upon their learning through a case-study project.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "239",
+            "title": "\u2014 Char of Students With Exceptionalities",
+            "description": "This course introduces prospective and practicing teachers to the characteristics of students with physical, cognitive and emotional/behavioral challenges. The participants will be introduced to legislative issues including ADA, IDEA, IEPs, transition services, inclusion, etc. Participants will explore the role of students, family and education professionals. As part of this course, participants will reflect upon 20 hours of observations and interactions with students with disabilities.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "271",
+            "title": "\u2014 Found Literacy Instruction",
+            "description": "This course is designed to help prospective teachers develop the knowledge and skills to deliver literacy instruction effectively. Students will learn how to: (a) create a literate environment that wraps literacy around all areas of the curriculum, (b) implement the New York State Learning Standards following principles of effective instruction, (c) incorporate technology into instruction, (d) use a wide range of literature, including multicultural literature, across the curriculum, (e) cultivate partnerships with parents to encourage and enhance literacy development, and (f) use literacy assessments to make decisions about instruction for diverse learners.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "333",
+            "title": "\u2014 Special Olympics Coaching and Games",
+            "description": "This course is designed to orient potential coaches and sports/games management coordinators to the basic structures and concepts of Special Olympics. Sports-specific skills and strategies, coaching philosophy and planning, mentoring, safety and risk management, and sports management will be examined/applied within the Special Olympics model. The goal of the course is to develop students with competency in Special Olympics coaching and game/event management.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "372",
+            "title": "\u2014 Reading Assessment & Instruction",
+            "description": "Prerequisite take edu*271 This course is designed to help teacher candidates develop greater effectiveness in providing differentiated reading instruction in K- 12 classrooms, especially in individualized or small group settings. Teacher candidates will examine a variety of factors that influence literacy acquisition, discuss and identify various reading problems, examine informal reading assessments, and plan for appropriate reading instruction.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

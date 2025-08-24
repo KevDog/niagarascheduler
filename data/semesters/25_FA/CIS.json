@@ -1,0 +1,171 @@
+[
+  {
+    "department": "CIS",
+    "number": "CIS190A",
+    "name": "Web Design",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "0"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS190B",
+    "name": "Web Design",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "AE",
+    "availability": "0"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS232F",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "AS",
+    "availability": "6"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS265A",
+    "name": "Visual Programming I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "AS*QR",
+    "availability": "8"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS265B",
+    "name": "Visual Programming I",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "12:15PM",
+    "end_time": "01:10PM",
+    "delivery_type": "LEC",
+    "designation": "AS*QR",
+    "availability": "13"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS270B",
+    "name": "Computer Hardware",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "HYB",
+    "designation": "AS",
+    "availability": "5"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS285B",
+    "name": "Computer Forensics I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "AS",
+    "availability": "14"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS350A",
+    "name": "Intro Systm Analysis",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "06:00PM",
+    "end_time": "07:20PM",
+    "delivery_type": "LEC",
+    "designation": "AS",
+    "availability": "4"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS355A",
+    "name": "Artificial Intelligence",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "10:05AM",
+    "end_time": "11:00AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "4"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS359A",
+    "name": "Advanced Python & Data Anal",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "AS*QR",
+    "availability": "10"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS490B",
+    "name": "Law & Ethics in Computing",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "12:15PM",
+    "end_time": "01:10PM",
+    "delivery_type": "LEC",
+    "designation": "AS",
+    "availability": "5"
+  },
+  {
+    "department": "CIS",
+    "number": "CIS490C",
+    "name": "Topic: Cryptocurrency",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AS",
+    "availability": "2"
+  },
+  {
+    "number": "CIS232A",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS232B",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS232E",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS232G",
+    "name": "Computer Apps for Business I",
+    "credits": "3.00"
+  },
+  {
+    "number": "CIS285A",
+    "name": "Computer Forensics I",
+    "credits": "3.00"
+  }
+]

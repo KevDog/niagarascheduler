@@ -1,0 +1,388 @@
+[
+  {
+    "department": "NRS",
+    "number": "NRS205A",
+    "name": "Human Development",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "SSI",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS250A",
+    "name": "Introduction to Nursing",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "13"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS260A",
+    "name": "Health Assessment & Lab",
+    "credits": "4.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS260LA",
+    "name": "Health Assessment Lab",
+    "credits": "0.00",
+    "days": "M",
+    "start_time": "09:00AM",
+    "end_time": "10:50AM",
+    "delivery_type": "LAB",
+    "designation": "LAB",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS260LB",
+    "name": "Health Assessment Lab",
+    "credits": "0.00",
+    "days": "M",
+    "start_time": "11:00AM",
+    "end_time": "12:50PM",
+    "delivery_type": "LAB",
+    "designation": "LAB",
+    "availability": "5"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS300A",
+    "name": "Clinical Judgement in Nursing",
+    "credits": "2.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS300B",
+    "name": "Clinical Judgement in Nursing",
+    "credits": "2.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "11"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS310A",
+    "name": "Foundations of Nursing",
+    "credits": "7.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "6"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS310B",
+    "name": "Foundations of Nursing",
+    "credits": "7.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "5"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS320A",
+    "name": "Pathophysiology",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS320B",
+    "name": "Pathophysiology",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS320C",
+    "name": "Pathophysiology",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "LA",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS330A",
+    "name": "Pharmacology for Nursing",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS330B",
+    "name": "Pharmacology for Nursing",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS330C",
+    "name": "Pharmacology for Nursing",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS350A",
+    "name": "Ment Hlth & Pop Based Nursing",
+    "credits": "5.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "18"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS350ACA",
+    "name": "Ment Hlth & Pop Based Nursing",
+    "credits": "5.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "14"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS360A",
+    "name": "Resilience in Nursing",
+    "credits": "2.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "18"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS360ACA",
+    "name": "Resilience in Nursing",
+    "credits": "2.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "16"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS400A",
+    "name": "Adult Health Nursing",
+    "credits": "7.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "18"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS400ACA",
+    "name": "Adult Health Nursing",
+    "credits": "7.00",
+    "days": "MW",
+    "start_time": "10:30AM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "16"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS410A",
+    "name": "Matern, Newbrn, & Ped Nursing",
+    "credits": "5.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "18"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS410ACA",
+    "name": "Matern, Newbrn, & Ped Nursing",
+    "credits": "5.00",
+    "days": "MTWTH",
+    "start_time": "09:00AM",
+    "end_time": "12:00PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "16"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS420A",
+    "name": "Nurs Pract to Improve Pat Outc",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "18"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS420ACA",
+    "name": "Nurs Pract to Improve Pat Outc",
+    "credits": "3.00",
+    "days": "MTWTH",
+    "start_time": "12:30PM",
+    "end_time": "03:30PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "16"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS450ACA",
+    "name": "Adult Health and Complex Care",
+    "credits": "7.00",
+    "days": "MTWTH",
+    "start_time": "01:30PM",
+    "end_time": "05:30PM",
+    "delivery_type": "LEC",
+    "designation": "EXP",
+    "availability": "14"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS460ACA",
+    "name": "Transition to Nursing Practice",
+    "credits": "3.00",
+    "days": "MTWTH",
+    "start_time": "09:00AM",
+    "end_time": "01:00PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "14"
+  },
+  {
+    "department": "NRS",
+    "number": "NRS470ACA",
+    "name": "Leadership for the Baccalaurea",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "14"
+  },
+  {
+    "number": "NRS310LA",
+    "name": "Found of Nursing Lab/Clinical",
+    "credits": "0.00"
+  },
+  {
+    "number": "NRS350LA",
+    "name": "Ment Hlth & Pop Based Nrsg Lab",
+    "credits": "0.00"
+  },
+  {
+    "number": "NRS350LACA",
+    "name": "Ment Hlth & Pop Based Nrsg Lab",
+    "credits": "0.00"
+  },
+  {
+    "number": "NRS370A",
+    "name": "Nursing Research",
+    "credits": "3.00"
+  },
+  {
+    "number": "NRS370ACA",
+    "name": "Nursing Research",
+    "credits": "3.00"
+  },
+  {
+    "number": "NRS400LA",
+    "name": "Adult Health Nursing Lab",
+    "credits": "0.00"
+  },
+  {
+    "number": "NRS400LACA",
+    "name": "Adult Health Nursing Lab",
+    "credits": "0.00"
+  },
+  {
+    "number": "NRS410LA",
+    "name": "Mat, Newbrn & Ped Nurs Lab",
+    "credits": "0.00"
+  },
+  {
+    "number": "NRS410LACA",
+    "name": "Mat, Newbrn & Ped Nurs Lab",
+    "credits": "0.00"
+  },
+  {
+    "number": "NRS450LACA",
+    "name": "Adult Health Complex Care Clin",
+    "credits": "0.00"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "department": "GEO",
+    "number": "GEO290A",
+    "name": "Political Geography",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "SS*LA",
+    "availability": "12"
+  }
+]

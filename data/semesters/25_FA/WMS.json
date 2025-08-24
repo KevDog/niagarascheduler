@@ -1,0 +1,14 @@
+[
+  {
+    "department": "WMS",
+    "number": "WMS375A",
+    "name": "Women and Film",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "12:00PM",
+    "end_time": "01:20PM",
+    "delivery_type": "LEC",
+    "designation": "H*CD*SJ*LA",
+    "availability": "1"
+  }
+]

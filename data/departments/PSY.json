@@ -1,0 +1,89 @@
+{
+    "name": "Psychology",
+    "mission_statement": "As the field of mental health counseling expands, so does the need for qualified counselors. Our CACREP-accredited Master of Science in Clinical Health Health Counseling program prepares you for New York State Licensed Mental Health Counselor (LMHC) eligibility, while ensuring a general mastery of counseling service skills.\n\nYou\u2019ll be trained in the application of psychotherapy principles, human development, and learning theory, as well as the etiology of mental illness and dysfunctional behavior to individuals, couples, families and groups. Upon graduation, you\u2019ll become well-equipped to treat psychopathology and promote optimal mental health.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/psy/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Introductory Psychology",
+            "description": "An introduction to basic psychological theory and research. The content of this course surveys the various subfields of psychology including: biopsychology, cognitive psychology, developmental psychology, abnormal psychology, and social psychology.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 Developmental Psychology",
+            "description": "Prerequisite Take PSY*101 The biological, affective, cognitive, and social domains of human development are studied individually and integrally as the stages of growth are traced from conception to death.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "211",
+            "title": "\u2014 Health Psychology",
+            "description": "Prerequisite Take PSY*101 This course examines the role of psychological and social factors in health and illness, typically covering three general areas: (1) psychological factors affecting disease, (2) psychological and social consequences of illness and (3) psychotherapeutic interventions.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "215",
+            "title": "\u2014 Psychology of Aging",
+            "description": "Prerequisite Take PSY*101 A study of development in adulthood and old age. The psychological, social, and biological determinants of age-related changes are discussed. Current theory and empirical evidence are considered. Topics include psychomotor, intellectual functioning, learning, personality and adjustment, and mental health.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "221",
+            "title": "\u2014 Statistics for Psych",
+            "description": "Prerequisite Must have taken PSY*101; A study and application of descriptive and inferential statistics used in psychological research including presentations of data, descriptive statistics, and testing of hypotheses.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "222",
+            "title": "\u2014 Research Methods",
+            "description": "Prerequisite Take PSY*101 PSY*221 An introduction to research methods in psychology. Topics include observational, correlational, and experimental research, and application and interpretation of basic classical and Bayesian statistics. Students design, conduct, and present research projects to improve their interpretation and communication skills. Students must complete an introductory statistics course such as PSY 221 before taking this course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "221",
+            "title": "before",
+            "description": "taking this course.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "231",
+            "title": "\u2014 Behavioral Neuroscience",
+            "description": "Prerequisite Take PSY*101 This course explores the relationship between the brain, its related systems, and behavior. The basic goals are to examine the physiological and neurological basis of behavior and to approach psychology from a biological perspective. Topics covered include: neuroanatomy and neurochemistry, sleep and arousal, biological rhythms, sexual differentiation and behavior, feeding behavior, the physiology of mental disorders, and neurological disorders.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "232L",
+            "title": "\u2014 Behavioral Neuroscience Lab",
+            "description": "Prerequisite Take PSY*101 PSY*231 This laboratory, designed to be taken concurrently with PSY 231, will provide students with hands-on experience in neuroanatomy, small animal care, and behavioral testing. Students will also be afforded direct contact with the principles of research design and analysis by conducting laboratory experiments in physiological psychology. The course is optional for students enrolled in PSY 231 and is also open to students who have completed PSY 231.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "245",
+            "title": "\u2014 Psychology of Disability",
+            "description": "The field of Disability Studies offers a lens for thinking about the body, mind, society, and culture. The goal of this interdisciplinary field is not to offer a definition of disability; rather, its purp,ose is to create a critical framework that questions and connects our understandings of disability and impairment across established disciplines. This course will provide a sampling of disciplinary perspectives on disability so that you become informed consumers of academic scholarship and public information on issues related to disability. Additionally, the course will critically assess traditional and historic perspectives on developmental psychology to determine how disabled individuals are included or excluded. With this in mind, the readings were selected based on a central tension in Disability Studies-between impairments as lived subjective experience and disability as stigmatized socially constructed category in objective, medical, and legal discourses.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

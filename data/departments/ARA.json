@@ -1,0 +1,57 @@
+{
+    "name": "Arabic",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/ara/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Elementary Arabic I",
+            "description": "A basic course in reading, writing, speaking and listening to Modern Standard Arabic, with some exposure to the Egyptian dialect. There will be an emphasis on active vocabulary learning, and on developing the ability to use the language to accomplish basic interpersonal communicative tasks.ARA 102 \u2014 Elementary Arabic II  Prerequisite Take ARA*101 This course continues to develop the four basic language skills  Prerequisite Take ARA*101 and ARA*102 Review and expansion of communication skills through materials reflecting the history, literature, and culture of the Arabic world.ARA 104 \u2014 Intermediate Arabic 2  Prerequisite Take ARA*101, ARA*102, and ARA*103; This course is the second half of the intermediate sequence and continues to develop the communication skills begun in Arabic 103.ARA 200 \u2014 Contemporary Arabic Culture  Students will explore various aspects of Arabic culture, with an emphasis on current trends in art, politics, religion, and entertainment in the Middle East and North Africa. Students will examine implications of cultural stereotypes by comparing their own heritage with social, geographic, and political identities of the modern Arab world. This course is conducted in English, and is open to all students, regardless of their background in Arabic language. This course cannot be used to satisfy a foreign-language requirement.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "101",
+            "title": "\u2014 Elementary Arabic I",
+            "description": "A basic course in reading, writing, speaking and listening to Modern Standard Arabic, with some exposure to the Egyptian dialect. There will be an emphasis on active vocabulary learning, and on developing the ability to use the language to accomplish basic interpersonal communicative tasks.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "102",
+            "title": "\u2014 Elementary Arabic II",
+            "description": "Prerequisite Take ARA*101 This course continues to develop the four basic language skills (writing, reading, speaking, listening) begun in Arabic 101. There will be an emphasis on active vocabulary learning, and on developing the ability to use the language to accomplish basic interpersonal communicative tasks.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "103",
+            "title": "\u2014 Intermediate Arabic I",
+            "description": "Prerequisite Take ARA*101 and ARA*102 Review and expansion of communication skills through materials reflecting the history, literature, and culture of the Arabic world.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "104",
+            "title": "\u2014 Intermediate Arabic 2",
+            "description": "Prerequisite Take ARA*101, ARA*102, and ARA*103; This course is the second half of the intermediate sequence and continues to develop the communication skills begun in Arabic 103.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Contemporary Arabic Culture",
+            "description": "Students will explore various aspects of Arabic culture, with an emphasis on current trends in art, politics, religion, and entertainment in the Middle East and North Africa. Students will examine implications of cultural stereotypes by comparing their own heritage with social, geographic, and political identities of the modern Arab world. This course is conducted in English, and is open to all students, regardless of their background in Arabic language. This course cannot be used to satisfy a foreign-language requirement.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

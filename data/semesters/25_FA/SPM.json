@@ -1,0 +1,98 @@
+[
+  {
+    "department": "SPM",
+    "number": "SPM244A",
+    "name": "Rec & Sport Law",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "2"
+  },
+  {
+    "department": "SPM",
+    "number": "SPM250A",
+    "name": "Sport/Rec Comm & Tech",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "24"
+  },
+  {
+    "department": "SPM",
+    "number": "SPM260A",
+    "name": "Sports Broadcasting",
+    "credits": "3.00",
+    "days": "TH",
+    "start_time": "04:30PM",
+    "end_time": "07:15PM",
+    "delivery_type": "LEC",
+    "designation": "EXP",
+    "availability": "0"
+  },
+  {
+    "department": "SPM",
+    "number": "SPM275A",
+    "name": "Sport Mgmt & Recreation",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "10:05AM",
+    "end_time": "11:00AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "1"
+  },
+  {
+    "department": "SPM",
+    "number": "SPM275B",
+    "name": "Sport Mgmt & Recreation",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "SPM",
+    "number": "SPM395A",
+    "name": "Rec & Sport Program",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "12:15PM",
+    "end_time": "01:10PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "22"
+  },
+  {
+    "department": "SPM",
+    "number": "SPM432A",
+    "name": "Financial Aspects Sport/Rec",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "SPM",
+    "number": "SPM455A",
+    "name": "Sport/Rec Mkg & Promotions",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  }
+]

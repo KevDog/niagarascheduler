@@ -1,0 +1,62 @@
+[
+  {
+    "department": "FIN",
+    "number": "FIN320A",
+    "name": "Corporate Finance I",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "5"
+  },
+  {
+    "department": "FIN",
+    "number": "FIN320B",
+    "name": "Corporate Finance I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "FIN",
+    "number": "FIN320C",
+    "name": "Corporate Finance I",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "0"
+  },
+  {
+    "department": "FIN",
+    "number": "FIN350A",
+    "name": "Fundamentals of Investments",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "WI",
+    "availability": "10"
+  },
+  {
+    "department": "FIN",
+    "number": "FIN360A",
+    "name": "International Financial Mgt",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "",
+    "availability": "7"
+  }
+]

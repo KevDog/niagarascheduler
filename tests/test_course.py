@@ -81,17 +81,17 @@ class TestCourse(unittest.TestCase):
         # Assert
         self.assertEqual(course.zoom_link, zoom_link)
     
-    def test_course_meets_days_of_week(self):
-        """A course meets one or more days a week"""
+    def test_course_defaults_empty_lists(self):
+        """A course has empty lists for instructors and textbooks by default"""
         # Arrange
         course_number = "101"
-        meeting_days = ["Monday", "Wednesday", "Friday"]
         
         # Act
-        course = Course(course_number, meeting_days=meeting_days)
+        course = Course(course_number)
         
         # Assert
-        self.assertEqual(course.meeting_days, meeting_days)
+        self.assertEqual(course.instructors, [])
+        self.assertEqual(course.textbooks, [])
     
     def test_course_to_dict(self):
         """Course has to_dict method that serializes all properties"""
@@ -102,8 +102,7 @@ class TestCourse(unittest.TestCase):
             description="Basic theater course",
             instructors=["Dr. Smith"],
             textbooks=["Theater Basics"],
-            zoom_link="https://zoom.us/j/123",
-            meeting_days=["Monday", "Wednesday"]
+            zoom_link="https://zoom.us/j/123"
         )
         
         # Act
@@ -116,8 +115,7 @@ class TestCourse(unittest.TestCase):
             "description": "Basic theater course",
             "instructors": ["Dr. Smith"],
             "textbooks": ["Theater Basics"],
-            "zoom_link": "https://zoom.us/j/123",
-            "meeting_days": ["Monday", "Wednesday"]
+            "zoom_link": "https://zoom.us/j/123"
         }
         self.assertEqual(result, expected)
     
@@ -130,8 +128,7 @@ class TestCourse(unittest.TestCase):
             "description": "Advanced techniques",
             "instructors": ["Prof. Johnson", "Dr. Lee"],
             "textbooks": ["Method Acting", "Scene Study"],
-            "zoom_link": "https://zoom.us/j/456",
-            "meeting_days": ["Tuesday", "Thursday"]
+            "zoom_link": "https://zoom.us/j/456"
         }
         
         # Act
@@ -144,7 +141,6 @@ class TestCourse(unittest.TestCase):
         self.assertEqual(course.instructors, ["Prof. Johnson", "Dr. Lee"])
         self.assertEqual(course.textbooks, ["Method Acting", "Scene Study"])
         self.assertEqual(course.zoom_link, "https://zoom.us/j/456")
-        self.assertEqual(course.meeting_days, ["Tuesday", "Thursday"])
 
 
 if __name__ == '__main__':

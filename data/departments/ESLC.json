@@ -1,0 +1,17 @@
+{
+    "name": "English As a Second Language",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/eslc/",
+    "courses": [
+        {
+            "number": "110",
+            "title": "\u2014 Intro Reading & Vocabulary",
+            "description": "ESLC 115L \u2014 Intro Literacy  ESLC 120 \u2014 Intro Writing Effectively  ESLC 125L \u2014 Intro Writing  ESLC 130 \u2014 Intro Speaking & Comprehension  ESLC 150 \u2014 Intro Pronunciation Skills  ESLC 160 \u2014 Intro Special Topics  ESLC 170 \u2014 Casual Conversation  ESLC 210 \u2014 Intermediate Reading & Vocab  ESLC 215L \u2014 Intermediate Literacy  ESLC 220 \u2014 Intermediate Writing Effectively  ESLC 225L \u2014 Intermediate Writing  ESLC 230 \u2014 Intermediate Speaking & Composition  ESLC 250 \u2014 Intermediate Pronunciation  ESLC 260 \u2014 Intermediate Special Topics  ESLC 270 \u2014 Intermediate Conversation  ESLC 310 \u2014 Literacy Skills  ESLC 315L \u2014 Advanced Literacy  ESLC 320 \u2014 Advance Writing Effectively  ESLC 325L \u2014 Advanced Writing  ESLC 330 \u2014 Advanced Speaking & Comprehen  ESLC 350 \u2014 Advanc Pronunciation Skills  ESLC 360 \u2014 Advanced Special Topics  ESLC 370 \u2014 Advanced Conversation  ESLC 410 \u2014 Academic Reading & Vocabulary  ESLC 415L \u2014 University Reading Lab  ESLC 420 \u2014 Writing for the U.S. Classroom  ESLC 425L \u2014 University Writing Lab  ESLC 430 \u2014 Speaking & Comprehension  ESLC 450 \u2014 Pronunciation Skills  ESLC 460 \u2014 Academic Success Strategy  ESLC 470 \u2014 Public Speaking",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

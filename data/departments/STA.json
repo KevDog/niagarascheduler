@@ -1,0 +1,41 @@
+{
+    "name": "Statistics",
+    "mission_statement": null,
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/sta/",
+    "courses": [
+        {
+            "number": "301",
+            "title": "\u2014 Linear Models",
+            "description": "Prerequisite Must have taken CIS*233, ECO*231, PSY*221 or MAT*336; A completely integrated computer-based course in which software is used to study statistical relationships between several variables. The topics include multiple regression, ANOVA, design of experiments and logistic regression. A comprehensive project will evaluate students' ability to collect and analyze data.STA 305 \u2014 Nonparametric Statistics  Prerequisite Must have taken CIS*233, ECO*231, MAT*335 or PSY*221; This course will discuss how to analyze data when the distribution of the data is unknown. Topics include bootstrap estimation, analysis of contingency tables, and rank based tests. Computer software will be used extensively. Students will do a research project and analyze the data they have collected.STA 499 \u2014 Statistics Internship  Prerequisite Must have taken STA*301; In this course, students will learn how to analyze real data. Students will find another faculty member or corporation to work with and analyze their data. Students will write a proposal, analyze the data, and present their results both orally and in written form.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "301",
+            "title": "\u2014 Linear Models",
+            "description": "Prerequisite Must have taken CIS*233, ECO*231, PSY*221 or MAT*336; A completely integrated computer-based course in which software is used to study statistical relationships between several variables. The topics include multiple regression, ANOVA, design of experiments and logistic regression. A comprehensive project will evaluate students' ability to collect and analyze data.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "305",
+            "title": "\u2014 Nonparametric Statistics",
+            "description": "Prerequisite Must have taken CIS*233, ECO*231, MAT*335 or PSY*221; This course will discuss how to analyze data when the distribution of the data is unknown. Topics include bootstrap estimation, analysis of contingency tables, and rank based tests. Computer software will be used extensively. Students will do a research project and analyze the data they have collected.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "499",
+            "title": "\u2014 Statistics Internship",
+            "description": "Prerequisite Must have taken STA*301; In this course, students will learn how to analyze real data. Students will find another faculty member or corporation to work with and analyze their data. Students will write a proposal, analyze the data, and present their results both orally and in written form.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

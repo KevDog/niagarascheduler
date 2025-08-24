@@ -1,0 +1,226 @@
+[
+  {
+    "department": "WRT",
+    "number": "WRT100A",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "04:30PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "0"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100B",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "06:00PM",
+    "end_time": "07:20PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "2"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100C",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "04:30PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "0"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100D",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "06:00PM",
+    "end_time": "07:20PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "0"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100E",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "0"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100F",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "0"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100J",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "0"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100K",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "04:30PM",
+    "end_time": "05:50PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "1"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100L",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "06:00PM",
+    "end_time": "07:20PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "2"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100M",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "0"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT100N",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "0"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT221A",
+    "name": "Creative Writing",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "H*WI*LA",
+    "availability": "10"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT231A",
+    "name": "Business Communication",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "11:10AM",
+    "end_time": "12:05PM",
+    "delivery_type": "HYB",
+    "designation": "WI*LA",
+    "availability": "0"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT231B",
+    "name": "Business Communication",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "06:00PM",
+    "end_time": "08:45PM",
+    "delivery_type": "ONL",
+    "designation": "WI*LA",
+    "availability": "3"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT261A",
+    "name": "Methods of Writing Studies",
+    "credits": "3.00",
+    "days": "MWF",
+    "start_time": "10:05AM",
+    "end_time": "11:00AM",
+    "delivery_type": "HYB",
+    "designation": "WI*LA",
+    "availability": "1"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT329A",
+    "name": "Playwriting",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "04:30PM",
+    "end_time": "05:30PM",
+    "delivery_type": "LEC",
+    "designation": "WI*LA",
+    "availability": "9"
+  },
+  {
+    "department": "WRT",
+    "number": "WRT348A",
+    "name": "Ethnog/Travel Writing",
+    "credits": "3.00",
+    "days": "W",
+    "start_time": "06:00PM",
+    "end_time": "08:45PM",
+    "delivery_type": "LEC",
+    "designation": "CD*H*WI*MWE*ECS*LA",
+    "availability": "12"
+  },
+  {
+    "number": "WRT100G",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00"
+  },
+  {
+    "number": "WRT100H",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00"
+  },
+  {
+    "number": "WRT100I",
+    "name": "Writing and Rhetoric",
+    "credits": "3.00"
+  },
+  {
+    "number": "WRT350A",
+    "name": "Style",
+    "credits": "3.00"
+  }
+]

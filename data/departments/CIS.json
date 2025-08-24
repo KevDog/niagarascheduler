@@ -1,0 +1,89 @@
+{
+    "name": "Computer Information Sciences",
+    "mission_statement": "Our bachelor\u2019s program in Computer and Information Sciences provides a comprehensive foundation in computing principles while offering you a flexible curriculum to tailor your studies to your career interests.\n\nAs you study at Niagara, you\u2019ll become prepared for a wide range of careers in the computing and information technology industry, or advanced study following graduation. Our students have a variety of paths to choose to study as an undergraduate student, including computer hardware, networking, information security, artificial intelligence (AI), data science, and more.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/cis/",
+    "courses": [
+        {
+            "number": "138",
+            "title": "\u2014 Intro to Prog & Comp",
+            "description": "The course provides an intensive introduction to computers and to programming as a tool for problem solving. Students will use and write programs in a beginners programming language. Applications involve personal, scientific, and health or business worlds. (This course does not satisfy the CIS major requirement.)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "140",
+            "title": "\u2014 STEM Programming",
+            "description": "Students are introduced to computing and apply problem solving techniques to a variety of contexts including, but not limited to, web page design, introductory programming and robotics. Students will consider the societal and ethical issues regarding technology while applying computing concepts and utilizing computing tools to solve problems.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "160",
+            "title": "\u2014 Struct Bus Progrm I",
+            "description": "This is a first course using a structured business language. Design and style are emphasized. Typical business problems are coded and documented, compiled and tested to acquaint the student with practical use of the language.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "190",
+            "title": "\u2014 Web Design",
+            "description": "Students in this course will learn how to plan and develop dynamic web pages utilizing graphics, CSS, multimedia, animation, database applications, sharing and distribution of documents via the Web.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "198",
+            "title": "\u2014 Intro to Computer Science Education",
+            "description": "This course presents an introduction to computers and their use in the schools. It is designed as a first course for teachers. Emphasis is placed upon fundamental concepts and their applications in education. Students use an integrated software package and programs relating to the subject matter of their discipline. They have the opportunity to write programs in a structured language. No prior experience with computers is assumed. (This course does not satisfy the CIS major requirement.)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Intro Programming Struct",
+            "description": "Students will be introduced to fundamental programming concepts and core programming structures including but not limited to variables, data types, arithmetic operators, decisions, loops, functions, arrays and objects. Students will obtain basic knowledge of standard programming practices utilizing a minimum of two programming languages.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "232",
+            "title": "\u2014 Computer Applications for Business I",
+            "description": "The course presents business-related software for the microcomputer (PC). The main applications examined are spreadsheets, business graphics, databases, word processing, and presentation graphics. Integration of these applications is also covered. (This course satisfies the CIS major or minor requirements.)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "233",
+            "title": "\u2014 Statistics Applications for Research",
+            "description": "Prerequisite take mat*102 This course presents computers as research tools to students in the behavioral and social sciences and human services. It presents an overview of computer hardware and software and use of an operating system and an editor as tools for the computer user. The student will also become familiar with the use of a word processor for report and proposal writing, spreadsheets for budgeting, and database design and access. Students will learn SPSS as a research tool for statistical applications. (This course does not satisfy the CIS major requirement.)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "255",
+            "title": "\u2014 Introduction to Geographic Information",
+            "description": "(also listed as GIS 100) This course is a broad and intensive introduction to the study of Geographic Information Systems (GIS). Using this extensive computer-based mapping software, students will learn the nature and models of spatial data, organize, manage, and present such data, as well as plan and conduct research. Applications in various social and natural sciences will be introduced and discussed. This learning is to be continued in upper division courses within related fields.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "256",
+            "title": "\u2014 Mobile Gaming I",
+            "description": "This course will introduce students to mobile game development including fundamental knowledge and skills in game design. A practical introduction to game design and implementation will be presented including history of mobile games, game elements, human-computer interaction, interface design, collision detection, testing and publishing, and game-related math and physics.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

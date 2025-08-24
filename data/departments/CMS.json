@@ -1,0 +1,89 @@
+{
+    "name": "Communication and Media Studies",
+    "mission_statement": "Our Communication and Media Studies program examines how the tools of mass media (including writing, design, photography, videography, and technology) are used to influence the world around them. You will see how the media can shape cultural, social, and economic landscapes globally and within our own communities.\n\nStudents in our program will engage with the implications of today\u2019s mass media consumption, as the program emphasizes the importance of language, the primacy of digital communication in the 21st century, and ethical career development. Our CMS curriculum nurtures core skill sets for students, including critical media literacy and professional training in media management and content creation.",
+    "office": null,
+    "course_listing_url": null,
+    "course_descriptions_url": "https://catalog.niagara.edu/undergraduate/courses-az/cms/",
+    "courses": [
+        {
+            "number": "101",
+            "title": "\u2014 Introduction to Media Studies",
+            "description": "A first year seminar for majors and minors, this course is designed to orient students to the field of communications, provide an overview of career possibilities and give students a critical analysis of the importance of communication in today's world. The emphasis on the course is identifying the communications values which reflect the theme of the program-communicating for social justice. Formerly CMS 100.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "115",
+            "title": "\u2014 Digital Media Production",
+            "description": "This course is an introduction to the history, basic concepts, and skills of digital media design and production. Through the creation and critique of projects incorporating images, audio, and video, students will gain knowledge of potential careers, acquire life-long production skills, and produce a portfolio of their digital media work. Formerly CMS 245.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "120",
+            "title": "\u2014 Media Writing",
+            "description": "A specialized discussion of how to communicate through the mass media, focusing on the planning and writing of effective messages for print, radio, television, and web media. For analysis purposes, the student concentrates on journalism and public relations and their communicative and social role in contemporary society.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "200",
+            "title": "\u2014 Media Theory",
+            "description": "The course combines a cross cultural history of the communication field with a survey of the main theoretical models advanced to explain the relationship between media and society during the twentieth and early twenty-first centuries. Students formulate positions on the role and effects of theory in daily media practices. (Satisfies Media and Culture Elective)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "201",
+            "title": "\u2014 Research Methods",
+            "description": "This course provides an overview and critique of mass media research methods and techniques. The research process, a survey of scientifically studying mass media as a human phenomenon is explored. The course will also focus on the particular roles and problems of public opinion research and television ratings methodology in determining mass tastes and preferences. Students will also gain a practical understanding of data analysis. Formerly CMS 330.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "215",
+            "title": "\u2014 Video Production and Laboratory",
+            "description": "After a detailed survey of the vocabulary, tools, techniques, and conventions of video production, the student is led through a series of creative exercises in both studio and remote video production. Students will learn producing and directing techniques in preproduction, production, and post-production, developing both a critical aesthetic and technical proficiency. Course includes lab exercises and projects in non-linear digital video production. Formerly CMS 215.",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "221",
+            "title": "\u2014 Screenwriting",
+            "description": "This course will introduce students to the basics of screenwriting for film. By taking on the role of a professional screenwriter, students experience the complete process of screenwriting by learning how to create plot, theme, characters and dialogue, resulting in an original screenplay. (Satisfies Media Writing Elective)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "222",
+            "title": "\u2014 Social Media for Comm. Professionals",
+            "description": "Prerequisite Take CMS*120 prior to this course. This course acquaints students with the practical knowledge and analytical skills to create social media content across industries such as public relations, advertising, and journalism. Special attention is paid to developing stylistic and technical skills needed to plan, create, and edit digital content with a focus on tools needed for personal brand building. (Formerly Digital Journalism)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "223",
+            "title": "\u2014 Creative Non-Fiction",
+            "description": "Prerequisite Take WRT*100 CMS*120 Students will read and write creative nonfiction from a number of sub-genres, including nature writing, personal essay/memoir, profiles, and reportage, considering possibilities for publication. They will explore the literature of reality from the power of true stories, to the fascination of odd facts, to the revelation of insight. (Satisfies Media Writing Elective)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        },
+        {
+            "number": "226",
+            "title": "\u2014 Specialty Journalism",
+            "description": "Prerequisite Must have taken CMS*120; This course introduces students to the many kinds of special interest journalism while conducting exercises in the shared skills required to practice any of them. Students learn about the industry as well as the research techniques, writing methods, ethics, and editing procedures used to practice specialty journalism. Areas of content may change from semester to semester. They will include sports, business and finance, ethnicity, the environment, science, technology and the arts. (Satisfies Media Writing Elective)",
+            "instructors": [],
+            "textbooks": [],
+            "zoom_link": null
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "department": "SPK",
+    "number": "SPK100A",
+    "name": "Effective Speech",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "09:00AM",
+    "end_time": "10:20AM",
+    "delivery_type": "LEC",
+    "designation": "AS*LA",
+    "availability": "0"
+  },
+  {
+    "department": "SPK",
+    "number": "SPK100B",
+    "name": "Effective Speech",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "AS*LA",
+    "availability": "0"
+  },
+  {
+    "department": "SPK",
+    "number": "SPK100C",
+    "name": "Effective Speech",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "01:30PM",
+    "end_time": "02:50PM",
+    "delivery_type": "LEC",
+    "designation": "AS*LA",
+    "availability": "0"
+  },
+  {
+    "department": "SPK",
+    "number": "SPK100D",
+    "name": "Effective Speech",
+    "credits": "3.00",
+    "days": "MW",
+    "start_time": "03:00PM",
+    "end_time": "04:20PM",
+    "delivery_type": "LEC",
+    "designation": "AS*LA",
+    "availability": "0"
+  },
+  {
+    "department": "SPK",
+    "number": "SPK100G",
+    "name": "Effective Speech",
+    "credits": "3.00",
+    "days": "TTH",
+    "start_time": "10:30AM",
+    "end_time": "11:50AM",
+    "delivery_type": "LEC",
+    "designation": "AS*LA",
+    "availability": "0"
+  },
+  {
+    "number": "SPK100E",
+    "name": "Effective Speech",
+    "credits": "3.00"
+  },
+  {
+    "number": "SPK100F",
+    "name": "Effective Speech",
+    "credits": "3.00"
+  }
+]
