@@ -26,8 +26,8 @@ const fetchConfig = async () => {
   try {
     loading.value = true
     const response = await fetch('/api/config')
-    const data = await response.json()
-    semesters.value = data.semesters || []
+    const result = await response.json()
+    semesters.value = result.data?.semesters || []
   } catch (error) {
     console.error('Error fetching config:', error)
   } finally {
@@ -39,9 +39,9 @@ const fetchDepartments = async () => {
   try {
     loading.value = true
     const response = await fetch('/api/departments')
-    const data: DepartmentsResponse = await response.json()
+    const result = await response.json()
     // Sort departments alphabetically by code
-    departments.value = (data.departments || []).sort((a, b) => a.code.localeCompare(b.code))
+    departments.value = (result.data?.departments || []).sort((a, b) => a.code.localeCompare(b.code))
   } catch (error) {
     console.error('Error fetching departments:', error)
   } finally {
@@ -58,8 +58,8 @@ const fetchCourses = async (deptCode: string) => {
   try {
     loading.value = true
     const response = await fetch(`/api/departments/${deptCode}`)
-    const data: DepartmentWithCourses = await response.json()
-    courses.value = data.courses || []
+    const result = await response.json()
+    courses.value = result.data?.courses || []
   } catch (error) {
     console.error('Error fetching courses:', error)
     courses.value = []
@@ -77,8 +77,8 @@ const fetchOfferings = async (semester: string, deptCode: string, courseNumber: 
   try {
     loading.value = true
     const response = await fetch(`/api/offerings/${semester}/${deptCode}/${courseNumber}`)
-    const data = await response.json()
-    offerings.value = data.offerings || []
+    const result = await response.json()
+    offerings.value = result.data?.offerings || []
   } catch (error) {
     console.error('Error fetching offerings:', error)
     offerings.value = []

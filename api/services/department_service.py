@@ -27,7 +27,7 @@ class DepartmentService:
         
         for dept_code in departments:
             dept = self.data_loader.load_department(dept_code)
-            if dept:
+            if dept and dept.name:  # Only include departments with valid names
                 dept_list.append({
                     'code': dept_code,
                     'name': dept.name,
