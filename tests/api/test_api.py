@@ -6,7 +6,7 @@ import os
 import tempfile
 import json
 from unittest.mock import patch, mock_open
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 # Import API after path setup
 import api

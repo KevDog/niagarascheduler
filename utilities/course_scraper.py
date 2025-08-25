@@ -8,6 +8,10 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import json
+import sys
+
+# Add parent directory to Python path for imports
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from core.offering import Offering
 from core.department import Department
 
@@ -96,6 +100,7 @@ class CourseScraperCLI:
     def create_semester_departments(self, offerings):
         """Create Department objects with Course+Offering structure"""
         from core.course import Course
+
         
         dept_dict = {}
         

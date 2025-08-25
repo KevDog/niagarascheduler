@@ -11,6 +11,11 @@ from bs4 import BeautifulSoup
 import json
 import os
 import re
+import sys
+
+# Add parent directory to Python path for imports
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from core.data_loader import DepartmentDataLoader
 from core.course import Course
 from core.department import Department

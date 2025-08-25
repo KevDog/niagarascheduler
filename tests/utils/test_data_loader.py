@@ -5,7 +5,7 @@ import json
 import os
 import tempfile
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from core.data_loader import DepartmentDataLoader
 from core.department import Department
 from core.course import Course

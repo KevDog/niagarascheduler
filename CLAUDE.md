@@ -1,6 +1,5 @@
 The context of this project is to repurpose the project to create syllabi for Niagara University. Academic calendars in .xslx format can be found in the ./niagara folder
 
-Be terse and don't overexplain
 
 TEST-DRIVEN DEVELOPMENT PROCESS:
 1. Create test file with empty test functions (just function names)
@@ -12,7 +11,7 @@ TEST-DRIVEN DEVELOPMENT PROCESS:
 7. Run git add . after each passing test
 8. When asked a question, answer it before suggesting changes.
 9. Describe functionality before proposing code. I.e., what is the workflow?
-Propose functionality in the following format:
+
 
 All tests going in the ./tests folder
 
@@ -78,7 +77,7 @@ Course Description Lookup: Given a course I.D., e.g. "THR 101", the system looks
 
 ## CLI Tools ✅ IMPLEMENTED
 1. **Course Offerings Scraper** (`scrape_offerings.py`): 
-   - Command: `python scrape_offerings.py --semester 25/FA --ug --output-dir ./data`
+   - Command: `python utilities/scrape_offerings.py --semester 25/FA --ug --output-dir ./data`
    - Scrapes semester course offerings from apps.niagara.edu
    - Creates Department→Course→Offerings structure in semesters/ folder
 2. **Department Creator** (`create_departments.py`):
@@ -103,7 +102,7 @@ Course Description Lookup: Given a course I.D., e.g. "THR 101", the system looks
 
 ### Data Enhancement
 1. **Course Description Scraper**: CLI tool to populate course descriptions from catalog URLs
-   - Command: `python scrape_descriptions.py --department THR --output-dir ./data/departments`
+   - Command: `python utilities/scrape_descriptions.py --department THR --output-dir ./data/departments`
    - Parse course descriptions from course_descriptions_url in department files
    - Update Course objects with detailed descriptions
 2. **Bulk Department Processing**: Process all departments for course descriptions
@@ -114,6 +113,26 @@ Course Description Lookup: Given a course I.D., e.g. "THR 101", the system looks
 2. **Live Preview**: Real-time markdown rendering with TailwindCSS styling
 3. **In-Browser Editing**: Rich text editor for final adjustments
 4. **Export Options**: Download in multiple formats after editing
+
+### Syllabus Template Persistence System
+1. **Auto-Save Current Selections**: LocalStorage for in-session persistence
+   - Save wizard selections (semester, instructor, department, course, section)
+   - Persist form data during syllabus editing
+   - Auto-restore on page refresh
+2. **Server-Side Template Storage**: Long-term syllabus templates
+   - Extend Flask API with `/api/templates` endpoints
+   - Store completed syllabi as reusable templates with instructor metadata
+   - Template CRUD operations (create, read, update, delete)
+3. **Teacher Workflow Features**:
+   - "Save as Template" button after syllabus completion
+   - "Load Previous Template" option on homepage
+   - "Copy from Previous Semester" functionality
+   - Template naming and organization system
+4. **Hybrid Persistence Strategy**:
+   - LocalStorage for quick auto-save during active session
+   - Server storage for long-term template management
+   - "Start from last syllabus" homepage option
+5. **Implementation Priority**: Transform workflow from "start fresh each time" to "modify previous work"
 
 ### Technical Resources
 - **TailwindCSS Documentation**: https://tailwindcss.com/docs/

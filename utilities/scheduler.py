@@ -7,6 +7,12 @@ This module provides the public API for the refactored scheduler system.
 It imports and exposes all the necessary functions from the modular components.
 """
 
+import sys
+import os
+
+# Add parent directory to Python path for imports
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 # Core functionality
 from core.utils import locale, regex, date_formats, range_of_days, clean_cell, parse_td_for_dates
 from core.calendar_loader import make_url, fetch_registrar_table, parse_registrar_table, load_semester_calendar_from_json, load_calendar_from_json
@@ -23,6 +29,8 @@ from pdf.event_parser import classify_event_type, extract_semester_events_from_p
 # JSON processing
 from calendar_json.json_converter import parse_pdf_to_json, parse_pdf_to_json_with_events
 from calendar_json.calendar_manager import discover_available_years, generate_active_semester_config, generate_calendar_json
+
+
 
 # Public API - expose most commonly used functions
 __all__ = [

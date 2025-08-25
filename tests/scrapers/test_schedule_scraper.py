@@ -6,9 +6,9 @@ import os
 import tempfile
 import json
 from unittest.mock import patch, MagicMock
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-from scrape_descriptions import CourseScheduleScraper
+from utilities.scrape_descriptions import CourseScheduleScraper
 from bs4 import BeautifulSoup
 
 
@@ -158,7 +158,7 @@ class TestCourseScheduleScraper(unittest.TestCase):
         self.assertIn('THR103A', course_numbers)
         self.assertIn('THR999', course_numbers)
     
-    @patch('scrape_descriptions.requests.get')
+    @patch('utilities.scrape_descriptions.requests.get')
     def test_scrape_semester_schedule_success(self, mock_get):
         """Test successful semester schedule scraping"""
         # Arrange
@@ -246,9 +246,9 @@ class TestCourseScheduleScraper(unittest.TestCase):
 class TestScheduleScraperCLIIntegration(unittest.TestCase):
     """Test CLI integration for schedule scraping"""
     
-    @patch('scrape_descriptions.CourseScheduleScraper')
-    @patch('scrape_descriptions.os.path.exists')
-    @patch('scrape_descriptions.os.listdir')
+    @patch('utilities.scrape_descriptions.CourseScheduleScraper')
+    @patch('utilities.scrape_descriptions.os.path.exists')
+    @patch('utilities.scrape_descriptions.os.listdir')
     def test_cli_schedules_flag_with_semester(self, mock_listdir, mock_exists, mock_scraper_class):
         """Test CLI with --schedules flag and specific semester"""
         # Arrange
@@ -257,7 +257,7 @@ class TestScheduleScraperCLIIntegration(unittest.TestCase):
         mock_scraper.scrape_semester_schedule.return_value = True
         
         # Import and test main function
-        from scrape_descriptions import main
+        from utilities.scrape_descriptions import main
         
         # Mock command line arguments
         import argparse
@@ -307,10 +307,10 @@ class TestCLIHelpFunctionality(unittest.TestCase):
         with open(os.path.join(semesters_dir, 'THR.json'), 'w') as f:
             json.dump(semester_data, f)
     
-    @patch('scrape_descriptions.list_departments')
+    @patch('utilities.scrape_descriptions.list_departments')
     def test_list_departments_option(self, mock_list_departments):
         """Test --list-departments flag calls the function and exits"""
-        from scrape_descriptions import main
+        from utilities.scrape_descriptions import main
         
         with patch('sys.argv', ['scrape_descriptions.py', '--list-departments']):
             # Act
@@ -319,10 +319,10 @@ class TestCLIHelpFunctionality(unittest.TestCase):
         # Assert
         mock_list_departments.assert_called_once_with('./data')
     
-    @patch('scrape_descriptions.list_semesters')
+    @patch('utilities.scrape_descriptions.list_semesters')
     def test_list_semesters_option(self, mock_list_semesters):
         """Test --list-semesters flag calls the function and exits"""
-        from scrape_descriptions import main
+        from utilities.scrape_descriptions import main
         
         with patch('sys.argv', ['scrape_descriptions.py', '--list-semesters']):
             # Act
@@ -331,10 +331,10 @@ class TestCLIHelpFunctionality(unittest.TestCase):
         # Assert
         mock_list_semesters.assert_called_once_with('./data')
     
-    @patch('scrape_descriptions.show_stats')
+    @patch('utilities.scrape_descriptions.show_stats')
     def test_stats_option(self, mock_show_stats):
         """Test --stats flag calls the function and exits"""
-        from scrape_descriptions import main
+        from utilities.scrape_descriptions import main
         
         with patch('sys.argv', ['scrape_descriptions.py', '--stats']):
             # Act
@@ -345,7 +345,7 @@ class TestCLIHelpFunctionality(unittest.TestCase):
     
     def test_list_departments_output(self):
         """Test that list_departments produces expected output"""
-        from scrape_descriptions import list_departments
+        from utilities.scrape_descriptions import list_departments
         import io
         import sys
         
@@ -367,7 +367,7 @@ class TestCLIHelpFunctionality(unittest.TestCase):
     
     def test_show_stats_output(self):
         """Test that show_stats produces expected output"""
-        from scrape_descriptions import show_stats
+        from utilities.scrape_descriptions import show_stats
         import io
         import sys
         

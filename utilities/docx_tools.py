@@ -12,6 +12,10 @@ Command-line utilities for enhanced DOCX operations:
 import argparse
 import sys
 import os
+
+# Add parent directory to Python path for imports
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from core.docx_editor import create_custom_syllabus_template, install_docx_support, enhance_syllabus_docx
 
 def check_capabilities():

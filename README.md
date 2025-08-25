@@ -2,7 +2,7 @@
 
 A modern Vue 3 + Flask application for generating course syllabi for Niagara University. Features a comprehensive course selection wizard, live schedule integration, and automated syllabus generation with multiple export formats.
 
-## Current Architecture (December 2025) ✨
+## Current Architecture (August 2025) ✨
 
 - **Vue 3 Frontend**: Modern SPA with TypeScript, Pinia state management, and TailwindCSS
 - **Flask JSON API**: CORS-enabled backend serving course and schedule data
@@ -154,19 +154,19 @@ Returns API status and version information.
 ### Course Description Scraper
 ```bash
 # Scrape all department course descriptions
-python scrape_descriptions.py
+python utilities/scrape_descriptions.py
 
 # Scrape specific department
-python scrape_descriptions.py --department THR
+python utilities/scrape_descriptions.py --department THR
 ```
 
 ### Schedule Data Scraper
 ```bash
 # Scrape all semester schedules
-python scrape_descriptions.py --schedules
+python utilities/scrape_descriptions.py --schedules
 
 # Scrape specific semester
-python scrape_descriptions.py --schedules --semester 25_FA
+python utilities/scrape_descriptions.py --schedules --semester 25_FA
 ```
 
 The scraper pulls live data from: https://apps.niagara.edu/courses/index.php?semester=25/FA&ug=1
@@ -329,13 +329,13 @@ python api.py --port 8000 --env production
 ### Updates
 ```bash
 # Update course descriptions
-python scrape_descriptions.py
+python utilities/scrape_descriptions.py
 
 # Update current semester schedules  
-python scrape_descriptions.py --schedules --semester 25_FA
+python utilities/scrape_descriptions.py --schedules --semester 25_FA
 
 # Update all available semesters
-python scrape_descriptions.py --schedules
+python utilities/scrape_descriptions.py --schedules
 ```
 
 ## License
