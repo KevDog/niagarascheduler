@@ -88,7 +88,7 @@ def extract_program_overview(program_url):
 
 def main():
     base_url = "https://www.niagara.edu/programs/"
-    output_file = "program_overviews.json"
+    output_file = "data/program_overviews.json"
     
     print("Fetching program links...")
     programs = get_program_links(base_url)

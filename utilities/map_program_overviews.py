@@ -10,7 +10,7 @@ import re
 
 def load_program_overviews():
     """Load program overviews from JSON file"""
-    with open('program_overviews.json', 'r') as f:
+    with open('data/program_overviews.json', 'r') as f:
         return json.load(f)
 
 def create_program_to_department_mapping():
@@ -164,8 +164,8 @@ def update_department_mission_statements():
     print(f"\nUpdated {updated_count} department mission statements")
 
 def main():
-    if not os.path.exists('program_overviews.json'):
-        print("program_overviews.json not found. Run scrape_program_overviews.py first.")
+    if not os.path.exists('data/program_overviews.json'):
+        print("data/program_overviews.json not found. Run scrape_program_overviews.py first.")
         return
     
     update_department_mission_statements()

@@ -138,7 +138,7 @@ def write_tbd_report(tbd_items, output_dir, preservation_notes=None):
         
         f.write("\nTo fix TBD items:\n")
         f.write("1. Edit the JSON files directly, or\n")
-        f.write("2. Improve the PDF parsing logic in niagarascheduler.py, or\n")
+        f.write("2. Improve the PDF parsing logic in pdf/pdf_extractor.py, or\n")
         f.write("3. Provide cleaner PDF source files\n\n")
         f.write("Re-run generate_calendars.py after making changes.\n")
     
@@ -218,7 +218,7 @@ def main():
                 print(f"\n📝 Detailed report written to: {report_path}")
                 print("\nTo fix TBD items:")
                 print("1. Edit the JSON files directly, or")
-                print("2. Improve the PDF parsing logic in niagarascheduler.py, or") 
+                print("2. Improve the PDF parsing logic in pdf/pdf_extractor.py, or") 
                 print("3. Provide cleaner PDF source files")
         
         print("\nJSON generation complete!")

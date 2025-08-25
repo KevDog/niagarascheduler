@@ -42,8 +42,9 @@ cd frontend && npm run dev
 # Build frontend
 cd frontend && npm run build
 
-# Start production server
-python app.py --port 5002  # Legacy Flask app with static files
+# Start production servers
+python api.py --port 8000  # API server
+# Serve frontend build files with web server (nginx, apache, etc.)
 ```
 
 ## API Documentation
@@ -182,8 +183,10 @@ The scraper pulls live data from: https://apps.niagara.edu/courses/index.php?sem
 │   ├── package.json           # Vue project dependencies
 │   └── vite.config.ts         # Vite configuration with API proxy
 ├── api.py                     # Flask JSON API server
-├── app.py                     # Legacy Flask app (for production static serving)
-├── scrape_descriptions.py     # CLI tool for course data scraping
+├── utilities/                 # CLI tools and utilities
+│   ├── scrape_descriptions.py # Course data scraping tool
+│   ├── scrape_offerings.py    # Schedule scraping tool
+│   └── ...
 ├── core/                      # Core application modules
 │   ├── course.py             # Course class with serialization
 │   ├── department.py         # Department class with course collection  
@@ -204,7 +207,8 @@ The scraper pulls live data from: https://apps.niagara.edu/courses/index.php?sem
 │   ├── test_course.py       # Course model tests
 │   └── test_department.py   # Department model tests
 └── templates/               # Syllabus templates
-    └── syllabus_master.md   # Core markdown template
+    ├── syllabus_master.md   # Core markdown template
+    └── NU 2025 Syllabus Template.docx  # DOCX template
 ```
 
 ## Data Architecture
@@ -340,12 +344,11 @@ python utilities/scrape_descriptions.py --schedules
 
 ## License
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+MIT License - see LICENSE file for details.
 
 ## Credits
 
-Based on original work by W. Caleb McDaniel (2015-2019)  
-Vue + Flask modernization by Kevin Stevens (2025)
+Created by Kevin Stevens (2025)
 
 ---
 

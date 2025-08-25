@@ -7,7 +7,7 @@ Generated: 2025-08-19 23:20:02
 
 To fix TBD items:
 1. Edit the JSON files directly, or
-2. Improve the PDF parsing logic in niagarascheduler.py, or
+2. Improve the PDF parsing logic in pdf/pdf_extractor.py, or
 3. Provide cleaner PDF source files
 
 Re-run generate_calendars.py after making changes.

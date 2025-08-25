@@ -56,7 +56,7 @@ Course Description Lookup: Given a course I.D., e.g. "THR 101", the system looks
 - `core/course.py` - Course class with full serialization and offerings support
 - `core/department.py` - Department class with mission statements and URL management
 - `core/data_loader.py` - Load Course/Department objects with backward compatibility
-- `app.py` - Flask web application with preview/export workflow
+- `api.py` - Flask JSON API server for Vue frontend
 - `calendars/*.json` - Academic calendar data parsed from PDFs
 - `data/departments/` - Static department JSON files with mission statements and URLs
 - `data/semesters/` - Dynamic semester offering data by term
