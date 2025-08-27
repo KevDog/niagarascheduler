@@ -69,8 +69,8 @@ const submitForm = async () => {
         </div>
       </div>
 
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <h2 class="text-xl font-semibold mb-4">Need help with the Niagara University Scheduler?</h2>
+      <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Need help with the Purple Eagle Syllabus Wizard?</h2>
         
         <p class="text-gray-600 mb-6">
           Send us a message and we'll get back to you as soon as possible. 
