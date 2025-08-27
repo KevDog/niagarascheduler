@@ -53,10 +53,18 @@ def get_department_offerings(semester, dept_code):
         if not validate_department_code(dept_code.upper()):
             return error_response('Invalid department code format', 400)
         
-        # This would require extending CourseService to get all department offerings
-        # For now, return a placeholder response
+        course_service = CourseService(
+            current_app.data_loader,
+            current_app.config['DATA_DIR']
+        )
+        
+        offerings = course_service.get_department_offerings(
+            semester, dept_code.upper()
+        )
+        
         return success_response({
-            'message': 'Department offerings endpoint - to be implemented',
+            'offerings': offerings,
+            'count': len(offerings),
             'semester': semester,
             'department': dept_code.upper()
         })

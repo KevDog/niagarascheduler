@@ -93,12 +93,52 @@ Course Description Lookup: Given a course I.D., e.g. "THR 101", the system looks
 - **Course Description URLs**: Direct links to catalog pages for each department
 - **Organized Structure**: Static department info separated from dynamic semester offerings
 
+## Vue Frontend Architecture ✅ IMPLEMENTED
+
+### Component-Based Development Standards
+**All Vue functionality must be implemented as reusable components following these patterns:**
+
+#### **Component Structure** 📁
+```
+src/
+├── components/
+│   ├── ui/                          # Reusable UI components
+│   │   ├── CustomListbox.vue        # HeadlessUI Listbox wrapper
+│   │   ├── FormField.vue           # Standard form input wrapper
+│   │   └── LoadingSpinner.vue       # Loading states
+│   ├── CourseSelectionForm.vue      # Main form logic
+│   ├── ProgressIndicator.vue        # Wizard progress bar
+│   └── [FeatureName]Component.vue   # Feature-specific components
+├── composables/
+│   ├── useApiData.ts               # API data fetching
+│   ├── useCourseSelection.ts       # Form state management
+│   ├── useNavigation.ts            # Router utilities
+│   └── use[FeatureName].ts         # Feature-specific logic
+└── views/
+    └── [Page]View.vue              # Page orchestration only (~50 lines max)
+```
+
+#### **Development Rules** 🔧
+1. **No Logic in Views**: Views should only orchestrate components (≤50 lines)
+2. **Single Responsibility**: Each component has one clear purpose
+3. **Composable First**: Extract reusable logic to composables
+4. **TypeScript Required**: All components must have proper type definitions
+5. **Emit Events**: Use events for parent-child communication
+6. **Props Interface**: Define clear prop interfaces with defaults
+
+#### **Modularization Benefits** ✅
+- **HomeView.vue**: Reduced from 498 lines to 36 lines (93% reduction)
+- **Reusable Components**: ProgressIndicator, CourseSelectionForm
+- **Shared Logic**: useApiData, useCourseSelection, useNavigation composables
+- **Type Safety**: Better TypeScript support with focused interfaces
+- **Maintainability**: Easier testing, debugging, and feature additions
+
 ## TODO: Next Development Phase
 ### UI/UX Enhancements
-1. **TailwindCSS Integration**: Add modern styling framework to Flask app
+1. **Component Library Expansion**: Build comprehensive UI component library
 2. **Editable Syllabus Preview**: Allow in-browser editing before download
-3. **Syllabus Creation Wizard**: Multi-step form for guided syllabus building
-4. **Enhanced User Experience**: Modern, responsive interface
+3. **Syllabus Creation Wizard**: Complete multi-step wizard with modular components
+4. **Enhanced User Experience**: Modern, responsive component-based interface
 
 ### Data Enhancement
 1. **Course Description Scraper**: CLI tool to populate course descriptions from catalog URLs

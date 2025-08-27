@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/schedule-setup',
+      name: 'schedule-setup',
+      component: () => import('../views/ScheduleSetupView.vue'),
+    },
+    {
       path: '/support',
       name: 'support',
       // route level code-splitting

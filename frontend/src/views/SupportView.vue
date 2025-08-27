@@ -72,7 +72,7 @@ const submitForm = async () => {
       <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">Need help with the Purple Eagle Syllabus Wizard?</h2>
         
-        <p class="text-gray-600 mb-6">
+        <p class="text-gray-300 mb-6">
           Send us a message and we'll get back to you as soon as possible. 
           Please include as much detail as possible about your issue or question.
         </p>
@@ -87,7 +87,7 @@ const submitForm = async () => {
               v-model="form.name"
               type="text"
               required
-              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
               placeholder="Your full name"
             />
           </div>
@@ -101,7 +101,7 @@ const submitForm = async () => {
               v-model="form.email"
               type="email"
               required
-              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
               placeholder="your.email@example.com"
             />
           </div>
@@ -115,7 +115,7 @@ const submitForm = async () => {
               v-model="form.subject"
               type="text"
               required
-              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
               placeholder="Brief description of your issue"
             />
           </div>
@@ -129,7 +129,7 @@ const submitForm = async () => {
               v-model="form.message"
               required
               rows="5"
-              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
               placeholder="Please describe your issue or question in detail..."
             ></textarea>
           </div>
@@ -137,7 +137,7 @@ const submitForm = async () => {
           <button
             type="submit"
             :disabled="isSubmitting"
-            class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            class="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {{ isSubmitting ? 'Opening Email Client...' : 'Send Message' }}
           </button>
@@ -154,11 +154,11 @@ const submitForm = async () => {
       </div>
 
       <!-- Additional Support Information -->
-      <div class="mt-8 bg-gray-50 rounded-lg p-6">
+      <div class="mt-8 bg-gray-900 rounded-lg p-6">
         <h3 class="text-lg font-semibold mb-3">Other Ways to Get Help</h3>
-        <ul class="space-y-2 text-gray-600">
-          <li>• Check the <RouterLink to="/" class="text-blue-600 hover:underline">Home page</RouterLink> for getting started guides</li>
-          <li>• Email us directly: <a href="mailto:kcstevens@mac.com" class="text-blue-600 hover:underline">kcstevens@mac.com</a></li>
+        <ul class="space-y-2 text-gray-300">
+          <li>• Check the <RouterLink to="/" class="text-purple-600 hover:underline">Home page</RouterLink> for getting started guides</li>
+          <li>• Email us directly: <a href="mailto:kcstevens@mac.com" class="text-purple-600 hover:underline">kcstevens@mac.com</a></li>
           <li>• For technical issues, please include your browser version and operating system</li>
         </ul>
       </div>

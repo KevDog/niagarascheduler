@@ -111,6 +111,79 @@ class CourseService:
         except Exception as e:
             raise Exception(f'Error loading offerings from {offerings_file}: {str(e)}')
     
+    def get_department_offerings(self, semester: str, dept_code: str) -> List[Dict[str, Any]]:
+        """
+        Get all course offerings for a department in a specific semester
+        
+        Args:
+            semester: Semester code (e.g., '25_FA')
+            dept_code: Department code (e.g., 'THR')
+        
+        Returns:
+            List of all course offerings for the department
+        """
+        offerings_file = os.path.join(self.data_dir, 'semesters', semester, f'{dept_code}.json')
+        
+        if not os.path.exists(offerings_file):
+            return []
+        
+        try:
+            with open(offerings_file, 'r') as f:
+                offerings_data = json.load(f)
+            
+            # Process all offerings for the department
+            processed_offerings = []
+            for offering in offerings_data:
+                offering_number = offering.get('number', '')
+                
+                # Extract course number and section from the offering number
+                if offering_number.startswith(dept_code):
+                    clean_number = offering_number[len(dept_code):]
+                else:
+                    clean_number = offering_number
+                
+                # Extract base course number (e.g., "103A" -> "103")
+                base_number = ''
+                section = 'A'
+                for i, char in enumerate(clean_number):
+                    if char.isalpha():
+                        base_number = clean_number[:i]
+                        section = clean_number[i:]
+                        break
+                else:
+                    base_number = clean_number
+                
+                offering_data = {
+                    'number': offering_number,
+                    'name': offering.get('name', ''),
+                    'credits': offering.get('credits', ''),
+                    'section': section,
+                    'semester': semester,
+                    'department': dept_code,
+                    'course_number': base_number
+                }
+                
+                # Add schedule information if available
+                if 'days' in offering:
+                    offering_data.update({
+                        'days': offering.get('days', ''),
+                        'start_time': offering.get('start_time', ''),
+                        'end_time': offering.get('end_time', ''),
+                        'delivery_type': offering.get('delivery_type', ''),
+                        'availability': offering.get('availability', ''),
+                        'instructor': offering.get('instructor', ''),
+                        'location': offering.get('location', '')
+                    })
+                
+                processed_offerings.append(offering_data)
+            
+            # Sort by course number and then by section
+            processed_offerings.sort(key=lambda x: (x['course_number'], x['section']))
+            return processed_offerings
+            
+        except Exception as e:
+            raise Exception(f'Error loading offerings from {offerings_file}: {str(e)}')
+    
     def get_available_semesters(self) -> List[str]:
         """
         Get list of available semesters from data directory
