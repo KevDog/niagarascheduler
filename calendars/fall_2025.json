@@ -4,49 +4,61 @@
   "generated_at": "2025-08-19 23:20:02",
   "first_day": "2025-08-25",
   "last_day": "2025-12-15",
-  "no_class_dates": [],
+  "no_class_dates": [
+    "2025-09-01",
+    "2025-10-14",
+    "2025-11-28",
+    "2025-11-29",
+    "2025-12-23",
+    "2025-12-24",
+    "2025-12-25",
+    "2025-12-26",
+    "2025-12-27",
+    "2025-12-30",
+    "2025-12-31"
+  ],
   "events": [
     {
-      "name": "January 20",
-      "date": "2025-08-23",
+      "name": "Labor Day",
+      "date": "2025-09-01",
       "date_range": null,
-      "type": "other"
+      "type": "holiday"
     },
     {
-      "name": "Graduate Start End",
-      "date": "2025-09-05",
+      "name": "Indigenous Peoples Day",
+      "date": "2025-10-14",
+      "date_range": null,
+      "type": "holiday"
+    },
+    {
+      "name": "Thanksgiving Break",
+      "date": "2025-11-28",
+      "date_range": "2025-11-29",
+      "type": "holiday"
+    },
+    {
+      "name": "Winter Break Begins",
+      "date": "2025-12-23",
+      "date_range": "2025-12-31",
+      "type": "holiday"
+    },
+    {
+      "name": "Classes Begin",
+      "date": "2025-08-25",
       "date_range": null,
       "type": "semester_event"
     },
     {
-      "name": "March 14",
-      "date": "2025-10-10",
+      "name": "Last Day of Classes",
+      "date": "2025-12-15",
       "date_range": null,
-      "type": "other"
+      "type": "semester_event"
     },
     {
-      "name": "Mar",
-      "date": "2025-10-25",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "Independence Day Friday,",
-      "date": "2025-10-31",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "April 07",
-      "date": "2025-11-01",
-      "date_range": null,
-      "type": "other"
-    },
-    {
-      "name": "2026",
-      "date": "2025-12-04",
-      "date_range": null,
-      "type": "other"
+      "name": "Final Exams Begin",
+      "date": "2025-12-16",
+      "date_range": "2025-12-20",
+      "type": "academic_deadline"
     }
   ]
 }

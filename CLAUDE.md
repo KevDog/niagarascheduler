@@ -1,10 +1,31 @@
 The context of this project is to repurpose the project to create syllabi for Niagara University. Academic calendars in .xslx format can be found in the ./niagara folder
 
 
-TEST-DRIVEN DEVELOPMENT PROCESS:
+## TESTING FRAMEWORK STANDARDS ✅
+
+### **Consistent Test Frameworks by Layer**
+- **Python/API Tests**: `unittest` (Python standard library)
+- **Frontend Tests**: `Vitest` + `Vue Test Utils` + `jsdom`
+- **Pinia Store Tests**: `Vitest` + `Pinia` test utilities
+- **Component Tests**: `Vitest` + `Vue Test Utils` + component mounting
+- **Integration Tests**: `Vitest` for frontend, `unittest` for Python
+
+### **Test Organization Structure**
+```
+tests/
+├── api/                    # Python API tests (unittest)
+├── models/                 # Python model tests (unittest)  
+├── core/                   # Python core logic tests (unittest)
+└── frontend/               # Frontend tests (Vitest)
+    ├── src/test/stores/    # Pinia store tests
+    ├── src/test/views/     # Vue component tests
+    └── src/test/setup.ts   # Test configuration
+```
+
+## TEST-DRIVEN DEVELOPMENT PROCESS:
 1. Create test file with empty test functions (just function names)
 2. Implement one test method at a time, in order
-3. Use "Arrange, Act, Assert" pattern in test methods wherever practical
+3. **MANDATORY**: Use "Arrange, Act, Assert" pattern in ALL test methods
 4. Write minimal code to make current test pass
 5. Move to next test method
 6. Refactor when all tests pass
@@ -12,6 +33,35 @@ TEST-DRIVEN DEVELOPMENT PROCESS:
 8. When asked a question, answer it before suggesting changes.
 9. Describe functionality before proposing code. I.e., what is the workflow?
 
+### **Arrange/Act/Assert Pattern Requirements**
+**All tests MUST follow this structure:**
+```python
+def test_example_functionality(self):
+    """Test description"""
+    # Arrange - Set up test data and conditions
+    input_data = "test_input"
+    expected_result = "expected_output"
+    
+    # Act - Execute the function/method being tested
+    actual_result = function_under_test(input_data)
+    
+    # Assert - Verify the results
+    self.assertEqual(actual_result, expected_result)
+```
+
+```typescript
+it('should test example functionality', () => {
+  // Arrange - Set up test data and conditions
+  const inputData = 'test_input'
+  const expectedResult = 'expected_output'
+  
+  // Act - Execute the function/method being tested
+  const actualResult = functionUnderTest(inputData)
+  
+  // Assert - Verify the results
+  expect(actualResult).toBe(expectedResult)
+})
+```
 
 All tests going in the ./tests folder
 
@@ -178,3 +228,105 @@ src/
 - **TailwindCSS Documentation**: https://tailwindcss.com/docs/
 - **Integration Method**: CDN or npm installation for Flask templates
 - **Responsive Design**: Mobile-first approach with Tailwind utility classes
+
+## Testing Strategy for Schedule Notes Feature ✅ IMPLEMENTED
+
+### **Test Framework & Scope**
+- **Framework**: Vitest + Vue Test Utils
+- **Scope**: Both unit tests (Pinia store) and integration tests (Vue components)
+- **Mock Strategy**: Mock localStorage and API calls as needed
+- **Test Location**: `/tests/frontend/` directory
+
+### **Character Limits & Unicode Support**
+- **Character Limit**: 750 characters maximum per note
+- **Unicode Support**: Full Unicode support (mathematical symbols, international characters)
+- **Validation**: Client-side character count validation with visual feedback
+- **Error Handling**: Graceful handling of character limit exceeded
+
+### **Test Coverage Requirements**
+
+#### **1. Pinia Store Tests (`useScheduleStore`)**
+```typescript
+// Core functionality
+- openNotesModal(date) → sets selectedDate, loads existing note to tempNote, shows modal
+- saveNote(semester, dept, course) → saves note to dateNotes, persists to localStorage, closes modal
+- closeNotesModal() → clears temporary state, hides modal
+- hasNoteForDate(date) → returns boolean based on note existence
+- getNoteForDate(date) → retrieves note text for given date
+
+// Persistence
+- loadNotesFromStorage(semester, dept, course) → loads notes from localStorage
+- saveNotesToStorage(semester, dept, course) → persists with correct storage key
+- Storage key format: `schedule-notes-{semester}-{department}-{course}`
+
+// Character limits
+- Character validation (750 max)
+- Unicode character handling
+- Truncation behavior
+```
+
+#### **2. Component Integration Tests (ScheduleSetupView)**
+```typescript
+// User interactions
+- Click schedule item → opens notes modal
+- Modal displays correct date in header
+- Textarea pre-populates with existing note content
+- Save button → persists note and updates UI indicator
+- Cancel button → discards changes and closes modal
+
+// Visual feedback
+- Notes indicator (📝 Notes badge) appears when note exists
+- Character count display (e.g., "245/750 characters")
+- Character limit warning/error states
+- Empty notes removal from storage
+```
+
+#### **3. Edge Cases & Error Handling**
+```typescript
+// Data validation
+- Very long notes (750+ characters)
+- Special characters (mathematical symbols: ∑, ∫, π, ∞)
+- International characters (Chinese: 汉字, Arabic: العربية, etc.)
+- Empty/whitespace-only notes
+
+// Storage scenarios
+- Invalid JSON in localStorage
+- Storage quota exceeded
+- Course-specific note isolation
+- Cross-session persistence
+
+// User experience
+- Modal auto-focus on textarea
+- Keyboard navigation (ESC to close)
+- Click outside modal behavior
+```
+
+#### **4. Mock Data Structure**
+```typescript
+// Test course data
+const mockWizardData = {
+  semester: '25_FA',
+  department: 'THR', 
+  course: '101',
+  instructor: 'Test Professor'
+}
+
+// Test calendar data
+const mockScheduleItems = [
+  { date: '2025-08-26', type: 'class' },
+  { date: '2025-09-01', type: 'holiday', name: 'Labor Day' },
+  { date: '2025-08-28', type: 'class' }
+]
+
+// Test notes
+const mockNotes = {
+  '2025-08-26': 'Assignment 1 due - Mathematical proofs (∑, ∫)',
+  '2025-08-28': 'Quiz on Chapter 1 中文测试'
+}
+```
+
+### **Implementation Priority**
+1. **Character Limit Implementation**: Add 750-character validation to store and UI
+2. **Unit Tests**: Test Pinia store functionality with Unicode edge cases  
+3. **Integration Tests**: Test full user workflow with mock data
+4. **Edge Case Coverage**: Comprehensive error handling and validation tests

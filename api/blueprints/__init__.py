@@ -8,6 +8,7 @@ from .offerings_bp import offerings_bp
 from .schedule_bp import schedule_bp
 from .syllabus_bp import syllabus_bp
 from .health_bp import health_bp
+from .calendar_bp import calendar_bp
 
 __all__ = [
     'config_bp',
@@ -16,5 +17,6 @@ __all__ = [
     'offerings_bp', 
     'schedule_bp',
     'syllabus_bp',
-    'health_bp'
+    'health_bp',
+    'calendar_bp'
 ]

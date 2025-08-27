@@ -7,7 +7,7 @@ from flask_cors import CORS
 from .config import get_config
 from .blueprints import (
     config_bp, departments_bp, courses_bp, offerings_bp,
-    schedule_bp, syllabus_bp, health_bp
+    schedule_bp, syllabus_bp, health_bp, calendar_bp
 )
 from core.data_loader import DepartmentDataLoader
 
@@ -46,6 +46,7 @@ def create_app(config_name=None):
     app.register_blueprint(schedule_bp)
     app.register_blueprint(syllabus_bp)
     app.register_blueprint(health_bp)
+    app.register_blueprint(calendar_bp)
     
     # Register error handlers
     register_error_handlers(app)
