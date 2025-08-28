@@ -15,6 +15,21 @@ const router = createRouter({
       component: () => import('../views/ScheduleSetupView.vue'),
     },
     {
+      path: '/course-content',
+      name: 'course-content',
+      component: () => import('../views/CourseContentView.vue'),
+    },
+    {
+      path: '/policies-grading',
+      name: 'policies-grading',
+      component: () => import('../views/PoliciesGradingView.vue'),
+    },
+    {
+      path: '/class-policies',
+      name: 'class-policies',
+      component: () => import('../views/ClassPoliciesView.vue'),
+    },
+    {
       path: '/support',
       name: 'support',
       // route level code-splitting

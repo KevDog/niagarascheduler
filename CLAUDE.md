@@ -330,3 +330,4 @@ const mockNotes = {
 2. **Unit Tests**: Test Pinia store functionality with Unicode edge cases  
 3. **Integration Tests**: Test full user workflow with mock data
 4. **Edge Case Coverage**: Comprehensive error handling and validation tests
+- Document structure is in place. The text under "Student Learning Outcomes", "Assessment", "Requirements of Course and Workload Information" is informational for the instructor and can be in a help popover. The "Vincentian Excellence" and "Sexual Harassment" sections are required.

@@ -38,7 +38,7 @@ Syllabi for courses that are not requirements or electives for a program must ar
 
 Please describe assessment information here by indicating clearly how each of the stated student learning objectives will be assessed.
 
-## Course Schedule
+## Outline of Course
 
 {{SCHEDULE_TABLE}}
 

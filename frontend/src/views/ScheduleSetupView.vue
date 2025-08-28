@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { ref, onMounted, computed, watch } from 'vue'
+import { ref, onMounted, computed, watch, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/vue'
-import { CheckIcon, ChevronUpDownIcon, ClockIcon, CalendarIcon } from '@heroicons/vue/20/solid'
+import { ClockIcon, CalendarIcon } from '@heroicons/vue/20/solid'
 import { useApiStore } from '@/stores/api'
 import { useScheduleStore } from '@/stores/schedule'
 import { storeToRefs } from 'pinia'
@@ -28,7 +27,9 @@ const {
   isOverLimit,
   charactersRemaining,
   characterCountText,
-  characterCountColor
+  characterCountColor,
+  userImportantDates,
+  cancelledClasses
 } = storeToRefs(scheduleStore)
 
 // Get data from query parameters (passed from Step 1)
@@ -48,110 +49,147 @@ const selectedOffering = computed(() => {
 
 // Schedule building data - will be populated from offering data
 const scheduleData = ref({
-  meetingTimes: '',
+  meetingDays: [] as string[],
+  startTime: '',
+  endTime: '',
   location: '',
   officeHours: '',
   finalExamDate: '',
-  holidays: [] as string[],
-  importantDates: [] as { date: string, description: string }[]
+  importantDates: [] as { date: string, description: string, type: 'class' | 'holiday' | 'event' | 'other' }[]
 })
 
+// Available meeting days
+const meetingDayOptions = [
+  { value: 'M', label: 'Monday (M)' },
+  { value: 'T', label: 'Tuesday (T)' },
+  { value: 'W', label: 'Wednesday (W)' },
+  { value: 'R', label: 'Thursday (Th)' },
+  { value: 'F', label: 'Friday (F)' }
+]
 
-// Computed property for formatted meeting times from offering
+// Available types for important dates
+const dateTypes = [
+  { value: 'class', label: 'Class Meeting', color: 'bg-purple-50 text-purple-800 border-purple-200' },
+  { value: 'holiday', label: 'Holiday', color: 'bg-red-50 text-red-800 border-red-200' },
+  { value: 'event', label: 'Academic Event', color: 'bg-amber-50 text-amber-800 border-amber-200' },
+  { value: 'other', label: 'Other', color: 'bg-gray-50 text-gray-800 border-gray-200' }
+]
+
+
+const loading = ref(false)
+
+// Computed properties
+const canProceed = computed(() => {
+  return scheduleData.value.meetingDays.length > 0 && 
+         scheduleData.value.startTime && 
+         scheduleData.value.endTime && 
+         scheduleData.value.location
+})
+
 const formattedMeetingTimes = computed(() => {
-  if (!selectedOffering.value) return ''
-  const offering = selectedOffering.value
-  if (offering.days && offering.start_time && offering.end_time) {
-    return `${offering.days} ${offering.start_time} - ${offering.end_time}`
+  if (scheduleData.value.meetingDays.length > 0 && scheduleData.value.startTime && scheduleData.value.endTime) {
+    // Format days string properly (convert R to Th for display)
+    let daysString = scheduleData.value.meetingDays
+      .map(day => day === 'R' ? 'Th' : day)
+      .join('')
+    
+    // Convert times back to 12-hour format for display
+    const formatTime = (time24: string) => {
+      const [hours, minutes] = time24.split(':')
+      const hour24 = parseInt(hours, 10)
+      const hour12 = hour24 === 0 ? 12 : hour24 > 12 ? hour24 - 12 : hour24
+      const ampm = hour24 >= 12 ? 'PM' : 'AM'
+      return `${hour12}:${minutes}${ampm}`
+    }
+    
+    const startTime12 = formatTime(scheduleData.value.startTime)
+    const endTime12 = formatTime(scheduleData.value.endTime)
+    
+    return `${daysString} ${startTime12} - ${endTime12}`
   }
   return ''
 })
 
-const loading = ref(false)
-const selectedHolidays = ref<string[]>([])
-
-// Available holidays for the semester
-const availableHolidays = ref([
-  'Labor Day',
-  'Indigenous Peoples Day',
-  'Thanksgiving Break',
-  'Winter Break',
-  'Martin Luther King Jr. Day',
-  'Presidents Day',
-  'Spring Break',
-  'Good Friday',
-  'Memorial Day'
-])
-
-// Important dates for the academic year
-const importantDates = ref([
-  { date: '2024-09-02', description: 'Labor Day - No Classes' },
-  { date: '2024-10-14', description: 'Indigenous Peoples Day - No Classes' },
-  { date: '2024-11-28', description: 'Thanksgiving Break Begins' },
-  { date: '2024-12-02', description: 'Classes Resume' },
-  { date: '2024-12-16', description: 'Final Exams Begin' },
-  { date: '2025-01-13', description: 'Spring Semester Begins' },
-  { date: '2025-03-10', description: 'Spring Break Begins' },
-  { date: '2025-03-17', description: 'Classes Resume' },
-  { date: '2025-04-18', description: 'Good Friday - No Classes' },
-  { date: '2025-05-12', description: 'Final Exams Begin' }
-])
-
-// Computed properties
-const canProceed = computed(() => {
-  return scheduleData.value.meetingTimes && scheduleData.value.location
+const validImportantDatesCount = computed(() => {
+  return scheduleData.value.importantDates.filter(date => 
+    date.date && date.type && date.description.trim()
+  ).length
 })
 
 // Generate class meeting dates based on schedule
 const generateClassDates = async () => {
-  if (!wizardData.value.semester || !scheduleData.value.meetingTimes) {
+  if (!wizardData.value.semester || scheduleData.value.meetingDays.length === 0) {
     return
   }
   
-  // Extract meeting days from meeting times (e.g., "MW 10:30AM-11:50AM" -> "MW")
-  const meetingDays = scheduleData.value.meetingTimes.split(' ')[0]
+  const meetingDays = scheduleData.value.meetingDays.join('')
   await scheduleStore.generateClassDates(wizardData.value.semester, meetingDays)
 }
 
-// Watch for changes in meeting times to regenerate class dates
-watch(() => scheduleData.value.meetingTimes, (newValue) => {
-  if (newValue) {
+// Watch for changes in meeting days to regenerate class dates
+watch(() => scheduleData.value.meetingDays, (newValue) => {
+  if (newValue.length > 0) {
     generateClassDates()
   }
-}, { immediate: false })
+}, { immediate: false, deep: true })
+
+// Initialize meeting data from the selected offering
+const initializeFromOffering = async () => {
+  if (selectedOffering.value && selectedOffering.value.days && selectedOffering.value.start_time && selectedOffering.value.end_time) {
+    const offering = selectedOffering.value
+    
+    // Parse meeting days from offering.days (e.g., "TTH" -> ["T", "R"])
+    const daysString = offering.days
+    const parsedDays: string[] = []
+    
+    for (let i = 0; i < daysString.length; i++) {
+      const char = daysString[i]
+      if (char === 'T' && i < daysString.length - 1 && daysString[i + 1] === 'H') {
+        parsedDays.push('R') // Thursday
+        i++ // Skip the H
+      } else if (char === 'M') {
+        parsedDays.push('M')
+      } else if (char === 'T') {
+        parsedDays.push('T')
+      } else if (char === 'W') {
+        parsedDays.push('W')
+      } else if (char === 'R') {
+        parsedDays.push('R')
+      } else if (char === 'F') {
+        parsedDays.push('F')
+      }
+    }
+    
+    scheduleData.value.meetingDays = parsedDays
+    scheduleData.value.startTime = convertTo24Hour(offering.start_time)
+    scheduleData.value.endTime = convertTo24Hour(offering.end_time)
+    
+    // Generate class dates immediately after setting meeting data
+    await generateClassDates()
+  }
+}
+
+// Watch for selectedOffering to become available and initialize
+watch(selectedOffering, async (newOffering) => {
+  if (newOffering && !scheduleData.value.meetingDays.length) {
+    await initializeFromOffering()
+  }
+}, { immediate: true })
 
 // Methods
-const generateSchedule = async () => {
+const saveScheduleData = async () => {
   loading.value = true
   try {
-    const response = await fetch('/api/generate-schedule', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        ...wizardData.value,
-        ...scheduleData.value,
-        holidays: selectedHolidays.value,
-        importantDates: scheduleData.value.importantDates
-      })
-    })
+    // Store schedule data locally (already managed by Pinia store)
+    console.log('Schedule data configured:', scheduleData.value)
     
-    if (response.ok) {
-      const data = await response.json()
-      console.log('Schedule generated:', data)
-      // Navigate to next step (syllabus content)
-      router.push({
-        name: 'syllabus-content',
-        query: {
-          ...wizardData.value,
-          ...scheduleData.value,
-          scheduleId: data.scheduleId
-        }
-      })
-    }
+    // Navigate to next step (course content)
+    router.push({
+      name: 'course-content',
+      query: wizardData.value
+    })
   } catch (error) {
-    console.error('Error generating schedule:', error)
+    console.error('Error navigating to policies:', error)
   } finally {
     loading.value = false
   }
@@ -162,11 +200,48 @@ const goBack = () => {
 }
 
 const addImportantDate = () => {
-  scheduleData.value.importantDates.push({ date: '', description: '' })
+  scheduleData.value.importantDates.push({ date: '', description: '', type: 'class' })
 }
 
 const removeImportantDate = (index: number) => {
   scheduleData.value.importantDates.splice(index, 1)
+}
+
+// Helper function to convert 12-hour time format to 24-hour format
+const convertTo24Hour = (time12h: string): string => {
+  const [time, modifier] = time12h.split(/([AP]M)/)
+  let [hours, minutes] = time.split(':')
+  
+  if (hours === '12') {
+    hours = '00'
+  }
+  
+  if (modifier === 'PM') {
+    hours = String(parseInt(hours, 10) + 12)
+  }
+  
+  return `${hours.padStart(2, '0')}:${minutes || '00'}`
+}
+
+const saveImportantDatesToSchedule = () => {
+  // Filter out incomplete entries - must have date, type, AND description
+  const validDates = scheduleData.value.importantDates.filter(date => 
+    date.date && date.type && date.description.trim()
+  )
+  
+  if (validDates.length > 0) {
+    // Save to the schedule store
+    scheduleStore.setUserImportantDates(validDates)
+    console.log('Saved important dates to schedule:', validDates)
+    
+    // Clear the form by removing all entries
+    scheduleData.value.importantDates = []
+    
+    // Optional: Show success feedback (you could add a toast notification here)
+    console.log(`Successfully saved ${validDates.length} important date(s) to schedule`)
+  } else {
+    console.log('No complete important dates to save (missing date, type, or description)')
+  }
 }
 
 // Date notes functionality - using store actions
@@ -184,6 +259,25 @@ const saveNotes = () => {
 
 const cancelNotes = () => {
   scheduleStore.closeNotesModal()
+}
+
+const deleteScheduleDate = (dateToDelete: string, event: Event) => {
+  // Stop the click event from bubbling up to the parent (which would open the notes modal)
+  event.stopPropagation()
+  
+  // Remove from user important dates
+  scheduleStore.removeUserImportantDate(dateToDelete)
+  console.log('Removed date from schedule:', dateToDelete)
+}
+
+const toggleClassCancellation = (date: string, event: Event) => {
+  // Stop the click event from bubbling up to the parent (which would open the notes modal)
+  event.stopPropagation()
+  
+  // Toggle the cancellation status
+  scheduleStore.toggleClassCancellation(date)
+  const isCancelled = scheduleStore.isClassCancelled(date)
+  console.log(`Class on ${date} is now ${isCancelled ? 'cancelled' : 'scheduled'}`)
 }
 
 onMounted(async () => {
@@ -208,15 +302,8 @@ onMounted(async () => {
     )
   }
   
-  // Initialize meeting times from offering data
-  if (formattedMeetingTimes.value) {
-    console.log('Pre-populating meeting times:', formattedMeetingTimes.value)
-    scheduleData.value.meetingTimes = formattedMeetingTimes.value
-    // Generate class dates immediately after setting meeting times
-    await generateClassDates()
-  } else {
-    console.log('No offering data found for:', wizardData.value.offering)
-  }
+  // Initialize meeting data from offering (after API data loads)
+  initializeFromOffering()
 })
 </script>
 
@@ -262,22 +349,75 @@ onMounted(async () => {
           <p class="text-gray-300">Set up your course schedule and important dates</p>
         </div>
 
-        <form @submit.prevent="generateSchedule" class="space-y-6">
-          <!-- Meeting Times -->
-          <div>
-            <label for="meetingTimes" class="block text-sm font-medium text-gray-700 mb-2">
-              <ClockIcon class="inline w-4 h-4 mr-2" />
-              Meeting Times <span class="text-red-500">*</span>
-              <span v-if="formattedMeetingTimes" class="text-xs text-gray-500 ml-2">(from selected section)</span>
-            </label>
-            <input
-              id="meetingTimes"
-              v-model="scheduleData.meetingTimes"
-              type="text"
-              required
-              :placeholder="formattedMeetingTimes || 'e.g., MW 10:30AM-11:50AM'"
-              class="block w-full rounded-lg border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 transition duration-200"
-            />
+        <form @submit.prevent="saveScheduleData" class="space-y-6">
+          <!-- Meeting Schedule -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-medium text-gray-900 flex items-center">
+              <ClockIcon class="inline w-5 h-5 mr-2 text-purple-600" />
+              Meeting Schedule <span class="text-red-500">*</span>
+              <span v-if="selectedOffering" class="text-xs text-gray-500 ml-2">(from selected section)</span>
+            </h3>
+
+            <!-- Meeting Days -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-3">
+                Meeting Days <span class="text-red-500">*</span>
+              </label>
+              <div class="grid grid-cols-5 gap-2">
+                <label
+                  v-for="day in meetingDayOptions"
+                  :key="day.value"
+                  class="flex items-center justify-center p-3 border rounded-lg cursor-pointer transition-all"
+                  :class="{
+                    'border-purple-300 bg-purple-50 text-purple-700 font-medium': scheduleData.meetingDays.includes(day.value),
+                    'border-gray-300 bg-white text-gray-700 hover:border-purple-200 hover:bg-purple-25': !scheduleData.meetingDays.includes(day.value)
+                  }"
+                >
+                  <input
+                    type="checkbox"
+                    :value="day.value"
+                    v-model="scheduleData.meetingDays"
+                    class="sr-only"
+                  />
+                  <span class="text-sm">{{ day.label }}</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Start and End Times -->
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="startTime" class="block text-sm font-medium text-gray-700 mb-2">
+                  Start Time <span class="text-red-500">*</span>
+                </label>
+                <input
+                  id="startTime"
+                  v-model="scheduleData.startTime"
+                  type="time"
+                  required
+                  class="block w-full rounded-lg border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 transition duration-200"
+                />
+              </div>
+              <div>
+                <label for="endTime" class="block text-sm font-medium text-gray-700 mb-2">
+                  End Time <span class="text-red-500">*</span>
+                </label>
+                <input
+                  id="endTime"
+                  v-model="scheduleData.endTime"
+                  type="time"
+                  required
+                  class="block w-full rounded-lg border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 transition duration-200"
+                />
+              </div>
+            </div>
+
+            <!-- Meeting Times Preview -->
+            <div v-if="formattedMeetingTimes" class="p-3 bg-gray-50 rounded-lg">
+              <p class="text-sm text-gray-600">
+                <strong>Preview:</strong> {{ formattedMeetingTimes }}
+              </p>
+            </div>
           </div>
 
           <!-- Location -->
@@ -323,78 +463,62 @@ onMounted(async () => {
             />
           </div>
 
-          <!-- Holiday Selection -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">
-              Holidays (No Classes)
-            </label>
-            <Listbox v-model="selectedHolidays" multiple>
-              <div class="relative">
-                <ListboxButton
-                  class="relative w-full cursor-default rounded-lg bg-white py-3 pl-4 pr-10 text-left border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
-                >
-                  <span class="block truncate text-gray-900">
-                    {{ selectedHolidays.length > 0 ? `${selectedHolidays.length} holidays selected` : 'Select holidays' }}
-                  </span>
-                  <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                    <ChevronUpDownIcon class="h-5 w-5 text-gray-400" />
-                  </span>
-                </ListboxButton>
-
-                <transition
-                  leave-active-class="transition duration-100 ease-in"
-                  leave-from-class="opacity-100"
-                  leave-to-class="opacity-0"
-                >
-                  <ListboxOptions
-                    class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-lg bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                  >
-                    <ListboxOption
-                      v-slot="{ active, selected }"
-                      v-for="holiday in availableHolidays"
-                      :key="holiday"
-                      :value="holiday"
-                      as="template"
-                    >
-                      <li
-                        :class="[
-                          active ? 'bg-purple-100 text-purple-900' : 'text-gray-900',
-                          'relative cursor-default select-none py-3 pl-10 pr-4',
-                        ]"
-                      >
-                        <span :class="[selected ? 'font-medium' : 'font-normal', 'block truncate']">
-                          {{ holiday }}
-                        </span>
-                        <span
-                          v-if="selected"
-                          class="absolute inset-y-0 left-0 flex items-center pl-3 text-purple-600"
-                        >
-                          <CheckIcon class="h-5 w-5" />
-                        </span>
-                      </li>
-                    </ListboxOption>
-                  </ListboxOptions>
-                </transition>
-              </div>
-            </Listbox>
-          </div>
 
           <!-- Important Dates -->
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-2">
               Additional Important Dates
+              <span class="text-xs text-gray-500 ml-2">(will appear in your class schedule)</span>
             </label>
-            <div class="space-y-3">
+            <p class="text-xs text-gray-600 mb-3">
+              Fill out all fields (date, type, and description) before saving to schedule.
+            </p>
+            <div class="space-y-4">
+              <div class="flex gap-2">
+                <button
+                  type="button"
+                  @click="addImportantDate"
+                  class="text-purple-600 hover:text-purple-800 font-medium px-3 py-2 border border-purple-300 rounded-lg hover:bg-purple-50 transition-colors"
+                >
+                  + Add Important Date
+                </button>
+                
+                <button
+                  v-if="scheduleData.importantDates.length > 0"
+                  type="button"
+                  @click="saveImportantDatesToSchedule"
+                  :disabled="validImportantDatesCount === 0"
+                  :class="{
+                    'bg-purple-600 text-white hover:bg-purple-700': validImportantDatesCount > 0,
+                    'bg-gray-400 text-gray-200 cursor-not-allowed': validImportantDatesCount === 0
+                  }"
+                  class="font-medium px-4 py-2 rounded-lg transition-colors"
+                >
+                  Save to Schedule
+                  <span v-if="validImportantDatesCount > 0" class="ml-1 text-xs bg-purple-500 px-2 py-1 rounded-full">
+                    {{ validImportantDatesCount }}
+                  </span>
+                </button>
+              </div>
+              
               <div
                 v-for="(date, index) in scheduleData.importantDates"
                 :key="index"
-                class="flex gap-3 items-center"
+                class="flex gap-2 items-center bg-gray-50 p-3 rounded-lg"
               >
                 <input
                   v-model="date.date"
                   type="date"
                   class="flex-1 rounded-lg border-0 py-2 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-purple-600"
                 />
+                <select
+                  v-model="date.type"
+                  class="flex-1 rounded-lg border-0 py-2 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-purple-600"
+                >
+                  <option v-for="type in dateTypes" :key="type.value" :value="type.value">
+                    {{ type.label }}
+                  </option>
+                </select>
                 <input
                   v-model="date.description"
                   type="text"
@@ -404,18 +528,11 @@ onMounted(async () => {
                 <button
                   type="button"
                   @click="removeImportantDate(index)"
-                  class="text-red-600 hover:text-red-800"
+                  class="text-red-600 hover:text-red-800 px-2 py-1"
                 >
-                  Remove
+                  ✕
                 </button>
               </div>
-              <button
-                type="button"
-                @click="addImportantDate"
-                class="text-purple-600 hover:text-blue-800 font-medium"
-              >
-                + Add Important Date
-              </button>
             </div>
           </div>
 
@@ -432,9 +549,11 @@ onMounted(async () => {
                   v-for="item in scheduleItems" 
                   :key="`${item.date}-${item.type}`"
                   :class="{
-                    'bg-purple-50 text-purple-800 border border-purple-200': item.type === 'class',
+                    'bg-purple-50 text-purple-800 border border-purple-200': item.type === 'class' && !scheduleStore.isClassCancelled(item.date),
+                    'bg-gray-100 text-gray-500 border border-gray-300 opacity-75': item.type === 'class' && scheduleStore.isClassCancelled(item.date),
                     'bg-red-50 text-red-800 border border-red-200': item.type === 'holiday',
-                    'bg-amber-50 text-amber-800 border border-amber-200': item.type === 'event'
+                    'bg-amber-50 text-amber-800 border border-amber-200': item.type === 'event',
+                    'bg-gray-50 text-gray-800 border border-gray-200': item.type === 'other'
                   }"
                   class="flex items-center justify-between px-4 py-3 rounded-lg w-full cursor-pointer hover:opacity-80 transition-opacity"
                   @click="toggleDateNotes(item.date)"
@@ -448,15 +567,54 @@ onMounted(async () => {
                       }) }}
                     </div>
                     <div class="text-sm opacity-75">
-                      <span v-if="item.type === 'class'">Class Meeting</span>
+                      <span v-if="item.type === 'class'">
+                        <span v-if="scheduleStore.isClassCancelled(item.date)" class="line-through">Class Meeting</span>
+                        <span v-else>Class Meeting</span>
+                        <span v-if="scheduleStore.isClassCancelled(item.date)" class="ml-2 text-red-600 font-medium">CANCELLED</span>
+                      </span>
                       <span v-else-if="item.type === 'holiday'">🎉 {{ item.name || 'Holiday' }}</span>
-                      <span v-else>📅 {{ item.name }}</span>
+                      <span v-else-if="item.type === 'event'">📅 {{ item.name }}</span>
+                      <span v-else-if="item.type === 'other'">📌 {{ item.name }}</span>
+                      <span v-else>{{ item.name }}</span>
                     </div>
                   </div>
                   <div class="flex items-center space-x-2">
                     <div v-if="scheduleStore.hasNoteForDate(item.date)" class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
                       📝 Notes
                     </div>
+                    <!-- Cancel/Uncancel button for class meetings -->
+                    <button
+                      type="button"
+                      v-if="item.type === 'class'"
+                      @click="toggleClassCancellation(item.date, $event)"
+                      :class="{
+                        'text-red-500 hover:text-red-700 hover:bg-red-50 border-red-200': !scheduleStore.isClassCancelled(item.date),
+                        'text-green-500 hover:text-green-700 hover:bg-green-50 border-green-200': scheduleStore.isClassCancelled(item.date)
+                      }"
+                      class="flex items-center space-x-1 px-2 py-1 rounded border text-xs font-medium transition-colors"
+                      :title="scheduleStore.isClassCancelled(item.date) ? 'Restore class' : 'Cancel class'"
+                    >
+                      <svg v-if="!scheduleStore.isClassCancelled(item.date)" class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                      </svg>
+                      <svg v-else class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                      </svg>
+                      <span v-if="!scheduleStore.isClassCancelled(item.date)">Cancel</span>
+                      <span v-else>Restore</span>
+                    </button>
+                    <!-- Delete button for user-added important dates only -->
+                    <button
+                      type="button"
+                      v-if="item.eventType === 'user_defined'"
+                      @click="deleteScheduleDate(item.date, $event)"
+                      class="text-red-500 hover:text-red-700 p-1 rounded hover:bg-red-50 transition-colors"
+                      title="Delete this date"
+                    >
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1-1H9a1 1 0 00-1 1v3M4 7h16"></path>
+                      </svg>
+                    </button>
                     <div class="text-xs text-gray-400">
                       Click to add notes
                     </div>
@@ -468,7 +626,12 @@ onMounted(async () => {
               <div class="mt-4 flex flex-wrap gap-4 text-sm">
                 <div class="flex items-center">
                   <div class="w-3 h-3 bg-purple-200 rounded-full mr-2"></div>
-                  <span class="text-gray-600">Class meetings ({{ classDates.length }})</span>
+                  <span class="text-gray-600">
+                    Class meetings ({{ classDates.length }})
+                    <span v-if="cancelledClasses.size > 0" class="ml-2 text-red-600 text-xs">
+                      - {{ cancelledClasses.size }} cancelled
+                    </span>
+                  </span>
                 </div>
                 <div class="flex items-center" v-if="scheduleItems.filter(item => item.type === 'holiday').length > 0">
                   <div class="w-3 h-3 bg-red-200 rounded-full mr-2"></div>
@@ -477,6 +640,16 @@ onMounted(async () => {
                 <div class="flex items-center" v-if="scheduleItems.filter(item => item.type === 'event').length > 0">
                   <div class="w-3 h-3 bg-amber-200 rounded-full mr-2"></div>
                   <span class="text-gray-600">Academic events ({{ scheduleItems.filter(item => item.type === 'event').length }})</span>
+                </div>
+                <div class="flex items-center" v-if="scheduleItems.filter(item => item.type === 'other').length > 0">
+                  <div class="w-3 h-3 bg-gray-200 rounded-full mr-2"></div>
+                  <span class="text-gray-600">Other important dates ({{ scheduleItems.filter(item => item.type === 'other').length }})</span>
+                </div>
+                <div class="flex items-center" v-if="scheduleItems.filter(item => item.eventType === 'user_defined').length > 0">
+                  <div class="w-3 h-3 bg-blue-200 rounded-full mr-2"></div>
+                  <span class="text-gray-600">User-added dates ({{ scheduleItems.filter(item => item.eventType === 'user_defined').length }}) 
+                    <span class="text-xs text-gray-400 ml-1">- click 🗑️ to delete</span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -491,7 +664,7 @@ onMounted(async () => {
           <!-- Progress Indicator -->
           <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
             <div class="flex items-center justify-between text-sm font-medium text-gray-700 mb-3">
-              <span class="text-purple-600">Step 2 of 4</span>
+              <span class="text-purple-600">Step 2 of 5</span>
               <span>Schedule Setup</span>
             </div>
             <div class="w-full bg-purple-100 rounded-full h-2.5 shadow-inner">
@@ -521,10 +694,10 @@ onMounted(async () => {
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
-                Generating Schedule...
+                Saving Schedule...
               </span>
               <span v-else class="flex items-center">
-                Generate Schedule
+                Course Content
                 <svg class="ml-2 -mr-1 w-5 h-5 transition-transform group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                 </svg>
@@ -537,13 +710,13 @@ onMounted(async () => {
 
     <!-- Notes Modal -->
     <div v-if="showNotesModal" class="fixed inset-0 z-50 overflow-y-auto">
-      <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-        <div class="fixed inset-0 transition-opacity" aria-hidden="true">
-          <div class="absolute inset-0 bg-gray-500 opacity-75" @click="cancelNotes"></div>
+      <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0 pointer-events-none">
+        <div class="fixed inset-0 transition-opacity pointer-events-none" aria-hidden="true">
+          <div class="absolute inset-0 bg-gray-500 opacity-75 pointer-events-auto" @click="cancelNotes"></div>
         </div>
 
         <!-- Modal content -->
-        <div class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+        <div class="relative z-50 inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6 pointer-events-auto">
           <div>
             <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-purple-100">
               <svg class="h-6 w-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -21,6 +21,8 @@ export const useScheduleStore = defineStore('schedule', () => {
   const classDates = ref<string[]>([])
   const academicEvents = ref<any[]>([])
   const calendarLoading = ref(false)
+  const userImportantDates = ref<Array<{ date: string, description: string, type: 'class' | 'holiday' | 'event' | 'other' }>>([])
+  const cancelledClasses = ref<Set<string>>(new Set())
   
   // Modal state
   const selectedDate = ref<string>('')
@@ -67,6 +69,18 @@ export const useScheduleStore = defineStore('schedule', () => {
             eventType: event.type 
           })
         }
+      }
+    })
+    
+    // Add user-defined important dates
+    userImportantDates.value.forEach(importantDate => {
+      if (importantDate.date && importantDate.description) {
+        items.push({
+          date: importantDate.date,
+          type: importantDate.type as 'class' | 'holiday' | 'event',
+          name: importantDate.description,
+          eventType: 'user_defined'
+        })
       }
     })
     
@@ -186,6 +200,26 @@ export const useScheduleStore = defineStore('schedule', () => {
     return dateNotes.value[date]?.note || ''
   }
 
+  const setUserImportantDates = (dates: Array<{ date: string, description: string, type: 'class' | 'holiday' | 'event' | 'other' }>) => {
+    userImportantDates.value = dates.filter(d => d.date && d.description)
+  }
+
+  const removeUserImportantDate = (dateToRemove: string) => {
+    userImportantDates.value = userImportantDates.value.filter(d => d.date !== dateToRemove)
+  }
+
+  const toggleClassCancellation = (date: string) => {
+    if (cancelledClasses.value.has(date)) {
+      cancelledClasses.value.delete(date)
+    } else {
+      cancelledClasses.value.add(date)
+    }
+  }
+
+  const isClassCancelled = (date: string): boolean => {
+    return cancelledClasses.value.has(date)
+  }
+
   return {
     // State
     dateNotes,
@@ -195,6 +229,8 @@ export const useScheduleStore = defineStore('schedule', () => {
     selectedDate,
     showNotesModal,
     tempNote,
+    userImportantDates,
+    cancelledClasses,
     
     // Computed
     scheduleItems,
@@ -214,6 +250,10 @@ export const useScheduleStore = defineStore('schedule', () => {
     generateClassDates,
     hasNoteForDate,
     getNoteForDate,
-    parseDate
+    parseDate,
+    setUserImportantDates,
+    removeUserImportantDate,
+    toggleClassCancellation,
+    isClassCancelled
   }
 })
