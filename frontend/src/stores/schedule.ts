@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { ref, computed, readonly } from 'vue'
+import { ref, computed, watch, readonly } from 'vue'
 
 interface DateNote {
   date: string
@@ -23,6 +23,42 @@ export const useScheduleStore = defineStore('schedule', () => {
   const calendarLoading = ref(false)
   const userImportantDates = ref<Array<{ date: string, description: string, type: 'class' | 'holiday' | 'event' | 'other' }>>([])
   const cancelledClasses = ref<Set<string>>(new Set())
+  
+  // Initialize from localStorage
+  const initializeFromStorage = () => {
+    try {
+      const savedSchedule = localStorage.getItem('niagara-schedule-data')
+      if (savedSchedule) {
+        const data = JSON.parse(savedSchedule)
+        if (data.classDates) classDates.value = data.classDates
+        if (data.academicEvents) academicEvents.value = data.academicEvents
+        if (data.userImportantDates) userImportantDates.value = data.userImportantDates
+        if (data.cancelledClasses) cancelledClasses.value = new Set(data.cancelledClasses)
+        if (data.dateNotes) dateNotes.value = data.dateNotes
+      }
+    } catch (error) {
+      console.warn('Failed to load schedule data from localStorage:', error)
+    }
+  }
+  
+  // Save to localStorage
+  const saveToStorage = () => {
+    try {
+      const data = {
+        classDates: classDates.value,
+        academicEvents: academicEvents.value,
+        userImportantDates: userImportantDates.value,
+        cancelledClasses: Array.from(cancelledClasses.value),
+        dateNotes: dateNotes.value
+      }
+      localStorage.setItem('niagara-schedule-data', JSON.stringify(data))
+    } catch (error) {
+      console.warn('Failed to save schedule data to localStorage:', error)
+    }
+  }
+  
+  // Initialize from storage on store creation
+  initializeFromStorage()
   
   // Modal state
   const selectedDate = ref<string>('')
@@ -219,6 +255,9 @@ export const useScheduleStore = defineStore('schedule', () => {
   const isClassCancelled = (date: string): boolean => {
     return cancelledClasses.value.has(date)
   }
+
+  // Auto-save watchers
+  watch([classDates, academicEvents, userImportantDates, cancelledClasses, dateNotes], saveToStorage, { deep: true })
 
   return {
     // State

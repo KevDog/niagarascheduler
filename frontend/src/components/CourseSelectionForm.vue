@@ -15,7 +15,6 @@ const emit = defineEmits<Emits>()
 
 const { 
   selectedSemester,
-  instructorName,
   selectedDepartment,
   selectedCourse,
   selectedOffering,
@@ -83,22 +82,6 @@ const filteredOfferings = computed(() => {
     </div>
 
     <form @submit.prevent="handleSubmit" class="space-y-6">
-      <!-- Instructor Name -->
-      <div>
-        <label for="instructor" class="block text-sm font-medium text-gray-700 mb-2">
-          Instructor Name <span class="text-red-500">*</span>
-        </label>
-        <div class="relative rounded-lg shadow-sm">
-          <input
-            id="instructor"
-            v-model="instructorName"
-            type="text"
-            required
-            placeholder="Enter your full name"
-            class="block w-full rounded-lg border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 transition duration-200"
-          />
-        </div>
-      </div>
 
       <!-- Semester Selection -->
       <div>
@@ -353,7 +336,7 @@ const filteredOfferings = computed(() => {
           Loading...
         </span>
         <span v-else class="flex items-center">
-          Continue to Schedule Setup
+          Continue to Instructor Information
           <svg class="ml-2 -mr-1 w-5 h-5 transition-transform group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
           </svg>

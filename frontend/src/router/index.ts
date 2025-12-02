@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/instructor-info',
+      name: 'instructor-info',
+      component: () => import('../views/InstructorInfoView.vue'),
+    },
+    {
       path: '/schedule-setup',
       name: 'schedule-setup',
       component: () => import('../views/ScheduleSetupView.vue'),
@@ -28,6 +33,11 @@ const router = createRouter({
       path: '/class-policies',
       name: 'class-policies',
       component: () => import('../views/ClassPoliciesView.vue'),
+    },
+    {
+      path: '/syllabus-preview',
+      name: 'syllabus-preview',
+      component: () => import('../views/SyllabusPreviewView.vue'),
     },
     {
       path: '/support',

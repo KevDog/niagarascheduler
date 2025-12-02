@@ -279,11 +279,11 @@ onMounted(() => {
         <!-- Progress Indicator -->
         <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 mt-8">
           <div class="flex items-center justify-between text-sm font-medium text-gray-700 mb-3">
-            <span class="text-purple-600">Step 4 of 5</span>
+            <span class="text-purple-600">Step 5 of 7</span>
             <span>Policies & Grading</span>
           </div>
           <div class="w-full bg-gray-200 rounded-full h-2">
-            <div class="bg-gradient-to-r from-purple-500 to-purple-700 h-2 rounded-full" style="width: 75%"></div>
+            <div class="bg-gradient-to-r from-purple-500 to-purple-700 h-2 rounded-full" style="width: 71%"></div>
           </div>
         </div>
 

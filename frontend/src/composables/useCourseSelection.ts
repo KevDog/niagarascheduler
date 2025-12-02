@@ -7,7 +7,6 @@ export function useCourseSelection() {
 
   // Form state
   const selectedSemester = ref('')
-  const instructorName = ref('')
   const selectedDepartment = ref('')
   const selectedCourse = ref('')
   const selectedOffering = ref('')
@@ -15,7 +14,6 @@ export function useCourseSelection() {
   // Computed properties
   const canProceed = computed(() => {
     return selectedSemester.value && 
-           instructorName.value.trim() && 
            selectedDepartment.value && 
            selectedCourse.value && 
            selectedOffering.value
@@ -48,7 +46,6 @@ export function useCourseSelection() {
   // Reset form
   const resetForm = () => {
     selectedSemester.value = ''
-    instructorName.value = ''
     selectedDepartment.value = ''
     selectedCourse.value = ''
     selectedOffering.value = ''
@@ -57,7 +54,6 @@ export function useCourseSelection() {
   // Get form data
   const getFormData = () => ({
     semester: selectedSemester.value,
-    instructor: instructorName.value,
     department: selectedDepartment.value,
     course: selectedCourse.value,
     offering: selectedOffering.value
@@ -66,7 +62,6 @@ export function useCourseSelection() {
   return {
     // Form state
     selectedSemester,
-    instructorName,
     selectedDepartment,
     selectedCourse,
     selectedOffering,

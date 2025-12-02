@@ -22,6 +22,8 @@ class SyllabusService:
                                          year: str, course_id: str = '', 
                                          include_description: bool = False,
                                          instructor_name: str = 'TBD',
+                                         office_hours: str = '', office_location: str = '',
+                                         email_address: str = '', phone_number: str = '',
                                          textbooks: str = '', assignments: str = '',
                                          attendance_policy: str = '', grading_policy: str = '',
                                          ai_policy: str = '', bibliography: str = '') -> Dict[str, Any]:
@@ -35,6 +37,10 @@ class SyllabusService:
             course_id: Course ID (e.g., 'THR101')
             include_description: Whether to include course description
             instructor_name: Instructor name
+            office_hours: Office hours information
+            office_location: Office location information
+            email_address: Email address
+            phone_number: Phone number
             textbooks: Textbooks information
             assignments: Assignments information
             attendance_policy: Attendance policy text
@@ -56,6 +62,10 @@ class SyllabusService:
                 course_id=course_id,
                 include_description=include_description,
                 instructor_name=instructor_name,
+                office_hours=office_hours,
+                office_location=office_location,
+                email_address=email_address,
+                phone_number=phone_number,
                 textbooks=textbooks,
                 assignments=assignments,
                 attendance_policy=attendance_policy,
@@ -88,6 +98,8 @@ class SyllabusService:
                             export_format: str = 'docx', course_id: str = '',
                             include_description: bool = False,
                             instructor_name: str = 'TBD',
+                            office_hours: str = '', office_location: str = '',
+                            email_address: str = '', phone_number: str = '',
                             textbooks: str = '', assignments: str = '',
                             attendance_policy: str = '', grading_policy: str = '',
                             ai_policy: str = '', bibliography: str = '') -> Dict[str, Any]:
@@ -102,6 +114,10 @@ class SyllabusService:
             course_id: Course ID
             include_description: Whether to include course description
             instructor_name: Instructor name
+            office_hours: Office hours information
+            office_location: Office location information
+            email_address: Email address
+            phone_number: Phone number
             textbooks: Textbooks information
             assignments: Assignments information
             attendance_policy: Attendance policy text
@@ -121,35 +137,72 @@ class SyllabusService:
             if export_format not in valid_formats:
                 raise ValueError(f'Invalid export format: {export_format}. Supported: {valid_formats}')
             
-            # Create temporary file
-            suffix = '.' + export_format
-            temp_file = NamedTemporaryFile(suffix=suffix, delete=False)
-            
-            # Generate syllabus
-            generate_syllabus(
-                schedule_data=schedule_data,
-                semester=semester,
-                year=year,
-                output_format=export_format,
-                template_dir=self.template_dir,
-                output_file=temp_file.name,
-                course_id=course_id,
-                include_description=include_description,
-                instructor_name=instructor_name,
-                textbooks=textbooks,
-                assignments=assignments,
-                attendance_policy=attendance_policy,
-                grading_policy=grading_policy,
-                ai_policy=ai_policy,
-                bibliography=bibliography
-            )
+            # Handle DOCX format with Word template
+            if export_format == 'docx':
+                from .word_template_service import create_word_syllabus
+                
+                # Load course data if available
+                course_title = self._get_course_title(course_id)
+                course_description = self._get_course_description(course_id)
+                department_mission = self._get_department_mission(course_id)
+                
+                temp_file_path = create_word_syllabus(
+                    schedule_data=schedule_data,
+                    semester=semester,
+                    year=year,
+                    template_dir=self.template_dir,
+                    course_id=course_id,
+                    course_title=course_title,
+                    course_description=course_description,
+                    department_mission_statement=department_mission,
+                    instructor_name=instructor_name,
+                    office_hours=office_hours,
+                    office_location=office_location,
+                    email_address=email_address,
+                    phone_number=phone_number,
+                    textbooks=textbooks,
+                    assignments=assignments,
+                    attendance_policy=attendance_policy,
+                    grading_policy=grading_policy,
+                    ai_policy=ai_policy,
+                    bibliography=bibliography,
+                    include_description=include_description
+                )
+            else:
+                # Create temporary file for other formats
+                suffix = '.' + export_format
+                temp_file = NamedTemporaryFile(suffix=suffix, delete=False)
+                
+                # Generate syllabus using existing method
+                generate_syllabus(
+                    schedule_data=schedule_data,
+                    semester=semester,
+                    year=year,
+                    output_format=export_format,
+                    template_dir=self.template_dir,
+                    output_file=temp_file.name,
+                    course_id=course_id,
+                    include_description=include_description,
+                    instructor_name=instructor_name,
+                    office_hours=office_hours,
+                    office_location=office_location,
+                    email_address=email_address,
+                    phone_number=phone_number,
+                    textbooks=textbooks,
+                    assignments=assignments,
+                    attendance_policy=attendance_policy,
+                    grading_policy=grading_policy,
+                    ai_policy=ai_policy,
+                    bibliography=bibliography
+                )
+                temp_file_path = temp_file.name
             
             # Generate filename
             course_part = f"_{course_id}" if course_id else ""
             filename = f"{semester}{year}{course_part}_Syllabus.{export_format}"
             
             return {
-                'file_path': temp_file.name,
+                'file_path': temp_file_path,
                 'filename': filename,
                 'format': export_format,
                 'course_id': course_id,
@@ -160,6 +213,43 @@ class SyllabusService:
             
         except Exception as e:
             raise Exception(f'Error exporting syllabus: {str(e)}')
+    
+    def _get_course_title(self, course_id: str) -> str:
+        """Get course title from course data"""
+        if not course_id:
+            return 'Course Title'
+        
+        try:
+            from ..utils.data_loader import load_course_from_id
+            course = load_course_from_id(course_id)
+            return course.title if course else f'Course {course_id}'
+        except:
+            return f'Course {course_id}'
+    
+    def _get_course_description(self, course_id: str) -> str:
+        """Get course description from course data"""
+        if not course_id:
+            return 'Course description will be provided.'
+        
+        try:
+            from ..utils.data_loader import load_course_from_id
+            course = load_course_from_id(course_id)
+            return course.description if course and course.description else 'Course description will be provided.'
+        except:
+            return 'Course description will be provided.'
+    
+    def _get_department_mission(self, course_id: str) -> str:
+        """Get department mission statement"""
+        if not course_id or ' ' not in course_id:
+            return 'This department is committed to providing excellent education and preparing students for success.'
+        
+        try:
+            department_code = course_id.split()[0]
+            from ..utils.data_loader import load_department
+            department = load_department(department_code)
+            return department.mission_statement if department and department.mission_statement else 'This department is committed to providing excellent education and preparing students for success.'
+        except:
+            return 'This department is committed to providing excellent education and preparing students for success.'
     
     def get_supported_export_formats(self) -> List[Dict[str, str]]:
         """

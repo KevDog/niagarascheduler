@@ -3,6 +3,20 @@ import { useRouter } from 'vue-router'
 export function useNavigation() {
   const router = useRouter()
 
+  const navigateToInstructorInfo = (formData: {
+    semester: string
+    department: string
+    course: string
+    offering: string
+  }) => {
+    console.log('Proceeding to instructor info with:', formData)
+    
+    router.push({
+      name: 'instructor-info',
+      query: formData
+    })
+  }
+
   const navigateToScheduleSetup = (formData: {
     semester: string
     instructor: string
@@ -10,7 +24,7 @@ export function useNavigation() {
     course: string
     offering: string
   }) => {
-    console.log('Proceeding with:', formData)
+    console.log('Proceeding to schedule setup with:', formData)
     
     router.push({
       name: 'schedule-setup',
@@ -27,6 +41,7 @@ export function useNavigation() {
   }
 
   return {
+    navigateToInstructorInfo,
     navigateToScheduleSetup,
     navigateToHome,
     navigateToSupport

@@ -39,57 +39,18 @@ const canProceed = computed(() => {
 })
 
 // Methods
-const generateSyllabus = async () => {
+const previewSyllabus = async () => {
   loading.value = true
   try {
-    // Parse semester to extract year
-    const semesterParts = wizardData.value.semester.split('_')
-    const year = 2000 + parseInt(semesterParts[0]) // Convert "25" to 2025
+    console.log('Class policies data configured:', classPoliciesData.value)
     
-    const requestData = {
-      // Required API fields
-      schedule: scheduleItems.value || [],
-      semester: wizardData.value.semester,
-      year: year,
-      
-      // Optional API fields
-      course_id: `${wizardData.value.department} ${wizardData.value.course}`,
-      instructor_name: wizardData.value.instructor,
-      
-      // Map class policies data to API expected fields
-      attendance_policy: classPoliciesData.value.classroomBehavior || '',
-      grading_policy: classPoliciesData.value.participationExpectations || '',
-      ai_policy: classPoliciesData.value.emailPolicy || '',
-      textbooks: '',
-      assignments: '',
-      bibliography: ''
-    }
-    
-    console.log('Sending syllabus generation request with data:', requestData)
-    
-    const response = await fetch('/api/generate-syllabus', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(requestData)
+    // Navigate to syllabus preview with all wizard data
+    router.push({
+      name: 'syllabus-preview',
+      query: wizardData.value
     })
-    
-    if (response.ok) {
-      const data = await response.json()
-      console.log('Syllabus generated:', data)
-      // Navigate back to home with success (temporary - until syllabus preview is created)
-      alert('Syllabus generated successfully!')
-      router.push({ name: 'home' })
-    } else {
-      const errorData = await response.text()
-      console.error('API Error:', response.status, response.statusText)
-      console.error('Error response:', errorData)
-      alert(`Error generating syllabus (${response.status}): ${errorData}`)
-    }
   } catch (error) {
-    console.error('Error generating syllabus:', error)
-    alert('Error generating syllabus. Please check your connection and try again.')
+    console.error('Error navigating to syllabus preview:', error)
   } finally {
     loading.value = false
   }
@@ -267,11 +228,11 @@ onMounted(() => {
         <!-- Progress Indicator -->
         <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 mt-8">
           <div class="flex items-center justify-between text-sm font-medium text-gray-700 mb-3">
-            <span class="text-purple-600">Step 5 of 5</span>
+            <span class="text-purple-600">Step 6 of 7</span>
             <span>Class Policies</span>
           </div>
           <div class="w-full bg-gray-200 rounded-full h-2">
-            <div class="bg-gradient-to-r from-purple-500 to-purple-700 h-2 rounded-full" style="width: 100%"></div>
+            <div class="bg-gradient-to-r from-purple-500 to-purple-700 h-2 rounded-full" style="width: 86%"></div>
           </div>
         </div>
 
@@ -290,7 +251,7 @@ onMounted(() => {
           
           <button
             type="button"
-            @click="generateSyllabus"
+            @click="previewSyllabus"
             :disabled="!canProceed || loading"
             :class="{
               'opacity-50 cursor-not-allowed': !canProceed || loading,
@@ -303,10 +264,10 @@ onMounted(() => {
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                 <path class="opacity-75" fill="currentColor" d="m4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
-              Generating Syllabus...
+              Loading Preview...
             </span>
             <span v-else class="flex items-center">
-              Generate Syllabus
+              Preview Syllabus
               <svg class="ml-2 -mr-1 w-5 h-5 transition-transform group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
               </svg>

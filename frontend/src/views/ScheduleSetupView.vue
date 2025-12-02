@@ -133,6 +133,30 @@ watch(() => scheduleData.value.meetingDays, (newValue) => {
   }
 }, { immediate: false, deep: true })
 
+// Helper function to convert 12-hour time format to 24-hour format
+const convertTo24Hour = (time12h: string): string => {
+  const [time, modifier] = time12h.split(/([AP]M)/)
+  let [hours, minutes] = time.split(':')
+  
+  if (hours === '12') {
+    hours = '00'
+  }
+  
+  if (modifier === 'PM') {
+    hours = parseInt(hours, 10) + 12 + ''
+  }
+  
+  return `${hours}:${minutes}`
+}
+
+const addImportantDate = () => {
+  scheduleData.value.importantDates.push({ date: '', description: '', type: 'class' })
+}
+
+const removeImportantDate = (index: number) => {
+  scheduleData.value.importantDates.splice(index, 1)
+}
+
 // Initialize meeting data from the selected offering
 const initializeFromOffering = async () => {
   if (selectedOffering.value && selectedOffering.value.days && selectedOffering.value.start_time && selectedOffering.value.end_time) {
@@ -199,29 +223,6 @@ const goBack = () => {
   router.push({ name: 'home' })
 }
 
-const addImportantDate = () => {
-  scheduleData.value.importantDates.push({ date: '', description: '', type: 'class' })
-}
-
-const removeImportantDate = (index: number) => {
-  scheduleData.value.importantDates.splice(index, 1)
-}
-
-// Helper function to convert 12-hour time format to 24-hour format
-const convertTo24Hour = (time12h: string): string => {
-  const [time, modifier] = time12h.split(/([AP]M)/)
-  let [hours, minutes] = time.split(':')
-  
-  if (hours === '12') {
-    hours = '00'
-  }
-  
-  if (modifier === 'PM') {
-    hours = String(parseInt(hours, 10) + 12)
-  }
-  
-  return `${hours.padStart(2, '0')}:${minutes || '00'}`
-}
 
 const saveImportantDatesToSchedule = () => {
   // Filter out incomplete entries - must have date, type, AND description
@@ -664,11 +665,11 @@ onMounted(async () => {
           <!-- Progress Indicator -->
           <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
             <div class="flex items-center justify-between text-sm font-medium text-gray-700 mb-3">
-              <span class="text-purple-600">Step 2 of 5</span>
+              <span class="text-purple-600">Step 3 of 7</span>
               <span>Schedule Setup</span>
             </div>
             <div class="w-full bg-purple-100 rounded-full h-2.5 shadow-inner">
-              <div class="bg-gradient-to-r from-purple-400 to-purple-600 h-2.5 rounded-full w-1/2 shadow-sm transition-all duration-300"></div>
+              <div class="bg-gradient-to-r from-purple-400 to-purple-600 h-2.5 rounded-full shadow-sm transition-all duration-300" style="width: 43%"></div>
             </div>
           </div>
 

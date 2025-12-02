@@ -5,10 +5,10 @@ import { useApiData } from '@/composables/useApiData'
 import { useNavigation } from '@/composables/useNavigation'
 
 const { fetchConfig, fetchDepartments } = useApiData()
-const { navigateToScheduleSetup } = useNavigation()
+const { navigateToInstructorInfo } = useNavigation()
 
 const handleFormSubmit = (formData: any) => {
-  navigateToScheduleSetup(formData)
+  navigateToInstructorInfo(formData)
 }
 
 // Load initial data on mount
